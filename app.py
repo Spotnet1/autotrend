@@ -35,108 +35,72 @@ MAX_THREADS        = 15
 OUTPUT_DIR         = "output"
 CACHE_FILE         = f"{OUTPUT_DIR}/cache.json"
 EXPIRY_FILE        = f"{OUTPUT_DIR}/expiry.json"
-SITE_TITLE         = "AutoTrend Intelligence"
-SITE_TAGLINE       = "Real‑time global trend analysis — 100+ sources, zero bias."
+SITE_TITLE         = "SpotPulse Intelligence"
+SITE_TAGLINE       = "World's First Autonomous Global Trend Intelligence Engine."
 RETRIES            = 2
 REQUEST_TIMEOUT    = 15
 
 # ─── 100+ Feeds (14 categories) ───────────────────────────────────────────────
 FEEDS = {
-    "🌐 World News": [
-        ("Reuters",        "http://feeds.reuters.com/reuters/topNews"),
-        ("BBC World",      "http://feeds.bbci.co.uk/news/world/rss.xml"),
-        ("Al Jazeera",     "https://www.aljazeera.com/xml/rss/all.xml"),
-        ("The Guardian",   "https://www.theguardian.com/world/rss"),
-        ("NPR World",      "https://feeds.npr.org/1004/rss.xml"),
-        ("AP Top News",    "https://rsshub.app/apnews/topics/ap-top-news"),
-        ("ABC News",       "https://abcnews.go.com/abcnews/topstories"),
-        ("CBS News",       "https://www.cbsnews.com/latest/rss/main"),
-        ("USA Today",      "https://rsshub.app/usatoday/news"),
+    "🌍 Geopolitics": [
+        ("Foreign Affairs", "https://www.foreignaffairs.com/rss.xml"),
+        ("Foreign Policy", "https://foreignpolicy.com/feed/"),
+        ("CFR", "https://www.cfr.org/rss.xml"),
+        ("The Diplomat", "https://thediplomat.com/feed/"),
+        ("Defense News", "https://www.defensenews.com/arc/outboundfeeds/rss/category/global/"),
+        ("Stratfor", "https://worldview.stratfor.com/rss.xml"),
+        ("UN News", "https://news.un.org/feed/english/rss.xml"),
     ],
-    "🗳️ Politics": [
-        ("BBC Politics",        "http://feeds.bbci.co.uk/news/politics/rss.xml"),
-        ("The Hill",            "https://thehill.com/rss/syndicator/19110"),
-        ("Politico",            "https://rss.politico.com/politics-news.xml"),
-        ("RealClearPolitics",   "https://www.realclearpolitics.com/index.xml"),
-        ("Roll Call",           "https://rollcall.com/feed/"),
+    "🇺🇸 Americas": [
+        ("NYT World", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"),
+        ("CNN World", "http://rss.cnn.com/rss/edition_world.rss"),
+        ("Washington Post", "https://feeds.washingtonpost.com/rss/world"),
+        ("CBC News", "https://www.cbc.ca/cctoc/rss/news/world"),
+        ("Globo", "https://g1.globo.com/rss/g1/mundo/"),
     ],
-    "💻 Technology": [
-        ("TechCrunch",   "https://techcrunch.com/feed/"),
-        ("The Verge",    "https://www.theverge.com/rss/index.xml"),
-        ("Wired",        "https://www.wired.com/feed/rss"),
-        ("Ars Technica", "http://feeds.arstechnica.com/arstechnica/index"),
-        ("Hacker News",  "https://news.ycombinator.com/rss"),
-        ("Product Hunt", "https://www.producthunt.com/feed"),
-        ("The Register", "https://www.theregister.com/headlines.atom"),
-        ("VentureBeat",  "https://venturebeat.com/feed/"),
+    "🇪🇺 Europe": [
+        ("BBC News World", "http://feeds.bbci.co.uk/news/world/rss.xml"),
+        ("Reuters World", "https://www.reutersagency.com/feed/"),
+        ("Deutsche Welle", "https://rss.dw.com/rdf/rss-en-world"),
+        ("France 24", "https://www.france24.com/en/rss"),
+        ("EuroNews", "https://www.euronews.com/rss?level=vertical&name=news"),
+        ("EL PAÍS", "https://elpais.com/rss/elpais/inenglish.xml"),
     ],
-    "🔬 Science": [
-        ("NASA",            "https://www.nasa.gov/rss/dyn/breaking_news.rss"),
-        ("Science Daily",   "https://rss.sciencedaily.com/top/science.xml"),
-        ("Nature",          "http://feeds.nature.com/nature/rss/current"),
-        ("Science Mag",     "https://www.science.org/rss/news_current.xml"),
-        ("New Scientist",   "https://www.newscientist.com/feed/"),
-        ("Phys.org",        "https://phys.org/rss-feed/"),
+    "🌏 Asia & Pacific": [
+        ("South China Morning Post", "https://www.scmp.com/rss/91/feed.xml"),
+        ("Japan Times", "https://www.japantimes.co.jp/feed/"),
+        ("CNA (Channel News Asia)", "https://www.channelnewsasia.com/rssfeed/8395981"),
+        ("The Times of India", "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms"),
+        ("ABC News Australia", "https://www.abc.net.au/news/feed/52278/rss.xml"),
     ],
-    "💊 Health": [
-        ("WHO",                "https://www.who.int/rss-feeds/news-english.xml"),
-        ("WebMD",              "https://rssfeeds.webmd.com/rssfeeds/consumer-health.xml"),
-        ("Medical News Today", "https://www.medicalnewstoday.com/feeds/news"),
-        ("NIH News",           "https://www.nih.gov/news-events/news-releases/feed"),
+    "🌍 Africa & Mid-East": [
+        ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
+        ("Premium Times Nigeria", "https://www.premiumtimesng.com/feed"),
+        ("The Star Kenya", "https://www.the-star.co.ke/rss/"),
+        ("Haaretz", "https://www.haaretz.com/cmlink/1.4621008"),
+        ("Daily Maverick", "https://www.dailymaverick.co.za/feed/"),
     ],
-    "📈 Business / Finance": [
-        ("CNBC",            "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
-        ("Bloomberg",       "https://feeds.bloomberg.com/markets/news.rss"),
-        ("Reuters Business","http://feeds.reuters.com/reuters/businessNews"),
-        ("MarketWatch",     "https://feeds.marketwatch.com/marketwatch/topstories/"),
-        ("The Economist",   "https://www.economist.com/finance-and-economics/rss.xml"),
+    "💻 Technology & AI": [
+        ("TechCrunch", "https://techcrunch.com/feed/"),
+        ("The Verge", "https://www.theverge.com/rss/index.xml"),
+        ("Wired", "https://www.wired.com/feed/rss"),
+        ("MIT Tech Review", "https://www.technologyreview.com/feed/"),
+        ("Hacker News", "https://news.ycombinator.com/rss"),
+        ("Google AI Blog", "http://googleresearch.blogspot.com/atom.xml"),
     ],
-    "🏅 Sports": [
-        ("ESPN",        "https://www.espn.com/espn/rss/news"),
-        ("BBC Sport",   "http://feeds.bbci.co.uk/sport/rss.xml"),
-        ("Yahoo Sports","https://sports.yahoo.com/rss/"),
-        ("CBS Sports",  "https://www.cbssports.com/rss/headlines/"),
+    "📈 Finance & Markets": [
+        ("CNBC Markets", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+        ("Bloomberg", "https://feeds.bloomberg.com/markets/news.rss"),
+        ("Financial Times", "https://www.ft.com/?format=rss"),
+        ("The Economist", "https://www.economist.com/finance-and-economics/rss.xml"),
+        ("MarketWatch", "https://feeds.marketwatch.com/marketwatch/topstories/"),
     ],
-    "🎬 Entertainment": [
-        ("Variety",             "https://variety.com/feed/"),
-        ("Hollywood Reporter",  "https://www.hollywoodreporter.com/feed/"),
-        ("E! Online",           "https://www.eonline.com/news/feed"),
-        ("Billboard",           "https://www.billboard.com/feed/"),
-    ],
-    "🌍 Climate / Environment": [
-        ("NASA Climate",        "https://climate.nasa.gov/news/rss.xml"),
-        ("UN Environment",      "https://www.unep.org/news-and-stories/feed"),
-        ("Inside Climate News", "https://insideclimatenews.org/feed/"),
-        ("EcoWatch",            "https://www.ecowatch.com/feeds/latest.rss"),
-    ],
-    "🎓 Education": [
-        ("EdSurge",         "https://www.edsurge.com/news/feed"),
-        ("Education Week",  "https://www.edweek.org/feeds/feedburner/edweek/top"),
-        ("Inside Higher Ed","https://www.insidehighered.com/rss/feed"),
-    ],
-    "🛒 Lifestyle": [
-        ("Lifehacker",       "https://lifehacker.com/rss"),
-        ("BBC Good Food",    "https://www.bbcgoodfood.com/feed"),
-        ("Apartment Therapy","https://www.apartmenttherapy.com/feed"),
-    ],
-    "🤖 AI & Robotics": [
-        ("MIT AI News",        "http://news.mit.edu/rss/topic/artificial-intelligence2"),
-        ("Google AI Blog",     "http://googleresearch.blogspot.com/atom.xml"),
-        ("DeepMind Blog",      "https://www.deepmind.com/blog/rss.xml"),
-        ("Towards Data Science","https://towardsdatascience.com/feed"),
-        ("The Batch",          "https://www.deeplearning.ai/the-batch/feed/"),
-        ("Import AI",          "https://importai.substack.com/feed"),
-    ],
-    "📜 Opinion / Analysis": [
-        ("The Atlantic", "https://www.theatlantic.com/feed/all/"),
-        ("Vox",          "https://www.vox.com/rss/index.xml"),
-        ("Slate",        "https://slate.com/feeds/all.rss"),
-    ],
-    "🔐 Security": [
-        ("Krebs on Security", "https://krebsonsecurity.com/feed/"),
-        ("Threatpost",        "https://threatpost.com/feed/"),
-        ("Naked Security",    "https://nakedsecurity.sophos.com/feed/"),
-        ("ZDNet Security",    "https://www.zdnet.com/topic/security/rss.xml"),
+    "🔬 Science & Climate": [
+        ("Nature", "http://feeds.nature.com/nature/rss/current"),
+        ("ScienceDaily", "https://rss.sciencedaily.com/top/science.xml"),
+        ("NASA News", "https://www.nasa.gov/rss/dyn/breaking_news.rss"),
+        ("Scientific American", "https://www.scientificamerican.com/section/news/rss/"),
+        ("Phys.org", "https://phys.org/rss-feed/"),
     ],
 }
 
