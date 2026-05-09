@@ -26,25 +26,25 @@ jobs:
     steps:
       # ── 1. Checkout ──────────────────────────────────────────────────────────
       - name: Checkout repository
-          uses: actions/checkout@v4
-          with:
+        uses: actions/checkout@v4
+        with:
           fetch-depth: 0   # full history so git push works cleanly
 
       # ── 2. Python setup ───────────────────────────────────────────────────────
       - name: Set up Python 3.11
-          uses: actions/setup-python@v5
-          with:
+        uses: actions/setup-python@v5
+        with:
           python-version: "3.11"
           cache: pip
 
       # ── 3. Install dependencies ───────────────────────────────────────────────
       - name: Install dependencies
-          run: pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       # ── 4. Restore cached articles (so we keep the 48-hour rolling window) ───
       - name: Restore article cache
-          uses: actions/cache@v4
-          with:
+        uses: actions/cache@v4
+        with:
           path: output/
           key: autotrend-cache-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
@@ -52,11 +52,11 @@ jobs:
 
       # ── 5. Run the engine ─────────────────────────────────────────────────────
       - name: Run AutoTrend
-          run: python app.py
+        run: python app.py
 
       # ── 6. Commit outputs back to repo (index.html, rss, json, history) ──────
       - name: Commit & push output
-          run: |
+        run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add output/
@@ -66,8 +66,8 @@ jobs:
 
       # ── 7. Upload output/ as a Pages artifact ────────────────────────────────
       - name: Upload Pages artifact
-          uses: actions/upload-pages-artifact@v3
-          with:
+        uses: actions/upload-pages-artifact@v3
+        with:
           path: output/
 
   # ── Deploy to GitHub Pages (runs after build succeeds) ─────────────────────
@@ -82,5 +82,5 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-          id: deployment
-          uses: actions/deploy-pages@v4
+        id: deployment
+        uses: actions/deploy-pages@v4
