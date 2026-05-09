@@ -23,6 +23,15 @@ from bs4 import BeautifulSoup
 from jinja2 import Template
 from urllib.parse import urlparse
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+import spacy
+
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    print("Downloading spacy model...")
+    import subprocess
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
 
 # ─── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -237,7 +246,20 @@ def score_article(article):
     text   = f"{article['title']} {article['summary']}"
     lower  = text.lower()
 
-    keywords = rake_extract(text, n=5)
+    # Advanced NLP Entity Extraction
+    doc = nlp(text)
+    entities = {
+        "gpe": list(set([ent.text for ent in doc.ents if ent.label_ in ['GPE', 'LOC']])),
+        "orgs": list(set([ent.text for ent in doc.ents if ent.label_ == 'ORG'])),
+        "persons": list(set([ent.text for ent in doc.ents if ent.label_ == 'PERSON']))
+    }
+    
+    # Fallback to pure nouns if Spacy found nothing
+    if not entities["gpe"] and not entities["orgs"] and not entities["persons"]:
+        nouns = list(set([token.text for token in doc if token.pos_ == 'NOUN' and len(token.text) > 3]))
+        entities["keywords"] = nouns[:4]
+    else:
+        entities["keywords"] = []
 
     vs        = analyzer.polarity_scores(text)
     compound  = vs["compound"]
@@ -283,7 +305,7 @@ def score_article(article):
     return {
         "virality_score": score,
         "sentiment":      sentiment,
-        "keywords":       keywords,
+        "entities":       entities,
         "is_trending":    is_trending,
         "impact_level":   impact_level,
         "is_breaking":    is_breaking

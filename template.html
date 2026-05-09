@@ -127,20 +127,39 @@
             margin: 0 auto;
         }
 
-        /* ── Single Line Hero ── */
+        /* ── Powerful Hero Section ── */
         .hero {
-            margin: 1.5rem 0 2rem;
+            margin: 0 0 2.5rem;
             text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+            background: radial-gradient(circle at center, rgba(47, 129, 247, 0.15) 0%, transparent 70%),
+                        linear-gradient(180deg, rgba(13,17,23,0) 0%, var(--bg) 100%),
+                        repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(255,255,255,0.03) 20px),
+                        repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(255,255,255,0.03) 20px);
+            border-bottom: 1px solid rgba(47, 129, 247, 0.2);
+            border-radius: 0 0 2rem 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
         }
 
         .hero h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.75rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(47, 129, 247, 0.6);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        
+        .hero p {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
         }
 
         /* ── Top Trending Vertical Scroller (Inline) ── */
@@ -362,16 +381,18 @@
             margin-bottom: 0.75rem;
         }
 
-        .kw-chip {
-            background: rgba(47, 129, 247, 0.1);
-            color: var(--accent);
-            font-size: 0.6rem;
-            font-weight: 700;
-            padding: 0.2rem 0.5rem;
+        .ent-chip {
+            font-size: 0.55rem;
+            font-weight: 800;
+            padding: 0.15rem 0.4rem;
             border-radius: 0.25rem;
-            border: 1px solid rgba(47, 129, 247, 0.2);
-            text-transform: lowercase;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
+        .ent-gpe { background: rgba(248, 81, 73, 0.1); color: #ff7b72; border: 1px solid rgba(248, 81, 73, 0.2); }
+        .ent-org { background: rgba(47, 129, 247, 0.1); color: #79c0ff; border: 1px solid rgba(47, 129, 247, 0.2); }
+        .ent-per { background: rgba(210, 168, 255, 0.1); color: #d2a8ff; border: 1px solid rgba(210, 168, 255, 0.2); }
+        .ent-kw  { background: rgba(139, 148, 158, 0.1); color: #8b949e; border: 1px solid rgba(139, 148, 158, 0.2); }
 
         .card-meta {
             display: flex;
@@ -470,14 +491,11 @@
             </div>
         </div>
     </header>
-           Live
-            </div>
-        </div>
-    </header>
 
     <main>
         <section class="hero">
-            <h1>Worlds First Trend Intelligence</h1>
+            <h1>GLOBAL THREAT MATRIX</h1>
+            <p>Autonomous AI Intelligence Engine</p>
         </section>
 
         <div class="tag-list-header">
@@ -684,7 +702,10 @@
                         </div>
 
                         <div class="keyword-row">
-                            ${(a.keywords || []).slice(0, 3).map(kw => `<span class="kw-chip">${esc(kw)}</span>`).join('')}
+                            ${(a.entities?.gpe || []).slice(0,2).map(e => `<span class="ent-chip ent-gpe">📍 ${esc(e)}</span>`).join('')}
+                            ${(a.entities?.orgs || []).slice(0,2).map(e => `<span class="ent-chip ent-org">🏢 ${esc(e)}</span>`).join('')}
+                            ${(a.entities?.persons || []).slice(0,1).map(e => `<span class="ent-chip ent-per">👤 ${esc(e)}</span>`).join('')}
+                            ${(a.entities?.keywords || []).slice(0,3).map(e => `<span class="ent-chip ent-kw">${esc(e)}</span>`).join('')}
                         </div>
 
                         <div class="card-meta">

@@ -1,10 +1,10 @@
 {
   "stats": {
-    "total": 203,
-    "trending": 57,
+    "total": 209,
+    "trending": 59,
     "categories": 12,
     "sources": 41,
-    "updated": "2026-05-09 19:42 UTC"
+    "updated": "2026-05-09 19:48 UTC"
   },
   "articles": [
     {
@@ -569,6 +569,36 @@
       "is_breaking": false
     },
     {
+      "id": "75fb9bcf99a35a7f",
+      "title": "‘On level of atomic bomb’: Iran highlights Hormuz importance amid US talks - Al Jazeera",
+      "summary": "‘On level of atomic bomb’: Iran highlights Hormuz importance amid US talks    Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUjBkQzRiS01pUG5OWWdIWjBsdjhXekhVNXBpRDVQc0VoTTdta0MxV1Y1NGFCZTRFdVhwd2Q0REF2OGJHVGZLZHh1bVNLQjVzUWRQaDNDSUpUVnBhVDFkbnYtVHMzb0FyYjhMNmZ3ZjZKLUlXT2lKSDVLbnpsT2VSWDVaTThBWlI0R1g0am9lR1lCeXRWUnQ3ZlJaaDdTUVpnWUZ4RF9ESV9jenFjalB5T9IBtgFBVV95cUxOd3lyeFZ5enhNRldLbUd5Rm1VaWIyS2NxcmtvaGdSckhhT0dIZFp5OU5tZ19JVFFOcUpmR2wwSU53SmM3M29wVzZlaGxYa3cyU042aG1iV0hLcm9Nb3phV3BxcWxmUlg4WUY2cmVQQ2RmMUprRFg4emlab29CZlJpN19SZldJcmpzMXlubXFvWE5tTHRlVzBIcC1vdGdQeG82bE0xX0sxNEtMYW5iMlZkRWNaLU1nUQ?oc=5",
+      "source": "Google News: Middle East",
+      "category": "🌍 Africa & Mid-East",
+      "published": "2026-05-09T16:40:25",
+      "published_dt": "2026-05-09T16:40:25",
+      "fetched_at": "2026-05-09T19:48:40.083458",
+      "virality_score": 85,
+      "sentiment": "positive",
+      "keywords": [],
+      "is_trending": true,
+      "entities": {
+        "gpe": [
+          "US",
+          "Iran"
+        ],
+        "orgs": [
+          "Al Jazeera"
+        ],
+        "persons": [
+          "Hormuz"
+        ],
+        "keywords": []
+      },
+      "impact_level": "HIGH",
+      "is_breaking": false
+    },
+    {
       "id": "de35d7546fce85b2",
       "title": "BREAKING: 2027 Quarterback Commits To Auburn - localmemphis.com",
       "summary": "BREAKING: 2027 Quarterback Commits To Auburn    localmemphis.com",
@@ -800,6 +830,35 @@
       "is_trending": true,
       "impact_level": "HIGH",
       "is_breaking": false
+    },
+    {
+      "id": "600d77534afb5e28",
+      "title": "Why Argentina chose Kansas City as World Cup base: “Dallas wasn't right” - OneFootball",
+      "summary": "Why Argentina chose Kansas City as World Cup base: “Dallas wasn't right”    OneFootball",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbFdFQTFzVllCeEFKNHVPX3RWVW9EWElzeXFJYTItMW9OMERfZnl3SkFodFFUTU11ZlUzNmMtU0VPdG1QMWtCWEsxempXTElJZTdOZlB5dGtiV3cxZ3U0Qy1iX2dUUHFVMlFYejhGSWpHOVNyYUJ1OFFFR3lnTWxKRjdsLVpqN0V6YmhuWG1pVlFHNjUxdmlQTnphZFlOY2RvWkRORlRKR01GZzZUb0E?oc=5",
+      "source": "Google News: South America",
+      "category": "🇺🇸 Americas",
+      "published": "2026-05-09T19:12:39",
+      "published_dt": "2026-05-09T19:12:39",
+      "fetched_at": "2026-05-09T19:48:39.001553",
+      "virality_score": 81,
+      "sentiment": "neutral",
+      "keywords": [],
+      "is_trending": true,
+      "entities": {
+        "gpe": [
+          "Kansas City",
+          "Argentina",
+          "Dallas"
+        ],
+        "orgs": [
+          "OneFootball"
+        ],
+        "persons": [],
+        "keywords": []
+      },
+      "impact_level": "HIGH",
+      "is_breaking": true
     },
     {
       "id": "b2f2556e2884d2a8",
@@ -1914,6 +1973,32 @@
         "schools education week"
       ],
       "is_trending": false,
+      "impact_level": "MONITORING",
+      "is_breaking": false
+    },
+    {
+      "id": "e77881e069687ea5",
+      "title": "Education Sector in the Crosshairs: ShinyHunters' Extortion Campaign Against Instructure - Halcyon",
+      "summary": "Education Sector in the Crosshairs: ShinyHunters' Extortion Campaign Against Instructure    Halcyon",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOX2xBUGdDOHBOMno4Q3F0VThjR3JQZDg0TzdJRFhlY2NjMUVSVzVFcXdSZzlNZGNnMkdOc3hLTUU1UWY3UExYcjhrZTVSWU1INWs1cVZyWGNhd0JjTmZaUEhNS0JHbmpvaVZiNnFtRF9XZjd1ZGx4MFpwMWFwdy1VSDBXRmZHaTlGcXBzcjRka2RsbXZqUHB0SHBialB4bmd3MDdwUEI3OHhEUGZzTE1tTVdUZ3RMbVBfNlIxUFlYdU5qQ243bFE?oc=5",
+      "source": "Google News: Cyber",
+      "category": "🤖 Cyber & Tech Warfare",
+      "published": "2026-05-09T01:13:11",
+      "published_dt": "2026-05-09T01:13:11",
+      "fetched_at": "2026-05-09T19:48:41.230275",
+      "virality_score": 58,
+      "sentiment": "neutral",
+      "keywords": [],
+      "is_trending": false,
+      "entities": {
+        "gpe": [],
+        "orgs": [
+          "ShinyHunters' Extortion Campaign Against Instructure    Halcyon",
+          "ShinyHunters' Extortion Campaign Against Instructure - Halcyon Education Sector"
+        ],
+        "persons": [],
+        "keywords": []
+      },
       "impact_level": "MONITORING",
       "is_breaking": false
     },
@@ -3565,16 +3650,22 @@
       "category": "🌍 Geopolitics & Conflict",
       "published": "2026-05-07T13:09:00",
       "published_dt": "2026-05-07T13:09:00",
-      "fetched_at": "2026-05-09T19:42:40.795438",
+      "fetched_at": "2026-05-09T19:48:38.141313",
       "virality_score": 43,
       "sentiment": "negative",
-      "keywords": [
-        "nuclear america still needs worry",
-        "proliferation east asia",
-        "south korea",
-        "japan"
-      ],
+      "keywords": [],
       "is_trending": false,
+      "entities": {
+        "gpe": [
+          "East Asia",
+          "South Korea",
+          "Japan",
+          "Nuclear America"
+        ],
+        "orgs": [],
+        "persons": [],
+        "keywords": []
+      },
       "impact_level": "MONITORING",
       "is_breaking": false
     },
@@ -3882,6 +3973,61 @@
       "is_trending": false
     },
     {
+      "id": "fe1ee186092209bc",
+      "title": "I will not add query strings to your URLs",
+      "summary": "Comments",
+      "url": "https://chrismorgan.info/no-query-strings",
+      "source": "Hacker News",
+      "category": "🤖 Cyber & Tech Warfare",
+      "published": "2026-05-09T16:28:36",
+      "published_dt": "2026-05-09T16:28:36",
+      "fetched_at": "2026-05-09T19:48:41.316541",
+      "virality_score": 39,
+      "sentiment": "neutral",
+      "keywords": [],
+      "is_trending": false,
+      "entities": {
+        "gpe": [],
+        "orgs": [],
+        "persons": [],
+        "keywords": [
+          "Comments",
+          "strings",
+          "URLs",
+          "query"
+        ]
+      },
+      "impact_level": "MONITORING",
+      "is_breaking": false
+    },
+    {
+      "id": "83a6b1629a7c6e96",
+      "title": "Zed Editor Theme-Builder",
+      "summary": "Comments",
+      "url": "https://zed.dev/theme-builder",
+      "source": "Hacker News",
+      "category": "🤖 Cyber & Tech Warfare",
+      "published": "2026-05-09T17:30:39",
+      "published_dt": "2026-05-09T17:30:39",
+      "fetched_at": "2026-05-09T19:48:41.316541",
+      "virality_score": 39,
+      "sentiment": "neutral",
+      "keywords": [],
+      "is_trending": false,
+      "entities": {
+        "gpe": [],
+        "orgs": [
+          "Theme-Builder Comments"
+        ],
+        "persons": [
+          "Zed"
+        ],
+        "keywords": []
+      },
+      "impact_level": "MONITORING",
+      "is_breaking": false
+    },
+    {
       "id": "1c5e97355d853fad",
       "title": "San Francisco’s housing market has lost its mind",
       "summary": "The invisible force behind all of this is no mystery to anyone paying attention to the city's tech economy. San Francisco is home to some of the most valuable private companies in the world, and their employees have been quietly accumulating — and, increasingly, cashing out — fortunes.",
@@ -3953,17 +4099,21 @@
       "category": "🌍 Geopolitics & Conflict",
       "published": "2026-05-06T04:00:00",
       "published_dt": "2026-05-06T04:00:00",
-      "fetched_at": "2026-05-09T19:42:40.795438",
+      "fetched_at": "2026-05-09T19:48:38.141313",
       "virality_score": 37,
       "sentiment": "positive",
-      "keywords": [
-        "oil weapon",
-        "protect itself",
-        "global economy",
-        "iran",
-        "america"
-      ],
+      "keywords": [],
       "is_trending": false,
+      "entities": {
+        "gpe": [
+          "Iran"
+        ],
+        "orgs": [
+          "New Oil Weapon How America"
+        ],
+        "persons": [],
+        "keywords": []
+      },
       "impact_level": "MONITORING",
       "is_breaking": false
     },
@@ -4086,99 +4236,6 @@
         "still star",
         "months old",
         "punch"
-      ],
-      "is_trending": false
-    },
-    {
-      "id": "56c0069a76d3784b",
-      "title": "US, Iran talks likely next week",
-      "summary": "",
-      "url": "https://timesofindia.indiatimes.com/world/middle-east/us-iran-talks-likely-next-week/articleshow/130982526.cms",
-      "source": "The Times of India",
-      "category": "🌏 Asia & Pacific",
-      "published": "2026-05-09T19:08:56",
-      "published_dt": "2026-05-09T19:08:56",
-      "fetched_at": "2026-05-09T19:32:28.132659",
-      "virality_score": 35,
-      "sentiment": "neutral",
-      "keywords": [
-        "iran talks likely next week"
-      ],
-      "is_trending": false
-    },
-    {
-      "id": "b7b551c37145fd64",
-      "title": "Indian-origin philanthropist Anil Kochhar pays off student loans for 176 graduates of North Carolina college: '80 years ago, my father...'",
-      "summary": "",
-      "url": "https://timesofindia.indiatimes.com/world/us/indian-origin-philanthropist-anil-kochhar-pays-off-student-loans-for-176-graduates-of-north-carolina-80-years-ago-my-father-/articleshow/130982213.cms",
-      "source": "The Times of India",
-      "category": "🌏 Asia & Pacific",
-      "published": "2026-05-09T18:37:05",
-      "published_dt": "2026-05-09T18:37:05",
-      "fetched_at": "2026-05-09T19:32:28.134677",
-      "virality_score": 35,
-      "sentiment": "neutral",
-      "keywords": [
-        "indian origin philanthropist anil kochhar pays",
-        "graduates north carolina college",
-        "student loans",
-        "years ago",
-        "father"
-      ],
-      "is_trending": false
-    },
-    {
-      "id": "b673372325723d87",
-      "title": "Israel widens Gaza control, plans more ops",
-      "summary": "",
-      "url": "https://timesofindia.indiatimes.com/world/middle-east/israel-widens-gaza-control-plans-more-ops/articleshow/130982547.cms",
-      "source": "The Times of India",
-      "category": "🌏 Asia & Pacific",
-      "published": "2026-05-09T19:12:26",
-      "published_dt": "2026-05-09T19:12:26",
-      "fetched_at": "2026-05-09T19:33:54.251713",
-      "virality_score": 35,
-      "sentiment": "neutral",
-      "keywords": [
-        "israel widens gaza control",
-        "plans"
-      ],
-      "is_trending": false
-    },
-    {
-      "id": "d18a6660920b3249",
-      "title": "This Is Not the World Russia Wants",
-      "summary": "A belligerent America is foiling Putin’s strategy.",
-      "url": "https://www.foreignaffairs.com/united-states/not-world-russia-wants",
-      "source": "Foreign Affairs",
-      "category": "🌍 Geopolitics & Conflict",
-      "published": "2026-05-07T04:00:00",
-      "published_dt": "2026-05-07T04:00:00",
-      "fetched_at": "2026-05-09T19:42:40.795438",
-      "virality_score": 35,
-      "sentiment": "neutral",
-      "keywords": [
-        "world russia wants belligerent america foiling putin strategy",
-        "this"
-      ],
-      "is_trending": false,
-      "impact_level": "MONITORING",
-      "is_breaking": false
-    },
-    {
-      "id": "2a3eab2c1bd88ccf",
-      "title": "Bun ported to Rust in 6 days",
-      "summary": "Comments",
-      "url": "https://xunroll.com/thread/2053047748191232310",
-      "source": "Hacker News",
-      "category": "💻 Technology & AI",
-      "published": "2026-05-09T18:47:58",
-      "published_dt": "2026-05-09T18:47:58",
-      "fetched_at": "2026-05-09T19:32:31.835956",
-      "virality_score": 28,
-      "sentiment": "neutral",
-      "keywords": [
-        "bun ported rust days comments"
       ],
       "is_trending": false
     }
