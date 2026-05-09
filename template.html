@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <style>
         :root {
             --bg: #010409;
@@ -65,85 +67,83 @@
             border-radius: 0 0 2rem 2rem;
             overflow: hidden;
         }
-
-        /* Unique Animated Background */
         .hero::before {
             content: "";
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(47, 129, 247, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(210, 168, 255, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 30%, rgba(47, 129, 247, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(210, 168, 255, 0.1) 0%, transparent 50%);
             z-index: 0;
         }
-
         .hero::after {
             content: "";
             position: absolute;
             top: -50%; left: -50%;
             width: 200%; height: 200%;
-            background-image: 
-                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(47, 129, 247, 0.02) 41px),
-                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(47, 129, 247, 0.02) 41px);
+            background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(47, 129, 247, 0.02) 41px), repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(47, 129, 247, 0.02) 41px);
             animation: signalMove 20s linear infinite;
-            z-index: 0;
-            opacity: 0.5;
+            z-index: 0; opacity: 0.5;
         }
-
-        @keyframes signalMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(40px, 40px); }
-        }
+        @keyframes signalMove { 0% { transform: translate(0, 0); } 100% { transform: translate(40px, 40px); } }
 
         .hero h1, .hero p { position: relative; z-index: 1; }
         .hero h1 { 
             font-family: 'Outfit', sans-serif; 
             font-size: 2.5rem; 
             font-weight: 900; 
-            color: #fff; 
-            text-shadow: 0 0 30px rgba(47, 129, 247, 0.5); 
-            text-transform: uppercase; 
-            letter-spacing: -0.05em; 
             background: linear-gradient(to right, #fff, var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(47, 129, 247, 0.4);
+            text-transform: uppercase; 
+            letter-spacing: -0.05em; 
         }
         .hero p { color: var(--accent); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.5rem; }
 
+        .section-title { font-size: 0.8rem; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em; display: flex; align-items: center; gap: 0.5rem; }
+        .section-title::before { content: ""; width: 4px; height: 12px; background: var(--accent); border-radius: 2px; }
+
+        /* Map Section */
+        #map { height: 350px; width: 100%; border-radius: 1rem; border: 1px solid var(--border); background: var(--surface); margin-bottom: 2rem; z-index: 1; }
+        .leaflet-container { background: #010409 !important; }
+        .leaflet-tile { filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%); opacity: 0.3 !important; }
+        .leaflet-control-attribution { display: none !important; }
+
         /* Chart Section */
-        .analytics-section { background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; }
-        .analytics-section h2 { font-size: 0.8rem; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em; }
-        .chart-container { height: 180px; width: 100%; }
+        .analytics-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem; }
+        .analytics-card { background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; padding: 1.25rem; }
+        .chart-container { height: 160px; width: 100%; }
 
         .feed-grid { display: grid; gap: 0.75rem; }
-        .article-card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem; transition: background 0.2s; }
-        .breaking-banner { background: rgba(248, 81, 73, 0.1); color: var(--negative); font-size: 0.6rem; font-weight: 900; padding: 0.3rem 0.5rem; border-radius: 0.25rem; border: 1px solid rgba(248, 81, 73, 0.3); display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.75rem; }
+        .article-card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem; transition: background 0.2s; position: relative; overflow: hidden; }
+        .article-card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--border); }
+        .article-card.critical::before { background: var(--negative); box-shadow: 0 0 10px var(--negative); }
         
+        .breaking-banner { background: rgba(248, 81, 73, 0.1); color: var(--negative); font-size: 0.6rem; font-weight: 900; padding: 0.3rem 0.5rem; border-radius: 0.25rem; border: 1px solid rgba(248, 81, 73, 0.3); display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.75rem; animation: pulseRed 2s infinite; }
+        @keyframes pulseRed { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
+
         .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
         .source-name { font-size: 0.65rem; font-weight: 800; color: var(--accent); text-transform: uppercase; }
-        .trending-badge { background: var(--hot); color: #000; font-size: 0.55rem; font-weight: 900; padding: 0.15rem 0.4rem; border-radius: 4px; text-transform: uppercase; }
+        .trending-badge { background: var(--accent); color: #fff; font-size: 0.55rem; font-weight: 900; padding: 0.15rem 0.4rem; border-radius: 4px; text-transform: uppercase; }
         
-        .card-title { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .card-title { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.75rem; color: #fff; }
         .card-title a { color: inherit; text-decoration: none; }
 
         .ent-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
-        .ent-chip { font-size: 0.55rem; font-weight: 800; padding: 0.2rem 0.4rem; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.1); }
+        .ent-chip { font-size: 0.55rem; font-weight: 800; padding: 0.2rem 0.4rem; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.05); }
         .ent-gpe { background: rgba(248, 81, 73, 0.1); color: #ff7b72; }
         .ent-org { background: rgba(47, 129, 247, 0.1); color: #79c0ff; }
         .ent-per { background: rgba(210, 168, 255, 0.1); color: #d2a8ff; }
 
-        .card-stats { display: flex; gap: 1rem; background: rgba(255,255,255,0.03); padding: 0.5rem; border-radius: 0.5rem; align-items: center; }
+        .card-stats { display: flex; gap: 1rem; background: rgba(255,255,255,0.02); padding: 0.5rem; border-radius: 0.5rem; align-items: center; }
         .stat-item { display: flex; flex-direction: column; }
-        .stat-label { font-size: 0.5rem; font-weight: 800; color: var(--text-dim); }
+        .stat-label { font-size: 0.5rem; font-weight: 800; color: var(--text-dim); text-transform: uppercase; }
         .stat-val { font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 800; }
 
         .nav-bottom { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(13,17,23,0.9); backdrop-filter: blur(20px); border-top: 1px solid var(--border); display: flex; justify-content: space-around; padding: 0.75rem 0.5rem; padding-bottom: calc(0.75rem + var(--safe-area-bottom)); z-index: 1001; }
         .nav-item { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; color: var(--text-dim); text-decoration: none; font-size: 0.6rem; font-weight: 800; text-transform: uppercase; }
         .nav-item.active { color: var(--accent); }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--bg); }
         ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
     </style>
 </head>
@@ -155,43 +155,74 @@
         </div>
         <div class="header-right">
             <div class="utc-clock" id="utcClock">00:00:00 UTC</div>
-            <div class="status-badge"><div class="status-dot"></div> Live Analysis</div>
+            <div class="status-badge"><div class="status-dot"></div> Live Matrix</div>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <h1>Global Threat Matrix</h1>
-            <p>Autonomous AI Signal Intelligence</p>
+            <p>Predictive Signal Intelligence</p>
         </section>
 
-        <section class="analytics-section">
-            <h2>Threat Velocity (Last 10 Cycles)</h2>
-            <div class="chart-container">
-                <canvas id="threatChart"></canvas>
+        <h2 class="section-title">Geopolitical Signal Density</h2>
+        <div id="map"></div>
+
+        <div class="analytics-grid">
+            <div class="analytics-card">
+                <h2 class="section-title">Threat Velocity</h2>
+                <div class="chart-container">
+                    <canvas id="threatChart"></canvas>
+                </div>
             </div>
-        </section>
+        </div>
 
+        <h2 class="section-title">Active Signals</h2>
         <div class="feed-grid" id="cardGrid"></div>
     </main>
 
     <nav class="nav-bottom">
-        <a href="#" class="nav-item active"><span>🌐</span><span>Global</span></a>
-        <a href="#" class="nav-item"><span>🔥</span><span>Trending</span></a>
+        <a href="#" class="nav-item active"><span>🌐</span><span>Matrix</span></a>
+        <a href="#" class="nav-item"><span>🔥</span><span>Hot</span></a>
         <a href="https://t.me/YOUR_BOT" target="_blank" class="nav-item"><span>📢</span><span>Alerts</span></a>
     </nav>
 
     <script>
         const ARTICLES = {{ articles_json }};
         const HISTORY = {{ history_json }};
+        const MAP_DATA = {{ map_json }};
 
         function init() {
             renderGrid();
             renderChart();
+            renderMap();
             setInterval(() => {
                 const now = new Date();
                 document.getElementById('utcClock').textContent = now.getUTCHours().toString().padStart(2,'0') + ":" + now.getUTCMinutes().toString().padStart(2,'0') + ":" + now.getUTCSeconds().toString().padStart(2,'0') + " UTC";
             }, 1000);
+        }
+
+        function renderMap() {
+            const map = L.map('map', {
+                center: [20, 10],
+                zoom: 2,
+                zoomControl: false,
+                attributionControl: false
+            });
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+            MAP_DATA.forEach(pt => {
+                const color = pt.val >= 90 ? '#f85149' : (pt.val >= 75 ? '#ff7b72' : '#2f81f7');
+                const radius = (pt.val / 100) * 800000;
+                L.circle([pt.lat, pt.lng], {
+                    color: color,
+                    fillColor: color,
+                    fillOpacity: 0.3,
+                    radius: radius,
+                    weight: 1
+                }).addTo(map).bindPopup(`<b style="color:#000">${pt.title}</b>`);
+            });
         }
 
         function renderChart() {
@@ -199,16 +230,16 @@
             new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: HISTORY.map(h => h.date),
+                    labels: HISTORY.map(h => h.date.split('-').slice(1).join('/')),
                     datasets: [{
-                        label: 'Threat Velocity',
                         data: HISTORY.map(h => h.hot),
                         borderColor: '#2f81f7',
                         backgroundColor: 'rgba(47, 129, 247, 0.1)',
                         fill: true,
                         tension: 0.4,
                         borderWidth: 2,
-                        pointRadius: 0
+                        pointRadius: 2,
+                        pointBackgroundColor: '#2f81f7'
                     }]
                 },
                 options: {
@@ -216,11 +247,8 @@
                     maintainAspectRatio: false,
                     plugins: { legend: { display: false } },
                     scales: {
-                        x: { display: false },
-                        y: { 
-                            grid: { color: 'rgba(255,255,255,0.05)' },
-                            ticks: { color: '#8b949e', font: { size: 10 } }
-                        }
+                        x: { grid: { display: false }, ticks: { color: '#8b949e', font: { size: 9 } } },
+                        y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#8b949e', font: { size: 9 } } }
                     }
                 }
             });
@@ -229,20 +257,21 @@
         function renderGrid() {
             const grid = document.getElementById('cardGrid');
             grid.innerHTML = ARTICLES.map(a => `
-                <article class="article-card">
-                    ${a.is_breaking ? '<div class="breaking-banner">⚡ VELOCITY SURGE DETECTED</div>' : ''}
+                <article class="article-card ${a.impact_level==='CRITICAL'?'critical':''}">
+                    ${a.is_breaking ? '<div class="breaking-banner">⚡ VELOCITY SURGE: HIGH IMPACT SIGNAL</div>' : ''}
                     <div class="card-top">
                         <span class="source-name">${a.source}</span>
-                        ${a.is_trending ? '<span class="trending-badge">Hot</span>' : ''}
+                        ${a.is_trending ? `<span class="trending-badge">${a.impact_level}</span>` : ''}
                     </div>
                     <div class="card-title"><a href="${a.url}" target="_blank">${a.title}</a></div>
                     <div class="ent-row">
                         ${(a.entities?.gpe || []).slice(0,2).map(e => `<span class="ent-chip ent-gpe">📍 ${e}</span>`).join('')}
                         ${(a.entities?.orgs || []).slice(0,2).map(e => `<span class="ent-chip ent-org">🏢 ${e}</span>`).join('')}
+                        ${(a.entities?.persons || []).slice(0,1).map(e => `<span class="ent-chip ent-per">👤 ${e}</span>`).join('')}
                     </div>
                     <div class="card-stats">
-                        <div class="stat-item"><span class="stat-label">VIRALITY</span><span class="stat-val">${a.virality_score}%</span></div>
-                        <div class="stat-item"><span class="stat-label">SENTIMENT</span><span class="stat-val" style="color: ${a.sentiment==='positive'?'var(--positive)':(a.sentiment==='negative'?'var(--negative)':'var(--neutral)')}">${a.sentiment.toUpperCase()}</span></div>
+                        <div class="stat-item"><span class="stat-label">Virality</span><span class="stat-val">${a.virality_score}%</span></div>
+                        <div class="stat-item"><span class="stat-label">Sentiment</span><span class="stat-val" style="color: ${a.sentiment==='positive'?'var(--positive)':(a.sentiment==='negative'?'var(--negative)':'var(--neutral)')}">${a.sentiment.toUpperCase()}</span></div>
                     </div>
                 </article>
             `).join('');

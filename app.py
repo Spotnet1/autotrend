@@ -35,6 +35,28 @@ except OSError:
 
 analyzer = SentimentIntensityAnalyzer()
 
+# ─── Geolocation Mapping (Top Hotspots) ──────────────────────────────────────
+GEOCORDS = {
+    "Russia": [61.524, 105.318], "Ukraine": [48.379, 31.165], "China": [35.861, 104.195],
+    "USA": [37.090, -95.712], "United States": [37.090, -95.712], "Israel": [31.046, 34.851],
+    "Iran": [32.427, 53.688], "Taiwan": [23.697, 120.960], "NATO": [50.850, 4.350],
+    "Gaza": [31.354, 34.308], "North Korea": [40.339, 127.510], "South Korea": [35.907, 127.766],
+    "India": [20.593, 78.962], "UK": [55.378, -3.436], "Germany": [51.165, 10.451],
+    "France": [46.227, 2.213], "Japan": [36.204, 138.252], "Middle East": [29.298, 42.551],
+    "Europe": [54.526, 15.255], "Africa": [1.023, 23.659], "Asia": [34.047, 100.619],
+    "Turkey": [38.963, 35.243], "Syria": [34.802, 38.996], "Lebanon": [33.854, 35.862],
+}
+
+def get_map_data(articles):
+    coords = []
+    for a in articles:
+        if not a.get("is_trending"): continue
+        gpes = a.get("entities", {}).get("gpe", [])
+        for gpe in gpes:
+            if gpe in GEOCORDS:
+                coords.append({"lat": GEOCORDS[gpe][0], "lng": GEOCORDS[gpe][1], "val": a.get("virality_score", 50), "title": a['title']})
+    return coords
+
 # ─── Config ───────────────────────────────────────────────────────────────────
 MAX_ITEMS_PER_FEED = 5
 KEEP_HOURS         = 24
@@ -314,7 +336,9 @@ def build_site(articles, stats, kw_counts):
     html = tmpl.render(
         title=SITE_TITLE, tagline=SITE_TAGLINE, stats=stats, keywords=kw_counts,
         articles_json=json.dumps(articles[:150], ensure_ascii=False),
-        kw_json=json.dumps(kw_counts), history_json=json.dumps(get_history_summary()),
+        kw_json=json.dumps(kw_counts), 
+        history_json=json.dumps(get_history_summary()),
+        map_json=json.dumps(get_map_data(articles)),
         updated=stats["updated"]
     )
     with open(f"{OUTPUT_DIR}/index.html", "w", encoding="utf-8") as f: f.write(html)
