@@ -42,65 +42,50 @@ REQUEST_TIMEOUT    = 15
 
 # ─── 100+ Feeds (14 categories) ───────────────────────────────────────────────
 FEEDS = {
-    "🌍 Geopolitics": [
+    "🌍 Geopolitics & Conflict": [
+        ("Google News: Geopolitics", "https://news.google.com/rss/search?q=geopolitics+OR+%22foreign+policy%22+OR+%22international+relations%22+when:1d&hl=en-US&gl=US&ceid=US:en"),
+        ("Google News: Conflicts", "https://news.google.com/rss/search?q=war+OR+conflict+OR+military+OR+invasion+when:1d&hl=en-US&gl=US&ceid=US:en"),
+        ("Google News: Treaties", "https://news.google.com/rss/search?q=treaty+OR+sanctions+OR+diplomacy+when:1d&hl=en-US&gl=US&ceid=US:en"),
         ("Foreign Affairs", "https://www.foreignaffairs.com/rss.xml"),
-        ("Foreign Policy", "https://foreignpolicy.com/feed/"),
-        ("CFR", "https://www.cfr.org/rss.xml"),
-        ("The Diplomat", "https://thediplomat.com/feed/"),
         ("Defense News", "https://www.defensenews.com/arc/outboundfeeds/rss/category/global/"),
-        ("Stratfor", "https://worldview.stratfor.com/rss.xml"),
-        ("UN News", "https://news.un.org/feed/english/rss.xml"),
+        ("Al Jazeera English", "https://www.aljazeera.com/xml/rss/all.xml"),
+    ],
+    "🚨 Breaking & Upcoming Alerts": [
+        ("Google News: Breaking", "https://news.google.com/rss/search?q=BREAKING+OR+%22just+in%22+OR+%22urgent%22+when:1h&hl=en-US&gl=US&ceid=US:en"),
+        ("Google News: Crisis", "https://news.google.com/rss/search?q=crisis+OR+emergency+OR+disaster+when:1d&hl=en-US&gl=US&ceid=US:en"),
     ],
     "🇺🇸 Americas": [
+        ("Google News: North America", "https://news.google.com/rss/search?q=USA+OR+Canada+OR+Mexico+when:1d&hl=en-US&gl=US&ceid=US:en"),
+        ("Google News: South America", "https://news.google.com/rss/search?q=Brazil+OR+Argentina+OR+Venezuela+when:1d&hl=en-US&gl=US&ceid=US:en"),
         ("NYT World", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"),
-        ("CNN World", "http://rss.cnn.com/rss/edition_world.rss"),
-        ("Washington Post", "https://feeds.washingtonpost.com/rss/world"),
-        ("CBC News", "https://www.cbc.ca/cctoc/rss/news/world"),
-        ("Globo", "https://g1.globo.com/rss/g1/mundo/"),
     ],
     "🇪🇺 Europe": [
+        ("Google News: Europe", "https://news.google.com/rss/search?q=Europe+OR+EU+OR+UK+OR+Germany+OR+France+OR+Russia+when:1d&hl=en-US&gl=US&ceid=US:en"),
         ("BBC News World", "http://feeds.bbci.co.uk/news/world/rss.xml"),
-        ("Reuters World", "https://www.reutersagency.com/feed/"),
-        ("Deutsche Welle", "https://rss.dw.com/rdf/rss-en-world"),
         ("France 24", "https://www.france24.com/en/rss"),
-        ("EuroNews", "https://www.euronews.com/rss?level=vertical&name=news"),
-        ("EL PAÍS", "https://elpais.com/rss/elpais/inenglish.xml"),
     ],
     "🌏 Asia & Pacific": [
-        ("South China Morning Post", "https://www.scmp.com/rss/91/feed.xml"),
-        ("Japan Times", "https://www.japantimes.co.jp/feed/"),
-        ("CNA (Channel News Asia)", "https://www.channelnewsasia.com/rssfeed/8395981"),
+        ("Google News: Asia", "https://news.google.com/rss/search?q=China+OR+Japan+OR+India+OR+Taiwan+OR+ASEAN+when:1d&hl=en-US&gl=US&ceid=US:en"),
         ("The Times of India", "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms"),
-        ("ABC News Australia", "https://www.abc.net.au/news/feed/52278/rss.xml"),
+        ("South China Morning Post", "https://www.scmp.com/rss/91/feed.xml"),
     ],
     "🌍 Africa & Mid-East": [
-        ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
-        ("Premium Times Nigeria", "https://www.premiumtimesng.com/feed"),
-        ("The Star Kenya", "https://www.the-star.co.ke/rss/"),
-        ("Haaretz", "https://www.haaretz.com/cmlink/1.4621008"),
-        ("Daily Maverick", "https://www.dailymaverick.co.za/feed/"),
+        ("Google News: Middle East", "https://news.google.com/rss/search?q=%22Middle+East%22+OR+Israel+OR+Iran+OR+Saudi+when:1d&hl=en-US&gl=US&ceid=US:en"),
+        ("Google News: Africa", "https://news.google.com/rss/search?q=Africa+OR+Nigeria+OR+Egypt+OR+%22South+Africa%22+when:1d&hl=en-US&gl=US&ceid=US:en"),
     ],
-    "💻 Technology & AI": [
-        ("TechCrunch", "https://techcrunch.com/feed/"),
-        ("The Verge", "https://www.theverge.com/rss/index.xml"),
-        ("Wired", "https://www.wired.com/feed/rss"),
-        ("MIT Tech Review", "https://www.technologyreview.com/feed/"),
-        ("Hacker News", "https://news.ycombinator.com/rss"),
-        ("Google AI Blog", "http://googleresearch.blogspot.com/atom.xml"),
-    ],
-    "📈 Finance & Markets": [
-        ("CNBC Markets", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+    "📈 Macro Economy & Markets": [
+        ("Google News: Markets", "https://news.google.com/rss/search?q=market+crash+OR+inflation+OR+%22interest+rates%22+OR+recession+when:1d&hl=en-US&gl=US&ceid=US:en"),
         ("Bloomberg", "https://feeds.bloomberg.com/markets/news.rss"),
         ("Financial Times", "https://www.ft.com/?format=rss"),
-        ("The Economist", "https://www.economist.com/finance-and-economics/rss.xml"),
-        ("MarketWatch", "https://feeds.marketwatch.com/marketwatch/topstories/"),
+    ],
+    "🤖 Cyber & Tech Warfare": [
+        ("Google News: Cyber", "https://news.google.com/rss/search?q=cyberattack+OR+ransomware+OR+hacker+OR+%22data+breach%22+when:1d&hl=en-US&gl=US&ceid=US:en"),
+        ("Google News: AI", "https://news.google.com/rss/search?q=%22artificial+intelligence%22+OR+OpenAI+OR+AGI+when:1d&hl=en-US&gl=US&ceid=US:en"),
+        ("Hacker News", "https://news.ycombinator.com/rss"),
     ],
     "🔬 Science & Climate": [
+        ("Google News: Climate", "https://news.google.com/rss/search?q=%22climate+change%22+OR+%22global+warming%22+OR+%22extreme+weather%22+when:1d&hl=en-US&gl=US&ceid=US:en"),
         ("Nature", "http://feeds.nature.com/nature/rss/current"),
-        ("ScienceDaily", "https://rss.sciencedaily.com/top/science.xml"),
-        ("NASA News", "https://www.nasa.gov/rss/dyn/breaking_news.rss"),
-        ("Scientific American", "https://www.scientificamerican.com/section/news/rss/"),
-        ("Phys.org", "https://phys.org/rss-feed/"),
     ],
 }
 
@@ -260,19 +245,48 @@ def score_article(article):
 
     src_lower = article["source"].lower()
     weight    = next((v for k, v in SOURCE_WEIGHTS.items() if k in src_lower), 1.0)
+    if "google news" in src_lower:
+        weight = 1.3 # High trust in aggregators for volume
 
     base_score   = 35
     trend_hits   = sum(1 for t in TREND_TOKENS if t in lower)
-    base_score  += trend_hits * 8
-    base_score  += int(abs(compound) * 15)
-    score        = min(int(base_score * weight), 100)
-    is_trending  = score >= 65
+    base_score  += trend_hits * 10
+    base_score  += int(abs(compound) * 20)
+
+    # Velocity / Predictive Scoring
+    velocity_multiplier = 1.0
+    is_breaking = False
+    pub_dt_str = article.get("published_dt")
+    if pub_dt_str:
+        try:
+            pub_dt = datetime.datetime.fromisoformat(pub_dt_str)
+            age_hours = (utcnow() - pub_dt).total_seconds() / 3600.0
+            if age_hours <= 1.5:
+                velocity_multiplier = 1.8 # Massive boost for very recent
+                is_breaking = True
+            elif age_hours <= 4.0:
+                velocity_multiplier = 1.4
+            elif age_hours <= 12.0:
+                velocity_multiplier = 1.1
+        except:
+            pass
+
+    score = int(base_score * weight * velocity_multiplier)
+    
+    # Cap score at 99 normally, 100+ only for breaking + trending
+    if score > 99 and not is_breaking:
+        score = 99
+
+    impact_level = "CRITICAL" if score >= 90 else ("HIGH" if score >= 75 else ("ELEVATED" if score >= 60 else "MONITORING"))
+    is_trending  = score >= 70
 
     return {
         "virality_score": score,
         "sentiment":      sentiment,
         "keywords":       keywords,
         "is_trending":    is_trending,
+        "impact_level":   impact_level,
+        "is_breaking":    is_breaking
     }
 
 # ─── Feed Fetcher ─────────────────────────────────────────────────────────────
