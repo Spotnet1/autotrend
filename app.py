@@ -342,6 +342,10 @@ def build_site(articles, stats, kw_counts):
         updated=stats["updated"]
     )
     with open(f"{OUTPUT_DIR}/index.html", "w", encoding="utf-8") as f: f.write(html)
+    
+    # Write CNAME for custom domain
+    with open(f"{OUTPUT_DIR}/CNAME", "w") as f: f.write("spotpulse.spotnet.in")
+    log.info(f"CNAME record set → spotpulse.spotnet.in")
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 def main():
