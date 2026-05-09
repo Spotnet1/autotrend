@@ -1,9 +1,9 @@
 name: AutoTrend Intelligence Engine
 
 on:
-  # Run automatically every 6 hours
+  # Run automatically every 20 minutes
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "*/20 * * * *"
   # Allow manual trigger from GitHub Actions UI
   workflow_dispatch:
 
