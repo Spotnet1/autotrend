@@ -1306,6 +1306,101 @@
         .status-pill.rising { color: var(--sun); }
         .status-pill.watch { color: var(--teal); }
 
+        .pulse-board {
+            display: grid;
+            gap: 12px;
+            padding: 0 16px 16px;
+        }
+
+        .pulse-card {
+            display: grid;
+            gap: 12px;
+            padding: 16px;
+            border: 1px solid rgba(24, 33, 28, 0.14);
+            background: rgba(255, 250, 239, 0.9);
+            box-shadow: 0 12px 30px rgba(24, 33, 28, 0.08);
+        }
+
+        .pulse-card.dark {
+            color: #fff8e8;
+            background: linear-gradient(135deg, #123324, #24402d);
+        }
+
+        .pulse-card h3 {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.2;
+        }
+
+        .pulse-card p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.45;
+            font-size: 0.86rem;
+        }
+
+        .pulse-card.dark p,
+        .pulse-card.dark .signal-label { color: rgba(255, 248, 232, 0.74); }
+
+        .pulse-kpis {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        .pulse-kpi {
+            padding: 10px;
+            border: 1px solid rgba(24, 33, 28, 0.12);
+            background: rgba(255,255,255,0.42);
+        }
+
+        .pulse-card.dark .pulse-kpi {
+            border-color: rgba(255,255,255,0.16);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .pulse-kpi span {
+            display: block;
+            color: inherit;
+            opacity: 0.72;
+            font-size: 0.74rem;
+        }
+
+        .pulse-kpi strong {
+            display: block;
+            margin-top: 4px;
+            font-size: 1.2rem;
+        }
+
+        .watch-list {
+            display: grid;
+            gap: 8px;
+        }
+
+        .watch-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 10px;
+            align-items: center;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(24, 33, 28, 0.1);
+            font-size: 0.84rem;
+        }
+
+        .watch-row:last-child { border-bottom: 0; padding-bottom: 0; }
+
+        .watch-row strong {
+            min-width: 44px;
+            text-align: right;
+            color: var(--teal);
+        }
+
+        .pulse-card.dark .watch-row {
+            border-bottom-color: rgba(255,255,255,0.14);
+        }
+
+        .pulse-card.dark .watch-row strong { color: var(--sun); }
+
         .tag {
             border-radius: 0;
             color: #314138;
@@ -1362,6 +1457,7 @@
                 padding-bottom: 28px;
             }
             .hero h1 { font-size: 3rem; }
+            .pulse-board { grid-template-columns: 1.1fr 0.9fr 0.9fr; padding-left: 22px; padding-right: 22px; }
             .category-slider { grid-auto-columns: minmax(210px, 260px); }
             .article-card.lead {
                 grid-column: span 2;
@@ -1445,6 +1541,10 @@
                             <span>Sources today</span>
                             <strong>{{ stats.sources }}</strong>
                         </div>
+                        <div class="stat">
+                            <span>India stories</span>
+                            <strong>{{ stats.india }}</strong>
+                        </div>
                     </div>
                 </div>
 
@@ -1519,6 +1619,64 @@
 
             </section>
 
+            <section class="pulse-board" aria-label="Dashboard intelligence">
+                <div class="pulse-card dark">
+                    <h3>India pulse</h3>
+                    <p>{{ scope_dashboard.india_share }}% of the current board is India-linked, with {{ scope_dashboard.india_sources }} sources feeding this view.</p>
+                    <div class="pulse-kpis">
+                        <div class="pulse-kpi">
+                            <span>Stories</span>
+                            <strong>{{ scope_dashboard.india_count }}</strong>
+                        </div>
+                        <div class="pulse-kpi">
+                            <span>Pulse</span>
+                            <strong>{{ scope_dashboard.india_score }}%</strong>
+                        </div>
+                        <div class="pulse-kpi">
+                            <span>Rising</span>
+                            <strong>{{ scope_dashboard.india_trending }}</strong>
+                        </div>
+                        <div class="pulse-kpi">
+                            <span>Fresh</span>
+                            <strong>{{ scope_dashboard.india_breaking }}</strong>
+                        </div>
+                    </div>
+                    <div class="bar-track"><i style="width: {{ scope_dashboard.india_share }}%"></i></div>
+                </div>
+
+                <div class="pulse-card">
+                    <h3>India categories</h3>
+                    <div class="watch-list">
+                        {% if scope_dashboard.india_categories %}
+                        {% for item in scope_dashboard.india_categories %}
+                        <div class="watch-row">
+                            <span>{{ item.label }}</span>
+                            <strong>{{ item.count }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <p>Waiting for India category signals.</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="pulse-card">
+                    <h3>Top India watch</h3>
+                    <div class="watch-list">
+                        {% if scope_dashboard.india_top %}
+                        {% for item in scope_dashboard.india_top %}
+                        <div class="watch-row">
+                            <span>{{ item.title }}</span>
+                            <strong>{{ item.score }}%</strong>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <p>India stories will appear here after the next scrape.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </section>
+
             <section class="stories" id="stories">
                 <div class="section-head">
                     <h2>Story desk</h2>
@@ -1563,7 +1721,7 @@
     <script>
         const ARTICLES = {{ articles_json }};
         const CATEGORY_OPTIONS = {{ categories_json }};
-        const INDIA_TERMS = ['india', 'new delhi', 'delhi', 'mumbai', 'bengaluru', 'bangalore', 'chennai', 'hyderabad', 'pune', 'kolkata', 'apac'];
+        const INDIA_TERMS = {{ india_terms_json }};
 
         const state = {
             search: '',
@@ -1617,6 +1775,7 @@
         }
 
         function isIndiaArticle(article) {
+            if (article.scope === 'india') return true;
             const text = articleText(article);
             return INDIA_TERMS.some((term) => text.includes(term));
         }

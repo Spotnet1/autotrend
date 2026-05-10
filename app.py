@@ -43,9 +43,53 @@ KEEP_HOURS = 36
 MAX_ITEMS_PER_FEED = 12
 MAX_THREADS = 24
 REQUEST_TIMEOUT = 18
-USER_AGENT = "AutoTrendAtlas/1.0 (+https://github.com/)"
+USER_AGENT = "SpotPulse/1.0 (+https://github.com/spotser/autotrend)"
+
+INDIA_TERMS = [
+    "india", "bharat", "new delhi", "delhi", "mumbai", "bengaluru", "bangalore",
+    "chennai", "hyderabad", "pune", "kolkata", "ahmedabad", "jaipur", "lucknow",
+    "noida", "gurugram", "gurgaon", "maharashtra", "karnataka", "tamil nadu",
+    "telangana", "gujarat", "uttar pradesh", "west bengal", "kerala", "rbi",
+    "sebi", "nifty", "sensex", "rupee", "upi", "isro", "modi", "bjp",
+    "congress", "lok sabha", "rajya sabha", "apac",
+]
 
 GOOGLE_NEWS_QUERIES = {
+    "India Pulse": [
+        "India breaking news OR New Delhi",
+        "India politics OR parliament OR Lok Sabha",
+        "India election OR BJP OR Congress",
+        "India Supreme Court OR policy OR regulation",
+        "India defence OR border OR military",
+        "India foreign policy OR diplomacy",
+        "India monsoon OR heatwave OR climate",
+        "India energy OR power grid OR oil",
+    ],
+    "India Markets": [
+        "India markets OR Sensex OR Nifty",
+        "RBI OR rupee OR inflation India",
+        "India GDP OR economy OR manufacturing",
+        "India startups OR funding OR IPO",
+        "India banking OR fintech OR UPI",
+        "Reliance OR Tata OR Adani OR Infosys",
+    ],
+    "India Tech": [
+        "India artificial intelligence OR AI startup",
+        "India semiconductor OR chip OR electronics",
+        "India cyber attack OR data breach",
+        "India space OR ISRO OR satellite",
+        "India electric vehicle OR battery",
+        "India app OR creator economy OR telecom",
+    ],
+    "India Cities": [
+        "Delhi news OR New Delhi",
+        "Mumbai news OR Maharashtra",
+        "Bengaluru news OR Karnataka",
+        "Chennai news OR Tamil Nadu",
+        "Hyderabad news OR Telangana",
+        "Kolkata news OR West Bengal",
+        "Pune news OR Ahmedabad OR Jaipur",
+    ],
     "Geopolitics": [
         "geopolitics OR war OR diplomacy",
         "missile OR sanctions OR military",
@@ -85,6 +129,8 @@ GOOGLE_NEWS_QUERIES = {
     ],
     "India & APAC": [
         "india OR southeast asia startup",
+        "india china OR india us OR india russia",
+        "india pakistan OR border OR kashmir",
         "japan economy OR bank of japan",
         "south korea chip OR samsung",
         "taiwan semiconductor OR tsmc",
@@ -99,6 +145,33 @@ GOOGLE_NEWS_QUERIES = {
 }
 
 DIRECT_FEEDS = {
+    "India Pulse": [
+        ("NDTV India", "https://feeds.feedburner.com/ndtvnews-india-news"),
+        ("NDTV Latest", "https://feeds.feedburner.com/ndtvnews-latest"),
+        ("Indian Express India", "https://indianexpress.com/section/india/feed/"),
+        ("The Hindu National", "https://www.thehindu.com/news/national/feeder/default.rss"),
+        ("Hindustan Times India", "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"),
+        ("Times of India India", "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms"),
+    ],
+    "India Markets": [
+        ("Economic Times Markets", "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"),
+        ("Economic Times Economy", "https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms"),
+        ("Indian Express Business", "https://indianexpress.com/section/business/feed/"),
+        ("The Hindu Business", "https://www.thehindu.com/business/feeder/default.rss"),
+    ],
+    "India Tech": [
+        ("HT Tech News", "https://tech.hindustantimes.com/rss/tech/news"),
+        ("Indian Express AI", "https://indianexpress.com/section/technology/artificial-intelligence/feed/"),
+        ("Indian Express Technology", "https://indianexpress.com/section/technology/feed/"),
+        ("Economic Times Tech", "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"),
+    ],
+    "India Cities": [
+        ("NDTV Cities", "https://feeds.feedburner.com/ndtvnews-cities"),
+        ("Indian Express Delhi", "https://indianexpress.com/section/cities/delhi/feed/"),
+        ("Indian Express Mumbai", "https://indianexpress.com/section/cities/mumbai/feed/"),
+        ("Indian Express Bangalore", "https://indianexpress.com/section/cities/bangalore/feed/"),
+        ("Indian Express Kolkata", "https://indianexpress.com/section/cities/kolkata/feed/"),
+    ],
     "Geopolitics": [
         ("Reuters World", "https://feeds.reuters.com/Reuters/worldNews"),
         ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
@@ -133,6 +206,13 @@ SOURCE_WEIGHTS = {
     "google": 1.0,
     "guardian": 1.08,
     "the verge": 1.02,
+    "ndtv": 1.12,
+    "indian express": 1.14,
+    "the hindu": 1.16,
+    "hindustan times": 1.08,
+    "times of india": 1.06,
+    "economic times": 1.12,
+    "ht tech": 1.06,
 }
 
 KEYWORD_WEIGHTS = {
@@ -166,6 +246,17 @@ KEYWORD_WEIGHTS = {
     "energy": 6,
     "shipping": 7,
     "supply chain": 8,
+    "india": 7,
+    "rbi": 9,
+    "sebi": 8,
+    "nifty": 8,
+    "sensex": 8,
+    "rupee": 7,
+    "upi": 7,
+    "isro": 8,
+    "delhi": 5,
+    "mumbai": 5,
+    "bengaluru": 5,
 }
 
 SECTOR_RULES = {
@@ -186,12 +277,16 @@ SECTOR_RULES = {
         "keywords": {"inflation", "rate", "recession", "tariff", "earnings", "ipo", "trade"},
     },
     "Energy & Supply": {
-        "categories": {"Climate & Supply Chain"},
+        "categories": {"Climate & Supply Chain", "India Markets"},
         "keywords": {"energy", "oil", "gas", "shipping", "supply chain", "logistics", "battery"},
     },
     "Platform Power": {
-        "categories": {"Consumer Tech"},
+        "categories": {"Consumer Tech", "India Tech"},
         "keywords": {"meta", "tiktok", "youtube", "iphone", "android", "app store", "streaming"},
+    },
+    "India Watch": {
+        "categories": {"India Pulse", "India Markets", "India Tech", "India Cities", "India & APAC"},
+        "keywords": {"india", "delhi", "mumbai", "bengaluru", "rbi", "sebi", "nifty", "sensex", "upi", "isro"},
     },
 }
 
@@ -203,6 +298,14 @@ REGION_ALIASES = {
     "Europe": ["europe", "eu", "brussels"],
     "United Kingdom": ["united kingdom", "uk", "britain", "london"],
     "India": ["india", "new delhi"],
+    "Delhi": ["delhi", "new delhi", "noida", "gurgaon", "gurugram"],
+    "Mumbai": ["mumbai", "maharashtra"],
+    "Bengaluru": ["bengaluru", "bangalore", "karnataka"],
+    "Chennai": ["chennai", "tamil nadu"],
+    "Hyderabad": ["hyderabad", "telangana"],
+    "Kolkata": ["kolkata", "west bengal"],
+    "Pune": ["pune"],
+    "Ahmedabad": ["ahmedabad", "gujarat"],
     "Middle East": ["middle east", "gaza", "israel", "iran", "tehran"],
     "Taiwan": ["taiwan", "taipei"],
     "Japan": ["japan", "tokyo"],
@@ -219,6 +322,14 @@ REGION_COORDS = {
     "Europe": [50.1, 8.6],
     "United Kingdom": [54.7, -3.5],
     "India": [21.1, 78.0],
+    "Delhi": [28.6, 77.2],
+    "Mumbai": [19.1, 72.9],
+    "Bengaluru": [12.9, 77.6],
+    "Chennai": [13.1, 80.3],
+    "Hyderabad": [17.4, 78.5],
+    "Kolkata": [22.6, 88.4],
+    "Pune": [18.5, 73.9],
+    "Ahmedabad": [23.0, 72.6],
     "Middle East": [29.3, 47.5],
     "Taiwan": [23.7, 121.0],
     "Japan": [36.2, 138.3],
@@ -231,6 +342,9 @@ ORG_HINTS = [
     "OpenAI", "Google", "Microsoft", "Apple", "Meta", "NVIDIA", "Amazon",
     "Tesla", "TSMC", "Intel", "NATO", "EU", "Fed", "ECB", "OPEC", "UN",
     "ByteDance", "Anthropic", "SpaceX", "Oracle", "Samsung",
+    "RBI", "SEBI", "ISRO", "Reliance", "Tata", "Adani", "Infosys", "TCS",
+    "HDFC", "ICICI", "Airtel", "Jio", "Wipro", "Mahindra", "Zomato",
+    "Swiggy", "Flipkart", "Paytm", "PhonePe", "NPCI",
 ]
 
 STOPWORDS = {
@@ -279,16 +393,19 @@ def canonicalize_url(url: str) -> str:
     return urlunparse(clean)
 
 
-def build_google_rss(query: str) -> str:
+def build_google_rss(query: str, gl: str = "US", ceid: str = "US:en") -> str:
     encoded = query.replace(" ", "+")
-    return f"https://news.google.com/rss/search?q={encoded}+when:1d&hl=en-US&gl=US&ceid=US:en"
+    return f"https://news.google.com/rss/search?q={encoded}+when:1d&hl=en-US&gl={gl}&ceid={ceid}"
 
 
 def build_feed_catalog() -> dict[str, list[tuple[str, str]]]:
     catalog = defaultdict(list)
     for category, queries in GOOGLE_NEWS_QUERIES.items():
         for query in queries:
-            catalog[category].append((f"Google: {query}", build_google_rss(query)))
+            if category.startswith("India"):
+                catalog[category].append((f"Google India: {query}", build_google_rss(query, gl="IN", ceid="IN:en")))
+            else:
+                catalog[category].append((f"Google: {query}", build_google_rss(query)))
     for category, feeds in DIRECT_FEEDS.items():
         catalog[category].extend(feeds)
     return dict(catalog)
@@ -322,6 +439,17 @@ def extract_regions(text: str) -> list[str]:
         if any(alias in lowered for alias in aliases):
             regions.append(name)
     return regions[:4]
+
+
+def is_india_text(text: str) -> bool:
+    lowered = f" {text.lower()} "
+    return any(term in lowered for term in INDIA_TERMS)
+
+
+def is_india_article(article: dict) -> bool:
+    text = f"{article.get('title', '')} {article.get('summary', '')} {article.get('category', '')} {article.get('source', '')}"
+    regions = " ".join(article.get("entities", {}).get("gpe", []))
+    return is_india_text(f"{text} {regions}")
 
 
 def extract_orgs(text: str) -> list[str]:
@@ -391,7 +519,8 @@ def score_article(article: dict) -> dict:
         elif age_hours <= 12:
             recency_bonus = 5
 
-    score = 38 + keyword_score + int(abs(sentiment_score) * 14) + recency_bonus
+    india_bonus = 8 if article.get("category", "").startswith("India") or is_india_text(text) else 0
+    score = 38 + keyword_score + int(abs(sentiment_score) * 14) + recency_bonus + india_bonus
     score = int(score * source_weight(article.get("source", "")))
     score = max(22, min(99, score))
     if score >= 88:
@@ -416,6 +545,7 @@ def score_article(article: dict) -> dict:
         "is_breaking": is_breaking,
         "entities": entities,
         "keywords": article.get("keywords") or extract_keywords(text),
+        "scope": "india" if is_india_text(f"{text} {article.get('category', '')} {article.get('source', '')}") else "global",
     }
 
 
@@ -552,6 +682,7 @@ def ensure_article_shape(article: dict) -> dict:
     article.setdefault("virality_score", 40)
     article.setdefault("is_trending", article.get("virality_score", 0) >= 73)
     article.setdefault("is_breaking", False)
+    article["scope"] = "india" if is_india_article(article) else article.get("scope", "global")
     article["sectors"] = classify_sectors(article)
     article["age_hours"] = article_age_hours(article)
     return article
@@ -563,6 +694,43 @@ def top_breakdown(counter: Counter, limit: int = 5) -> list[dict]:
         {"label": label, "count": count, "share": round((count / total) * 100)}
         for label, count in counter.most_common(limit)
     ]
+
+
+def avg_score(articles: list[dict]) -> int:
+    return round(sum(article.get("virality_score", 0) for article in articles) / max(len(articles), 1))
+
+
+def build_scope_dashboard(articles: list[dict]) -> dict:
+    india_articles = [article for article in articles if article.get("scope") == "india" or is_india_article(article)]
+    global_articles = articles
+    india_sources = {article.get("source", "Unknown") for article in india_articles}
+    india_categories = Counter(article.get("category", "Signals") for article in india_articles)
+    india_sentiment = Counter(article.get("sentiment", "neutral") for article in india_articles)
+    india_share = round((len(india_articles) / max(len(global_articles), 1)) * 100)
+    top_india = india_articles[:5]
+    return {
+        "global_count": len(global_articles),
+        "india_count": len(india_articles),
+        "india_share": india_share,
+        "india_score": avg_score(india_articles),
+        "india_trending": sum(1 for article in india_articles if article.get("is_trending")),
+        "india_breaking": sum(1 for article in india_articles if article.get("is_breaking")),
+        "india_sources": len(india_sources),
+        "india_categories": top_breakdown(india_categories, limit=5),
+        "india_sentiment": [
+            {"label": "Positive", "count": india_sentiment.get("positive", 0)},
+            {"label": "Neutral", "count": india_sentiment.get("neutral", 0)},
+            {"label": "Negative", "count": india_sentiment.get("negative", 0)},
+        ],
+        "india_top": [
+            {
+                "title": article.get("title", ""),
+                "source": article.get("source", "Unknown"),
+                "score": article.get("virality_score", 0),
+            }
+            for article in top_india
+        ],
+    }
 
 
 def build_hourly_activity(articles: list[dict]) -> list[dict]:
@@ -977,6 +1145,7 @@ def build_payload(articles: list[dict]) -> dict:
     feed_catalog = build_feed_catalog()
     articles = [ensure_article_shape(article) for article in articles]
     articles.sort(key=lambda item: (item.get("virality_score", 0), item.get("published_dt", "")), reverse=True)
+    scope_dashboard = build_scope_dashboard(articles)
     story_families = build_story_families(articles)
     categories = Counter(article["category"] for article in articles)
     sentiments = Counter(article["sentiment"] for article in articles)
@@ -1026,6 +1195,8 @@ def build_payload(articles: list[dict]) -> dict:
         "breaking": sum(1 for article in articles if article.get("is_breaking")),
         "sources": len({article["source"] for article in articles}),
         "feeds": sum(len(sources) for sources in feed_catalog.values()),
+        "india": scope_dashboard["india_count"],
+        "india_share": scope_dashboard["india_share"],
         "updated": utcnow().strftime("%d %b %Y, %H:%M UTC"),
     }
     return {
@@ -1041,6 +1212,7 @@ def build_payload(articles: list[dict]) -> dict:
             {"label": "Negative", "count": sentiments.get("negative", 0)},
         ],
         "source_breakdown": top_sources,
+        "scope_dashboard": scope_dashboard,
         "source_confidence": source_confidence,
         "keyword_pulse": keyword_pulse,
         "rising_keywords": rising_keywords[:6],
@@ -1132,6 +1304,7 @@ def render_site(payload: dict) -> None:
         stats=payload["stats"],
         hero_articles=payload["hero_articles"],
         category_breakdown=payload["category_breakdown"],
+        scope_dashboard=payload["scope_dashboard"],
         source_breakdown=payload["source_breakdown"],
         source_confidence=payload["source_confidence"],
         keyword_pulse=payload["keyword_pulse"],
@@ -1151,6 +1324,7 @@ def render_site(payload: dict) -> None:
         category_momentum=payload["category_momentum"],
         articles_json=json.dumps(payload["articles"], ensure_ascii=False),
         categories_json=json.dumps(sorted({article["category"] for article in payload["articles"]}), ensure_ascii=False),
+        india_terms_json=json.dumps(INDIA_TERMS, ensure_ascii=False),
     )
     SITE_FILE.write_text(html_content, encoding="utf-8")
     (OUTPUT_DIR / ".nojekyll").write_text("", encoding="utf-8")
