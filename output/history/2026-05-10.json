@@ -1,32 +1,32 @@
 {
   "date": "2026-05-10",
   "stats": {
-    "total": 1100,
-    "trending": 113,
-    "breaking": 71,
+    "total": 1151,
+    "trending": 106,
+    "breaking": 59,
     "sources": 116,
     "feeds": 46,
-    "updated": "10 May 2026, 07:22 UTC"
+    "updated": "10 May 2026, 07:40 UTC"
   },
   "top_categories": [
     {
-      "label": "Markets & Macro",
-      "count": 95,
+      "label": "Geopolitics",
+      "count": 102,
       "share": 9
     },
     {
-      "label": "Geopolitics",
-      "count": 90,
-      "share": 8
+      "label": "Markets & Macro",
+      "count": 100,
+      "share": 9
     },
     {
       "label": "AI & Startups",
-      "count": 83,
+      "count": 94,
       "share": 8
     },
     {
       "label": "Cybersecurity",
-      "count": 73,
+      "count": 76,
       "share": 7
     },
     {
@@ -38,95 +38,111 @@
   "top_regions": [
     {
       "label": "United States",
-      "count": 180,
+      "count": 183,
       "score": 57,
       "lat": 38.9,
-      "lng": -97.0
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
     },
     {
       "label": "Middle East",
-      "count": 111,
-      "score": 65,
+      "count": 114,
+      "score": 64,
       "lat": 29.3,
-      "lng": 47.5
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
     },
     {
       "label": "United Kingdom",
-      "count": 68,
-      "score": 61,
+      "count": 73,
+      "score": 60,
       "lat": 54.7,
-      "lng": -3.5
+      "lng": -3.5,
+      "x": 49.0,
+      "y": 19.6
     },
     {
       "label": "China",
-      "count": 60,
-      "score": 55,
+      "count": 63,
+      "score": 54,
       "lat": 35.9,
-      "lng": 104.2
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
     },
     {
       "label": "Russia",
       "count": 50,
       "score": 62,
       "lat": 61.5,
-      "lng": 105.3
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
     },
     {
       "label": "Ukraine",
-      "count": 41,
-      "score": 65,
+      "count": 42,
+      "score": 64,
       "lat": 48.4,
-      "lng": 31.2
+      "lng": 31.2,
+      "x": 58.7,
+      "y": 23.1
     },
     {
       "label": "Europe",
       "count": 41,
       "score": 56,
       "lat": 50.1,
-      "lng": 8.6
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
     },
     {
       "label": "Africa",
       "count": 28,
       "score": 54,
       "lat": 1.6,
-      "lng": 17.5
+      "lng": 17.5,
+      "x": 54.9,
+      "y": 49.1
     }
   ],
   "top_keywords": [
     {
       "label": "to",
-      "count": 127,
+      "count": 136,
       "share": 2
     },
     {
       "label": "in",
-      "count": 104,
+      "count": 110,
       "share": 2
     },
     {
       "label": "of",
-      "count": 70,
+      "count": 73,
       "share": 1
     },
     {
       "label": "is",
-      "count": 52,
-      "share": 1
-    },
-    {
-      "label": "new",
-      "count": 36,
+      "count": 56,
       "share": 1
     },
     {
       "label": "ai",
-      "count": 36,
+      "count": 39,
       "share": 1
     },
     {
       "label": "on",
-      "count": 34,
+      "count": 38,
+      "share": 1
+    },
+    {
+      "label": "new",
+      "count": 38,
       "share": 1
     },
     {
@@ -136,7 +152,7 @@
     },
     {
       "label": "putin",
-      "count": 27,
+      "count": 28,
       "share": 0
     },
     {
@@ -148,10 +164,10 @@
   "top_families": [
     {
       "id": "family-1",
-      "label": "to, supply, oil",
+      "label": "anwar, to, supply",
       "category": "Markets & Macro",
-      "count": 425,
-      "average_score": 57,
+      "count": 452,
+      "average_score": 56,
       "unique_sources": 81,
       "consensus": 99,
       "top_sources": [
@@ -162,11 +178,26 @@
       ]
     },
     {
-      "id": "family-4",
-      "label": "to, patient, one",
-      "category": "Cybersecurity",
+      "id": "family-25",
+      "label": "virus-hit, United States, tenerife",
+      "category": "Geopolitics",
       "count": 20,
-      "average_score": 66,
+      "average_score": 57,
+      "unique_sources": 7,
+      "consensus": 99,
+      "top_sources": [
+        "BBC News World",
+        "BBC World",
+        "France 24",
+        "Google News: South America"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "patient, one, zero",
+      "category": "Cybersecurity",
+      "count": 19,
+      "average_score": 65,
       "unique_sources": 9,
       "consensus": 99,
       "top_sources": [
@@ -177,8 +208,8 @@
       ]
     },
     {
-      "id": "family-19",
-      "label": "man, shot, killed",
+      "id": "family-20",
+      "label": "shot, breaking, killed",
       "category": "🚨 Breaking & Upcoming Alerts",
       "count": 16,
       "average_score": 62,
@@ -190,38 +221,23 @@
       ]
     },
     {
-      "id": "family-25",
-      "label": "cruise, United States, ship",
-      "category": "Geopolitics",
-      "count": 14,
-      "average_score": 64,
-      "unique_sources": 6,
-      "consensus": 99,
-      "top_sources": [
-        "BBC News World",
-        "BBC World",
-        "France 24",
-        "Google News: South America"
-      ]
-    },
-    {
-      "id": "family-17",
-      "label": "Russia, how, Ukraine",
+      "id": "family-18",
+      "label": "soldiers, Ukraine, how",
       "category": "Geopolitics",
       "count": 11,
-      "average_score": 78,
+      "average_score": 77,
       "unique_sources": 4,
       "consensus": 99,
       "top_sources": [
         "Google News: Conflicts",
         "Google News: Europe",
-        "Google: russia ukraine OR nato",
+        "Google: geopolitics OR war OR diplomacy",
         "Google: zero-day OR exploit OR vulnerability"
       ]
     },
     {
       "id": "family-2",
-      "label": "in, us, United States",
+      "label": "us, of, in",
       "category": "🌏 Asia & Pacific",
       "count": 11,
       "average_score": 76,
@@ -235,11 +251,25 @@
       ]
     },
     {
-      "id": "family-26",
-      "label": "to, startups, zaidi",
-      "category": "AI & Startups",
-      "count": 8,
+      "id": "family-77",
+      "label": "malaysia, Meta, mulls",
+      "category": "Consumer Tech",
+      "count": 10,
       "average_score": 58,
+      "unique_sources": 3,
+      "consensus": 99,
+      "top_sources": [
+        "Google: gaming OR streaming OR creator economy",
+        "Google: meta OR tiktok OR youtube",
+        "Google: open source model OR agentic ai"
+      ]
+    },
+    {
+      "id": "family-26",
+      "label": "zaidi, startups, to",
+      "category": "AI & Startups",
+      "count": 9,
+      "average_score": 57,
       "unique_sources": 4,
       "consensus": 99,
       "top_sources": [
@@ -248,70 +278,55 @@
         "Google: open source model OR agentic ai",
         "Google: startup funding OR venture capital"
       ]
-    },
-    {
-      "id": "family-67",
-      "label": "ai, Google, permits",
-      "category": "AI & Startups",
-      "count": 8,
-      "average_score": 56,
-      "unique_sources": 4,
-      "consensus": 99,
-      "top_sources": [
-        "Google: artificial intelligence OR foundation model",
-        "Google: cloud security OR supply chain attack",
-        "Google: developer tools OR software startup",
-        "Google: open source model OR agentic ai"
-      ]
     }
   ],
   "top_sectors": [
     {
       "label": "AI Race",
-      "count": 506,
-      "avg_score": 60,
-      "trending": 83,
+      "count": 533,
+      "avg_score": 59,
+      "trending": 79,
       "sources": 110,
       "heat": 99
     },
     {
       "label": "Geopolitical Risk",
-      "count": 255,
+      "count": 271,
       "avg_score": 66,
-      "trending": 81,
-      "sources": 71,
+      "trending": 77,
+      "sources": 72,
       "heat": 99
     },
     {
       "label": "Macro Stress",
-      "count": 173,
+      "count": 181,
       "avg_score": 62,
-      "trending": 24,
+      "trending": 26,
       "sources": 53,
       "heat": 99
     },
     {
       "label": "Energy & Supply",
-      "count": 114,
-      "avg_score": 61,
-      "trending": 21,
-      "sources": 40,
+      "count": 123,
+      "avg_score": 60,
+      "trending": 22,
+      "sources": 41,
       "heat": 99
     },
     {
       "label": "Cyber Threat",
-      "count": 96,
-      "avg_score": 65,
-      "trending": 29,
+      "count": 99,
+      "avg_score": 64,
+      "trending": 26,
       "sources": 15,
       "heat": 99
     },
     {
       "label": "Platform Power",
-      "count": 66,
-      "avg_score": 53,
-      "trending": 2,
-      "sources": 14,
+      "count": 77,
+      "avg_score": 52,
+      "trending": 1,
+      "sources": 16,
       "heat": 99
     }
   ],
@@ -321,9 +336,9 @@
       "score": 99,
       "families": 4,
       "drivers": [
-        "to, supply, oil",
-        "to, patient, one",
-        "Russia, how, Ukraine"
+        "anwar, to, supply",
+        "patient, one, zero",
+        "soldiers, Ukraine, how"
       ]
     },
     {
@@ -331,9 +346,9 @@
       "score": 99,
       "families": 3,
       "drivers": [
-        "to, supply, oil",
-        "Russia, how, Ukraine",
-        "in, us, United States"
+        "anwar, to, supply",
+        "soldiers, Ukraine, how",
+        "us, of, in"
       ]
     },
     {
@@ -341,9 +356,9 @@
       "score": 99,
       "families": 3,
       "drivers": [
-        "to, supply, oil",
-        "to, patient, one",
-        "in, us, United States"
+        "anwar, to, supply",
+        "patient, one, zero",
+        "us, of, in"
       ]
     },
     {
@@ -351,9 +366,9 @@
       "score": 99,
       "families": 3,
       "drivers": [
-        "to, supply, oil",
-        "cruise, United States, ship",
-        "Russia, how, Ukraine"
+        "anwar, to, supply",
+        "virus-hit, United States, tenerife",
+        "soldiers, Ukraine, how"
       ]
     },
     {
@@ -361,9 +376,9 @@
       "score": 99,
       "families": 3,
       "drivers": [
-        "to, supply, oil",
-        "Russia, how, Ukraine",
-        "in, us, United States"
+        "anwar, to, supply",
+        "soldiers, Ukraine, how",
+        "us, of, in"
       ]
     },
     {
@@ -371,9 +386,9 @@
       "score": 99,
       "families": 3,
       "drivers": [
-        "to, supply, oil",
-        "to, patient, one",
-        "in, us, United States"
+        "anwar, to, supply",
+        "patient, one, zero",
+        "us, of, in"
       ]
     }
   ],
@@ -481,12 +496,6 @@
       "url": "https://www.cnbc.com/2026/05/09/iran-war-oil-gas-energy-security.html"
     },
     {
-      "title": "Whirlpool hikes prices again as Iran War, inflation shake appliance market - Scripps News",
-      "score": 90,
-      "category": "Markets & Macro",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSGw5Zkc1SGs3Tmo2Yl91bURwQU5HemVtNzBUVHdwMjNuY2pjYW5qb180bkxmLWFjTHV6clY4U3lLTkZpdTFtTkE4NmJOczVHNTdLNmZOWFc1N2RYcUxfRVhuRFl0VTlCZVFkTFo2UnM4QWFQUEdoemRsOWROX3Z3NHduQ2NHSkZST25SUHIxMU5IODBpS05fd2ZhOXpKVndUMUdpaS03MVAyaU9zNUNjcjBsRGVXMndVM2c?oc=5"
-    },
-    {
       "title": "Far-Right Australian Party Wins Seat in First Election Victory",
       "score": 90,
       "category": "📈 Macro Economy & Markets",
@@ -499,22 +508,16 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWnU1S3RGaFNOOTdZWFZoRkVWVDZiNmNsbWEzM0xNVkpOTC02U3R3TVV5V3lkWmJmQmxqb0k2eUtha3g3ZkZaTVQ0aXQ5WDJJQXZ0YzQ3cnk0VWhQU0dYSWhPaU1fMlBjWUNiU0ZoOVNheUN6aG42LUJHVjVNbk8xT1lR?oc=5"
     },
     {
+      "title": "Pakistan central bank hikes policy rate by 100 bps as West Asia war fuels inflation - MSN",
+      "score": 88,
+      "category": "India & APAC",
+      "url": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxNQng4bVBrYVhEN0hsdjhhMzZCa1VuTjh3R3FkcWZjai1scXlzOXhSVzRiRVVGX29RYUZzV2plVmNlZk1BSUhralhINTBwUVF6SV9uNWk0d1VrVTJuN19IcE9LcmNrb281Nm5ybXZuTWtZNXlPRnZBczZhRXVJbXBhSTN2QWtfN2FTclpTRi14VU5fbndWYXJMNi1UMmxKWmZ4aWRBS0IxVG5LWUlpbnhraFVHOXNGblF0RS0yZnJkc01SSXVkYWtzcmg2YWxjSWl0a0d6M0ZwanlydWtubHdZZnFFTzJ6NWlJeDlhejZ0Ri16SDh6dmFWQ2JSSFpZMHl5NUlVYldPV1ZUOFoxdTItVW8xaVVLX0l1VWFTSTdGYWVjYnNJakRvbEdyam1xQ3VEVTRNNFVUaFRVY1hILWxXSnp5UjdwdFo1TzMyb1VkYzRSWjk5RjZ3djB6YWlEUzNkRGFCRndIcGllZVF3TTJKaW5KVQ?oc=5"
+    },
+    {
       "title": "Dozens killed in jihadist attacks in central Mali",
       "score": 87,
       "category": "🇪🇺 Europe",
       "url": "https://www.france24.com/en/africa/20260510-dozens-killed-in-jihadist-attacks-in-central-mali"
-    },
-    {
-      "title": "Ransomware attack wipes out finals week at ISU, thousands of other schools - Idaho State Journal",
-      "score": 87,
-      "category": "Cybersecurity",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQTzhabGNxVXl1TlpDLU5sdHZPWFhxSEJ4UU5vc0NHbWpZRXpyV1FrLU5BdkZLSnZxZzh4LUpWRi1ZNkVWZ09ySzQ5VEgzdVhYVUVtZnlTVGpSX1ZwOEZHRU96UVVfTjkweXp6ZVVsbllLRWxsdVRGajcxTGdjX0N5WjRQMm5zQmtEcmktRzBPdTlzV1E1cTZkQzA5NjdVSkdjQV9hOXhjZG5sZ1JXLWpjX2hpY1FicUgxcEk2Q21UeDVOVG40dW1hREVvbXlEUllxcldDMXVPX1E5Q3ZqMDNYUEEwbW53RTdnT3dkeWpBamZFUUZZU2RNQmtzMHJMS012cEHSAYICQVVfeXFMUE84WmxjcVV5dU5aQy1ObHR2T1hYcUhCeFFOb3NDR21qWUV6cldRay1OQXZGS0p2cWc4eC1KVkYtWTZFVmdPcks0OVRIM3VYWFVFbWZ5U1RqUl9WcDhGR0VPelFVX045MHl6emVVbG5ZS0VsbHVURmo3MUxnY19DeVo0UDJuc0JrRHJpLUcwT3U5c1dRNXE2ZEMwOTY3VUpHY0FfYTl4Y2RubGdSVy1qY19oaWNRYnFIMXBJNkNtVHg1TlRuNHVtYURFb215RFJZcXJXQzF1T19ROUN2ajAzWFBBMG1ud0U3Z093ZHlqQWpmRVFGWVNkTUJrczByTEtNdnBB?oc=5"
-    },
-    {
-      "title": "Ransomware attack wipes out finals week at ISU, thousands of other schools - Idaho State Journal",
-      "score": 87,
-      "category": "🤖 Cyber & Tech Warfare",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOWG14eF9VdElfRjNFRExQaWw0dU5hYVp0dnZmc1pYSlhlVFZqcmlvdC1pZlB2aXlKX08tcVUyWnN6WjFEVE5ULWFvcThMVENhM2lIdmlMbFp3em9fRFNET2w4ZTA2dEJVOVhlMXRvbXl2ZjdTcmFLVU9ncGJkMC1MVTNveDctVVQ2c0VseklNbDBEZ3BqeVB5aWtxOTBYRGMwYXlXWV8zSVZ4UUtDY3U1czdHTUY5OGJaUnFncl9UbFdOUi1KYlVNM3dzQ1FabzdGZ2NpcDN0b2lPVHJjX1pEcEFZV2dHUnZtMUxuSXVaODNNOGxnaHFfNmdpaFbSAYICQVVfeXFMUE84WmxjcVV5dU5aQy1ObHR2T1hYcUhCeFFOb3NDR21qWUV6cldRay1OQXZGS0p2cWc4eC1KVkYtWTZFVmdPcks0OVRIM3VYWFVFbWZ5U1RqUl9WcDhGR0VPelFVX045MHl6emVVbG5ZS0VsbHVURmo3MUxnY19DeVo0UDJuc0JrRHJpLUcwT3U5c1dRNXE2ZEMwOTY3VUpHY0FfYTl4Y2RubGdSVy1qY19oaWNRYnFIMXBJNkNtVHg1TlRuNHVtYURFb215RFJZcXJXQzF1T19ROUN2ajAzWFBBMG1ud0U3Z093ZHlqQWpmRVFGWVNkTUJrczByTEtNdnBB?oc=5"
     },
     {
       "title": "Iran war live: IRGC warns US against attacks on ships; Israel bombs Lebanon",
@@ -527,6 +530,18 @@
       "score": 86,
       "category": "Markets & Macro",
       "url": "https://www.cnbc.com/2026/05/08/iran-focus-at-trump-xi-summit-may-delay-progress-on-tariffs-rare-earths.html"
+    },
+    {
+      "title": "Quasar Linux RAT Steals Developer Credentials for Software Supply Chain Compromise",
+      "score": 86,
+      "category": "Cybersecurity",
+      "url": "https://thehackernews.com/2026/05/quasar-linux-rat-steals-developer.html"
+    },
+    {
+      "title": "Whirlpool hikes prices again as Iran War, inflation shake appliance market - Scripps News",
+      "score": 85,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSGw5Zkc1SGs3Tmo2Yl91bURwQU5HemVtNzBUVHdwMjNuY2pjYW5qb180bkxmLWFjTHV6clY4U3lLTkZpdTFtTkE4NmJOczVHNTdLNmZOWFc1N2RYcUxfRVhuRFl0VTlCZVFkTFo2UnM4QWFQUEdoemRsOWROX3Z3NHduQ2NHSkZST25SUHIxMU5IODBpS05fd2ZhOXpKVndUMUdpaS03MVAyaU9zNUNjcjBsRGVXMndVM2c?oc=5"
     }
   ]
 }
