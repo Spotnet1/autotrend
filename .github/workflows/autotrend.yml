@@ -1,85 +1,78 @@
-name: AutoTrend Intelligence Engine
+name: AutoTrend Atlas
 
 on:
-  # Run automatically every 20 minutes
   schedule:
-    - cron: "*/20 * * * *"
-  # Allow manual trigger from GitHub Actions UI
+    - cron: '*/20 * * * *'
   workflow_dispatch:
-
-  # Also run on push to main (useful for testing)
   push:
     branches:
       - main
 
 permissions:
-  contents: write   # needed to commit output/ back to the repo
-  pages: write      # needed if deploying to GitHub Pages
+  contents: write
+  pages: write
   id-token: write
+
+concurrency:
+  group: autotrend-atlas-pages
+  cancel-in-progress: true
 
 jobs:
   build:
-    name: Scrape · Score · Build
+    name: Ingest · Score · Build
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
-      # ── 1. Checkout ──────────────────────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # full history so git push works cleanly
+          fetch-depth: 0
 
-      # ── 2. Python setup ───────────────────────────────────────────────────────
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
           cache: pip
 
-      # ── 3. Install dependencies ───────────────────────────────────────────────
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ── 4. Restore cached articles (so we keep the 48-hour rolling window) ───
-      - name: Restore article cache
+      - name: Restore rolling output memory
         uses: actions/cache@v4
         with:
           path: output/
-          key: autotrend-cache-${{ runner.os }}-${{ github.run_id }}
+          key: autotrend-output-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
-            autotrend-cache-${{ runner.os }}-
+            autotrend-output-${{ runner.os }}-
 
-      # ── 5. Run the engine ─────────────────────────────────────────────────────
-      - name: Run AutoTrend
+      - name: Build static intelligence site
         run: python app.py
 
-      # ── 6. Commit outputs back to repo (index.html, rss, json, history) ──────
-      - name: Commit & push output
+      - name: Keep Pages metadata
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f output/
-          # Only commit if something actually changed
-          git diff --cached --quiet || git commit -m "chore: auto-update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          test -f output/.nojekyll || touch output/.nojekyll
+
+      - name: Commit updated memory and output
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add output/
+          git diff --cached --quiet || git commit -m "chore: refresh intelligence memory [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push
 
-      # ── 7. Upload output/ as a Pages artifact ────────────────────────────────
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: output/
 
-  # ── Deploy to GitHub Pages (runs after build succeeds) ─────────────────────
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy Pages
     needs: build
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

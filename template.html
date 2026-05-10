@@ -2,252 +2,1286 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>{{ title }} | Tactical Command</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ tagline }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ title }} RSS" href="trending.rss">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap');
+
         :root {
-            --bg: #020617;
-            --sidebar: #0f172a;
-            --surface: #1e293b;
-            --accent: #38bdf8;
-            --accent-glow: rgba(56, 189, 248, 0.2);
-            --text-main: #f8fafc;
-            --text-dim: #94a3b8;
-            --border: #334155;
-            --danger: #ef4444;
-            --success: #22c55e;
-            --warning: #f59e0b;
+            --bg: #07111f;
+            --bg-soft: #101d30;
+            --panel: rgba(12, 21, 36, 0.78);
+            --panel-strong: rgba(10, 18, 32, 0.92);
+            --line: rgba(157, 189, 255, 0.18);
+            --line-strong: rgba(157, 189, 255, 0.3);
+            --text: #f4f7fb;
+            --muted: #93a4bf;
+            --teal: #79f0d3;
+            --coral: #ff7a6b;
+            --gold: #f4cd7a;
+            --blue: #7fb7ff;
+            --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+            --radius-xl: 32px;
+            --radius-lg: 22px;
+            --radius-md: 16px;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { 
-            background-color: var(--bg); 
-            color: var(--text-main); 
-            font-family: 'Inter', sans-serif; 
-            line-height: 1.5; 
-            overflow: hidden; 
-            height: 100vh;
-            display: flex;
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(121, 240, 211, 0.16), transparent 28%),
+                radial-gradient(circle at 85% 10%, rgba(127, 183, 255, 0.16), transparent 22%),
+                radial-gradient(circle at 50% 100%, rgba(255, 122, 107, 0.14), transparent 25%),
+                linear-gradient(180deg, #06101d 0%, #091523 48%, #06101a 100%);
+            overflow-x: hidden;
         }
 
-        /* Palantir Sidebar */
-        aside {
-            width: 260px;
-            background: var(--sidebar);
-            border-right: 1px solid var(--border);
-            display: flex;
-            flex-direction: column;
-            padding: 1.5rem;
-            flex-shrink: 0;
-        }
-        .logo-area { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2.5rem; }
-        .logo-box { width: 32px; height: 32px; background: var(--accent); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 900; color: #000; font-size: 1rem; }
-        .logo-text { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.02em; }
-        
-        .nav-group { margin-bottom: 2rem; }
-        .nav-label { font-size: 0.65rem; font-weight: 800; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; display: block; }
-        .nav-link { display: flex; align-items: center; gap: 0.75rem; color: var(--text-dim); text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 0.6rem 0.75rem; border-radius: 0.5rem; transition: 0.2s; margin-bottom: 0.25rem; }
-        .nav-link:hover, .nav-link.active { background: rgba(56, 189, 248, 0.1); color: var(--accent); }
-        .nav-link span { font-size: 1.1rem; }
-
-        /* Main Content Area */
-        main {
-            flex-grow: 1;
-            overflow-y: auto;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
         }
 
-        header {
-            padding: 1rem 2rem;
-            background: rgba(2, 6, 23, 0.8);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border);
+        body::before {
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 42px 42px;
+            mask-image: linear-gradient(180deg, rgba(0,0,0,0.55), transparent 95%);
+            opacity: 0.22;
+        }
+
+        body::after {
+            background: radial-gradient(circle at center, transparent 0, rgba(4, 9, 15, 0.4) 60%, rgba(4, 9, 15, 0.75) 100%);
+        }
+
+        a { color: inherit; }
+        .page {
+            position: relative;
+            z-index: 1;
+            width: min(1440px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 20px 0 56px;
+        }
+
+        .shell {
+            background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 38px;
+            backdrop-filter: blur(18px);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .topbar {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            position: sticky; top: 0; z-index: 100;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 20px 24px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            background: rgba(7, 12, 22, 0.56);
         }
-        .header-left h1 { font-size: 1rem; font-weight: 700; color: var(--text-main); }
-        .header-right { display: flex; align-items: center; gap: 1.5rem; }
-        .market-item { font-size: 0.75rem; font-weight: 600; display: flex; gap: 0.4rem; }
-        .m-name { color: var(--text-dim); }
-        .m-up { color: var(--success); }
-        .m-down { color: var(--danger); }
 
-        .content-scroll { padding: 2rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
 
-        /* AIP Briefing Panel */
-        .aip-panel {
-            background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(15, 23, 42, 0.5) 100%);
-            border: 1px solid var(--accent);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+        .brand-mark {
+            width: 48px;
+            height: 48px;
+            border-radius: 15px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, var(--teal), var(--blue));
+            color: #03111a;
+            font-size: 18px;
+            font-weight: 700;
+            box-shadow: 0 18px 40px rgba(121, 240, 211, 0.25);
+        }
+
+        .brand-meta strong {
+            display: block;
+            font-size: 1rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .brand-meta span {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .mini-chip {
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.04);
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        .mini-chip strong { color: var(--text); }
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr);
+            gap: 24px;
+            padding: 28px;
+        }
+
+        .hero-main,
+        .hero-side,
+        .panel,
+        .article-card,
+        .story-card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-xl);
             position: relative;
             overflow: hidden;
         }
-        .aip-panel::after { content: "AIP INTELLIGENCE"; position: absolute; top: 0.75rem; right: 1rem; font-size: 0.6rem; font-weight: 900; color: var(--accent); opacity: 0.5; }
-        .aip-title { font-size: 0.75rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
-        .aip-text { font-size: 0.95rem; color: #cbd5e1; font-weight: 500; line-height: 1.6; }
 
-        /* Map & Grid Layout */
-        .dashboard-grid { display: grid; grid-template-columns: 1fr 340px; gap: 1.5rem; margin-bottom: 2rem; }
-        #map { height: 400px; width: 100%; border-radius: 1rem; border: 1px solid var(--border); background: #020617; }
-        .leaflet-tile { filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%); opacity: 0.2; }
-
-        .stat-sidebar { display: flex; flex-direction: column; gap: 1rem; }
-        .stat-card { background: var(--sidebar); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
-        .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); font-family: 'Outfit', sans-serif; }
-        .stat-label { font-size: 0.7rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; }
-
-        /* Article Cards */
-        .intel-list { display: grid; gap: 1rem; }
-        .intel-card { background: var(--sidebar); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; transition: 0.2s; position: relative; }
-        .intel-card:hover { border-color: var(--accent); background: rgba(56, 189, 248, 0.02); }
-        .card-meta { display: flex; justify-content: space-between; font-size: 0.65rem; font-weight: 700; color: var(--text-dim); margin-bottom: 0.75rem; text-transform: uppercase; }
-        .card-source { color: var(--accent); }
-        .card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: #fff; line-height: 1.4; }
-        .card-title a { color: inherit; text-decoration: none; }
-        
-        .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
-        .tag { font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.05); color: #94a3b8; border: 1px solid rgba(255,255,255,0.1); }
-        .tag-gpe { border-color: var(--danger); color: #f87171; }
-        .tag-org { border-color: var(--accent); color: #38bdf8; }
-
-        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 0.75rem; }
-        .score-pill { font-size: 0.65rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: 99px; background: rgba(56, 189, 248, 0.1); color: var(--accent); }
-        .score-pill.critical { background: rgba(239, 68, 68, 0.1); color: var(--danger); }
-
-        @media (max-width: 1024px) {
-            aside { display: none; }
-            .dashboard-grid { grid-template-columns: 1fr; }
+        .hero-main {
+            padding: 30px;
+            background:
+                radial-gradient(circle at top right, rgba(127, 183, 255, 0.16), transparent 26%),
+                linear-gradient(145deg, rgba(12, 21, 36, 0.96), rgba(12, 21, 36, 0.72));
         }
 
-        /* Scrollbars */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(121, 240, 211, 0.08);
+            color: var(--teal);
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border: 1px solid rgba(121, 240, 211, 0.18);
+        }
+
+        .hero h1 {
+            margin: 18px 0 14px;
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(2.8rem, 7vw, 5rem);
+            line-height: 0.92;
+            letter-spacing: -0.04em;
+            max-width: 12ch;
+        }
+
+        .hero-copy {
+            max-width: 62ch;
+            color: #d6deea;
+            font-size: 1.06rem;
+            line-height: 1.75;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 26px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.94rem;
+            transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+        }
+
+        .button.primary {
+            color: #03111a;
+            background: linear-gradient(135deg, var(--teal), #b4f8ea);
+            box-shadow: 0 12px 30px rgba(121, 240, 211, 0.26);
+        }
+
+        .button.secondary {
+            color: var(--text);
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(255,255,255,0.04);
+        }
+
+        .button:hover { transform: translateY(-2px); }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .stat-card {
+            padding: 18px;
+            border-radius: var(--radius-lg);
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .stat-label {
+            color: var(--muted);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 8px;
+        }
+
+        .stat-value {
+            font-size: clamp(1.45rem, 2vw, 2rem);
+            font-weight: 700;
+        }
+
+        .hero-side {
+            padding: 22px;
+            display: grid;
+            gap: 14px;
+            align-content: start;
+            background:
+                radial-gradient(circle at top left, rgba(255, 122, 107, 0.18), transparent 32%),
+                linear-gradient(180deg, rgba(18, 28, 44, 0.94), rgba(9, 16, 27, 0.82));
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .section-title h2,
+        .section-title h3 {
+            margin: 0;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .section-title span {
+            color: var(--muted);
+            font-size: 0.84rem;
+        }
+
+        .story-card {
+            padding: 18px;
+            border-radius: var(--radius-lg);
+            background: rgba(255,255,255,0.035);
+            transform: translateY(16px);
+            opacity: 0;
+            animation: rise 650ms ease forwards;
+        }
+
+        .story-card:nth-child(2) { animation-delay: 90ms; }
+        .story-card:nth-child(3) { animation-delay: 180ms; }
+
+        .story-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 10px;
+            color: var(--muted);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .story-card h3 {
+            margin: 0 0 10px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .story-card p {
+            margin: 0;
+            color: #c4d0e2;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+
+        .story-score {
+            display: inline-flex;
+            margin-top: 14px;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.06);
+            color: var(--gold);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+
+        .stack-grid,
+        .overview-grid,
+        .explorer {
+            display: grid;
+            gap: 18px;
+            padding: 0 28px 28px;
+        }
+
+        .stack-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        .overview-grid { grid-template-columns: 1.15fr 0.85fr 0.95fr; }
+        .explorer { grid-template-columns: 1fr 340px; align-items: start; }
+
+        .panel {
+            padding: 22px;
+            border-radius: var(--radius-xl);
+            background: linear-gradient(180deg, rgba(13, 22, 37, 0.95), rgba(10, 17, 29, 0.82));
+        }
+
+        .stack-item h3,
+        .panel h3 {
+            margin: 0 0 10px;
+            font-size: 1.04rem;
+        }
+
+        .stack-item p,
+        .panel p,
+        .panel li,
+        .panel label,
+        .article-card p {
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .stack-item {
+            padding: 22px;
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--line);
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+        }
+
+        .stack-item strong {
+            display: inline-flex;
+            margin-bottom: 12px;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.8rem;
+        }
+
+        .bars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+            gap: 12px;
+            align-items: end;
+            min-height: 190px;
+            margin-top: 18px;
+        }
+
+        .bar {
+            border-radius: 16px 16px 12px 12px;
+            border: 1px solid rgba(127, 183, 255, 0.18);
+            background: linear-gradient(180deg, rgba(127, 183, 255, 0.85), rgba(121, 240, 211, 0.25));
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 10px 6px;
+            min-height: 26px;
+            transition: transform 180ms ease;
+        }
+
+        .bar:hover { transform: translateY(-4px); }
+        .bar-wrap span { display: block; }
+        .bar-value {
+            margin-top: 10px;
+            font-size: 0.86rem;
+            color: var(--text);
+            font-weight: 700;
+        }
+        .bar-label {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
+        .list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .list-row {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 14px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.035);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .list-row strong { font-size: 0.96rem; }
+        .list-row span { color: var(--muted); font-size: 0.86rem; }
+        .delta.up { color: var(--teal); }
+        .delta.down { color: var(--coral); }
+
+        .progress {
+            height: 8px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.08);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress i {
+            display: block;
+            height: 100%;
+            border-radius: inherit;
+            background: linear-gradient(90deg, var(--blue), var(--teal));
+        }
+
+        .chip-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pulse-chip,
+        .filter-chip {
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.09);
+            background: rgba(255,255,255,0.035);
+            color: #d8e1ec;
+            font-size: 0.86rem;
+            cursor: pointer;
+        }
+
+        .pulse-chip strong { color: var(--gold); }
+        .filter-chip.active {
+            background: rgba(121, 240, 211, 0.12);
+            border-color: rgba(121, 240, 211, 0.34);
+            color: var(--teal);
+        }
+
+        .alert-stack {
+            display: grid;
+            gap: 12px;
+        }
+
+        .alert-item {
+            padding: 14px 16px;
+            border-radius: 18px;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.035);
+        }
+
+        .alert-item strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .alert-item.high strong { color: var(--coral); }
+        .alert-item.watch strong { color: var(--gold); }
+        .alert-item.info strong { color: var(--teal); }
+
+        .explorer-main {
+            display: grid;
+            gap: 18px;
+        }
+
+        .controls {
+            display: grid;
+            gap: 16px;
+            padding: 20px;
+            border-radius: var(--radius-xl);
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .control-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .search {
+            flex: 1 1 280px;
+            min-width: 0;
+        }
+
+        .search input,
+        .sort-select {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(7, 13, 24, 0.9);
+            color: var(--text);
+            font: inherit;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .article-card {
+            padding: 20px;
+            display: grid;
+            gap: 14px;
+            border-radius: 22px;
+            background: linear-gradient(180deg, rgba(12, 21, 36, 0.95), rgba(8, 14, 24, 0.9));
+            transform: translateY(18px);
+            opacity: 0;
+            animation: rise 560ms ease forwards;
+        }
+
+        .card-top,
+        .card-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.78rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .impact {
+            padding: 7px 10px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            background: rgba(255,255,255,0.06);
+        }
+
+        .impact.critical { color: var(--coral); }
+        .impact.high { color: var(--gold); }
+        .impact.monitor { color: var(--teal); }
+
+        .article-card h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .article-card h3 a {
+            text-decoration: none;
+        }
+
+        .article-card h3 a:hover { color: var(--teal); }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 7px 10px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: #c6d2e5;
+            font-size: 0.78rem;
+        }
+
+        .score {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.84rem;
+            color: var(--muted);
+        }
+
+        .score strong { color: var(--text); }
+
+        .meter {
+            width: 110px;
+            height: 8px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .meter i {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, var(--blue), var(--teal), var(--gold), var(--coral));
+        }
+
+        .sidebar-stack {
+            display: grid;
+            gap: 18px;
+            position: sticky;
+            top: 24px;
+        }
+
+        .memory-note {
+            display: grid;
+            gap: 12px;
+        }
+
+        .memory-note div {
+            padding: 14px 16px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.035);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .memory-note strong {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 0 28px 28px;
+            color: var(--muted);
+            font-size: 0.86rem;
+            flex-wrap: wrap;
+        }
+
+        .empty-state {
+            padding: 28px;
+            border-radius: 22px;
+            border: 1px dashed rgba(255,255,255,0.16);
+            color: var(--muted);
+            text-align: center;
+        }
+
+        @keyframes rise {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 1180px) {
+            .hero,
+            .overview-grid,
+            .explorer,
+            .stack-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar-stack { position: static; }
+            .hero-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 760px) {
+            .page { width: min(100% - 18px, 100%); }
+            .shell { border-radius: 26px; }
+            .topbar,
+            .hero,
+            .stack-grid,
+            .overview-grid,
+            .explorer,
+            .footer { padding-left: 16px; padding-right: 16px; }
+            .hero,
+            .stack-grid,
+            .overview-grid,
+            .explorer { padding-bottom: 18px; }
+            .hero-main,
+            .hero-side,
+            .panel,
+            .stack-item,
+            .controls,
+            .article-card { border-radius: 22px; }
+            .hero h1 { font-size: 2.7rem; }
+            .hero-grid,
+            .article-grid { grid-template-columns: 1fr; }
+            .topbar { align-items: flex-start; }
+            .topbar-right { justify-content: flex-start; }
+        }
     </style>
 </head>
 <body>
-    <aside>
-        <div class="logo-area">
-            <div class="logo-box">S</div>
-            <div class="logo-text">SPOT<span>PULSE</span></div>
-        </div>
-        
-        <nav class="nav-group">
-            <span class="nav-label">Intelligence</span>
-            <a href="#" class="nav-link active"><span>🌐</span> Global Matrix</a>
-            <a href="#" class="nav-link"><span>🔥</span> Threat Map</a>
-            <a href="#" class="nav-link"><span>💻</span> Cyber Recon</a>
-        </nav>
-
-        <nav class="nav-group">
-            <span class="nav-label">Systems</span>
-            <a href="#" class="nav-link"><span>📈</span> Markets</a>
-            <a href="#" class="nav-link"><span>📜</span> History</a>
-            <a href="#" class="nav-link"><span>⚙️</span> Settings</a>
-        </nav>
-
-        <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border);">
-            <div style="font-size: 0.6rem; color: var(--text-dim); font-weight: 700;">NODE STATUS</div>
-            <div style="font-size: 0.7rem; color: var(--success); display: flex; align-items: center; gap: 0.4rem; font-weight: 700;">
-                <div style="width: 6px; height: 6px; background: var(--success); border-radius: 50%;"></div> OPERATIONAL
-            </div>
-        </div>
-    </aside>
-
-    <main>
-        <header>
-            <div class="header-left">
-                <h1>{{ updated }}</h1>
-            </div>
-            <div class="header-right">
-                {% for m in market_intel %}
-                <div class="market-item">
-                    <span class="m-name">{{ m.name }}</span>
-                    <span class="m-val">{{ m.price }}</span>
-                    <span class="{{ 'm-up' if '+' in m.change else 'm-down' }}">{{ m.change }}</span>
+    <div class="page">
+        <div class="shell">
+            <header class="topbar">
+                <div class="brand">
+                    <div class="brand-mark">AT</div>
+                    <div class="brand-meta">
+                        <strong>{{ title }}</strong>
+                        <span>{{ tagline }}</span>
+                    </div>
                 </div>
-                {% endfor %}
-            </div>
-        </header>
+                <div class="topbar-right">
+                    <div class="mini-chip"><strong>{{ stats.feeds }}</strong> feed lanes</div>
+                    <div class="mini-chip"><strong>{{ stats.sources }}</strong> source brands</div>
+                    <div class="mini-chip"><strong>{{ memory.days_tracked }}</strong> day memory</div>
+                    <div class="mini-chip"><strong>{{ updated }}</strong></div>
+                </div>
+            </header>
 
-        <div class="content-scroll">
-            <section class="aip-panel">
-                <div class="aip-title"><span>🤖</span> LOCAL INTELLIGENCE SUMMARY</div>
-                <p class="aip-text">{{ briefing }}</p>
+            <section class="hero">
+                <div class="hero-main">
+                    <div class="eyebrow">Static intelligence cockpit · zero paid APIs · self-healing memory</div>
+                    <h1>Most featured. Most intelligence. Fully free.</h1>
+                    <p class="hero-copy">{{ briefing }} The entire stack runs on Python, public RSS, GitHub Actions, and GitHub Pages. Local snapshot memory keeps the system evolving without external AI, vector DBs, or memory APIs.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#explorer">Open signal explorer</a>
+                        <a class="button secondary" href="trending.rss">RSS feed</a>
+                        <a class="button secondary" href="trends.json">JSON data</a>
+                    </div>
+                    <div class="hero-grid">
+                        <div class="stat-card">
+                            <div class="stat-label">Signals in memory</div>
+                            <div class="stat-value">{{ stats.total }}</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">High-momentum alerts</div>
+                            <div class="stat-value">{{ stats.trending }}</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Breaking now</div>
+                            <div class="stat-value">{{ stats.breaking }}</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Memory mode</div>
+                            <div class="stat-value">Local-only</div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="hero-side">
+                    <div class="section-title">
+                        <h2>Featured stories</h2>
+                        <span>editor-picked by score</span>
+                    </div>
+                    {% for article in hero_articles %}
+                    <article class="story-card">
+                        <div class="story-top">
+                            <span>{{ article.category }}</span>
+                            <span>{{ article.published }}</span>
+                        </div>
+                        <h3><a href="{{ article.url }}" target="_blank" rel="noreferrer">{{ article.title }}</a></h3>
+                        <p>{{ article.summary }}</p>
+                        <div class="story-score">{{ article.virality_score }}/99 signal strength</div>
+                    </article>
+                    {% endfor %}
+                </aside>
             </section>
 
-            <div class="dashboard-grid">
-                <div id="map"></div>
-                <div class="stat-sidebar">
-                    <div class="stat-card">
-                        <div class="stat-num">{{ stats.total }}</div>
-                        <div class="stat-label">Total Signals Scanned</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-num">{{ stats.trending }}</div>
-                        <div class="stat-label">Critical Alerts</div>
-                    </div>
+            <section class="stack-grid">
+                <div class="stack-item">
+                    <strong>Free stack</strong>
+                    <h3>No paid infra hiding under the hood</h3>
+                    <p>Only Python libraries, RSS ingestion, static HTML generation, GitHub Actions for scheduling, and GitHub Pages for delivery.</p>
                 </div>
-            </div>
+                <div class="stack-item">
+                    <strong>Self memory</strong>
+                    <h3>Local history learns from every run</h3>
+                    <p>`output/cache.json` keeps rolling signal memory, while `output/history/*.json` stores day snapshots for momentum, rise/fall, and baseline comparison.</p>
+                </div>
+                <div class="stack-item">
+                    <strong>Scale model</strong>
+                    <h3>Hundreds of feed lanes, thousands of signals</h3>
+                    <p>A broad RSS/query mesh captures many source angles per cycle and deduplicates into a stable rolling graph of stories.</p>
+                </div>
+                <div class="stack-item">
+                    <strong>Set and forget</strong>
+                    <h3>Git-powered automation only</h3>
+                    <p>The repo itself is the memory layer. Actions regenerates output, commits snapshots, and Pages serves the latest dashboard with no external state store.</p>
+                </div>
+            </section>
 
-            <div class="intel-list" id="cardGrid"></div>
+            <section class="overview-grid">
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Category landscape</h3>
+                        <span>what dominates the cycle</span>
+                    </div>
+                    <div class="list">
+                        {% for item in category_breakdown %}
+                        <div class="list-row">
+                            <strong>{{ item.label }}</strong>
+                            <div class="progress"><i style="width: {{ item.share }}%"></i></div>
+                            <span>{{ item.count }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="section-title" style="margin-top: 20px;">
+                        <h3>Category momentum</h3>
+                        <span>vs stored history</span>
+                    </div>
+                    <div class="list">
+                        {% if category_momentum %}
+                            {% for item in category_momentum %}
+                            <div class="list-row">
+                                <strong>{{ item.label }}</strong>
+                                <span>{{ item.count }} active</span>
+                                <span class="delta {{ 'up' if item.delta >= 0 else 'down' }}">{{ '%+.1f'|format(item.delta) }}</span>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="list-row">
+                                <strong>Warm-up cycle</strong>
+                                <span>history is still filling up</span>
+                                <span class="delta up">+0.0</span>
+                            </div>
+                        {% endif %}
+                    </div>
+                </section>
+
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>24h flow</h3>
+                        <span>fresh signal velocity</span>
+                    </div>
+                    <div class="bars">
+                        {% for item in hourly_activity %}
+                        <div class="bar-wrap">
+                            <div class="bar" style="height: {{ item.height }}%;"><span>{{ item.count }}</span></div>
+                            <span class="bar-value">{{ item.count }}</span>
+                            <span class="bar-label">{{ item.label }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Source pulse</h3>
+                        <span>highest signal contribution</span>
+                    </div>
+                    <div class="list">
+                        {% for item in source_breakdown %}
+                        <div class="list-row">
+                            <strong>{{ item.label }}</strong>
+                            <div class="progress"><i style="width: {{ item.share }}%"></i></div>
+                            <span>{{ item.count }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="section-title" style="margin-top: 20px;">
+                        <h3>Sentiment mix</h3>
+                        <span>emotional market texture</span>
+                    </div>
+                    <div class="chip-cloud">
+                        {% for item in sentiment_breakdown %}
+                        <div class="pulse-chip">{{ item.label }} <strong>{{ item.count }}</strong></div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </section>
+
+            <section class="overview-grid">
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Anomaly radar</h3>
+                        <span>aggressive intelligence flags</span>
+                    </div>
+                    <div class="alert-stack">
+                        {% for item in anomaly_alerts %}
+                        <div class="alert-item {{ item.severity }}">
+                            <strong>{{ item.title }}</strong>
+                            <span>{{ item.detail }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Rising keywords</h3>
+                        <span>memory-adjusted theme lift</span>
+                    </div>
+                    <div class="chip-cloud">
+                        {% for item in rising_keywords %}
+                        <div class="pulse-chip">{{ item.label }} <strong>{{ item.count }}</strong> <span class="delta {{ 'up' if item.delta >= 0 else 'down' }}">{{ '%+.1f'|format(item.delta) }}</span></div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Region watch</h3>
+                        <span>where heat is clustering</span>
+                    </div>
+                    <div class="list">
+                        {% for item in region_watch %}
+                        <div class="list-row">
+                            <strong>{{ item.label }}</strong>
+                            <span>{{ item.score }}/99 avg intensity</span>
+                            <span class="delta {{ 'up' if item.delta >= 0 else 'down' }}">{{ '%+.1f'|format(item.delta) }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Memory engine</h3>
+                        <span>how this stays smart</span>
+                    </div>
+                    <div class="memory-note">
+                        <div>
+                            <strong>{{ memory.mode }}</strong>
+                            <span>{{ memory.persistence }}</span>
+                        </div>
+                        <div>
+                            <strong>{{ memory.days_tracked }} tracked day snapshots</strong>
+                            <span>The repo itself becomes the long-term memory layer, and git preserves historical evolution without any hosted DB.</span>
+                        </div>
+                        <div>
+                            <strong>Auto-evolve without AI</strong>
+                            <span>Heuristics compare today versus stored baselines to surface rising themes, growing regions, and category momentum.</span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="overview-grid">
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Sector heat</h3>
+                        <span>where systemic pressure is forming</span>
+                    </div>
+                    <div class="list">
+                        {% for item in sector_heat %}
+                        <div class="list-row">
+                            <strong>{{ item.label }}</strong>
+                            <span>{{ item.trending }} trending · {{ item.sources }} sources</span>
+                            <span>{{ item.heat }}/99</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Contagion map</h3>
+                        <span>theme spillover between categories</span>
+                    </div>
+                    <div class="list">
+                        {% for item in contagion_links %}
+                        <div class="list-row">
+                            <strong>{{ item.label }}</strong>
+                            <span>{{ item.families }} shared families</span>
+                            <span>{{ item.score }}/99</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="section-title">
+                        <h3>Persistence watch</h3>
+                        <span>what refuses to die</span>
+                    </div>
+                    <div class="list">
+                        {% for item in persistence_watch %}
+                        <div class="list-row">
+                            <strong>{{ item.label }}</strong>
+                            <span>{{ item.days }} days · {{ item.status }}</span>
+                            <span>{{ item.persistence }}/99</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </section>
+
+            <section class="explorer" id="explorer">
+                <div class="explorer-main">
+                    <section class="panel">
+                        <div class="section-title">
+                            <h3>Signal explorer</h3>
+                            <span>search, filter, and sort the live memory</span>
+                        </div>
+                        <div class="controls">
+                            <div class="control-row">
+                                <label class="search"><input id="searchInput" type="search" placeholder="Search titles, summaries, keywords, regions..."></label>
+                                <select class="sort-select" id="sortSelect">
+                                    <option value="score">Sort: highest score</option>
+                                    <option value="latest">Sort: latest first</option>
+                                    <option value="source">Sort: source A-Z</option>
+                                    <option value="impact">Sort: impact level</option>
+                                </select>
+                            </div>
+                            <div class="control-row" id="categoryFilters"></div>
+                        </div>
+                    </section>
+                    <section class="article-grid" id="articleGrid"></section>
+                </div>
+
+                <aside class="sidebar-stack">
+                    <section class="panel">
+                        <div class="section-title">
+                            <h3>Pulse tags</h3>
+                            <span>high-frequency keywords</span>
+                        </div>
+                        <div class="chip-cloud">
+                            {% for item in keyword_pulse %}
+                            <div class="pulse-chip">{{ item.label }} <strong>{{ item.count }}</strong></div>
+                            {% endfor %}
+                        </div>
+                    </section>
+                    <section class="panel">
+                        <div class="section-title">
+                            <h3>Story families</h3>
+                            <span>clustered theme groups</span>
+                        </div>
+                        <div class="list">
+                            {% for item in story_families %}
+                            <div class="list-row">
+                                <strong>{{ item.label }}</strong>
+                                <span>{{ item.category }} · {{ item.unique_sources }} sources</span>
+                                <span>{{ item.consensus }}/99</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </section>
+                    <section class="panel">
+                        <div class="section-title">
+                            <h3>Escalation watch</h3>
+                            <span>multi-source surge monitor</span>
+                        </div>
+                        <div class="list">
+                            {% for item in escalation_watch %}
+                            <div class="list-row">
+                                <strong>{{ item.label }}</strong>
+                                <span>{{ item.sources }} sources · {{ item.status }}</span>
+                                <span class="delta {{ 'up' if item.delta >= 0 else 'down' }}">{{ item.consensus }}/99</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </section>
+                    <section class="panel">
+                        <div class="section-title">
+                            <h3>Region snapshot</h3>
+                            <span>top geography signals</span>
+                        </div>
+                        <div class="list">
+                            {% for item in regions %}
+                            <div class="list-row">
+                                <strong>{{ item.label }}</strong>
+                                <span>{{ item.count }} signals</span>
+                                <span>{{ item.score }}/99</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </section>
+                    <section class="panel">
+                        <div class="section-title">
+                            <h3>Source confidence</h3>
+                            <span>weight x breadth x score</span>
+                        </div>
+                        <div class="list">
+                            {% for item in source_confidence %}
+                            <div class="list-row">
+                                <strong>{{ item.label }}</strong>
+                                <span>{{ item.count }} stories · {{ item.breadth }} lanes</span>
+                                <span>{{ item.confidence }}/99</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </section>
+                    <section class="panel">
+                        <div class="section-title">
+                            <h3>Disagreement watch</h3>
+                            <span>conflicted source narratives</span>
+                        </div>
+                        <div class="list">
+                            {% for item in disagreement_watch %}
+                            <div class="list-row">
+                                <strong>{{ item.label }}</strong>
+                                <span>{{ item.sources }} sources · {{ item.status }}</span>
+                                <span>{{ item.disagreement }}/99</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </section>
+                    <section class="panel">
+                        <div class="section-title">
+                            <h3>Automation guarantees</h3>
+                            <span>stable by design</span>
+                        </div>
+                        <div class="memory-note">
+                            <div>
+                                <strong>GitHub Actions scheduler</strong>
+                                <span>Regenerates the whole site on every cycle.</span>
+                            </div>
+                            <div>
+                                <strong>Git-backed state</strong>
+                                <span>Snapshots persist in the repo, so memory survives runner resets.</span>
+                            </div>
+                            <div>
+                                <strong>GitHub Pages output</strong>
+                                <span>Static delivery means no runtime backend to break.</span>
+                            </div>
+                            <div>
+                                <strong>Cluster intelligence</strong>
+                                <span>Related headlines are grouped into local story families so repeated coverage becomes usable signal, not noise.</span>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </section>
+
+            <footer class="footer">
+                <span>Built entirely from free tooling: Python libs, public RSS, GitHub Actions, GitHub Pages.</span>
+                <span>Last regeneration: {{ updated }}</span>
+            </footer>
         </div>
-    </main>
+    </div>
 
     <script>
         const ARTICLES = {{ articles_json }};
-        const MAP_DATA = {{ map_json }};
+        const CATEGORY_OPTIONS = {{ categories_json }};
 
-        function init() {
-            renderGrid();
-            renderMap();
+        const state = {
+            search: '',
+            category: 'All',
+            sort: 'score'
+        };
+
+        const articleGrid = document.getElementById('articleGrid');
+        const categoryFilters = document.getElementById('categoryFilters');
+        const searchInput = document.getElementById('searchInput');
+        const sortSelect = document.getElementById('sortSelect');
+
+        function scoreImpactValue(article) {
+            if (article.impact_level === 'Critical') return 3;
+            if (article.impact_level === 'High') return 2;
+            return 1;
         }
 
-        function renderMap() {
-            const map = L.map('map', { center: [20, 10], zoom: 2, zoomControl: false, attributionControl: false });
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-            MAP_DATA.forEach(pt => {
-                const color = pt.val >= 85 ? '#ef4444' : '#38bdf8';
-                L.circle([pt.lat, pt.lng], { color: color, fillColor: color, fillOpacity: 0.3, radius: 500000, weight: 1 }).addTo(map);
+        function matchesSearch(article, query) {
+            if (!query) return true;
+            const haystack = [
+                article.title,
+                article.summary,
+                article.source,
+                article.category,
+                article.cluster_label,
+                ...((article.sectors) || []),
+                ...(article.keywords || []),
+                ...((article.entities && article.entities.gpe) || []),
+                ...((article.entities && article.entities.orgs) || []),
+                ...((article.entities && article.entities.persons) || [])
+            ].join(' ').toLowerCase();
+            return haystack.includes(query);
+        }
+
+        function filteredArticles() {
+            const query = state.search.trim().toLowerCase();
+            return ARTICLES
+                .filter((article) => state.category === 'All' || article.category === state.category)
+                .filter((article) => matchesSearch(article, query))
+                .sort((a, b) => {
+                    if (state.sort === 'latest') return (b.published_dt || '').localeCompare(a.published_dt || '');
+                    if (state.sort === 'source') return a.source.localeCompare(b.source);
+                    if (state.sort === 'impact') return scoreImpactValue(b) - scoreImpactValue(a) || b.virality_score - a.virality_score;
+                    return b.virality_score - a.virality_score;
+                });
+        }
+
+        function renderFilters() {
+            const filters = ['All', ...CATEGORY_OPTIONS];
+            categoryFilters.innerHTML = filters.map((category) => `
+                <button class="filter-chip ${state.category === category ? 'active' : ''}" data-category="${category}">${category}</button>
+            `).join('');
+            categoryFilters.querySelectorAll('[data-category]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    state.category = button.dataset.category;
+                    renderFilters();
+                    renderArticles();
+                });
             });
         }
 
-        function renderGrid() {
-            const grid = document.getElementById('cardGrid');
-            grid.innerHTML = ARTICLES.map(a => `
-                <article class="intel-card">
-                    <div class="card-meta">
-                        <span class="card-source">${a.source}</span>
-                        <span>${a.category}</span>
-                    </div>
-                    <h2 class="card-title"><a href="${a.url}" target="_blank">${a.title}</a></h2>
-                    <div class="tag-row">
-                        ${(a.entities?.gpe || []).slice(0,3).map(e => `<span class="tag tag-gpe">${e}</span>`).join('')}
-                        ${(a.entities?.orgs || []).slice(0,2).map(e => `<span class="tag tag-org">${e}</span>`).join('')}
-                        ${(a.entities?.persons || []).slice(0,1).map(e => `<span class="tag">${e}</span>`).join('')}
-                    </div>
-                    <div class="card-footer">
-                        <span class="score-pill ${a.virality_score>=85?'critical':''}">${a.virality_score}% VIRALITY</span>
-                        <span style="font-size: 0.7rem; font-weight: 700; color: var(--text-dim);">${a.sentiment.toUpperCase()} SENTIMENT</span>
-                    </div>
-                </article>
-            `).join('');
+        function sentimentLabel(article) {
+            return (article.sentiment || 'neutral').toUpperCase();
         }
 
-        init();
+        function renderArticles() {
+            const items = filteredArticles();
+            if (!items.length) {
+                articleGrid.innerHTML = '<div class="empty-state">No matching signals. Try another keyword, category, or sort mode.</div>';
+                return;
+            }
+
+            articleGrid.innerHTML = items.map((article, index) => {
+                const tags = [
+                    ...((article.sectors) || []).slice(0, 1),
+                    ...(article.keywords || []).slice(0, 3),
+                    ...((article.entities && article.entities.gpe) || []).slice(0, 2),
+                    ...((article.entities && article.entities.orgs) || []).slice(0, 1)
+                ].slice(0, 6);
+
+                return `
+                    <article class="article-card" style="animation-delay:${Math.min(index * 40, 320)}ms">
+                        <div class="card-top">
+                            <div class="card-kicker">
+                                <span>${article.category}</span>
+                                <span>•</span>
+                                <span>${article.source}</span>
+                            </div>
+                            <div class="impact ${String(article.impact_level || 'Monitor').toLowerCase()}">${article.impact_level || 'Monitor'}</div>
+                        </div>
+                        <h3><a href="${article.url}" target="_blank" rel="noreferrer">${article.title}</a></h3>
+                        <p>${article.summary || 'No summary available.'}</p>
+                        <div class="tag-row">${tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}</div>
+                        <div class="card-bottom">
+                            <div class="score">
+                                <strong>${article.virality_score}/99</strong>
+                                <div class="meter"><i style="width:${Math.max(8, article.virality_score)}%"></i></div>
+                            </div>
+                            <div class="card-kicker">
+                                <span>${article.cluster_size || 1}x family</span>
+                                <span>•</span>
+                                <span>${article.cluster_label || 'single signal'}</span>
+                                <span>•</span>
+                                <span>${article.cluster_consensus || article.virality_score}/99 consensus</span>
+                                <span>•</span>
+                                <span>${sentimentLabel(article)}</span>
+                                <span>•</span>
+                                <span>${article.published || 'Just now'}</span>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
+
+        searchInput.addEventListener('input', (event) => {
+            state.search = event.target.value;
+            renderArticles();
+        });
+
+        sortSelect.addEventListener('change', (event) => {
+            state.sort = event.target.value;
+            renderArticles();
+        });
+
+        renderFilters();
+        renderArticles();
     </script>
 </body>
 </html>
