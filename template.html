@@ -3,455 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>SpotPulse | Tactical Intelligence Matrix</title>
+    <title>{{ title }} | Tactical Command</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <style>
         :root {
-            --bg: #050505;
-            --surface: #0a0a0a;
-            --surface-raised: #111111;
-            --border: #1a1a1a;
-            --accent: #2f81f7;
-            --accent-dim: rgba(47, 129, 247, 0.15);
-            --text: #e6edf3;
-            --text-dim: #7d8590;
-            --critical: #f85149;
-            --high: #ff7b72;
-            --positive: #3fb950;
-            --sidebar-width: 260px;
+            --bg: #020617;
+            --sidebar: #0f172a;
+            --surface: #1e293b;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.2);
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --border: #334155;
+            --danger: #ef4444;
+            --success: #22c55e;
+            --warning: #f59e0b;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { 
             background-color: var(--bg); 
-            color: var(--text); 
+            color: var(--text-main); 
             font-family: 'Inter', sans-serif; 
-            display: flex; 
-            height: 100vh; 
+            line-height: 1.5; 
             overflow: hidden; 
-            -webkit-font-smoothing: antialiased;
+            height: 100vh;
+            display: flex;
         }
 
-        /* Technical Background */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: 
-                radial-gradient(var(--border) 1px, transparent 1px);
-            background-size: 32px 32px;
-            opacity: 0.3;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        /* Sidebar */
+        /* Palantir Sidebar */
         aside {
-            width: var(--sidebar-width);
-            background: var(--surface);
+            width: 260px;
+            background: var(--sidebar);
             border-right: 1px solid var(--border);
             display: flex;
             flex-direction: column;
-            z-index: 100;
-        }
-
-        .sidebar-header {
             padding: 1.5rem;
-            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
         }
+        .logo-area { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2.5rem; }
+        .logo-box { width: 32px; height: 32px; background: var(--accent); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 900; color: #000; font-size: 1rem; }
+        .logo-text { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.02em; }
+        
+        .nav-group { margin-bottom: 2rem; }
+        .nav-label { font-size: 0.65rem; font-weight: 800; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; display: block; }
+        .nav-link { display: flex; align-items: center; gap: 0.75rem; color: var(--text-dim); text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 0.6rem 0.75rem; border-radius: 0.5rem; transition: 0.2s; margin-bottom: 0.25rem; }
+        .nav-link:hover, .nav-link.active { background: rgba(56, 189, 248, 0.1); color: var(--accent); }
+        .nav-link span { font-size: 1.1rem; }
 
-        .logo { 
-            font-family: 'Outfit', sans-serif; 
-            font-size: 1.25rem; 
-            font-weight: 900; 
-            letter-spacing: -0.03em;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .logo span { color: var(--accent); }
-        .logo-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 10px var(--accent); }
-
-        .nav-group {
-            padding: 1.5rem 0.75rem;
-            flex: 1;
-            overflow-y: auto;
-        }
-
-        .nav-label {
-            font-size: 0.65rem;
-            font-weight: 800;
-            color: var(--text-dim);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            padding: 0 0.75rem 0.75rem;
-        }
-
-        .nav-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.6rem 0.75rem;
-            border-radius: 6px;
-            color: var(--text);
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 500;
-            margin-bottom: 0.25rem;
-            transition: all 0.2s;
-        }
-
-        .nav-item:hover { background: var(--surface-raised); }
-        .nav-item.active { background: var(--accent-dim); color: var(--accent); }
-        .nav-count { font-size: 0.65rem; font-weight: 700; opacity: 0.6; }
-
-        /* Main Content */
+        /* Main Content Area */
         main {
-            flex: 1;
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 0;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
-            position: relative;
         }
 
-        /* Top Bar */
-        .top-bar {
-            height: 48px;
-            background: var(--surface);
+        header {
+            padding: 1rem 2rem;
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
             display: flex;
-            align-items: center;
-            padding: 0 1rem;
             justify-content: space-between;
-            z-index: 90;
+            align-items: center;
+            position: sticky; top: 0; z-index: 100;
         }
+        .header-left h1 { font-size: 1rem; font-weight: 700; color: var(--text-main); }
+        .header-right { display: flex; align-items: center; gap: 1.5rem; }
+        .market-item { font-size: 0.75rem; font-weight: 600; display: flex; gap: 0.4rem; }
+        .m-name { color: var(--text-dim); }
+        .m-up { color: var(--success); }
+        .m-down { color: var(--danger); }
 
-        .ticker-wrap {
-            flex: 1;
-            overflow: hidden;
-            white-space: nowrap;
-            margin: 0 2rem;
+        .content-scroll { padding: 2rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+
+        /* AIP Briefing Panel */
+        .aip-panel {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(15, 23, 42, 0.5) 100%);
+            border: 1px solid var(--accent);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
             position: relative;
-        }
-        .ticker-wrap::after {
-            content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 40px;
-            background: linear-gradient(to right, transparent, var(--surface));
-        }
-
-        .ticker {
-            display: inline-block;
-            animation: ticker 40s linear infinite;
-            font-size: 0.7rem;
-            font-weight: 600;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        @keyframes ticker {
-            0% { transform: translateX(10%); }
-            100% { transform: translateX(-100%); }
-        }
-
-        .system-status {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            font-size: 0.65rem;
-            font-weight: 700;
-            color: var(--text-dim);
-        }
-
-        .status-pill {
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-            background: rgba(63, 185, 80, 0.1);
-            color: var(--positive);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            border: 1px solid rgba(63, 185, 80, 0.2);
-        }
-
-        /* Dashboard View */
-        .dashboard-container {
-            flex: 1;
-            display: grid;
-            grid-template-columns: 1fr 400px;
             overflow: hidden;
         }
+        .aip-panel::after { content: "AIP INTELLIGENCE"; position: absolute; top: 0.75rem; right: 1rem; font-size: 0.6rem; font-weight: 900; color: var(--accent); opacity: 0.5; }
+        .aip-title { font-size: 0.75rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .aip-text { font-size: 0.95rem; color: #cbd5e1; font-weight: 500; line-height: 1.6; }
 
-        /* Left Panel: Map & Analytics */
-        .visual-panel {
-            display: flex;
-            flex-direction: column;
-            padding: 1rem;
-            gap: 1rem;
-            overflow-y: auto;
-        }
+        /* Map & Grid Layout */
+        .dashboard-grid { display: grid; grid-template-columns: 1fr 340px; gap: 1.5rem; margin-bottom: 2rem; }
+        #map { height: 400px; width: 100%; border-radius: 1rem; border: 1px solid var(--border); background: #020617; }
+        .leaflet-tile { filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%); opacity: 0.2; }
 
-        #map {
-            height: 400px;
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            background: #000;
-        }
+        .stat-sidebar { display: flex; flex-direction: column; gap: 1rem; }
+        .stat-card { background: var(--sidebar); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+        .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); font-family: 'Outfit', sans-serif; }
+        .stat-label { font-size: 0.7rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; }
 
-        .leaflet-tile { filter: invert(100%) hue-rotate(180deg) brightness(0.6) contrast(1.2); opacity: 0.4 !important; }
+        /* Article Cards */
+        .intel-list { display: grid; gap: 1rem; }
+        .intel-card { background: var(--sidebar); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; transition: 0.2s; position: relative; }
+        .intel-card:hover { border-color: var(--accent); background: rgba(56, 189, 248, 0.02); }
+        .card-meta { display: flex; justify-content: space-between; font-size: 0.65rem; font-weight: 700; color: var(--text-dim); margin-bottom: 0.75rem; text-transform: uppercase; }
+        .card-source { color: var(--accent); }
+        .card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: #fff; line-height: 1.4; }
+        .card-title a { color: inherit; text-decoration: none; }
+        
+        .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
+        .tag { font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; background: rgba(255,255,255,0.05); color: #94a3b8; border: 1px solid rgba(255,255,255,0.1); }
+        .tag-gpe { border-color: var(--danger); color: #f87171; }
+        .tag-org { border-color: var(--accent); color: #38bdf8; }
 
-        .analytics-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.25rem;
-        }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .card-label { font-size: 0.7rem; font-weight: 800; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; }
-
-        /* Right Panel: Feed */
-        .feed-panel {
-            background: var(--surface);
-            border-left: 1px solid var(--border);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .panel-header {
-            padding: 1rem;
-            border-bottom: 1px solid var(--border);
-            background: var(--surface-raised);
-        }
-
-        .feed-scroll {
-            flex: 1;
-            overflow-y: auto;
-            padding: 0.5rem;
-        }
-
-        /* Intelligence Records (Cards) */
-        .intel-record {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            margin-bottom: 0.5rem;
-            padding: 0.75rem;
-            transition: border-color 0.2s;
-            position: relative;
-        }
-
-        .intel-record:hover { border-color: var(--accent); }
-        .intel-record.critical { border-left: 3px solid var(--critical); }
-
-        .record-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.6rem;
-            font-weight: 800;
-            color: var(--text-dim);
-            text-transform: uppercase;
-            margin-bottom: 0.4rem;
-        }
-
-        .record-id { color: var(--accent); }
-
-        .record-title {
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 0.6rem;
-            line-height: 1.3;
-        }
-        .record-title a { color: inherit; text-decoration: none; }
-
-        .tag-row { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.75rem; }
-        .tag { font-size: 0.55rem; font-weight: 800; padding: 0.15rem 0.4rem; border-radius: 2px; text-transform: uppercase; }
-        .tag-gpe { background: rgba(248, 81, 73, 0.1); color: var(--critical); }
-        .tag-org { background: rgba(47, 129, 247, 0.1); color: var(--accent); }
-
-        .record-footer {
-            display: flex;
-            gap: 1rem;
-            border-top: 1px solid var(--border);
-            padding-top: 0.6rem;
-            align-items: center;
-        }
-
-        .impact-meter {
-            height: 4px;
-            width: 60px;
-            background: var(--border);
-            border-radius: 2px;
-            overflow: hidden;
-        }
-        .impact-fill { height: 100%; background: var(--accent); }
-
-        .footer-stat { font-size: 0.6rem; font-weight: 800; color: var(--text-dim); }
-
-        /* Scrollbars */
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-thumb { background: var(--border); }
+        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 0.75rem; }
+        .score-pill { font-size: 0.65rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: 99px; background: rgba(56, 189, 248, 0.1); color: var(--accent); }
+        .score-pill.critical { background: rgba(239, 68, 68, 0.1); color: var(--danger); }
 
         @media (max-width: 1024px) {
             aside { display: none; }
-            .dashboard-container { grid-template-columns: 1fr; }
-            .feed-panel { display: none; }
+            .dashboard-grid { grid-template-columns: 1fr; }
         }
+
+        /* Scrollbars */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
     </style>
 </head>
 <body>
     <aside>
-        <div class="sidebar-header">
-            <div class="logo">
-                <div class="logo-dot"></div>
-                Spot<span>Pulse</span>
-            </div>
+        <div class="logo-area">
+            <div class="logo-box">S</div>
+            <div class="logo-text">SPOT<span>PULSE</span></div>
         </div>
-        <div class="nav-group">
-            <div class="nav-label">Global Matrix</div>
-            <a href="#" class="nav-item active">
-                <span>Unified Intelligence</span>
-                <span class="nav-count">{{ stats.total }}</span>
-            </a>
-            <a href="#" class="nav-item">
-                <span>Critical Velocity</span>
-                <span class="nav-count" style="color: var(--critical)">{{ stats.trending }}</span>
-            </a>
+        
+        <nav class="nav-group">
+            <span class="nav-label">Intelligence</span>
+            <a href="#" class="nav-link active"><span>🌐</span> Global Matrix</a>
+            <a href="#" class="nav-link"><span>🔥</span> Threat Map</a>
+            <a href="#" class="nav-link"><span>💻</span> Cyber Recon</a>
+        </nav>
 
-            <div class="nav-label" style="margin-top: 1.5rem;">Command Centers</div>
-            {% for cat, count in stats.categories.items() %}
-            <a href="#" class="nav-item">
-                <span>{{ cat }}</span>
-                <span class="nav-count">{{ count }}</span>
-            </a>
-            {% endfor %}
+        <nav class="nav-group">
+            <span class="nav-label">Systems</span>
+            <a href="#" class="nav-link"><span>📈</span> Markets</a>
+            <a href="#" class="nav-link"><span>📜</span> History</a>
+            <a href="#" class="nav-link"><span>⚙️</span> Settings</a>
+        </nav>
+
+        <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <div style="font-size: 0.6rem; color: var(--text-dim); font-weight: 700;">NODE STATUS</div>
+            <div style="font-size: 0.7rem; color: var(--success); display: flex; align-items: center; gap: 0.4rem; font-weight: 700;">
+                <div style="width: 6px; height: 6px; background: var(--success); border-radius: 50%;"></div> OPERATIONAL
+            </div>
         </div>
     </aside>
 
     <main>
-        <div class="top-bar">
-            <div class="system-status">
-                <div class="status-pill">LIVE MATRIX</div>
-                <span>24H ROLLING WINDOW</span>
+        <header>
+            <div class="header-left">
+                <h1>{{ updated }}</h1>
             </div>
-            <div class="ticker-wrap">
-                <div class="ticker" id="ticker"></div>
+            <div class="header-right">
+                {% for m in market_intel %}
+                <div class="market-item">
+                    <span class="m-name">{{ m.name }}</span>
+                    <span class="m-val">{{ m.price }}</span>
+                    <span class="{{ 'm-up' if '+' in m.change else 'm-down' }}">{{ m.change }}</span>
+                </div>
+                {% endfor %}
             </div>
-            <div class="system-status" id="utcClock">00:00:00 UTC</div>
-        </div>
+        </header>
 
-        <div class="dashboard-container">
-            <div class="visual-panel">
+        <div class="content-scroll">
+            <section class="aip-panel">
+                <div class="aip-title"><span>🤖</span> LOCAL INTELLIGENCE SUMMARY</div>
+                <p class="aip-text">{{ briefing }}</p>
+            </section>
+
+            <div class="dashboard-grid">
                 <div id="map"></div>
-                <div class="analytics-card">
-                    <div class="card-header">
-                        <div class="card-label">Threat Velocity Index</div>
-                        <div class="card-label" style="color: var(--accent)">Processing...</div>
+                <div class="stat-sidebar">
+                    <div class="stat-card">
+                        <div class="stat-num">{{ stats.total }}</div>
+                        <div class="stat-label">Total Signals Scanned</div>
                     </div>
-                    <div style="height: 160px;">
-                        <canvas id="threatChart"></canvas>
+                    <div class="stat-card">
+                        <div class="stat-num">{{ stats.trending }}</div>
+                        <div class="stat-label">Critical Alerts</div>
                     </div>
                 </div>
             </div>
 
-            <div class="feed-panel">
-                <div class="panel-header">
-                    <div class="card-label">Intelligence Stream</div>
-                </div>
-                <div class="feed-scroll" id="feedScroll"></div>
-            </div>
+            <div class="intel-list" id="cardGrid"></div>
         </div>
     </main>
 
     <script>
         const ARTICLES = {{ articles_json }};
-        const HISTORY = {{ history_json }};
         const MAP_DATA = {{ map_json }};
 
         function init() {
-            renderFeed();
-            renderChart();
+            renderGrid();
             renderMap();
-            renderTicker();
-            
-            setInterval(() => {
-                const now = new Date();
-                document.getElementById('utcClock').textContent = now.getUTCHours().toString().padStart(2,'0') + ":" + now.getUTCMinutes().toString().padStart(2,'0') + ":" + now.getUTCSeconds().toString().padStart(2,'0') + " UTC";
-            }, 1000);
-        }
-
-        function renderTicker() {
-            const ticker = document.getElementById('ticker');
-            ticker.textContent = ARTICLES.slice(0, 10).map(a => `[${a.source.toUpperCase()}] ${a.title}`).join(' // ');
         }
 
         function renderMap() {
             const map = L.map('map', { center: [20, 10], zoom: 2, zoomControl: false, attributionControl: false });
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
             MAP_DATA.forEach(pt => {
-                const color = pt.val >= 90 ? '#f85149' : (pt.val >= 75 ? '#ff7b72' : '#2f81f7');
-                L.circle([pt.lat, pt.lng], { color: color, fillColor: color, fillOpacity: 0.4, radius: (pt.val/100)*800000, weight: 1 })
-                    .addTo(map).bindPopup(`<b style="color:#000">${pt.title}</b>`);
+                const color = pt.val >= 85 ? '#ef4444' : '#38bdf8';
+                L.circle([pt.lat, pt.lng], { color: color, fillColor: color, fillOpacity: 0.3, radius: 500000, weight: 1 }).addTo(map);
             });
         }
 
-        function renderChart() {
-            const ctx = document.getElementById('threatChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: HISTORY.map(h => h.date.split('-').slice(1).join('/')),
-                    datasets: [{
-                        data: HISTORY.map(h => h.hot),
-                        borderColor: '#2f81f7',
-                        backgroundColor: 'rgba(47, 129, 247, 0.1)',
-                        fill: true, tension: 0.4, borderWidth: 2, pointRadius: 2
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: {
-                        x: { grid: { display: false }, ticks: { color: '#444', font: { size: 9 } } },
-                        y: { grid: { color: '#111' }, ticks: { color: '#444', font: { size: 9 } } }
-                    }
-                }
-            });
-        }
-
-        function renderFeed() {
-            const scroll = document.getElementById('feedScroll');
-            scroll.innerHTML = ARTICLES.map(a => `
-                <div class="intel-record ${a.impact_level === 'CRITICAL' ? 'critical' : ''}">
-                    <div class="record-meta">
-                        <span class="record-id">REC-${Math.random().toString(36).substr(2, 6).toUpperCase()}</span>
-                        <span>${a.source}</span>
+        function renderGrid() {
+            const grid = document.getElementById('cardGrid');
+            grid.innerHTML = ARTICLES.map(a => `
+                <article class="intel-card">
+                    <div class="card-meta">
+                        <span class="card-source">${a.source}</span>
+                        <span>${a.category}</span>
                     </div>
-                    <div class="record-title"><a href="${a.url}" target="_blank">${a.title}</a></div>
+                    <h2 class="card-title"><a href="${a.url}" target="_blank">${a.title}</a></h2>
                     <div class="tag-row">
-                        ${(a.entities?.gpe || []).slice(0,2).map(e => `<span class="tag tag-gpe">${e}</span>`).join('')}
+                        ${(a.entities?.gpe || []).slice(0,3).map(e => `<span class="tag tag-gpe">${e}</span>`).join('')}
                         ${(a.entities?.orgs || []).slice(0,2).map(e => `<span class="tag tag-org">${e}</span>`).join('')}
+                        ${(a.entities?.persons || []).slice(0,1).map(e => `<span class="tag">${e}</span>`).join('')}
                     </div>
-                    <div class="record-footer">
-                        <div class="impact-meter"><div class="impact-fill" style="width: ${a.virality_score}%"></div></div>
-                        <span class="footer-stat">${a.virality_score}% VIRALITY</span>
-                        <span class="footer-stat" style="color: ${a.sentiment==='positive'?'#3fb950':(a.sentiment==='negative'?'#f85149':'#7d8590')}">${a.sentiment.toUpperCase()}</span>
+                    <div class="card-footer">
+                        <span class="score-pill ${a.virality_score>=85?'critical':''}">${a.virality_score}% VIRALITY</span>
+                        <span style="font-size: 0.7rem; font-weight: 700; color: var(--text-dim);">${a.sentiment.toUpperCase()} SENTIMENT</span>
                     </div>
-                </div>
+                </article>
             `).join('');
         }
 
