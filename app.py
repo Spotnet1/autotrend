@@ -37,7 +37,7 @@ CNAME_FILE = OUTPUT_DIR / "CNAME"
 TEMPLATE_FILE = Path("template.html")
 
 SITE_TITLE = "AutoTrend Atlas"
-SITE_TAGLINE = "Autonomous trend radar for geopolitics, tech, macro and market-moving stories."
+SITE_TAGLINE = "A simple live view of the stories getting attention across the web."
 SITE_URL = "https://autotrend.pages.dev"
 KEEP_HOURS = 36
 MAX_ITEMS_PER_FEED = 12
@@ -596,7 +596,9 @@ def build_regions(articles: list[dict]) -> list[dict]:
     for region, count in counts.most_common(8):
         avg_score = round(sum(scores[region]) / max(len(scores[region]), 1))
         lat, lng = REGION_COORDS.get(region, [0, 0])
-        regions.append({"label": region, "count": count, "score": avg_score, "lat": lat, "lng": lng})
+        x = round(((lng + 180) / 360) * 100, 1)
+        y = round(((90 - lat) / 180) * 100, 1)
+        regions.append({"label": region, "count": count, "score": avg_score, "lat": lat, "lng": lng, "x": x, "y": y})
     return regions
 
 
@@ -661,14 +663,12 @@ def build_story_families(articles: list[dict]) -> list[dict]:
 
 def build_briefing(articles: list[dict], categories: list[dict], regions: list[dict]) -> str:
     if not articles:
-        return "No fresh signals yet. The dashboard is warm, but the current cycle did not return any public RSS stories."
+        return "No fresh stories yet. Check back in a bit for the next update."
     lead = articles[0]
-    parts = [
-        f"Top momentum is in {categories[0]['label']} ({categories[0]['count']} stories)" if categories else "Signal volume is stable",
-        f"with {regions[0]['label']} surfacing as the hottest watch region" if regions else "with no single region dominating the cycle",
-        f"and the lead story is \"{lead['title']}\" at {lead['virality_score']}/99." ,
-    ]
-    return " ".join(parts)
+    lead_text = f"Right now, the biggest story is \"{lead['title']}\"."
+    category_text = f"Most new stories today are in {categories[0]['label']}." if categories else ""
+    region_text = f"{regions[0]['label']} is getting the most attention." if regions else ""
+    return " ".join(part for part in [lead_text, category_text, region_text] if part)
 
 
 def load_recent_history(limit: int = 7) -> list[dict]:

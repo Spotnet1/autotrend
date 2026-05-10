@@ -10,20 +10,19 @@
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap');
 
         :root {
-            --bg: #07111f;
-            --bg-soft: #101d30;
-            --panel: rgba(12, 21, 36, 0.78);
-            --panel-strong: rgba(10, 18, 32, 0.92);
-            --line: rgba(157, 189, 255, 0.18);
-            --line-strong: rgba(157, 189, 255, 0.3);
-            --text: #f4f7fb;
-            --muted: #93a4bf;
-            --teal: #79f0d3;
-            --coral: #ff7a6b;
-            --gold: #f4cd7a;
-            --blue: #7fb7ff;
-            --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
-            --radius-xl: 32px;
+            --bg: #07111d;
+            --bg-soft: #0f1c2b;
+            --panel: rgba(11, 20, 33, 0.84);
+            --panel-2: rgba(18, 30, 48, 0.9);
+            --line: rgba(170, 204, 255, 0.13);
+            --text: #f3f6fb;
+            --muted: #99a9c1;
+            --teal: #7cf1d1;
+            --blue: #7bb5ff;
+            --sun: #ffd37d;
+            --coral: #ff816f;
+            --shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+            --radius-xl: 30px;
             --radius-lg: 22px;
             --radius-md: 16px;
         }
@@ -33,13 +32,13 @@
         body {
             margin: 0;
             min-height: 100vh;
-            font-family: 'Space Grotesk', sans-serif;
             color: var(--text);
+            font-family: 'Space Grotesk', sans-serif;
             background:
-                radial-gradient(circle at top left, rgba(121, 240, 211, 0.16), transparent 28%),
-                radial-gradient(circle at 85% 10%, rgba(127, 183, 255, 0.16), transparent 22%),
-                radial-gradient(circle at 50% 100%, rgba(255, 122, 107, 0.14), transparent 25%),
-                linear-gradient(180deg, #06101d 0%, #091523 48%, #06101a 100%);
+                radial-gradient(circle at top left, rgba(124, 241, 209, 0.18), transparent 28%),
+                radial-gradient(circle at 85% 12%, rgba(123, 181, 255, 0.18), transparent 24%),
+                radial-gradient(circle at 50% 100%, rgba(255, 129, 111, 0.12), transparent 22%),
+                linear-gradient(180deg, #06101a 0%, #09131f 100%);
             overflow-x: hidden;
         }
 
@@ -53,400 +52,460 @@
         }
 
         body::before {
-            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-            background-size: 42px 42px;
-            mask-image: linear-gradient(180deg, rgba(0,0,0,0.55), transparent 95%);
-            opacity: 0.22;
+            opacity: 0.18;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 38px 38px;
         }
 
         body::after {
-            background: radial-gradient(circle at center, transparent 0, rgba(4, 9, 15, 0.4) 60%, rgba(4, 9, 15, 0.75) 100%);
+            background: radial-gradient(circle at center, transparent 0, rgba(4, 8, 15, 0.35) 56%, rgba(4, 8, 15, 0.7) 100%);
         }
 
         a { color: inherit; }
+
         .page {
             position: relative;
             z-index: 1;
-            width: min(1440px, calc(100% - 32px));
+            width: min(100%, 1440px);
             margin: 0 auto;
-            padding: 20px 0 56px;
+            padding: 12px 12px 36px;
         }
 
         .shell {
-            background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
-            border: 1px solid rgba(255,255,255,0.09);
-            border-radius: 38px;
-            backdrop-filter: blur(18px);
-            box-shadow: var(--shadow);
             overflow: hidden;
+            border-radius: 28px;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012));
+            backdrop-filter: blur(16px);
+            box-shadow: var(--shadow);
+        }
+
+        .topbar,
+        .hero,
+        .overview,
+        .stories,
+        .footer {
+            padding-left: 16px;
+            padding-right: 16px;
         }
 
         .topbar {
-            display: flex;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
             align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            padding: 20px 24px;
+            gap: 12px 14px;
+            padding-top: 16px;
+            padding-bottom: 16px;
             border-bottom: 1px solid rgba(255,255,255,0.08);
-            background: rgba(7, 12, 22, 0.56);
+            background: rgba(7, 13, 22, 0.56);
         }
 
         .brand {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
+            min-width: 0;
+            grid-column: 1;
+            grid-row: 1;
         }
 
         .brand-mark {
-            width: 48px;
-            height: 48px;
-            border-radius: 15px;
+            width: 42px;
+            height: 42px;
+            flex: 0 0 42px;
+            border-radius: 14px;
             display: grid;
             place-items: center;
             background: linear-gradient(135deg, var(--teal), var(--blue));
-            color: #03111a;
-            font-size: 18px;
+            color: #041019;
             font-weight: 700;
-            box-shadow: 0 18px 40px rgba(121, 240, 211, 0.25);
+            box-shadow: 0 12px 30px rgba(124, 241, 209, 0.25);
         }
 
-        .brand-meta strong {
+        .brand-copy strong {
             display: block;
-            font-size: 1rem;
+            font-size: 0.98rem;
             letter-spacing: 0.08em;
             text-transform: uppercase;
         }
 
-        .brand-meta span {
+        .brand-copy span {
+            display: block;
             color: var(--muted);
-            font-size: 0.9rem;
+            font-size: 0.84rem;
+            line-height: 1.45;
         }
 
-        .topbar-right {
+        .topnav {
             display: flex;
-            align-items: center;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
-            justify-content: flex-end;
+            width: 100%;
+            grid-column: 1 / -1;
+            grid-row: 2;
         }
 
-        .mini-chip {
+        .topnav a,
+        .meta-link,
+        .category-chip,
+        .category-slide {
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.035);
+            color: var(--text);
+            transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+        }
+
+        .topnav a,
+        .meta-link {
             padding: 10px 14px;
             border-radius: 999px;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: rgba(255,255,255,0.04);
-            color: var(--muted);
+            font-size: 0.84rem;
+            white-space: nowrap;
+        }
+
+        .topnav a:hover,
+        .meta-link:hover,
+        .category-chip:hover,
+        .category-slide:hover { transform: translateY(-1px); }
+
+        .topbar-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            justify-self: end;
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .update-pill {
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(124, 241, 209, 0.08);
+            border: 1px solid rgba(124, 241, 209, 0.18);
+            color: var(--teal);
             font-size: 0.82rem;
         }
 
-        .mini-chip strong { color: var(--text); }
-
         .hero {
+            padding-top: 18px;
+            padding-bottom: 18px;
             display: grid;
-            grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr);
-            gap: 24px;
-            padding: 28px;
+            gap: 18px;
         }
 
-        .hero-main,
-        .hero-side,
+        .hero-copy,
+        .hero-featured,
         .panel,
-        .article-card,
-        .story-card {
-            background: var(--panel);
-            border: 1px solid var(--line);
+        .story-card,
+        .article-card {
             border-radius: var(--radius-xl);
+            border: 1px solid var(--line);
+            background: var(--panel);
             position: relative;
             overflow: hidden;
         }
 
-        .hero-main {
-            padding: 30px;
+        .hero-copy {
+            padding: 24px 20px;
             background:
-                radial-gradient(circle at top right, rgba(127, 183, 255, 0.16), transparent 26%),
-                linear-gradient(145deg, rgba(12, 21, 36, 0.96), rgba(12, 21, 36, 0.72));
+                radial-gradient(circle at top right, rgba(123, 181, 255, 0.16), transparent 30%),
+                linear-gradient(160deg, rgba(11, 20, 33, 0.97), rgba(12, 21, 36, 0.78));
         }
 
         .eyebrow {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            padding: 8px 14px;
+            gap: 8px;
+            padding: 8px 12px;
             border-radius: 999px;
-            background: rgba(121, 240, 211, 0.08);
+            background: rgba(124, 241, 209, 0.08);
+            border: 1px solid rgba(124, 241, 209, 0.18);
             color: var(--teal);
-            font-size: 0.8rem;
-            letter-spacing: 0.12em;
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
-            border: 1px solid rgba(121, 240, 211, 0.18);
         }
 
         .hero h1 {
-            margin: 18px 0 14px;
+            margin: 16px 0 12px;
             font-family: 'Instrument Serif', serif;
-            font-size: clamp(2.8rem, 7vw, 5rem);
+            font-size: clamp(2.6rem, 10vw, 4.8rem);
             line-height: 0.92;
             letter-spacing: -0.04em;
-            max-width: 12ch;
+            max-width: 10ch;
         }
 
-        .hero-copy {
+        .hero p {
+            margin: 0;
             max-width: 62ch;
-            color: #d6deea;
-            font-size: 1.06rem;
+            color: #d6dfeb;
             line-height: 1.75;
-            margin-bottom: 24px;
+            font-size: 1rem;
         }
 
-        .hero-actions {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-bottom: 26px;
-        }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            text-decoration: none;
-            padding: 12px 18px;
-            border-radius: 999px;
-            font-weight: 700;
-            font-size: 0.94rem;
-            transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-        }
-
-        .button.primary {
-            color: #03111a;
-            background: linear-gradient(135deg, var(--teal), #b4f8ea);
-            box-shadow: 0 12px 30px rgba(121, 240, 211, 0.26);
-        }
-
-        .button.secondary {
-            color: var(--text);
-            border: 1px solid rgba(255,255,255,0.12);
-            background: rgba(255,255,255,0.04);
-        }
-
-        .button:hover { transform: translateY(-2px); }
-
-        .hero-grid {
+        .hero-stats {
+            margin-top: 20px;
             display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 14px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
         }
 
-        .stat-card {
-            padding: 18px;
-            border-radius: var(--radius-lg);
-            background: rgba(255,255,255,0.04);
+        .stat {
+            padding: 14px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.035);
             border: 1px solid rgba(255,255,255,0.08);
         }
 
-        .stat-label {
+        .stat span {
+            display: block;
             color: var(--muted);
             font-size: 0.78rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
-        .stat-value {
-            font-size: clamp(1.45rem, 2vw, 2rem);
-            font-weight: 700;
+        .stat strong {
+            font-size: 1.3rem;
         }
 
-        .hero-side {
-            padding: 22px;
-            display: grid;
-            gap: 14px;
-            align-content: start;
+        .hero-featured {
+            padding: 20px;
             background:
-                radial-gradient(circle at top left, rgba(255, 122, 107, 0.18), transparent 32%),
-                linear-gradient(180deg, rgba(18, 28, 44, 0.94), rgba(9, 16, 27, 0.82));
+                radial-gradient(circle at top left, rgba(255, 129, 111, 0.16), transparent 34%),
+                linear-gradient(180deg, rgba(18, 30, 48, 0.95), rgba(9, 15, 24, 0.84));
         }
 
-        .section-title {
+        .section-head {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 12px;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
-        .section-title h2,
-        .section-title h3 {
+        .section-head h2,
+        .section-head h3 {
             margin: 0;
             font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.03em;
         }
 
-        .section-title span {
+        .section-head span {
             color: var(--muted);
-            font-size: 0.84rem;
+            font-size: 0.82rem;
+        }
+
+        .featured-list {
+            display: grid;
+            gap: 12px;
         }
 
         .story-card {
-            padding: 18px;
-            border-radius: var(--radius-lg);
+            padding: 16px;
             background: rgba(255,255,255,0.035);
-            transform: translateY(16px);
+            animation: rise 560ms ease forwards;
             opacity: 0;
-            animation: rise 650ms ease forwards;
+            transform: translateY(16px);
         }
 
         .story-card:nth-child(2) { animation-delay: 90ms; }
         .story-card:nth-child(3) { animation-delay: 180ms; }
 
-        .story-top {
+        .story-meta,
+        .article-meta,
+        .card-footer {
             display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            margin-bottom: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
             color: var(--muted);
             font-size: 0.78rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
         }
 
-        .story-card h3 {
-            margin: 0 0 10px;
-            font-size: 1rem;
+        .story-card h3,
+        .article-card h3 {
+            margin: 10px 0 8px;
+            font-size: 1.02rem;
             line-height: 1.5;
         }
 
-        .story-card p {
-            margin: 0;
-            color: #c4d0e2;
-            font-size: 0.92rem;
-            line-height: 1.65;
-        }
+        .story-card h3 a,
+        .article-card h3 a { text-decoration: none; }
+        .story-card p,
+        .article-card p { margin: 0; color: #cfdae7; line-height: 1.65; }
 
-        .story-score {
+        .story-link {
             display: inline-flex;
-            margin-top: 14px;
-            padding: 8px 12px;
-            border-radius: 999px;
-            background: rgba(255,255,255,0.06);
-            color: var(--gold);
-            font-size: 0.82rem;
+            margin-top: 12px;
+            color: var(--sun);
+            text-decoration: none;
+            font-size: 0.86rem;
             font-weight: 700;
         }
 
-        .stack-grid,
-        .overview-grid,
-        .explorer {
+        .overview {
+            padding-top: 4px;
+            padding-bottom: 4px;
             display: grid;
             gap: 18px;
-            padding: 0 28px 28px;
         }
 
-        .stack-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-        .overview-grid { grid-template-columns: 1.15fr 0.85fr 0.95fr; }
-        .explorer { grid-template-columns: 1fr 340px; align-items: start; }
+        .overview-grid,
+        .overview-bottom {
+            display: grid;
+            gap: 18px;
+        }
 
         .panel {
-            padding: 22px;
-            border-radius: var(--radius-xl);
-            background: linear-gradient(180deg, rgba(13, 22, 37, 0.95), rgba(10, 17, 29, 0.82));
+            padding: 20px;
+            background: linear-gradient(180deg, rgba(13, 22, 37, 0.96), rgba(10, 17, 29, 0.84));
         }
 
-        .stack-item h3,
-        .panel h3 {
-            margin: 0 0 10px;
-            font-size: 1.04rem;
+        .map-card {
+            min-height: 280px;
         }
 
-        .stack-item p,
-        .panel p,
-        .panel li,
-        .panel label,
-        .article-card p {
-            color: var(--muted);
-            line-height: 1.65;
+        .map-canvas {
+            position: relative;
+            min-height: 220px;
+            margin-top: 14px;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+            background:
+                radial-gradient(circle at 20% 32%, rgba(124, 241, 209, 0.12), transparent 20%),
+                radial-gradient(circle at 72% 34%, rgba(123, 181, 255, 0.14), transparent 24%),
+                radial-gradient(circle at 48% 70%, rgba(255, 211, 125, 0.14), transparent 18%),
+                linear-gradient(180deg, rgba(18, 30, 48, 0.9), rgba(10, 16, 24, 0.92));
         }
 
-        .stack-item {
-            padding: 22px;
-            border-radius: var(--radius-xl);
-            border: 1px solid var(--line);
-            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+        .map-canvas::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+            background-size: 56px 56px;
+            opacity: 0.35;
         }
 
-        .stack-item strong {
-            display: inline-flex;
-            margin-bottom: 12px;
-            color: var(--teal);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            font-size: 0.8rem;
+        .map-canvas::after {
+            content: "";
+            position: absolute;
+            inset: 12% 7%;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow:
+                inset 0 0 0 1px rgba(255,255,255,0.03),
+                0 0 40px rgba(123, 181, 255, 0.08);
         }
 
-        .bars {
+        .map-point {
+            position: absolute;
+            transform: translate(-50%, -50%);
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
-            gap: 12px;
+            gap: 4px;
+            justify-items: center;
+            text-align: center;
+        }
+
+        .map-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--teal), var(--blue));
+            box-shadow: 0 0 0 5px rgba(124, 241, 209, 0.12), 0 0 20px rgba(123, 181, 255, 0.28);
+            animation: pulse 2.4s ease-in-out infinite;
+        }
+
+        .map-point strong {
+            font-size: 0.75rem;
+            background: rgba(7, 14, 24, 0.78);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 5px 8px;
+            border-radius: 999px;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(34px, 1fr));
+            gap: 8px;
             align-items: end;
             min-height: 190px;
-            margin-top: 18px;
+            margin-top: 16px;
+        }
+
+        .bar-wrap {
+            display: grid;
+            justify-items: center;
+            gap: 6px;
         }
 
         .bar {
-            border-radius: 16px 16px 12px 12px;
-            border: 1px solid rgba(127, 183, 255, 0.18);
-            background: linear-gradient(180deg, rgba(127, 183, 255, 0.85), rgba(121, 240, 211, 0.25));
+            width: 100%;
+            min-height: 20px;
+            border-radius: 14px 14px 10px 10px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            padding: 10px 6px;
-            min-height: 26px;
-            transition: transform 180ms ease;
+            padding-bottom: 8px;
+            font-size: 0.72rem;
+            color: #06101a;
+            background: linear-gradient(180deg, var(--blue), var(--teal));
+            border: 1px solid rgba(255,255,255,0.08);
         }
 
-        .bar:hover { transform: translateY(-4px); }
-        .bar-wrap span { display: block; }
-        .bar-value {
-            margin-top: 10px;
-            font-size: 0.86rem;
-            color: var(--text);
-            font-weight: 700;
+        .bar-value { color: var(--text); font-size: 0.82rem; font-weight: 700; }
+        .bar-label { color: var(--muted); font-size: 0.72rem; }
+
+        .category-slider {
+            display: grid;
+            gap: 10px;
+            max-height: 294px;
+            overflow: auto;
+            padding-right: 4px;
+            scroll-snap-type: y proximity;
         }
-        .bar-label {
-            margin-top: 6px;
+
+        .category-slide {
+            width: 100%;
+            text-align: left;
+            padding: 14px;
+            border-radius: 18px;
+            cursor: pointer;
+            scroll-snap-align: start;
+        }
+
+        .category-slide.active,
+        .category-chip.active {
+            background: rgba(124, 241, 209, 0.12);
+            border-color: rgba(124, 241, 209, 0.34);
+        }
+
+        .category-slide strong {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.94rem;
+        }
+
+        .category-slide span {
+            display: block;
             color: var(--muted);
-            font-size: 0.78rem;
+            font-size: 0.82rem;
         }
-
-        .list {
-            display: grid;
-            gap: 12px;
-        }
-
-        .list-row {
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            gap: 12px;
-            align-items: center;
-            padding: 12px 14px;
-            border-radius: 16px;
-            background: rgba(255,255,255,0.035);
-            border: 1px solid rgba(255,255,255,0.06);
-        }
-
-        .list-row strong { font-size: 0.96rem; }
-        .list-row span { color: var(--muted); font-size: 0.86rem; }
-        .delta.up { color: var(--teal); }
-        .delta.down { color: var(--coral); }
 
         .progress {
             height: 8px;
+            overflow: hidden;
             border-radius: 999px;
             background: rgba(255,255,255,0.08);
-            overflow: hidden;
-            position: relative;
+            margin-top: 10px;
         }
 
         .progress i {
@@ -456,75 +515,76 @@
             background: linear-gradient(90deg, var(--blue), var(--teal));
         }
 
-        .chip-cloud {
+        .topic-list,
+        .region-list { display: grid; gap: 10px; }
+
+        .topic-item,
+        .region-item {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
             gap: 10px;
-        }
-
-        .pulse-chip,
-        .filter-chip {
-            padding: 10px 14px;
-            border-radius: 999px;
-            border: 1px solid rgba(255,255,255,0.09);
+            padding: 12px 14px;
+            border-radius: 16px;
             background: rgba(255,255,255,0.035);
-            color: #d8e1ec;
-            font-size: 0.86rem;
-            cursor: pointer;
+            border: 1px solid rgba(255,255,255,0.07);
         }
 
-        .pulse-chip strong { color: var(--gold); }
-        .filter-chip.active {
-            background: rgba(121, 240, 211, 0.12);
-            border-color: rgba(121, 240, 211, 0.34);
-            color: var(--teal);
+        .topic-item span,
+        .region-item span { color: var(--muted); font-size: 0.82rem; }
+
+        .source-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9rem;
         }
 
-        .alert-stack {
+        .source-table th,
+        .source-table td {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            text-align: left;
+        }
+
+        .source-table th { color: var(--muted); font-size: 0.78rem; font-weight: 500; }
+        .source-table td:last-child,
+        .source-table th:last-child { text-align: right; }
+
+        .stories {
+            padding-top: 14px;
+            padding-bottom: 28px;
             display: grid;
-            gap: 12px;
-        }
-
-        .alert-item {
-            padding: 14px 16px;
-            border-radius: 18px;
-            border: 1px solid rgba(255,255,255,0.08);
-            background: rgba(255,255,255,0.035);
-        }
-
-        .alert-item strong {
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        .alert-item.high strong { color: var(--coral); }
-        .alert-item.watch strong { color: var(--gold); }
-        .alert-item.info strong { color: var(--teal); }
-
-        .explorer-main {
-            display: grid;
-            gap: 18px;
+            gap: 16px;
         }
 
         .controls {
             display: grid;
-            gap: 16px;
-            padding: 20px;
-            border-radius: var(--radius-xl);
+            gap: 14px;
+            padding: 18px;
+            border-radius: 22px;
             background: rgba(255,255,255,0.03);
             border: 1px solid rgba(255,255,255,0.08);
         }
 
-        .control-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            align-items: center;
+        .control-top {
+            display: grid;
+            gap: 10px;
         }
 
-        .search {
-            flex: 1 1 280px;
-            min-width: 0;
+        .results-strip {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            color: var(--muted);
+            font-size: 0.84rem;
+        }
+
+        .results-strip strong {
+            color: var(--text);
+            font-weight: 700;
         }
 
         .search input,
@@ -538,70 +598,85 @@
             font: inherit;
         }
 
+        .category-row {
+            display: flex;
+            gap: 8px;
+            overflow: auto;
+            padding-bottom: 2px;
+        }
+
+        .category-chip {
+            padding: 10px 14px;
+            border-radius: 999px;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 0.84rem;
+        }
+
         .article-grid {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 16px;
-        }
-
-        .article-card {
-            padding: 20px;
-            display: grid;
             gap: 14px;
-            border-radius: 22px;
-            background: linear-gradient(180deg, rgba(12, 21, 36, 0.95), rgba(8, 14, 24, 0.9));
-            transform: translateY(18px);
-            opacity: 0;
-            animation: rise 560ms ease forwards;
         }
 
-        .card-top,
-        .card-bottom {
+        .pager {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 12px;
+            justify-content: center;
+            gap: 8px;
             flex-wrap: wrap;
         }
 
-        .card-kicker {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.78rem;
-            color: var(--muted);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
+        .pager button {
+            min-width: 40px;
+            height: 40px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.035);
+            color: var(--text);
+            font: inherit;
+            cursor: pointer;
         }
 
-        .impact {
+        .pager button.active {
+            background: rgba(124, 241, 209, 0.12);
+            border-color: rgba(124, 241, 209, 0.34);
+        }
+
+        .pager button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .article-card {
+            padding: 18px;
+            display: grid;
+            gap: 12px;
+            background: linear-gradient(180deg, rgba(12, 21, 36, 0.96), rgba(8, 14, 24, 0.92));
+            animation: rise 520ms ease forwards;
+            opacity: 0;
+            transform: translateY(16px);
+        }
+
+        .article-card .article-meta {
+            justify-content: space-between;
+        }
+
+        .status-pill {
             padding: 7px 10px;
             border-radius: 999px;
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             font-weight: 700;
             background: rgba(255,255,255,0.06);
         }
 
-        .impact.critical { color: var(--coral); }
-        .impact.high { color: var(--gold); }
-        .impact.monitor { color: var(--teal); }
-
-        .article-card h3 {
-            margin: 0;
-            font-size: 1.1rem;
-            line-height: 1.5;
-        }
-
-        .article-card h3 a {
-            text-decoration: none;
-        }
-
-        .article-card h3 a:hover { color: var(--teal); }
+        .status-pill.new { color: var(--coral); }
+        .status-pill.popular { color: var(--sun); }
+        .status-pill.watch { color: var(--teal); }
 
         .tag-row {
             display: flex;
-            flex-wrap: wrap;
             gap: 8px;
+            flex-wrap: wrap;
         }
 
         .tag {
@@ -609,76 +684,42 @@
             border-radius: 999px;
             background: rgba(255,255,255,0.05);
             border: 1px solid rgba(255,255,255,0.08);
-            color: #c6d2e5;
+            color: #d3deea;
             font-size: 0.78rem;
         }
 
-        .score {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.84rem;
-            color: var(--muted);
-        }
-
-        .score strong { color: var(--text); }
-
-        .meter {
-            width: 110px;
-            height: 8px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 999px;
-            overflow: hidden;
-        }
-
-        .meter i {
-            display: block;
-            height: 100%;
-            background: linear-gradient(90deg, var(--blue), var(--teal), var(--gold), var(--coral));
-        }
-
-        .sidebar-stack {
-            display: grid;
-            gap: 18px;
-            position: sticky;
-            top: 24px;
-        }
-
-        .memory-note {
-            display: grid;
-            gap: 12px;
-        }
-
-        .memory-note div {
-            padding: 14px 16px;
-            border-radius: 18px;
-            background: rgba(255,255,255,0.035);
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .memory-note strong {
-            display: block;
-            margin-bottom: 6px;
-            color: var(--text);
-        }
-
-        .footer {
-            display: flex;
+        .card-footer {
             justify-content: space-between;
-            gap: 12px;
-            padding: 0 28px 28px;
-            color: var(--muted);
-            font-size: 0.86rem;
-            flex-wrap: wrap;
         }
 
         .empty-state {
-            padding: 28px;
+            padding: 26px;
             border-radius: 22px;
-            border: 1px dashed rgba(255,255,255,0.16);
+            border: 1px dashed rgba(255,255,255,0.14);
             color: var(--muted);
             text-align: center;
         }
+
+        .footer {
+            padding-top: 18px;
+            padding-bottom: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            color: var(--muted);
+            font-size: 0.84rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a { text-decoration: none; }
 
         @keyframes rise {
             to {
@@ -687,41 +728,45 @@
             }
         }
 
-        @media (max-width: 1180px) {
-            .hero,
-            .overview-grid,
-            .explorer,
-            .stack-grid {
-                grid-template-columns: 1fr;
-            }
-            .sidebar-stack { position: static; }
-            .hero-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.18); }
         }
 
-        @media (max-width: 760px) {
-            .page { width: min(100% - 18px, 100%); }
-            .shell { border-radius: 26px; }
+        @media (min-width: 760px) {
+            .page { padding: 18px 18px 42px; }
             .topbar,
             .hero,
-            .stack-grid,
-            .overview-grid,
-            .explorer,
-            .footer { padding-left: 16px; padding-right: 16px; }
+            .overview,
+            .stories,
+            .footer { padding-left: 22px; padding-right: 22px; }
+            .topbar { grid-template-columns: auto minmax(0, 1fr) auto; }
+            .topbar-meta {
+                grid-column: 3;
+                grid-row: 1;
+            }
+            .topnav {
+                grid-column: 2;
+                grid-row: 1;
+                width: auto;
+                justify-content: center;
+            }
+            .hero-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+            .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .control-top { grid-template-columns: minmax(0, 1fr) 220px; align-items: center; }
+        }
+
+        @media (min-width: 1024px) {
+            .page { padding: 20px 20px 48px; }
+            .topbar,
             .hero,
-            .stack-grid,
-            .overview-grid,
-            .explorer { padding-bottom: 18px; }
-            .hero-main,
-            .hero-side,
-            .panel,
-            .stack-item,
-            .controls,
-            .article-card { border-radius: 22px; }
-            .hero h1 { font-size: 2.7rem; }
-            .hero-grid,
-            .article-grid { grid-template-columns: 1fr; }
-            .topbar { align-items: flex-start; }
-            .topbar-right { justify-content: flex-start; }
+            .overview,
+            .stories,
+            .footer { padding-left: 28px; padding-right: 28px; }
+            .hero { grid-template-columns: minmax(0, 1.2fr) 420px; }
+            .overview-grid { grid-template-columns: 1.1fr 0.95fr 0.8fr; }
+            .overview-bottom { grid-template-columns: 1fr 0.9fr; }
+            .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
     </style>
 </head>
@@ -731,422 +776,203 @@
             <header class="topbar">
                 <div class="brand">
                     <div class="brand-mark">AT</div>
-                    <div class="brand-meta">
+                    <div class="brand-copy">
                         <strong>{{ title }}</strong>
                         <span>{{ tagline }}</span>
                     </div>
                 </div>
-                <div class="topbar-right">
-                    <div class="mini-chip"><strong>{{ stats.feeds }}</strong> feed lanes</div>
-                    <div class="mini-chip"><strong>{{ stats.sources }}</strong> source brands</div>
-                    <div class="mini-chip"><strong>{{ memory.days_tracked }}</strong> day memory</div>
-                    <div class="mini-chip"><strong>{{ updated }}</strong></div>
-                </div>
-            </header>
 
-            <section class="hero">
-                <div class="hero-main">
-                    <div class="eyebrow">Static intelligence cockpit · zero paid APIs · self-healing memory</div>
-                    <h1>Most featured. Most intelligence. Fully free.</h1>
-                    <p class="hero-copy">{{ briefing }} The entire stack runs on Python, public RSS, GitHub Actions, and GitHub Pages. Local snapshot memory keeps the system evolving without external AI, vector DBs, or memory APIs.</p>
-                    <div class="hero-actions">
-                        <a class="button primary" href="#explorer">Open signal explorer</a>
-                        <a class="button secondary" href="trending.rss">RSS feed</a>
-                        <a class="button secondary" href="trends.json">JSON data</a>
+                <nav class="topnav">
+                    <a href="#overview">Overview</a>
+                    <a href="#stories">Stories</a>
+                    <a href="#sources">Sources</a>
+                </nav>
+
+                    <div class="topbar-meta">
+                        <div class="update-pill">Updated {{ updated }}</div>
+                        <a class="meta-link" href="trending.rss">Updates</a>
+                        <a class="meta-link" href="trends.json">Download</a>
                     </div>
-                    <div class="hero-grid">
-                        <div class="stat-card">
-                            <div class="stat-label">Signals in memory</div>
-                            <div class="stat-value">{{ stats.total }}</div>
+                </header>
+
+            <section class="hero" id="overview">
+                <div class="hero-copy">
+                    <div class="eyebrow">Today's updates</div>
+                    <h1>See what is getting attention right now.</h1>
+                    <p>{{ briefing }} Browse the top stories, check the map, and filter everything by category in one clean view.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span>Stories right now</span>
+                            <strong>{{ stats.total }}</strong>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-label">High-momentum alerts</div>
-                            <div class="stat-value">{{ stats.trending }}</div>
+                        <div class="stat">
+                            <span>Popular now</span>
+                            <strong>{{ stats.trending }}</strong>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-label">Breaking now</div>
-                            <div class="stat-value">{{ stats.breaking }}</div>
+                        <div class="stat">
+                            <span>Fresh updates</span>
+                            <strong>{{ stats.breaking }}</strong>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-label">Memory mode</div>
-                            <div class="stat-value">Local-only</div>
+                        <div class="stat">
+                            <span>Sources today</span>
+                            <strong>{{ stats.sources }}</strong>
                         </div>
                     </div>
                 </div>
 
-                <aside class="hero-side">
-                    <div class="section-title">
-                        <h2>Featured stories</h2>
-                        <span>editor-picked by score</span>
+                <aside class="hero-featured">
+                    <div class="section-head">
+                        <h2>Top stories</h2>
+                        <span>Picked from the latest update</span>
                     </div>
-                    {% for article in hero_articles %}
-                    <article class="story-card">
-                        <div class="story-top">
-                            <span>{{ article.category }}</span>
-                            <span>{{ article.published }}</span>
-                        </div>
-                        <h3><a href="{{ article.url }}" target="_blank" rel="noreferrer">{{ article.title }}</a></h3>
-                        <p>{{ article.summary }}</p>
-                        <div class="story-score">{{ article.virality_score }}/99 signal strength</div>
-                    </article>
-                    {% endfor %}
+                    <div class="featured-list">
+                        {% for article in hero_articles %}
+                        <article class="story-card">
+                            <div class="story-meta">
+                                <span>{{ article.category }}</span>
+                                <span>{{ article.published }}</span>
+                            </div>
+                            <h3><a href="{{ article.url }}" target="_blank" rel="noreferrer">{{ article.title }}</a></h3>
+                            <p>{{ article.summary }}</p>
+                            <a class="story-link" href="{{ article.url }}" target="_blank" rel="noreferrer">Open story</a>
+                        </article>
+                        {% endfor %}
+                    </div>
                 </aside>
             </section>
 
-            <section class="stack-grid">
-                <div class="stack-item">
-                    <strong>Free stack</strong>
-                    <h3>No paid infra hiding under the hood</h3>
-                    <p>Only Python libraries, RSS ingestion, static HTML generation, GitHub Actions for scheduling, and GitHub Pages for delivery.</p>
-                </div>
-                <div class="stack-item">
-                    <strong>Self memory</strong>
-                    <h3>Local history learns from every run</h3>
-                    <p>`output/cache.json` keeps rolling signal memory, while `output/history/*.json` stores day snapshots for momentum, rise/fall, and baseline comparison.</p>
-                </div>
-                <div class="stack-item">
-                    <strong>Scale model</strong>
-                    <h3>Hundreds of feed lanes, thousands of signals</h3>
-                    <p>A broad RSS/query mesh captures many source angles per cycle and deduplicates into a stable rolling graph of stories.</p>
-                </div>
-                <div class="stack-item">
-                    <strong>Set and forget</strong>
-                    <h3>Git-powered automation only</h3>
-                    <p>The repo itself is the memory layer. Actions regenerates output, commits snapshots, and Pages serves the latest dashboard with no external state store.</p>
-                </div>
-            </section>
-
-            <section class="overview-grid">
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Category landscape</h3>
-                        <span>what dominates the cycle</span>
-                    </div>
-                    <div class="list">
-                        {% for item in category_breakdown %}
-                        <div class="list-row">
-                            <strong>{{ item.label }}</strong>
-                            <div class="progress"><i style="width: {{ item.share }}%"></i></div>
-                            <span>{{ item.count }}</span>
+            <section class="overview">
+                <div class="overview-grid">
+                    <section class="panel map-card">
+                        <div class="section-head">
+                            <h3>Places in focus</h3>
+                            <span>Tap the stories below to explore more</span>
                         </div>
-                        {% endfor %}
-                    </div>
-                    <div class="section-title" style="margin-top: 20px;">
-                        <h3>Category momentum</h3>
-                        <span>vs stored history</span>
-                    </div>
-                    <div class="list">
-                        {% if category_momentum %}
-                            {% for item in category_momentum %}
-                            <div class="list-row">
-                                <strong>{{ item.label }}</strong>
-                                <span>{{ item.count }} active</span>
-                                <span class="delta {{ 'up' if item.delta >= 0 else 'down' }}">{{ '%+.1f'|format(item.delta) }}</span>
-                            </div>
-                            {% endfor %}
-                        {% else %}
-                            <div class="list-row">
-                                <strong>Warm-up cycle</strong>
-                                <span>history is still filling up</span>
-                                <span class="delta up">+0.0</span>
-                            </div>
-                        {% endif %}
-                    </div>
-                </section>
-
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>24h flow</h3>
-                        <span>fresh signal velocity</span>
-                    </div>
-                    <div class="bars">
-                        {% for item in hourly_activity %}
-                        <div class="bar-wrap">
-                            <div class="bar" style="height: {{ item.height }}%;"><span>{{ item.count }}</span></div>
-                            <span class="bar-value">{{ item.count }}</span>
-                            <span class="bar-label">{{ item.label }}</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </section>
-
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Source pulse</h3>
-                        <span>highest signal contribution</span>
-                    </div>
-                    <div class="list">
-                        {% for item in source_breakdown %}
-                        <div class="list-row">
-                            <strong>{{ item.label }}</strong>
-                            <div class="progress"><i style="width: {{ item.share }}%"></i></div>
-                            <span>{{ item.count }}</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <div class="section-title" style="margin-top: 20px;">
-                        <h3>Sentiment mix</h3>
-                        <span>emotional market texture</span>
-                    </div>
-                    <div class="chip-cloud">
-                        {% for item in sentiment_breakdown %}
-                        <div class="pulse-chip">{{ item.label }} <strong>{{ item.count }}</strong></div>
-                        {% endfor %}
-                    </div>
-                </section>
-            </section>
-
-            <section class="overview-grid">
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Anomaly radar</h3>
-                        <span>aggressive intelligence flags</span>
-                    </div>
-                    <div class="alert-stack">
-                        {% for item in anomaly_alerts %}
-                        <div class="alert-item {{ item.severity }}">
-                            <strong>{{ item.title }}</strong>
-                            <span>{{ item.detail }}</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </section>
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Rising keywords</h3>
-                        <span>memory-adjusted theme lift</span>
-                    </div>
-                    <div class="chip-cloud">
-                        {% for item in rising_keywords %}
-                        <div class="pulse-chip">{{ item.label }} <strong>{{ item.count }}</strong> <span class="delta {{ 'up' if item.delta >= 0 else 'down' }}">{{ '%+.1f'|format(item.delta) }}</span></div>
-                        {% endfor %}
-                    </div>
-                </section>
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Region watch</h3>
-                        <span>where heat is clustering</span>
-                    </div>
-                    <div class="list">
-                        {% for item in region_watch %}
-                        <div class="list-row">
-                            <strong>{{ item.label }}</strong>
-                            <span>{{ item.score }}/99 avg intensity</span>
-                            <span class="delta {{ 'up' if item.delta >= 0 else 'down' }}">{{ '%+.1f'|format(item.delta) }}</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </section>
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Memory engine</h3>
-                        <span>how this stays smart</span>
-                    </div>
-                    <div class="memory-note">
-                        <div>
-                            <strong>{{ memory.mode }}</strong>
-                            <span>{{ memory.persistence }}</span>
-                        </div>
-                        <div>
-                            <strong>{{ memory.days_tracked }} tracked day snapshots</strong>
-                            <span>The repo itself becomes the long-term memory layer, and git preserves historical evolution without any hosted DB.</span>
-                        </div>
-                        <div>
-                            <strong>Auto-evolve without AI</strong>
-                            <span>Heuristics compare today versus stored baselines to surface rising themes, growing regions, and category momentum.</span>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <section class="overview-grid">
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Sector heat</h3>
-                        <span>where systemic pressure is forming</span>
-                    </div>
-                    <div class="list">
-                        {% for item in sector_heat %}
-                        <div class="list-row">
-                            <strong>{{ item.label }}</strong>
-                            <span>{{ item.trending }} trending · {{ item.sources }} sources</span>
-                            <span>{{ item.heat }}/99</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </section>
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Contagion map</h3>
-                        <span>theme spillover between categories</span>
-                    </div>
-                    <div class="list">
-                        {% for item in contagion_links %}
-                        <div class="list-row">
-                            <strong>{{ item.label }}</strong>
-                            <span>{{ item.families }} shared families</span>
-                            <span>{{ item.score }}/99</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </section>
-                <section class="panel">
-                    <div class="section-title">
-                        <h3>Persistence watch</h3>
-                        <span>what refuses to die</span>
-                    </div>
-                    <div class="list">
-                        {% for item in persistence_watch %}
-                        <div class="list-row">
-                            <strong>{{ item.label }}</strong>
-                            <span>{{ item.days }} days · {{ item.status }}</span>
-                            <span>{{ item.persistence }}/99</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </section>
-            </section>
-
-            <section class="explorer" id="explorer">
-                <div class="explorer-main">
-                    <section class="panel">
-                        <div class="section-title">
-                            <h3>Signal explorer</h3>
-                            <span>search, filter, and sort the live memory</span>
-                        </div>
-                        <div class="controls">
-                            <div class="control-row">
-                                <label class="search"><input id="searchInput" type="search" placeholder="Search titles, summaries, keywords, regions..."></label>
-                                <select class="sort-select" id="sortSelect">
-                                    <option value="score">Sort: highest score</option>
-                                    <option value="latest">Sort: latest first</option>
-                                    <option value="source">Sort: source A-Z</option>
-                                    <option value="impact">Sort: impact level</option>
-                                </select>
-                            </div>
-                            <div class="control-row" id="categoryFilters"></div>
-                        </div>
-                    </section>
-                    <section class="article-grid" id="articleGrid"></section>
-                </div>
-
-                <aside class="sidebar-stack">
-                    <section class="panel">
-                        <div class="section-title">
-                            <h3>Pulse tags</h3>
-                            <span>high-frequency keywords</span>
-                        </div>
-                        <div class="chip-cloud">
-                            {% for item in keyword_pulse %}
-                            <div class="pulse-chip">{{ item.label }} <strong>{{ item.count }}</strong></div>
-                            {% endfor %}
-                        </div>
-                    </section>
-                    <section class="panel">
-                        <div class="section-title">
-                            <h3>Story families</h3>
-                            <span>clustered theme groups</span>
-                        </div>
-                        <div class="list">
-                            {% for item in story_families %}
-                            <div class="list-row">
-                                <strong>{{ item.label }}</strong>
-                                <span>{{ item.category }} · {{ item.unique_sources }} sources</span>
-                                <span>{{ item.consensus }}/99</span>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </section>
-                    <section class="panel">
-                        <div class="section-title">
-                            <h3>Escalation watch</h3>
-                            <span>multi-source surge monitor</span>
-                        </div>
-                        <div class="list">
-                            {% for item in escalation_watch %}
-                            <div class="list-row">
-                                <strong>{{ item.label }}</strong>
-                                <span>{{ item.sources }} sources · {{ item.status }}</span>
-                                <span class="delta {{ 'up' if item.delta >= 0 else 'down' }}">{{ item.consensus }}/99</span>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </section>
-                    <section class="panel">
-                        <div class="section-title">
-                            <h3>Region snapshot</h3>
-                            <span>top geography signals</span>
-                        </div>
-                        <div class="list">
+                        <div class="map-canvas">
                             {% for item in regions %}
-                            <div class="list-row">
+                            <div class="map-point" style="left: {{ item.x }}%; top: {{ item.y }}%;">
+                                <div class="map-dot"></div>
                                 <strong>{{ item.label }}</strong>
-                                <span>{{ item.count }} signals</span>
-                                <span>{{ item.score }}/99</span>
                             </div>
                             {% endfor %}
                         </div>
                     </section>
+
                     <section class="panel">
-                        <div class="section-title">
-                            <h3>Source confidence</h3>
-                            <span>weight x breadth x score</span>
+                        <div class="section-head">
+                            <h3>Story activity</h3>
+                            <span>When new stories are picking up</span>
                         </div>
-                        <div class="list">
-                            {% for item in source_confidence %}
-                            <div class="list-row">
-                                <strong>{{ item.label }}</strong>
-                                <span>{{ item.count }} stories · {{ item.breadth }} lanes</span>
-                                <span>{{ item.confidence }}/99</span>
+                        <div class="chart-grid">
+                            {% for item in hourly_activity %}
+                            <div class="bar-wrap">
+                                <div class="bar" style="height: {{ item.height }}%;"></div>
+                                <span class="bar-value">{{ item.count }}</span>
+                                <span class="bar-label">{{ item.label }}</span>
                             </div>
                             {% endfor %}
                         </div>
                     </section>
+
                     <section class="panel">
-                        <div class="section-title">
-                            <h3>Disagreement watch</h3>
-                            <span>conflicted source narratives</span>
+                        <div class="section-head">
+                            <h3>Browse by category</h3>
+                            <span>Quick category view</span>
                         </div>
-                        <div class="list">
-                            {% for item in disagreement_watch %}
-                            <div class="list-row">
+                        <div class="category-slider" id="categorySlider">
+                            <button class="category-slide active" data-category="All" type="button">
+                                <strong>All stories</strong>
+                                <span>Everything in one place</span>
+                                <div class="progress"><i style="width: 100%"></i></div>
+                            </button>
+                            {% for item in category_breakdown %}
+                            <button class="category-slide" data-category="{{ item.label }}" type="button">
                                 <strong>{{ item.label }}</strong>
-                                <span>{{ item.sources }} sources · {{ item.status }}</span>
-                                <span>{{ item.disagreement }}/99</span>
+                                <span>{{ item.count }} stories</span>
+                                <div class="progress"><i style="width: {{ item.share }}%"></i></div>
+                            </button>
+                            {% endfor %}
+                        </div>
+                    </section>
+                </div>
+
+                <div class="overview-bottom">
+                    <section class="panel">
+                        <div class="section-head">
+                            <h3>Popular topics</h3>
+                            <span>Clean, simple summary</span>
+                        </div>
+                        <div class="topic-list">
+                            {% for item in category_breakdown %}
+                            <div class="topic-item">
+                                <strong>{{ item.label }}</strong>
+                                <span>{{ item.share }}% of the current stories</span>
                             </div>
                             {% endfor %}
                         </div>
                     </section>
-                    <section class="panel">
-                        <div class="section-title">
-                            <h3>Automation guarantees</h3>
-                            <span>stable by design</span>
+
+                    <section class="panel" id="sources">
+                        <div class="section-head">
+                            <h3>Top sources today</h3>
+                            <span>Quick list view</span>
                         </div>
-                        <div class="memory-note">
-                            <div>
-                                <strong>GitHub Actions scheduler</strong>
-                                <span>Regenerates the whole site on every cycle.</span>
-                            </div>
-                            <div>
-                                <strong>Git-backed state</strong>
-                                <span>Snapshots persist in the repo, so memory survives runner resets.</span>
-                            </div>
-                            <div>
-                                <strong>GitHub Pages output</strong>
-                                <span>Static delivery means no runtime backend to break.</span>
-                            </div>
-                            <div>
-                                <strong>Cluster intelligence</strong>
-                                <span>Related headlines are grouped into local story families so repeated coverage becomes usable signal, not noise.</span>
-                            </div>
-                        </div>
+                        <table class="source-table">
+                            <thead>
+                                <tr>
+                                    <th>Source</th>
+                                    <th>Stories</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in source_breakdown %}
+                                <tr>
+                                    <td>{{ item.label }}</td>
+                                    <td>{{ item.count }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
                     </section>
-                </aside>
+                </div>
+            </section>
+
+            <section class="stories" id="stories">
+                <div class="section-head">
+                    <h2>All stories</h2>
+                    <span>Search, filter, and read quickly</span>
+                </div>
+
+                <div class="controls">
+                <div class="control-top">
+                        <label class="search"><input id="searchInput" type="search" placeholder="Search headlines, people, places, or topics"></label>
+                        <select class="sort-select" id="sortSelect">
+                            <option value="score">Most popular</option>
+                            <option value="latest">Newest first</option>
+                            <option value="source">By source</option>
+                        </select>
+                    </div>
+                    <div class="category-row" id="categoryFilters"></div>
+                    <div class="results-strip">
+                        <span id="resultsCount">0 stories</span>
+                        <div class="results-actions">
+                            <button class="category-chip" id="clearFilters" type="button">Clear filters</button>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="article-grid" id="articleGrid"></section>
+                <div class="pager" id="pagerTop"></div>
+                <div class="pager" id="pagerBottom"></div>
             </section>
 
             <footer class="footer">
-                <span>Built entirely from free tooling: Python libs, public RSS, GitHub Actions, GitHub Pages.</span>
-                <span>Last regeneration: {{ updated }}</span>
+                <span>{{ tagline }}</span>
+                <div class="footer-links">
+                    <a href="trending.rss">Updates</a>
+                    <a href="trends.json">Download</a>
+                    <span>Updated {{ updated }}</span>
+                </div>
             </footer>
         </div>
     </div>
@@ -1158,18 +984,24 @@
         const state = {
             search: '',
             category: 'All',
-            sort: 'score'
+            sort: 'score',
+            page: 1
         };
 
         const articleGrid = document.getElementById('articleGrid');
         const categoryFilters = document.getElementById('categoryFilters');
+        const categorySlider = document.getElementById('categorySlider');
         const searchInput = document.getElementById('searchInput');
         const sortSelect = document.getElementById('sortSelect');
+        const resultsCount = document.getElementById('resultsCount');
+        const clearFilters = document.getElementById('clearFilters');
+        const pagerTop = document.getElementById('pagerTop');
+        const pagerBottom = document.getElementById('pagerBottom');
 
-        function scoreImpactValue(article) {
-            if (article.impact_level === 'Critical') return 3;
-            if (article.impact_level === 'High') return 2;
-            return 1;
+        function statusLabel(article) {
+            if (article.is_breaking) return 'New';
+            if (article.is_trending) return 'Popular';
+            return 'Watch';
         }
 
         function matchesSearch(article, query) {
@@ -1179,12 +1011,9 @@
                 article.summary,
                 article.source,
                 article.category,
-                article.cluster_label,
-                ...((article.sectors) || []),
-                ...(article.keywords || []),
                 ...((article.entities && article.entities.gpe) || []),
                 ...((article.entities && article.entities.orgs) || []),
-                ...((article.entities && article.entities.persons) || [])
+                ...((article.sectors) || [])
             ].join(' ').toLowerCase();
             return haystack.includes(query);
         }
@@ -1197,90 +1026,169 @@
                 .sort((a, b) => {
                     if (state.sort === 'latest') return (b.published_dt || '').localeCompare(a.published_dt || '');
                     if (state.sort === 'source') return a.source.localeCompare(b.source);
-                    if (state.sort === 'impact') return scoreImpactValue(b) - scoreImpactValue(a) || b.virality_score - a.virality_score;
                     return b.virality_score - a.virality_score;
                 });
         }
 
-        function renderFilters() {
-            const filters = ['All', ...CATEGORY_OPTIONS];
-            categoryFilters.innerHTML = filters.map((category) => `
-                <button class="filter-chip ${state.category === category ? 'active' : ''}" data-category="${category}">${category}</button>
+        function pageSize() {
+            return window.innerWidth < 760 ? 4 : 6;
+        }
+
+        function totalPages(items) {
+            return Math.max(1, Math.ceil(items.length / pageSize()));
+        }
+
+        function currentPageItems(items) {
+            const size = pageSize();
+            const pages = totalPages(items);
+            if (state.page > pages) state.page = pages;
+            const start = (state.page - 1) * size;
+            return items.slice(start, start + size);
+        }
+
+        function pageWindow(pages) {
+            const maxButtons = window.innerWidth < 760 ? 4 : 7;
+            const half = Math.floor(maxButtons / 2);
+            let start = Math.max(1, state.page - half);
+            let end = Math.min(pages, start + maxButtons - 1);
+            start = Math.max(1, end - maxButtons + 1);
+            const buttons = [];
+            for (let page = start; page <= end; page += 1) {
+                buttons.push(page);
+            }
+            return buttons;
+        }
+
+        function renderPager(container, pages) {
+            if (pages <= 1) {
+                container.innerHTML = '';
+                return;
+            }
+
+            const buttons = pageWindow(pages).map((page) => `
+                <button class="${page === state.page ? 'active' : ''}" data-page="${page}" type="button">${page}</button>
             `).join('');
-            categoryFilters.querySelectorAll('[data-category]').forEach((button) => {
+
+            container.innerHTML = `
+                <button data-page="${Math.max(1, state.page - 1)}" type="button" ${state.page === 1 ? 'disabled' : ''}>Prev</button>
+                ${buttons}
+                <button data-page="${Math.min(pages, state.page + 1)}" type="button" ${state.page === pages ? 'disabled' : ''}>Next</button>
+            `;
+
+            container.querySelectorAll('button[data-page]').forEach((button) => {
                 button.addEventListener('click', () => {
-                    state.category = button.dataset.category;
-                    renderFilters();
+                    state.page = Number(button.dataset.page);
                     renderArticles();
                 });
             });
         }
 
-        function sentimentLabel(article) {
-            return (article.sentiment || 'neutral').toUpperCase();
+        function syncCategoryButtons() {
+            document.querySelectorAll('[data-category]').forEach((button) => {
+                button.classList.toggle('active', button.dataset.category === state.category);
+            });
+        }
+
+        function bindCategoryButtons(container) {
+            container.querySelectorAll('[data-category]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    state.category = button.dataset.category;
+                    state.page = 1;
+                    syncCategoryButtons();
+                    renderArticles();
+                });
+            });
+        }
+
+        function renderFilters() {
+            const filters = ['All', ...CATEGORY_OPTIONS];
+            categoryFilters.innerHTML = filters.map((category) => `
+                <button class="category-chip ${state.category === category ? 'active' : ''}" data-category="${category}" type="button">${category}</button>
+            `).join('');
+            bindCategoryButtons(categoryFilters);
         }
 
         function renderArticles() {
             const items = filteredArticles();
+            const pages = totalPages(items);
+            const pagedItems = currentPageItems(items);
+            const startIndex = items.length ? ((state.page - 1) * pageSize()) + 1 : 0;
+            const endIndex = Math.min(items.length, state.page * pageSize());
+
+            resultsCount.innerHTML = items.length
+                ? `<strong>${items.length}</strong> stories, showing ${startIndex}-${endIndex}`
+                : '0 stories';
+
             if (!items.length) {
-                articleGrid.innerHTML = '<div class="empty-state">No matching signals. Try another keyword, category, or sort mode.</div>';
+                articleGrid.innerHTML = '<div class="empty-state">No stories match that search yet. Try a different word or category.</div>';
+                pagerTop.innerHTML = '';
+                pagerBottom.innerHTML = '';
                 return;
             }
 
-            articleGrid.innerHTML = items.map((article, index) => {
+            articleGrid.innerHTML = pagedItems.map((article, index) => {
                 const tags = [
-                    ...((article.sectors) || []).slice(0, 1),
-                    ...(article.keywords || []).slice(0, 3),
+                    article.category,
                     ...((article.entities && article.entities.gpe) || []).slice(0, 2),
-                    ...((article.entities && article.entities.orgs) || []).slice(0, 1)
-                ].slice(0, 6);
+                    article.source
+                ].filter(Boolean).slice(0, 4);
 
                 return `
-                    <article class="article-card" style="animation-delay:${Math.min(index * 40, 320)}ms">
-                        <div class="card-top">
-                            <div class="card-kicker">
+                    <article class="article-card" style="animation-delay:${Math.min(index * 35, 280)}ms">
+                        <div class="article-meta">
+                            <div class="story-meta">
                                 <span>${article.category}</span>
                                 <span>•</span>
                                 <span>${article.source}</span>
                             </div>
-                            <div class="impact ${String(article.impact_level || 'Monitor').toLowerCase()}">${article.impact_level || 'Monitor'}</div>
+                            <span class="status-pill ${statusLabel(article).toLowerCase()}">${statusLabel(article)}</span>
                         </div>
                         <h3><a href="${article.url}" target="_blank" rel="noreferrer">${article.title}</a></h3>
                         <p>${article.summary || 'No summary available.'}</p>
                         <div class="tag-row">${tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}</div>
-                        <div class="card-bottom">
-                            <div class="score">
-                                <strong>${article.virality_score}/99</strong>
-                                <div class="meter"><i style="width:${Math.max(8, article.virality_score)}%"></i></div>
-                            </div>
-                            <div class="card-kicker">
-                                <span>${article.cluster_size || 1}x family</span>
-                                <span>•</span>
-                                <span>${article.cluster_label || 'single signal'}</span>
-                                <span>•</span>
-                                <span>${article.cluster_consensus || article.virality_score}/99 consensus</span>
-                                <span>•</span>
-                                <span>${sentimentLabel(article)}</span>
-                                <span>•</span>
-                                <span>${article.published || 'Just now'}</span>
-                            </div>
+                        <div class="card-footer">
+                            <span>${article.published || 'Just now'}</span>
+                            <strong>${article.virality_score}/99</strong>
                         </div>
                     </article>
                 `;
             }).join('');
+
+            renderPager(pagerTop, pages);
+            renderPager(pagerBottom, pages);
         }
 
         searchInput.addEventListener('input', (event) => {
             state.search = event.target.value;
+            state.page = 1;
             renderArticles();
         });
 
         sortSelect.addEventListener('change', (event) => {
             state.sort = event.target.value;
+            state.page = 1;
+            renderArticles();
+        });
+
+        clearFilters.addEventListener('click', () => {
+            state.search = '';
+            state.category = 'All';
+            state.sort = 'score';
+            state.page = 1;
+            searchInput.value = '';
+            sortSelect.value = 'score';
+            syncCategoryButtons();
+            renderFilters();
+            renderArticles();
+        });
+
+        window.addEventListener('resize', () => {
             renderArticles();
         });
 
         renderFilters();
+        bindCategoryButtons(categorySlider);
+        syncCategoryButtons();
         renderArticles();
     </script>
 </body>
