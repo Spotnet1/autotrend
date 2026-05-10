@@ -1,0 +1,655 @@
+{
+  "date": "2026-05-10",
+  "hour": "16",
+  "stats": {
+    "total": 3337,
+    "trending": 964,
+    "breaking": 375,
+    "sources": 243,
+    "feeds": 162,
+    "memory_runs": 5,
+    "updated": "10 May 2026, 16:45 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 593,
+      "share": 18
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 366,
+      "share": 11
+    },
+    {
+      "label": "India Cities",
+      "count": 320,
+      "share": 10
+    },
+    {
+      "label": "India Markets",
+      "count": 260,
+      "share": 8
+    },
+    {
+      "label": "Geopolitics",
+      "count": 250,
+      "share": 7
+    },
+    {
+      "label": "India Tech",
+      "count": 192,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 187,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 171,
+      "share": 5
+    },
+    {
+      "label": "AI & Startups",
+      "count": 165,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 163,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 154,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 120,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 93,
+      "share": 3
+    },
+    {
+      "label": "🌍 Geopolitics & Conflict",
+      "count": 47,
+      "share": 1
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 729,
+      "score": 68,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 350,
+      "score": 68,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 247,
+      "score": 75,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 137,
+      "score": 69,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Chennai",
+      "count": 116,
+      "score": 65,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Delhi",
+      "count": 93,
+      "score": 69,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Russia",
+      "count": 87,
+      "score": 70,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Hyderabad",
+      "count": 67,
+      "score": 69,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    },
+    {
+      "label": "Bengaluru",
+      "count": 64,
+      "score": 72,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Ukraine",
+      "count": 54,
+      "score": 75,
+      "lat": 48.4,
+      "lng": 31.2,
+      "x": 58.7,
+      "y": 23.1
+    },
+    {
+      "label": "Africa",
+      "count": 49,
+      "score": 63,
+      "lat": 1.6,
+      "lng": 17.5,
+      "x": 54.9,
+      "y": 49.1
+    },
+    {
+      "label": "Mumbai",
+      "count": 42,
+      "score": 72,
+      "lat": 19.1,
+      "lng": 72.9,
+      "x": 70.2,
+      "y": 39.4
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 365,
+      "share": 2
+    },
+    {
+      "label": "iran",
+      "count": 110,
+      "share": 0
+    },
+    {
+      "label": "modi",
+      "count": 104,
+      "share": 0
+    },
+    {
+      "label": "tamil",
+      "count": 90,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 84,
+      "share": 0
+    },
+    {
+      "label": "to",
+      "count": 84,
+      "share": 0
+    },
+    {
+      "label": "vijay",
+      "count": 82,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 82,
+      "share": 0
+    },
+    {
+      "label": "in",
+      "count": 77,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 72,
+      "share": 0
+    },
+    {
+      "label": "delhi",
+      "count": 69,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 67,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "countries, nationals, airlift",
+      "category": "Geopolitics",
+      "count": 1906,
+      "average_score": 58,
+      "unique_sources": 217,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "BBC News World",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "trade, United States, declared",
+      "category": "Markets & Macro",
+      "count": 442,
+      "average_score": 80,
+      "unique_sources": 127,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "BBC News World",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-3",
+      "label": "OpenAI, fake, attack",
+      "category": "Cybersecurity",
+      "count": 179,
+      "average_score": 75,
+      "unique_sources": 77,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera English",
+        "BBC World",
+        "Economic Times Markets",
+        "Economic Times Tech"
+      ]
+    },
+    {
+      "id": "family-5",
+      "label": "home, Middle East, covid-era",
+      "category": "India Pulse",
+      "count": 109,
+      "average_score": 84,
+      "unique_sources": 39,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC News World",
+        "Economic Times Economy",
+        "Economic Times Markets"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "breach, prompts, braintrust",
+      "category": "Cybersecurity",
+      "count": 11,
+      "average_score": 79,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: cyber attack OR breach OR ransomware 202",
+        "Google: data leak OR database exposed OR dump",
+        "Google: geopolitics OR war OR diplomacy",
+        "Google: taiwan semiconductor OR TSMC OR wafer"
+      ]
+    },
+    {
+      "id": "family-86",
+      "label": "wildfire, georgia, fire",
+      "category": "Climate & Supply Chain",
+      "count": 11,
+      "average_score": 68,
+      "unique_sources": 2,
+      "consensus": 99,
+      "top_sources": [
+        "Google News: Breaking",
+        "Google: flood OR drought OR wildfire OR heatwave"
+      ]
+    },
+    {
+      "id": "family-64",
+      "label": "grindr, grnd, valuation",
+      "category": "Markets & Macro",
+      "count": 9,
+      "average_score": 68,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: critical infrastructure attack OR power ",
+        "Google: earnings OR ipo OR layoffs",
+        "Google: earnings OR quarterly results OR guidanc",
+        "Seeking Alpha"
+      ]
+    },
+    {
+      "id": "family-19",
+      "label": "amit, west, govt",
+      "category": "India Cities",
+      "count": 8,
+      "average_score": 71,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Google India: Bengaluru news OR Karnataka",
+        "Google India: Kolkata news OR West Bengal",
+        "Google: Chennai OR Tamil Nadu news",
+        "Google: Kolkata OR West Bengal news"
+      ]
+    },
+    {
+      "id": "family-11",
+      "label": "revenue, panchayat, karnataka",
+      "category": "India Pulse",
+      "count": 7,
+      "average_score": 85,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India Supreme Court OR High Court OR pol",
+        "Hindustan Times India",
+        "NDTV India",
+        "The Hindu National"
+      ]
+    },
+    {
+      "id": "family-25",
+      "label": "staff, terminated, India",
+      "category": "India Markets",
+      "count": 6,
+      "average_score": 93,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Google: India cyber attack OR data breach OR hac",
+        "Google: India markets OR Sensex OR Nifty OR BSE"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 1727,
+      "avg_score": 67,
+      "trending": 555,
+      "sources": 137,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1437,
+      "avg_score": 69,
+      "trending": 546,
+      "sources": 212,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 662,
+      "avg_score": 76,
+      "trending": 382,
+      "sources": 160,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 645,
+      "avg_score": 68,
+      "trending": 231,
+      "sources": 131,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 587,
+      "avg_score": 68,
+      "trending": 205,
+      "sources": 95,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 401,
+      "avg_score": 61,
+      "trending": 75,
+      "sources": 47,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 271,
+      "avg_score": 60,
+      "trending": 40,
+      "sources": 56,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 202,
+      "avg_score": 64,
+      "trending": 53,
+      "sources": 66,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Countries airlift nationals evacuated from from virus-hit cruise ship",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cn7pzmg8zeno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Braintrust AWS Data Breach Prompts Urgent API Key Rotation for AI Platform Customers - Rescana",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ3NDVW51RHB5eGFBbXpUN0lBVzktOENxWGFKTnMzMWdZLUQ0eHFGa3hlXzJ1YTA4a2FSV2IwUVMtaTkwZ3o1MGNEcFlUeWMwWDJRMmItZk4tVEROdEhEdW5qWkFYNVN5MzJlNVBrZVpjU3JIdUZRQmF3cGQzOEJhb2tBQkhjTEJBdDhMV0xxWEpOdnE4a1FpX3JxZU5hZ0t0NUR0MEhQbjcySkdvUHQ5UFRGRQ?oc=5"
+    },
+    {
+      "title": "Supply Chain Attack: Fake OpenAI Repository on Hugging Face Distributes Infostealer Malware Targeting Developers and AI Tools - Rescana",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSWhHUnlJdVcxaVZsbTQ5ZXBrRWxwWENhVV96R25tc1ZreUhMbDJLQzlkc0d3RU5TOFFqdjdmWURQNUJ1d095amNmYVJieE5XdzNWZm1yd2FPbUtDcVljWWpOamdTX0Y4X0hDV1QxQmVfc0JNeWM5d2syZkR2QUE5aUFwVHdVcXl3TjhSRG90TllkNTJUazhRRFVkbEZLMWE5aTBHTTktZ3RJS3BPV0hsV3otSGRublU1dU0xMFBBZlRhTm9FZDFrRFk1YWlZUmtCN2x3a19hTnlUY2t0WWtXOVVwZw?oc=5"
+    },
+    {
+      "title": "Trump's Latest 10% Tariffs Declared Unlawful by US Trade",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-10/trump-s-latest-10-tariffs-declared-unlawful-by-us-trade-video"
+    },
+    {
+      "title": "'Covid-Era Measures': After PM's Appeal, Is Work From Home Set To Return To India's Workplaces?",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/covid-era-measures-after-pms-appeal-is-work-from-home-set-to-return-to-indias-workplaces-ws-l-10084249.html"
+    },
+    {
+      "title": "Food inflation hammers households in war-hit Iran",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/news/2026/5/10/food-inflation-hammers-households-in-war-hit-iran?traffic_source=rss"
+    },
+    {
+      "title": "Ivanti Warns of New EPMM Flaw Exploited in Zero-Day Attacks - Security Boulevard",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRWdMcnFJTV9qdXJ4akM4V3EweWpyeVVJbldsWW1kWWpuMWhmeG5wMHlzLU1kVjVsVklUc2JpTW1kcXlYZ0xCN3R2RW8yb1ZZc2FiWWFZdXRDVGJTcHA2ZmxyTENybjdxZEVLa0w2T2VJcGJMOHoxenE0bDBlX3ZuYjdtaDBwaHlYS3doUGx6cUJNaUNZRDcwajlZczQzdXc?oc=5"
+    },
+    {
+      "title": "Australia Warns of ClickFix Attacks Pushing Vidar Stealer Malware - Security Boulevard",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdWN4RUtNWWFOVWplTl93ZUx3MkdqSG96TllabVUzaTlwN2l3cVlSVl9Pa2tlTWtKVTVrSXRhV1NUZ3RQVWhiYS1aVjM0NGtDc21kMUpGdG44S1BnR21pYVFmNWFSRDRDd0pmeFVUQkNiUVF5YzlBVWVUVWJJam5LMFc0c0l5LXZBRDM1QjBuaWQxbngyQnA2ZzVNRkZpMFJSLXFmUE00TQ?oc=5"
+    },
+    {
+      "title": "New TCLBanker Malware Self-Spreads Over WhatsApp and Outlook - Security Boulevard",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdjk3NnJpZ3FfRjJuQXBNakU0SjJtNmlMdTkwRmJBN0ZoUG1KRGF3OHdoVVBBTnE0aFYxYTk1NmRMWnJheldXQ2NiWkpjVEFySWIxUG1WMDRlQ2ptNDQ4RnVCSFBscEhXdHJydm1EdzQtSDIwcHJiaDk0U0lpX1FkNVI1empQbHg0ZUtvdDViQ1VLTEw5ZnlOVmNkaE1YR3pT?oc=5"
+    },
+    {
+      "title": "The Ultimate Guide to Travel Insurance for Complex Times",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-10/the-ultimate-guide-to-travel-insurance-for-complex-times-video"
+    },
+    {
+      "title": "Solicitor General launches two tomes on humour in court",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/solicitor-general-launches-two-tomes-on-humour-in-court/article70962834.ece"
+    },
+    {
+      "title": "Karnataka is No 1 in revenue, panchayat services, claims Priyank Kharge",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-is-no-1-in-revenue-panchayat-services-claims-priyank-kharge/article70962346.ece"
+    },
+    {
+      "title": "From flight journey to land gifts, SSC toppers receive unique rewards in A.P.",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/from-flight-journey-to-land-gifts-ssc-toppers-receive-unique-rewards-in-ap/article70962858.ece"
+    },
+    {
+      "title": "Why Parenting Now Feels Like an Investment Strategy",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-10/why-parenting-now-feels-like-an-investment-strategy-video"
+    },
+    {
+      "title": "Olszewski\" \"Not Confident\" the US Can Negotiate an Advantageous Deal with Iran",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-10/olszewski-discuss-the-us-deal-with-iran-video"
+    },
+    {
+      "title": "Kochi Port on alert after hantavirus outbreak on cruise ship",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/kerala/kochi-port-on-alert-after-hantavirus-outbreak-on-cruise-ship/article70962860.ece"
+    },
+    {
+      "title": "Top Semiconductor Stocks to Watch in May 2026: AI Chip Rally Analysis - Intellectia AI",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5TVmpGTURaRmpGZWY3U2tKZGpXdlVITnpFa1RLaWlsOUVuaEl3S1E3Y0pYU2VjRzZFWG9KQnBXX0JoMmRqWk9hSUN3QVQ4eTdsRXY2YTY1cUxwOGR4czMyM0RVbFNabklJTE9MX0JEZnUtM1FO?oc=5"
+    },
+    {
+      "title": "TechCrunch Mobility: Lime’s IPO gamble",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://techcrunch.com/2026/05/10/techcrunch-mobility-limes-ipo-gamble/"
+    },
+    {
+      "title": "Putin hints at ending Russia’s war in Ukraine, but why now?",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/news/2026/5/10/putin-hints-at-ending-russias-war-in-ukraine-but-why-now?traffic_source=rss"
+    },
+    {
+      "title": "PM Modi congratulates TVK's Vijay on taking oath as Tamil Nadu CM after win in assembly elections 2026",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/pm-modi-congratulates-tvks-vijay-on-taking-oath-as-tamil-nadu-cm-after-win-in-assembly-elections-2026-11778424704138.html"
+    },
+    {
+      "title": "Trump, Xi Set to Meet for High-Stakes Meeting in Beijing",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-10/trump-xi-set-to-meet-for-high-stakes-meeting-in-beijing-video"
+    },
+    {
+      "title": "Refrain from foreign travel, buying gold for a year: PM Modi’s appeal amid West Asia crisis",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://indianexpress.com/article/india/pm-modi-hyderabad-speech-west-asia-crisis-petrol-diesel-gold-reduction-10682817/"
+    },
+    {
+      "title": "'Buy Indian, Choose Domestic Tourism': PM Modi Urges Citizens As Iran War Disrupts Global Economy",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/buy-indian-choose-domestic-tourism-pm-modi-urges-citizens-as-iran-war-disrupts-global-economy-ws-l-10084220.html"
+    },
+    {
+      "title": "HM Amit Shah says, BJP govt in West Bengal will secure India’s borders & plug biggest hole in national security - News On AIR",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTzg5QnVfSnFXZW43S1VsNmFmNmhNYXVHRTZOaVhEbHZSMks3LTctMl9kek1ObnpIQzh4YXhHYUFyekRwQUxlVHhIZjI5ZnBUaVhHczJvcGpMODMtS2pmUU1vZXFMMFRrQ00tU3o3aXVKQXN0VzlweEtpc0pyY0ZXY3NxWDNTbDZMa21LNFVpVjVCNzlNTllpYzFZVFRGdkhqTGZGWGJURmVhZFVtSE1fQXplemVLcTZYdWdNYWNVamNMT21fNTNieWlLR2VfS1JBamVN?oc=5"
+    },
+    {
+      "title": "Netanyahu warns Iran ‘not over’ until uranium stockpile is taken out, refuses to give timeline for ending conflict",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/world/netanyahu-warns-iran-not-over-until-uranium-stockpile-is-taken-out-refuses-to-give-timeline-for-ending-conflict-11778426226011.html"
+    },
+    {
+      "title": "Iran sends response to US ceasefire proposal via Pakistan",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/10/iran-sends-response-to-us-ceasefire-proposal-via-pakistan?traffic_source=rss"
+    },
+    {
+      "title": "‘Use petrol, gas, diesel with restraint, work from home, don't purchase gold’: Modi amid fuel crisis due to US-Iran war",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/use-petrol-gas-diesel-with-restraint-work-from-home-dont-purchase-gold-modi-amid-fuel-crisis-due-to-us-iran-war-11778423960277.html"
+    },
+    {
+      "title": "Spice Company Wins Suit Over 10% Trump Global Tariffs",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-10/spice-company-wins-suit-over-10-trump-global-tariffs-video"
+    },
+    {
+      "title": "Pimco CIO Sees Risk of Fed Hiking Rates Due to Iran War, FT Says",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/pimco-cio-sees-risk-of-fed-hiking-rates-due-to-iran-war-ft-says"
+    },
+    {
+      "title": "US F-35 changes course to UAE after mid-air emergency over Gulf of Oman amid Iran war: Report",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/world/us-f-35-changes-course-to-uae-after-mid-air-emergency-over-gulf-of-oman-amid-iran-war-report-11778418546395.html"
+    }
+  ]
+}
