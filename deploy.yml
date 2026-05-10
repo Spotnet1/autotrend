@@ -1,0 +1,78 @@
+name: SpotPulse — Build & Deploy
+
+on:
+  schedule:
+    # Runs every 2 hours — covers full 24hr window with overlap
+    - cron: '0 */2 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:   # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Full history so cache/memory files persist
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Download NLTK data (if needed)
+        run: |
+          python -c "import nltk; nltk.download('punkt', quiet=True); nltk.download('stopwords', quiet=True)"
+
+      - name: Restore cache from previous run
+        uses: actions/cache@v4
+        with:
+          path: |
+            output/cache.json
+            output/expiry.json
+            output/memory.json
+            output/history/
+          key: spotpulse-cache-${{ github.run_id }}
+          restore-keys: |
+            spotpulse-cache-
+
+      - name: Run SpotPulse builder
+        run: python app.py
+
+      - name: Verify output
+        run: |
+          echo "=== Output files ==="
+          ls -lah output/
+          echo "=== Article count ==="
+          python -c "import json; d=json.load(open('output/trends.json')); print(f'Articles: {d[\"stats\"][\"total\"]} | Breaking: {d[\"stats\"][\"breaking\"]} | Sources: {d[\"stats\"][\"sources\"]} | Memory run: #{d[\"stats\"][\"memory_runs\"]}')"
+
+      - name: Commit cache + memory (persist across runs)
+        run: |
+          git config user.name  "SpotPulse Bot"
+          git config user.email "bot@spotpulse.io"
+          git add output/cache.json output/expiry.json output/memory.json output/history/ || true
+          git diff --staged --quiet || git commit -m "chore: update cache + memory [skip ci]"
+          git push || true
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          force_orphan: false
+          keep_files: true          # Keep history/ and memory files on gh-pages
+          commit_message: "deploy: SpotPulse update — ${{ github.event.head_commit.message }}"
