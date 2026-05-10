@@ -1,0 +1,655 @@
+{
+  "date": "2026-05-10",
+  "hour": "08",
+  "stats": {
+    "total": 2384,
+    "trending": 717,
+    "breaking": 473,
+    "sources": 260,
+    "feeds": 162,
+    "memory_runs": 1,
+    "updated": "10 May 2026, 08:39 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 299,
+      "share": 13
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 205,
+      "share": 9
+    },
+    {
+      "label": "India Cities",
+      "count": 188,
+      "share": 8
+    },
+    {
+      "label": "India Markets",
+      "count": 184,
+      "share": 8
+    },
+    {
+      "label": "Geopolitics",
+      "count": 152,
+      "share": 6
+    },
+    {
+      "label": "India Tech",
+      "count": 143,
+      "share": 6
+    },
+    {
+      "label": "India & APAC",
+      "count": 137,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 136,
+      "share": 6
+    },
+    {
+      "label": "AI & Startups",
+      "count": 130,
+      "share": 5
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 120,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 97,
+      "share": 4
+    },
+    {
+      "label": "India Society",
+      "count": 86,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 75,
+      "share": 3
+    },
+    {
+      "label": "🌍 Geopolitics & Conflict",
+      "count": 56,
+      "share": 2
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 482,
+      "score": 71,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 265,
+      "score": 68,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 154,
+      "score": 75,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 119,
+      "score": 70,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Chennai",
+      "count": 75,
+      "score": 73,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Russia",
+      "count": 68,
+      "score": 68,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Delhi",
+      "count": 59,
+      "score": 72,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Africa",
+      "count": 41,
+      "score": 65,
+      "lat": 1.6,
+      "lng": 17.5,
+      "x": 54.9,
+      "y": 49.1
+    },
+    {
+      "label": "Ukraine",
+      "count": 41,
+      "score": 73,
+      "lat": 48.4,
+      "lng": 31.2,
+      "x": 58.7,
+      "y": 23.1
+    },
+    {
+      "label": "Bengaluru",
+      "count": 34,
+      "score": 78,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Mumbai",
+      "count": 34,
+      "score": 75,
+      "lat": 19.1,
+      "lng": 72.9,
+      "x": 70.2,
+      "y": 39.4
+    },
+    {
+      "label": "Europe",
+      "count": 34,
+      "score": 65,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 234,
+      "share": 1
+    },
+    {
+      "label": "to",
+      "count": 106,
+      "share": 1
+    },
+    {
+      "label": "in",
+      "count": 97,
+      "share": 1
+    },
+    {
+      "label": "china",
+      "count": 60,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 57,
+      "share": 0
+    },
+    {
+      "label": "iran",
+      "count": 54,
+      "share": 0
+    },
+    {
+      "label": "tamil",
+      "count": 54,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 52,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 48,
+      "share": 0
+    },
+    {
+      "label": "vijay",
+      "count": 47,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 47,
+      "share": 0
+    },
+    {
+      "label": "nadu",
+      "count": 44,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-3",
+      "label": "found, sticks, gelatin",
+      "category": "India Pulse",
+      "count": 1530,
+      "average_score": 63,
+      "unique_sources": 231,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "BBC News World",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "saudi, pipeline, aramco",
+      "category": "Markets & Macro",
+      "count": 114,
+      "average_score": 82,
+      "unique_sources": 54,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "Bloomberg",
+        "Bloomberg Markets"
+      ]
+    },
+    {
+      "id": "family-7",
+      "label": "jumps, India, india's",
+      "category": "India Markets",
+      "count": 38,
+      "average_score": 82,
+      "unique_sources": 14,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Economic Times Tech",
+        "Google India: India GDP OR economy OR manufacturing"
+      ]
+    },
+    {
+      "id": "family-21",
+      "label": "Kolkata, bengal, India",
+      "category": "India Cities",
+      "count": 17,
+      "average_score": 76,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "Google India: Bengaluru news OR Karnataka",
+        "Google India: Kolkata news OR West Bengal",
+        "Google India: Pune news OR Ahmedabad OR Jaipur",
+        "Google: Hyderabad OR Telangana news"
+      ]
+    },
+    {
+      "id": "family-100",
+      "label": "georgia, yesterday, fire",
+      "category": "Climate & Supply Chain",
+      "count": 12,
+      "average_score": 66,
+      "unique_sources": 2,
+      "consensus": 99,
+      "top_sources": [
+        "Google: factory OR export OR freight",
+        "Google: flood OR drought OR wildfire OR heatwave"
+      ]
+    },
+    {
+      "id": "family-8",
+      "label": "threat, India, landscape",
+      "category": "India Pulse",
+      "count": 10,
+      "average_score": 98,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Economic Times Tech",
+        "Google: India defence OR border OR military OR L",
+        "Google: India monsoon OR heatwave OR cyclone OR "
+      ]
+    },
+    {
+      "id": "family-31",
+      "label": "autonomous, attackers, systems",
+      "category": "India Tech",
+      "count": 8,
+      "average_score": 76,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google India: India electric vehicle OR battery",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India electric vehicle OR EV OR battery"
+      ]
+    },
+    {
+      "id": "family-10",
+      "label": "puebla, India, repeat",
+      "category": "India Society",
+      "count": 7,
+      "average_score": 87,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India agriculture OR farmer OR MSP OR cr",
+        "Google: India crime OR police OR arrest",
+        "Google: India religion OR temple OR mosque OR co",
+        "Google: India women OR gender OR violence OR pro"
+      ]
+    },
+    {
+      "id": "family-53",
+      "label": "drift, hack, drags",
+      "category": "Cybersecurity",
+      "count": 7,
+      "average_score": 74,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Google News: Cyber",
+        "Google: cyber attack OR breach OR ransomware",
+        "Google: cyber attack OR breach OR ransomware 202",
+        "Google: data leak OR database exposed OR dump"
+      ]
+    },
+    {
+      "id": "family-11",
+      "label": "caribbean, norovirus, princess",
+      "category": "India Pulse",
+      "count": 6,
+      "average_score": 90,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "BBC News World",
+        "France 24",
+        "Google: AI regulation OR EU AI Act OR policy",
+        "NDTV Latest"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 1074,
+      "avg_score": 69,
+      "trending": 397,
+      "sources": 138,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1057,
+      "avg_score": 69,
+      "trending": 399,
+      "sources": 237,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 449,
+      "avg_score": 75,
+      "trending": 252,
+      "sources": 162,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 426,
+      "avg_score": 70,
+      "trending": 176,
+      "sources": 91,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 421,
+      "avg_score": 71,
+      "trending": 178,
+      "sources": 128,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 296,
+      "avg_score": 62,
+      "trending": 66,
+      "sources": 45,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 200,
+      "avg_score": 61,
+      "trending": 35,
+      "sources": 46,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 142,
+      "avg_score": 65,
+      "trending": 46,
+      "sources": 51,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "‘Backstabbing comes naturally to them’: PM Modi attacks Congress over breaking alliance with DMK,",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://indianexpress.com/article/india/backstabbing-comes-naturally-to-them-pm-modi-attacks-congress-over-breaking-alliance-with-dmk-10682286/"
+    },
+    {
+      "title": "NDA leaders stake claim to form Assam government",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/elections/assam-assembly/assam-government-formation-himanta-biswa-sarma-legislature-party-leader-bjp-nda-alliance/article70961689.ece"
+    },
+    {
+      "title": "Gelatin Sticks Found Near PM Modi's Convoy Route On Bengaluru Outskirts; Suspect Detained",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/gelatin-sticks-found-near-pm-modis-convoy-route-on-bengaluru-outskirts-suspect-detained-ws-l-10083725.html"
+    },
+    {
+      "title": "Saudi Aramco Q1 profit jumps 26% as key pipeline reaches capacity amid Iran war",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/10/saudi-aramco-q1-profit-jumps-26percent-as-key-pipeline-reaches-capacity.html"
+    },
+    {
+      "title": "Mythos | Double-edged sword",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/mythos-double-edged-sword/article70960067.ece"
+    },
+    {
+      "title": "Iran war day 72: Tehran yet to reply to US plan; Israel bombs Lebanon - Al Jazeera",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcXFWWmp1LWM5Rl9tMThTVndXTk5LaHFPTWtaS1hZQXlEVnpFdW83ek1RTHVSQ2w1N3FhXzlObk5oSHhWUlh0MlB4N0w4OUZodUFWM1JlTnVuSzFJakl5OVVoZTRfUHR2TVJtdmpsOHpiNXBGYlVNVEdlR1dVNkpSdFB6VUpiVVRVY3dIM3NEc05DeFlGTU4yS3V4YkhTX0tOX3RPY3pYcHM5SFBh0gGyAUFVX3lxTE90N0xKSW5XbGNnZS1GTC1GWmswQ1VFQWJVcUduaUx0Z21uMFVSQ3NhdUhHZW9ONXRhcm9Td25GZ3plSU9xT3pXTnM4N0FnclVqdjIydVh4VjBmNU52QlRpNE9iMVR1ZkxVbGxKdFUwTXExT2oyYmZsSGpnUkZkT3VMSXlmVmszdEVuUmhfVGZpQURGNXRVOXV3ZkltYlFkNTNHcl9xcWhBNFJockdYZUI0Ync?oc=5"
+    },
+    {
+      "title": "AAP holds protests against BJP over ED action against Punjab Minister Sanjeev Arora",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/punjab/aap-holds-protests-against-bjp-over-ed-action-against-punjab-minister-sanjeev-arora/article70961862.ece"
+    },
+    {
+      "title": "India's private capex jumps 67% to Rs 7.7 lakh crore in Sept 2025: CII unveils 5-point action plan",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/policy/indias-private-capex-jumps-67-to-rs-7-7-lakh-crore-in-sept-2025-cii-unveils-5-point-action-plan/articleshow/130989158.cms"
+    },
+    {
+      "title": "One year after Operation Sindoor: The threat landscape has not disappeared",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/opinion/op-ed/one-year-after-operation-sindoor-the-threat-landscape-has-not-disappeared/article70961789.ece"
+    },
+    {
+      "title": "Week in review: cPanel vulnerability actively exploited, DigiCert breach, LinkedIn job scams - Help Net Security",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNR2dmZEQ5LU9SWXVhc2NPT3hEZF9neTNLbzNjWjV3N05oTHpNWkoxVGVLekZpZ0UyZWhRb2FSbWVRdFZqYkpuMTVORGpJbzU5TmVXbm4tUU1LVjM3OWhDVE9wVFFVZm9KWTRJUUpLa0ZlR0djaHg2ZG1ZZkp2V3VtdFdyNW9hUjdPdUh4MDZ2REw3ekdBZWVMaHlhSm9ocXV3aXpkV1dMV0FzbjBvQUY3c0puRTdibDNkVTlTZWV2YjYtUnRrdnp5NW5jcFFMZw?oc=5"
+    },
+    {
+      "title": "UK Joins India, South Asia & Germany Travelers to Flood UAE — Ajman’s Sports Tourism Strategy Triggers Record‑Breaking Emirates & Etihad Bookings, Massive Hotel Demand Surge Across Dubai, Abu Dhabi & Ajman - Travel And Tour World",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPMWVwMVpCVFdLOWN6VU4wR1lsX1NsbnV3SjBDVllIVkNmaXJLaVJfcmxTaUlpcDZNZ2lmMVFVZmtNd3B5T0RJT3BNLTFvMjJJS2hfZzljR01lRWV6c1dVTEp4a1RvMjJQLTIybzlQc2ZwalZtZTdHYnJnT1FIZGtFZkZVOTRNOVNZX1V0MjdxeVpadHpQQ1JrUm5QR1pXYzhrUU5sVjI4ZXJmV3A2R2txN2F2X21rbDBERDVDVGFrU1I1MFp3cXhLMVNLRVVqdmF2YmdaZ2FfU0JNWS10NHY4ZEVEN2xHRnhMT0VOUzBmQ1g2MmRuVkt1aDJHUldIcFVMa3hhZ3R3aEg0RU5Zd3pNSHVteXhFSllCNGZja2R5aTNET2l2a0t4U3hnZTVGNlBV?oc=5"
+    },
+    {
+      "title": "China unable to repeat Puebla success as India win recurve women team gold at Shanghai - World Archery",
+      "score": 99,
+      "category": "India Society",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVDdlMGVzU01MVm5Qa2Y4N21tcWtWc0ZpREJLU1NXQUxybk1jSV9xNWl6MEY1VXMzV3FOb1hMZ2I2em1sMzFRYkdxaFpKSU5rX1lXZkNuZi00YTZueXZVeFhXOGhYc1d3VFdSZXQza2E3ZWkzMm5jVnVMRk11U1lFam1lTWV0T080N1dlSngtTXhlT0JySmFydHpOTGh6WWpRZG54WEVwMklpczdfU2xKeFdvOGZYRUZ2MXVubQ?oc=5"
+    },
+    {
+      "title": "Archery World Cup 2026 Shanghai: Indian women’s recurve team stuns China to win gold medal - olympics.com",
+      "score": 99,
+      "category": "India Society",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWFB4LWFQczZRVWx4RmtUeFBmXzBUTk5QLTdpRjFaLVMxSVNISVFZUURTaXNJLUttRXVsbVNadDBUQkY2SHh4MUEzajMwcnFvbWxGT2MtTGhCWHkxQ2M3eFdUU3RObENfVVVXamUxb2ZWVDE4ODlKZnlUc1RjS2lmeUQ1ZHpIeGppMTNUaFBidV83MWt0enItVUNB?oc=5"
+    },
+    {
+      "title": "US Awaits Iran Reply as Aramco Says Hormuz Opening No Quick Fix",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/us-awaits-iran-reply-as-aramco-says-hormuz-opening-no-quick-fix"
+    },
+    {
+      "title": "What Is Norovirus? Caribbean Princess Cruise Ship Outbreak Sparks Global Concern",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/health/what-is-norovirus-caribbean-princess-cruise-ship-outbreak-sparks-global-concern-11474178"
+    },
+    {
+      "title": "Petrol, diesel prices today: How much does fuel cost in Delhi, Mumbai, Kolkata, Bengaluru on 10 May",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/petrol-diesel-prices-today-how-much-does-fuel-cost-in-delhi-mumbai-kolkata-bengaluru-on-10-may-11778397538269.html"
+    },
+    {
+      "title": "Maternal Health Beyond Childbirth: Doctor Explains Long-Term Care And Awareness Gaps",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/health/maternal-health-beyond-childbirth-doctor-explains-long-term-care-and-awareness-gaps-11474126"
+    },
+    {
+      "title": "Sensex to hit 3 lakh by 2036? Raamdeo Agrawal says India is the 'Ferrari' among markets, here's why",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-to-hit-3-lakh-by-2036-raamdeo-agrawal-says-india-is-the-ferrari-among-markets-heres-why/articleshow/130988602.cms"
+    },
+    {
+      "title": "LPG gas cylinder price on 10 May: Check domestic and commercial cooking gas rates in New Delhi, Mumbai, Bengaluru today",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/lpg-gas-cylinder-price-on-10-may-check-domestic-and-commercial-cooking-gas-rates-in-new-delhi-mumbai-bengaluru-today-11778396355561.html"
+    },
+    {
+      "title": "After Hantavirus Fears, Over 100 Fall Sick In Caribbean Cruise Norovirus Outbreak",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/world-news/after-hantavirus-fears-over-100-fall-sick-in-caribbean-cruise-norovirus-outbreak-11474135"
+    },
+    {
+      "title": "'Congress Stabbed DMK In The Back': PM Modi Attacks TVK Alliance Politics In Tamil Nadu",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/pm-modi-attacks-congress-dmk-alliance-betrayal-bengaluru-vijay-tamil-nadu-new-chief-minister-ws-l-10083594.html"
+    },
+    {
+      "title": "Indian stock market: How are Sensex and Nifty 50 likely to perform next week amid US-Iran war uncertainty? - Mint",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNS2JKNVc2X2pKN1IyaEhIUVllN3BxQzJrQUlVN2h3TEo5TmtKaUk3R0hGVXJvdU9QbWk1N2g2U2t0Q1JIbGhvZG9sRUpuVlJING5zZzJwcktDcDJ1YlF3NUJHZGpobjFoU0lXLUJFUk1FNFJMaUw0RWFhWlpBc18wSkpEVS0xbzRnTDlDUzRwS3R5V2ZZeGVvNTd3RHhLMGkySWxLMDBUWkpfd2MydlNOS0YxVEpYVkdxRVFmMV85V1VZX1lCOVIxM0VvXzZzQ25jS2FEUENSZklpY2pQRGQ5NGRFcXZUTzdVd2ppejVjNlFqam13ZmNxWUlRSnBxenZ2Q1JnNNIBigJBVV95cUxNUjBEcFotQ0RUb2FmTGxET3hUSHJUSUtFRWkwM3NLcE9XeTBqMXlnR2VRYktWbDAzZ1NwUjEtQktjU1oxOWp4MVhJRkNNREthOHVGem9jcUhhWXc3b1dudmZuV21JVi1sQS1ZUE5fODA5UXN3Q3gyaVZFTDlzY0JFRnlUVmhpa29MQlRWQl9mZFVfSzFBM050c1dFeTlsLW5jNzZIV004R3lmTzJsVHlBdXJ2cjkwd2loTjI3V1QtWjd3a3Q3ZVRxOTVHUkhsNXpmMWllX3lrSUExdHQ5OGZpakFTSExSanFYdk9JRWxWclJBSmVoYWlsMnRsOW9EXzZrODRzTGU4dXU2QQ?oc=5"
+    },
+    {
+      "title": "Chinese Consulate General in Kolkata issues renewed warning against unintentional Nepal-India border crossings - Global Times",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CTnFjUFVBcHNDeDlkczVreE1fMEI2YXp4NDQ5ejJrODVOaldESTVjMEZIeVZGcjhDakQ4bEpmcTdaal9BMml1WFhNczc5akFJVnRvRzZfUUp6dE52TGhodlF3?oc=5"
+    },
+    {
+      "title": "Psychologist Explains Why Mothers Experience Burnout, Stress And Emotional Fatigue",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/health/psychologist-explains-why-mothers-experience-burnout-stress-and-emotional-fatigue-11468678"
+    },
+    {
+      "title": "HC protects MP Shashi Tharoor's personality rights, directs removal of deepfake video",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/hc-protects-mp-shashi-tharoors-personality-rights-directs-removal-of-deepfake-video/articleshow/130987917.cms"
+    },
+    {
+      "title": "10 smallcap stocks soaring up to 116% in FY27. Do you own them?",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/10-smallcap-stocks-soaring-up-to-116-in-fy27-do-you-own-them/slideshow/130988390.cms"
+    },
+    {
+      "title": "\"Parasite, Backstabber\": PM Modi Tears Into Congress For Ditching DMK",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/tamil-nadu-news/congress-survived-pre-2014-with-dmk-help-backstabbed-it-today-pm-narendra-modi-11474006"
+    },
+    {
+      "title": "Iraq Announces New Oil Discovery at Al-Qarnain Block - Egypt Oil & Gas",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOT0VQenlPcnA1eTg2LTNpbFFhVFNJMUUza29mVXJkdTM5RkNadmN6ZlJUQnJqVFlfbU1abnlNVkMydTNXdlFoS0lTeG83WTZ0VjdDdTAtdDRIczJ3MU9MNFVPUmpyQUpfazZyOExIR1A3b21OMHQycEM2a0gtcWhNV1MtRzVlOGFCWjkw?oc=5"
+    },
+    {
+      "title": "Saudi Arabia joins India and Indonesia to Spark Spiritual Tourism Surge: Somnath Temple Leads 2026’s Top Pilgrimage Spots – Discover How Emirates & Air India Are Bracing for Record-Breaking Crowds! - Travel And Tour World",
+      "score": 99,
+      "category": "India Society",
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPUXdjX3NFV1JTcEVOVXBBTmpTZTMwaVFBNXZ2Zmh3WlB2eXJtUzVRMVRhWk1tRUVfaElhVkhpVVNwQ3NtLURfaTZFaHI0cGpSdmhjUk1JOFdObDJCOUw2dnZ6MU1yblVhZDQxT0ozMTFxVnFLQzZiRkMzQ0dTNkZpbkNwS1NjWUM2cmNvRG9SclhLaTR2VDFxWDNxTEw4MGp3NGNJcGw0a3M1SWk2eVVFcVZwck1VMjgyRVRuMmUzSE1KeUxQUUYxMThBRmxIUlpHb2NWb0I0UDR0MmRDSFdqdTZycUVUODdvclQtaGVMUHFSUUhWbUdGeW1ZVGk2OTM3QlFHODlEdll0YmxtLXpPWGMwbkdNbUlndXZpTWR3eWt1YjJwTjZiTzBiTVA5Y3NqNHB3S0RWd2pacVBDQi1hR3Npbnk2UQ?oc=5"
+    },
+    {
+      "title": "Saudi Aramco reports higher profits despite Iran war",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.ft.com/content/19c03559-1ed6-49bd-b2c1-98961d768f83"
+    }
+  ]
+}
