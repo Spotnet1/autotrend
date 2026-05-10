@@ -1,80 +1,91 @@
 {
   "date": "2026-05-10",
   "stats": {
-    "total": 1196,
-    "trending": 109,
-    "breaking": 61,
-    "sources": 116,
-    "feeds": 46,
-    "updated": "10 May 2026, 08:14 UTC"
+    "total": 1766,
+    "trending": 330,
+    "breaking": 190,
+    "sources": 168,
+    "feeds": 94,
+    "india": 664,
+    "india_share": 38,
+    "updated": "10 May 2026, 08:33 UTC"
   },
   "top_categories": [
     {
-      "label": "Geopolitics",
-      "count": 109,
+      "label": "India Pulse",
+      "count": 159,
       "share": 9
     },
     {
-      "label": "Markets & Macro",
-      "count": 108,
-      "share": 9
-    },
-    {
-      "label": "AI & Startups",
-      "count": 99,
-      "share": 8
-    },
-    {
-      "label": "Cybersecurity",
-      "count": 80,
+      "label": "India Cities",
+      "count": 125,
       "share": 7
     },
     {
-      "label": "Consumer Tech",
-      "count": 76,
+      "label": "Markets & Macro",
+      "count": 121,
+      "share": 7
+    },
+    {
+      "label": "India Markets",
+      "count": 119,
+      "share": 7
+    },
+    {
+      "label": "Geopolitics",
+      "count": 115,
+      "share": 7
+    },
+    {
+      "label": "India & APAC",
+      "count": 104,
       "share": 6
+    },
+    {
+      "label": "India Tech",
+      "count": 101,
+      "share": 6
+    },
+    {
+      "label": "AI & Startups",
+      "count": 100,
+      "share": 6
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 82,
+      "share": 5
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 80,
+      "share": 5
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 75,
+      "share": 4
     },
     {
       "label": "🌍 Geopolitics & Conflict",
       "count": 71,
-      "share": 6
-    },
-    {
-      "label": "Climate & Supply Chain",
-      "count": 71,
-      "share": 6
-    },
-    {
-      "label": "India & APAC",
-      "count": 68,
-      "share": 6
-    },
-    {
-      "label": "🚨 Breaking & Upcoming Alerts",
-      "count": 54,
-      "share": 5
-    },
-    {
-      "label": "🇺🇸 Americas",
-      "count": 51,
       "share": 4
-    },
-    {
-      "label": "🇪🇺 Europe",
-      "count": 38,
-      "share": 3
-    },
-    {
-      "label": "💻 Technology",
-      "count": 38,
-      "share": 3
     }
   ],
   "top_regions": [
     {
+      "label": "India",
+      "count": 260,
+      "score": 73,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
       "label": "United States",
-      "count": 191,
-      "score": 57,
+      "count": 237,
+      "score": 60,
       "lat": 38.9,
       "lng": -97.0,
       "x": 23.1,
@@ -82,8 +93,8 @@
     },
     {
       "label": "Middle East",
-      "count": 119,
-      "score": 65,
+      "count": 138,
+      "score": 67,
       "lat": 29.3,
       "lng": 47.5,
       "x": 63.2,
@@ -91,8 +102,8 @@
     },
     {
       "label": "United Kingdom",
-      "count": 74,
-      "score": 60,
+      "count": 86,
+      "score": 63,
       "lat": 54.7,
       "lng": -3.5,
       "x": 49.0,
@@ -100,17 +111,26 @@
     },
     {
       "label": "China",
-      "count": 66,
-      "score": 54,
+      "count": 77,
+      "score": 57,
       "lat": 35.9,
       "lng": 104.2,
       "x": 78.9,
       "y": 30.1
     },
     {
+      "label": "Europe",
+      "count": 59,
+      "score": 60,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
       "label": "Russia",
-      "count": 51,
-      "score": 62,
+      "count": 56,
+      "score": 63,
       "lat": 61.5,
       "lng": 105.3,
       "x": 79.2,
@@ -118,92 +138,74 @@
     },
     {
       "label": "Ukraine",
-      "count": 43,
-      "score": 65,
+      "count": 48,
+      "score": 67,
       "lat": 48.4,
       "lng": 31.2,
       "x": 58.7,
       "y": 23.1
-    },
-    {
-      "label": "Europe",
-      "count": 42,
-      "score": 56,
-      "lat": 50.1,
-      "lng": 8.6,
-      "x": 52.4,
-      "y": 22.2
-    },
-    {
-      "label": "Latin America",
-      "count": 29,
-      "score": 49,
-      "lat": -14.2,
-      "lng": -51.9,
-      "x": 35.6,
-      "y": 57.9
     }
   ],
   "top_keywords": [
     {
       "label": "to",
-      "count": 142,
-      "share": 2
+      "count": 254,
+      "share": 3
     },
     {
       "label": "in",
-      "count": 114,
+      "count": 197,
       "share": 2
     },
     {
       "label": "of",
-      "count": 77,
+      "count": 122,
       "share": 1
     },
     {
-      "label": "is",
-      "count": 58,
-      "share": 1
-    },
-    {
-      "label": "ai",
-      "count": 43,
+      "label": "india",
+      "count": 85,
       "share": 1
     },
     {
       "label": "on",
-      "count": 39,
+      "count": 78,
+      "share": 1
+    },
+    {
+      "label": "is",
+      "count": 76,
       "share": 1
     },
     {
       "label": "new",
-      "count": 39,
+      "count": 72,
+      "share": 1
+    },
+    {
+      "label": "ai",
+      "count": 67,
+      "share": 1
+    },
+    {
+      "label": "as",
+      "count": 57,
       "share": 1
     },
     {
       "label": "iran",
-      "count": 38,
-      "share": 1
-    },
-    {
-      "label": "putin",
-      "count": 28,
-      "share": 0
-    },
-    {
-      "label": "as",
-      "count": 26,
+      "count": 44,
       "share": 0
     }
   ],
   "top_families": [
     {
       "id": "family-1",
-      "label": "iran, as, Middle East",
+      "label": "Middle East, aramco, iran",
       "category": "Markets & Macro",
-      "count": 485,
-      "average_score": 57,
-      "unique_sources": 80,
+      "count": 1160,
+      "average_score": 62,
+      "unique_sources": 139,
       "consensus": 99,
       "top_sources": [
         "Al Jazeera English",
@@ -213,27 +215,72 @@
       ]
     },
     {
-      "id": "family-3",
-      "label": "one, to, zero",
+      "id": "family-4",
+      "label": "markets, raamdeo, India",
+      "category": "India Markets",
+      "count": 29,
+      "average_score": 82,
+      "unique_sources": 13,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera English",
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Google India: India GDP OR economy OR manufacturing"
+      ]
+    },
+    {
+      "id": "family-14",
+      "label": "to, zero, patient",
       "category": "Cybersecurity",
-      "count": 28,
-      "average_score": 61,
-      "unique_sources": 10,
+      "count": 11,
+      "average_score": 70,
+      "unique_sources": 5,
       "consensus": 99,
       "top_sources": [
         "BleepingComputer",
         "Google News: Cyber",
-        "Google: cloud security OR supply chain attack",
-        "Google: cyber attack OR breach OR ransomware"
+        "Google: cyber attack OR breach OR ransomware",
+        "Google: malware OR phishing OR infostealer"
       ]
     },
     {
-      "id": "family-22",
-      "label": "cruise, virus-hit, United States",
-      "category": "Geopolitics",
-      "count": 20,
-      "average_score": 56,
-      "unique_sources": 7,
+      "id": "family-16",
+      "label": "of, telangana, Hyderabad",
+      "category": "India Cities",
+      "count": 10,
+      "average_score": 80,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Google India: Bengaluru news OR Karnataka",
+        "Google India: Hyderabad news OR Telangana",
+        "Google India: Kolkata news OR West Bengal",
+        "Google India: Mumbai news OR Maharashtra"
+      ]
+    },
+    {
+      "id": "family-5",
+      "label": "in, consulate, chinese",
+      "category": "India Pulse",
+      "count": 9,
+      "average_score": 85,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Google India: India breaking news OR New Delhi",
+        "Google India: India defence OR border OR military",
+        "Google India: India election OR BJP OR Congress",
+        "Google India: India energy OR power grid OR oil"
+      ]
+    },
+    {
+      "id": "family-26",
+      "label": "United States, caribbean, princess",
+      "category": "India Pulse",
+      "count": 9,
+      "average_score": 70,
+      "unique_sources": 6,
       "consensus": 99,
       "top_sources": [
         "BBC News World",
@@ -243,146 +290,95 @@
       ]
     },
     {
-      "id": "family-7",
-      "label": "russian, many, how",
-      "category": "Geopolitics",
-      "count": 16,
-      "average_score": 77,
-      "unique_sources": 8,
+      "id": "family-12",
+      "label": "Ukraine, russia, war",
+      "category": "India & APAC",
+      "count": 6,
+      "average_score": 79,
+      "unique_sources": 4,
       "consensus": 99,
       "top_sources": [
-        "Google News: Conflicts",
+        "Google India: india OR southeast asia startup",
+        "Google India: india china OR india us OR india russia",
         "Google News: Europe",
-        "Google: china taiwan OR south china sea",
-        "Google: geopolitics OR war OR diplomacy"
+        "Google: russia ukraine OR nato"
       ]
     },
     {
-      "id": "family-66",
-      "label": "argentina, Latin America, celebrate",
-      "category": "🇺🇸 Americas",
-      "count": 16,
-      "average_score": 50,
-      "unique_sources": 3,
-      "consensus": 99,
-      "top_sources": [
-        "Globo",
-        "Google News: North America",
-        "Google News: South America"
-      ]
-    },
-    {
-      "id": "family-42",
-      "label": "shot, man, breaking",
-      "category": "🚨 Breaking & Upcoming Alerts",
-      "count": 15,
-      "average_score": 60,
-      "unique_sources": 1,
-      "consensus": 99,
-      "top_sources": [
-        "Google News: Breaking"
-      ]
-    },
-    {
-      "id": "family-23",
-      "label": "to, startups, zaidi",
-      "category": "AI & Startups",
-      "count": 9,
-      "average_score": 59,
+      "id": "family-27",
+      "label": "ip, India, startups",
+      "category": "India Tech",
+      "count": 4,
+      "average_score": 76,
       "unique_sources": 4,
-      "consensus": 99,
+      "consensus": 95,
       "top_sources": [
-        "Google: artificial intelligence OR foundation model",
-        "Google: developer tools OR software startup",
-        "Google: open source model OR agentic ai",
-        "Google: startup funding OR venture capital"
-      ]
-    },
-    {
-      "id": "family-60",
-      "label": "ai, permits, Google",
-      "category": "AI & Startups",
-      "count": 9,
-      "average_score": 56,
-      "unique_sources": 4,
-      "consensus": 99,
-      "top_sources": [
-        "Google: artificial intelligence OR foundation model",
-        "Google: cloud security OR supply chain attack",
-        "Google: developer tools OR software startup",
-        "Google: open source model OR agentic ai"
+        "Economic Times Tech",
+        "Google India: India artificial intelligence OR AI startup",
+        "Google India: India electric vehicle OR battery",
+        "Google: artificial intelligence OR foundation model"
       ]
     }
   ],
   "top_sectors": [
     {
       "label": "AI Race",
-      "count": 557,
-      "avg_score": 59,
-      "trending": 87,
-      "sources": 110,
+      "count": 763,
+      "avg_score": 64,
+      "trending": 203,
+      "sources": 161,
+      "heat": 99
+    },
+    {
+      "label": "India Watch",
+      "count": 597,
+      "avg_score": 69,
+      "trending": 197,
+      "sources": 73,
       "heat": 99
     },
     {
       "label": "Geopolitical Risk",
-      "count": 282,
-      "avg_score": 66,
-      "trending": 78,
-      "sources": 71,
-      "heat": 99
-    },
-    {
-      "label": "Macro Stress",
-      "count": 191,
-      "avg_score": 62,
-      "trending": 29,
-      "sources": 54,
+      "count": 336,
+      "avg_score": 68,
+      "trending": 115,
+      "sources": 99,
       "heat": 99
     },
     {
       "label": "Energy & Supply",
-      "count": 128,
-      "avg_score": 60,
-      "trending": 20,
-      "sources": 41,
+      "count": 269,
+      "avg_score": 67,
+      "trending": 83,
+      "sources": 60,
       "heat": 99
     },
     {
-      "label": "Cyber Threat",
-      "count": 104,
-      "avg_score": 64,
-      "trending": 26,
-      "sources": 16,
+      "label": "Macro Stress",
+      "count": 261,
+      "avg_score": 66,
+      "trending": 67,
+      "sources": 84,
       "heat": 99
     },
     {
       "label": "Platform Power",
-      "count": 87,
-      "avg_score": 52,
-      "trending": 2,
-      "sources": 16,
+      "count": 195,
+      "avg_score": 61,
+      "trending": 39,
+      "sources": 30,
       "heat": 99
     }
   ],
   "top_contagion": [
     {
-      "label": "AI & Startups -> Cybersecurity",
+      "label": "Geopolitics -> India & APAC",
       "score": 99,
       "families": 3,
       "drivers": [
-        "iran, as, Middle East",
-        "one, to, zero",
-        "ai, permits, Google"
-      ]
-    },
-    {
-      "label": "Cybersecurity -> 🌍 Geopolitics & Conflict",
-      "score": 99,
-      "families": 3,
-      "drivers": [
-        "iran, as, Middle East",
-        "one, to, zero",
-        "russian, many, how"
+        "Middle East, aramco, iran",
+        "markets, raamdeo, India",
+        "Ukraine, russia, war"
       ]
     },
     {
@@ -390,45 +386,120 @@
       "score": 99,
       "families": 3,
       "drivers": [
-        "iran, as, Middle East",
-        "cruise, virus-hit, United States",
-        "russian, many, how"
+        "Middle East, aramco, iran",
+        "United States, caribbean, princess",
+        "Ukraine, russia, war"
       ]
     },
     {
-      "label": "AI & Startups -> Consumer Tech",
+      "label": "AI & Startups -> India Tech",
       "score": 99,
       "families": 2,
       "drivers": [
-        "iran, as, Middle East",
-        "one, to, zero"
+        "Middle East, aramco, iran",
+        "ip, India, startups"
       ]
     },
     {
-      "label": "AI & Startups -> 🌍 Geopolitics & Conflict",
+      "label": "Cybersecurity -> 🤖 Cyber & Tech Warfare",
       "score": 99,
       "families": 2,
       "drivers": [
-        "iran, as, Middle East",
-        "one, to, zero"
+        "Middle East, aramco, iran",
+        "to, zero, patient"
       ]
     },
     {
-      "label": "AI & Startups -> 🤖 Cyber & Tech Warfare",
+      "label": "Geopolitics -> India Cities",
       "score": 99,
       "families": 2,
       "drivers": [
-        "iran, as, Middle East",
-        "one, to, zero"
+        "Middle East, aramco, iran",
+        "markets, raamdeo, India"
+      ]
+    },
+    {
+      "label": "Geopolitics -> India Markets",
+      "score": 99,
+      "families": 2,
+      "drivers": [
+        "Middle East, aramco, iran",
+        "markets, raamdeo, India"
       ]
     }
   ],
   "headlines": [
     {
+      "title": "Saudi Aramco Q1 profit jumps 26% as key pipeline reaches capacity amid Iran war",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/10/saudi-aramco-q1-profit-jumps-26percent-as-key-pipeline-reaches-capacity.html"
+    },
+    {
+      "title": "Mythos | Double-edged sword",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/mythos-double-edged-sword/article70960067.ece"
+    },
+    {
       "title": "US Awaits Iran Reply as Aramco Says Hormuz Opening No Quick Fix",
       "score": 99,
       "category": "Markets & Macro",
       "url": "https://www.bloomberg.com/news/articles/2026-05-10/us-awaits-iran-reply-as-aramco-says-hormuz-opening-no-quick-fix"
+    },
+    {
+      "title": "Maternal Health Beyond Childbirth: Doctor Explains Long-Term Care And Awareness Gaps",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/health/maternal-health-beyond-childbirth-doctor-explains-long-term-care-and-awareness-gaps-11474126"
+    },
+    {
+      "title": "Sensex to hit 3 lakh by 2036? Raamdeo Agrawal says India is the 'Ferrari' among markets, here's why",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-to-hit-3-lakh-by-2036-raamdeo-agrawal-says-india-is-the-ferrari-among-markets-heres-why/articleshow/130988602.cms"
+    },
+    {
+      "title": "Indian stock market: How are Sensex and Nifty 50 likely to perform next week amid US-Iran war uncertainty? - Mint",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNS2JKNVc2X2pKN1IyaEhIUVllN3BxQzJrQUlVN2h3TEo5TmtKaUk3R0hGVXJvdU9QbWk1N2g2U2t0Q1JIbGhvZG9sRUpuVlJING5zZzJwcktDcDJ1YlF3NUJHZGpobjFoU0lXLUJFUk1FNFJMaUw0RWFhWlpBc18wSkpEVS0xbzRnTDlDUzRwS3R5V2ZZeGVvNTd3RHhLMGkySWxLMDBUWkpfd2MydlNOS0YxVEpYVkdxRVFmMV85V1VZX1lCOVIxM0VvXzZzQ25jS2FEUENSZklpY2pQRGQ5NGRFcXZUTzdVd2ppejVjNlFqam13ZmNxWUlRSnBxenZ2Q1JnNNIBigJBVV95cUxNUjBEcFotQ0RUb2FmTGxET3hUSHJUSUtFRWkwM3NLcE9XeTBqMXlnR2VRYktWbDAzZ1NwUjEtQktjU1oxOWp4MVhJRkNNREthOHVGem9jcUhhWXc3b1dudmZuV21JVi1sQS1ZUE5fODA5UXN3Q3gyaVZFTDlzY0JFRnlUVmhpa29MQlRWQl9mZFVfSzFBM050c1dFeTlsLW5jNzZIV004R3lmTzJsVHlBdXJ2cjkwd2loTjI3V1QtWjd3a3Q3ZVRxOTVHUkhsNXpmMWllX3lrSUExdHQ5OGZpakFTSExSanFYdk9JRWxWclJBSmVoYWlsMnRsOW9EXzZrODRzTGU4dXU2QQ?oc=5"
+    },
+    {
+      "title": "Chinese Consulate General in Kolkata issues renewed warning against unintentional Nepal-India border crossings - Global Times",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CTnFjUFVBcHNDeDlkczVreE1fMEI2YXp4NDQ5ejJrODVOaldESTVjMEZIeVZGcjhDakQ4bEpmcTdaal9BMml1WFhNczc5akFJVnRvRzZfUUp6dE52TGhodlF3?oc=5"
+    },
+    {
+      "title": "HC protects MP Shashi Tharoor's personality rights, directs removal of deepfake video",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/hc-protects-mp-shashi-tharoors-personality-rights-directs-removal-of-deepfake-video/articleshow/130987917.cms"
+    },
+    {
+      "title": "10 smallcap stocks soaring up to 116% in FY27. Do you own them?",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/10-smallcap-stocks-soaring-up-to-116-in-fy27-do-you-own-them/slideshow/130988390.cms"
+    },
+    {
+      "title": "Market Trading Guide: Buy Coforge and NBCC on Monday for near-term gains of up to 7%",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-buy-coforge-and-nbcc-on-monday-for-near-term-gains-of-up-to-7/articleshow/130987252.cms"
+    },
+    {
+      "title": "Traders looking for next leg in global stocks rally bet on Asia",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/traders-looking-for-next-leg-in-global-stocks-rally-bet-on-asia/articleshow/130986358.cms"
+    },
+    {
+      "title": "Zepto, Dhoot Transmission among 6 companies to secure Sebi's nod for IPO",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/zepto-dhoot-transmission-among-6-companies-to-secure-sebis-nod-for-ipo/articleshow/130986236.cms"
     },
     {
       "title": "Anwar to Outline Malaysia Oil Supply Continuity Plan: Bernama",
@@ -461,6 +532,12 @@
       "url": "https://www.bloomberg.com/news/videos/2026-05-09/chalmers-on-unacceptable-australian-housing-status-quo-video"
     },
     {
+      "title": "Cybersecurity entering AI-vs-AI era as attackers, defenders deploy autonomous systems: WEF report",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/cybersecurity-entering-ai-vs-ai-era-as-attackers-defenders-deploy-autonomous-systems-wef-report/articleshow/130975105.cms"
+    },
+    {
       "title": "Trellix source code breach claimed by RansomHouse hackers",
       "score": 99,
       "category": "Cybersecurity",
@@ -473,106 +550,34 @@
       "url": "https://www.bloomberg.com/news/articles/2026-05-10/aramco-profit-climbs-as-war-driven-oil-rise-offsets-export-hit"
     },
     {
+      "title": "Two wins, two losses: What India, Pakistan have learned a year after war",
+      "score": 97,
+      "category": "🌍 Geopolitics & Conflict",
+      "url": "https://www.aljazeera.com/news/2026/5/10/two-wins-two-losses-what-india-pakistan-have-learned-a-year-after-war?traffic_source=rss"
+    },
+    {
+      "title": "T.N. Government formation: IUML endorses M.K. Stalin’s demand for a new government",
+      "score": 96,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/elections/tamil-nadu-assembly/iuml-role-tamil-nadu-govt-formation-updates-may-8/article70955419.ece"
+    },
+    {
+      "title": "Stalin reacts to Tamil Nadu CM Vijay speech: ‘Money is there; what is required is efficient administration’",
+      "score": 96,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/mk-stalin-reacts-to-tamil-nadu-cm-vijay-speech-money-is-there-what-is-required-is-efficient-administration/article70961861.ece"
+    },
+    {
+      "title": "Video | Russia Ukraine War | Ukraine War “Heading To An End”, Says Putin Amid Peace Push - NDTV",
+      "score": 96,
+      "category": "India & APAC",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN2Zfcm9zZlpuQ2k3MWhyU2ROdnVoS0lkWGhFcHUxUWxBLVY5eXl0ZDA5S0lrNENsd29ISk1mUWVOS3lZLWg3b3BaejMtZS1IWW4wZlN0Z2xiRnFYUzlqMW5YOER5VmRVNWk1Z1VwMms2dThkeFkyTldRQjltVmdLRC1melMzTTY3akFRT0xOUWdRS2x3SjV1ZGNCd21acS1DRmpIa3AxODlwZEtDaWdv?oc=5"
+    },
+    {
       "title": "Aramco Profit Tops Estimates After War-Driven Oil Price Rise",
       "score": 96,
       "category": "📈 Macro Economy & Markets",
       "url": "https://www.bloomberg.com/news/articles/2026-05-10/aramco-profit-climbs-as-war-driven-oil-rise-offsets-export-hit"
-    },
-    {
-      "title": "Saudi Aramco Profit Jumps 26% as Iran War Drives Oil Prices",
-      "score": 96,
-      "category": "📉 Markets",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-10/aramco-profit-climbs-as-war-driven-oil-rise-offsets-export-hit"
-    },
-    {
-      "title": "One Click, Total Shutdown: The \"Patient Zero\" Webinar on Killing Stealth Breaches",
-      "score": 96,
-      "category": "Cybersecurity",
-      "url": "https://thehackernews.com/2026/05/one-click-total-shutdown-patient-zero.html"
-    },
-    {
-      "title": "Qatar Sends First LNG Shipment Through Hormuz Since War Started",
-      "score": 95,
-      "category": "Markets & Macro",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-10/qatar-sends-first-lng-shipment-through-hormuz-since-war-started"
-    },
-    {
-      "title": "Qatar Sends First LNG Shipment Through Hormuz Since War Started",
-      "score": 95,
-      "category": "📈 Macro Economy & Markets",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-10/qatar-sends-first-lng-shipment-through-hormuz-since-war-started"
-    },
-    {
-      "title": "ThreatsDay Bulletin: Edge Plaintext Passwords, ICS 0-Days, Patch-or-Die Alerts and 25+ New Stories",
-      "score": 93,
-      "category": "Cybersecurity",
-      "url": "https://thehackernews.com/2026/05/threatsday-bulletin-edge-plaintext.html"
-    },
-    {
-      "title": "Iran warns countries enforcing US sanctions will face 'difficulties' in Strait of Hormuz transit - Anadolu Ajansı",
-      "score": 92,
-      "category": "Geopolitics",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPR290UVlHOVRuRWplZlFTbEhHOHZHM1RYV2h2dEt5ZlhjVnNCTjBvd2tUTG5ENVI1SU91YkhfZ1FrVW1PUGJSd1pEZ3VGNkRZTVBrajV2ZmRyYVlwV20tUmxrVGtaZEdoU0l3OWFyZ3JqRFFCRXo4bWhpS0l2SHh6Y05SMEV1OG1ZTHFTY0JfOXNGVU1aRHUwbGxJbmFkOVFkcXBvTkNTaTJacFpEVHc4WXBWcGVRVlljMmpIZFNtRkcwRWlqT2pIei00aWdyaFozRFAxQXln?oc=5"
-    },
-    {
-      "title": "Canvas login portals hacked in mass ShinyHunters extortion campaign",
-      "score": 92,
-      "category": "Cybersecurity",
-      "url": "https://www.bleepingcomputer.com/news/security/canvas-login-portals-hacked-in-mass-shinyhunters-extortion-campaign/"
-    },
-    {
-      "title": "The Iran war will change global energy markets in these important ways, oil executives say",
-      "score": 91,
-      "category": "Markets & Macro",
-      "url": "https://www.cnbc.com/2026/05/09/iran-war-oil-gas-energy-security.html"
-    },
-    {
-      "title": "The Iran war will change global energy markets in these important ways, oil executives say",
-      "score": 91,
-      "category": "📈 Business / Finance",
-      "url": "https://www.cnbc.com/2026/05/09/iran-war-oil-gas-energy-security.html"
-    },
-    {
-      "title": "Far-Right Australian Party Wins Seat in First Election Victory",
-      "score": 90,
-      "category": "📈 Macro Economy & Markets",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-10/far-right-australian-party-wins-seat-in-first-election-victory"
-    },
-    {
-      "title": "How many Russian soldiers died in the war with Ukraine - Mediazona",
-      "score": 89,
-      "category": "Geopolitics",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBoQjVVdlBzMUxla3RjVHUxdkEwc015Znc3WlBPNWRBeF9vWDVFaHlpcEYtang3bkNZUG9vYkZwNnlkOVBhQ2xseGtxMGw5ODBMSDZ6REIzcEExWl83M20xS3B5U0VzWnNSNHdN?oc=5"
-    },
-    {
-      "title": "Taiwan’s Plastic Habit Collides With Shortages Caused by a Faraway War - The New York Times",
-      "score": 88,
-      "category": "Geopolitics",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWnU1S3RGaFNOOTdZWFZoRkVWVDZiNmNsbWEzM0xNVkpOTC02U3R3TVV5V3lkWmJmQmxqb0k2eUtha3g3ZkZaTVQ0aXQ5WDJJQXZ0YzQ3cnk0VWhQU0dYSWhPaU1fMlBjWUNiU0ZoOVNheUN6aG42LUJHVjVNbk8xT1lR?oc=5"
-    },
-    {
-      "title": "Pakistan central bank hikes policy rate by 100 bps as West Asia war fuels inflation - MSN",
-      "score": 88,
-      "category": "India & APAC",
-      "url": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxNQng4bVBrYVhEN0hsdjhhMzZCa1VuTjh3R3FkcWZjai1scXlzOXhSVzRiRVVGX29RYUZzV2plVmNlZk1BSUhralhINTBwUVF6SV9uNWk0d1VrVTJuN19IcE9LcmNrb281Nm5ybXZuTWtZNXlPRnZBczZhRXVJbXBhSTN2QWtfN2FTclpTRi14VU5fbndWYXJMNi1UMmxKWmZ4aWRBS0IxVG5LWUlpbnhraFVHOXNGblF0RS0yZnJkc01SSXVkYWtzcmg2YWxjSWl0a0d6M0ZwanlydWtubHdZZnFFTzJ6NWlJeDlhejZ0Ri16SDh6dmFWQ2JSSFpZMHl5NUlVYldPV1ZUOFoxdTItVW8xaVVLX0l1VWFTSTdGYWVjYnNJakRvbEdyam1xQ3VEVTRNNFVUaFRVY1hILWxXSnp5UjdwdFo1TzMyb1VkYzRSWjk5RjZ3djB6YWlEUzNkRGFCRndIcGllZVF3TTJKaW5KVQ?oc=5"
-    },
-    {
-      "title": "Iran war live: IRGC warns US against attacks on ships; Israel bombs Lebanon",
-      "score": 86,
-      "category": "🌍 Geopolitics & Conflict",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/5/10/iran-war-live-irgc-warns-us-against-attacks-on-ships-israel-bombs-lebanon?traffic_source=rss"
-    },
-    {
-      "title": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
-      "score": 86,
-      "category": "Markets & Macro",
-      "url": "https://www.cnbc.com/2026/05/08/iran-focus-at-trump-xi-summit-may-delay-progress-on-tariffs-rare-earths.html"
-    },
-    {
-      "title": "Quasar Linux RAT Steals Developer Credentials for Software Supply Chain Compromise",
-      "score": 86,
-      "category": "Cybersecurity",
-      "url": "https://thehackernews.com/2026/05/quasar-linux-rat-steals-developer.html"
     }
   ]
 }
