@@ -1,0 +1,655 @@
+{
+  "date": "2026-05-10",
+  "hour": "14",
+  "stats": {
+    "total": 3153,
+    "trending": 940,
+    "breaking": 429,
+    "sources": 247,
+    "feeds": 162,
+    "memory_runs": 4,
+    "updated": "10 May 2026, 14:46 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 533,
+      "share": 17
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 327,
+      "share": 10
+    },
+    {
+      "label": "India Cities",
+      "count": 288,
+      "share": 9
+    },
+    {
+      "label": "India Markets",
+      "count": 252,
+      "share": 8
+    },
+    {
+      "label": "Geopolitics",
+      "count": 225,
+      "share": 7
+    },
+    {
+      "label": "India Tech",
+      "count": 181,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 175,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 166,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 157,
+      "share": 5
+    },
+    {
+      "label": "AI & Startups",
+      "count": 152,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 144,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 114,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 90,
+      "share": 3
+    },
+    {
+      "label": "🌍 Geopolitics & Conflict",
+      "count": 50,
+      "share": 2
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 679,
+      "score": 69,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 333,
+      "score": 68,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 232,
+      "score": 75,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 127,
+      "score": 69,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Chennai",
+      "count": 111,
+      "score": 66,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Delhi",
+      "count": 80,
+      "score": 68,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Russia",
+      "count": 80,
+      "score": 70,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Bengaluru",
+      "count": 58,
+      "score": 74,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Hyderabad",
+      "count": 57,
+      "score": 71,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    },
+    {
+      "label": "Africa",
+      "count": 51,
+      "score": 64,
+      "lat": 1.6,
+      "lng": 17.5,
+      "x": 54.9,
+      "y": 49.1
+    },
+    {
+      "label": "Ukraine",
+      "count": 50,
+      "score": 74,
+      "lat": 48.4,
+      "lng": 31.2,
+      "x": 58.7,
+      "y": 23.1
+    },
+    {
+      "label": "Southeast Asia",
+      "count": 39,
+      "score": 61,
+      "lat": 4.2,
+      "lng": 108.5,
+      "x": 80.1,
+      "y": 47.7
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 348,
+      "share": 2
+    },
+    {
+      "label": "iran",
+      "count": 100,
+      "share": 0
+    },
+    {
+      "label": "to",
+      "count": 89,
+      "share": 0
+    },
+    {
+      "label": "modi",
+      "count": 87,
+      "share": 0
+    },
+    {
+      "label": "tamil",
+      "count": 86,
+      "share": 0
+    },
+    {
+      "label": "in",
+      "count": 85,
+      "share": 0
+    },
+    {
+      "label": "vijay",
+      "count": 76,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 75,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 72,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 72,
+      "share": 0
+    },
+    {
+      "label": "nadu",
+      "count": 64,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 63,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "iran, sent, Middle East",
+      "category": "Geopolitics",
+      "count": 2243,
+      "average_score": 63,
+      "unique_sources": 222,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "Ars Technica",
+        "BBC News World"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "Delhi, delhi, gears",
+      "category": "India Pulse",
+      "count": 167,
+      "average_score": 85,
+      "unique_sources": 66,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "BBC News World",
+        "Bloomberg"
+      ]
+    },
+    {
+      "id": "family-19",
+      "label": "strait, Middle East, qatari",
+      "category": "Markets & Macro",
+      "count": 13,
+      "average_score": 90,
+      "unique_sources": 10,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Bloomberg Markets",
+        "CNBC Markets",
+        "FT Markets"
+      ]
+    },
+    {
+      "id": "family-23",
+      "label": "govt, west, Kolkata",
+      "category": "India Cities",
+      "count": 7,
+      "average_score": 75,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Google India: Bengaluru news OR Karnataka",
+        "Google India: Kolkata news OR West Bengal",
+        "Google India: Pune news OR Ahmedabad OR Jaipur",
+        "Google: Kolkata OR West Bengal news"
+      ]
+    },
+    {
+      "id": "family-112",
+      "label": "at, mach, natural",
+      "category": "Markets & Macro",
+      "count": 6,
+      "average_score": 67,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Google: earnings OR quarterly results OR guidanc",
+        "Google: oil OR natural gas OR opec",
+        "Google: oil OR natural gas OR opec cut OR brent",
+        "Google: trade OR tariff OR manufacturing OR resh"
+      ]
+    },
+    {
+      "id": "family-18",
+      "label": "india, staff, India",
+      "category": "India Markets",
+      "count": 5,
+      "average_score": 90,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Markets",
+        "Google: India banking OR fintech OR UPI OR NPCI",
+        "Google: India markets OR Sensex OR Nifty OR BSE",
+        "The Hindu Business"
+      ]
+    },
+    {
+      "id": "family-31",
+      "label": "akamai, Russia, SpaceX",
+      "category": "India Tech",
+      "count": 5,
+      "average_score": 79,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India cyber attack OR data breach OR hac",
+        "Google: developer tools OR software startup OR S"
+      ]
+    },
+    {
+      "id": "family-21",
+      "label": "official, served, jdownloader",
+      "category": "Cybersecurity",
+      "count": 5,
+      "average_score": 78,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "Google: Lucknow OR Kanpur OR UP news",
+        "Google: cloud security OR supply chain attack",
+        "Google: data leak OR database exposed OR dump"
+      ]
+    },
+    {
+      "id": "family-30",
+      "label": "punjab, hooliganism, open",
+      "category": "India Pulse",
+      "count": 5,
+      "average_score": 90,
+      "unique_sources": 3,
+      "consensus": 92,
+      "top_sources": [
+        "Google: India election OR BJP OR Congress OR AAP",
+        "NDTV India",
+        "The Hindu National"
+      ]
+    },
+    {
+      "id": "family-122",
+      "label": "revisions, earnings, estimate",
+      "category": "Markets & Macro",
+      "count": 6,
+      "average_score": 68,
+      "unique_sources": 3,
+      "consensus": 90,
+      "top_sources": [
+        "Google: earnings OR ipo OR layoffs",
+        "Google: stocks OR inflation OR recession 2025",
+        "Seeking Alpha"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 1597,
+      "avg_score": 67,
+      "trending": 542,
+      "sources": 139,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1371,
+      "avg_score": 69,
+      "trending": 534,
+      "sources": 220,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 611,
+      "avg_score": 76,
+      "trending": 359,
+      "sources": 166,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 595,
+      "avg_score": 69,
+      "trending": 224,
+      "sources": 127,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 567,
+      "avg_score": 68,
+      "trending": 213,
+      "sources": 95,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 377,
+      "avg_score": 62,
+      "trending": 82,
+      "sources": 46,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 257,
+      "avg_score": 61,
+      "trending": 49,
+      "sources": 54,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 196,
+      "avg_score": 66,
+      "trending": 58,
+      "sources": 64,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "War breaking news. Iran sent response to US proposal: 'Stop war and maritime security' - Il Sole 24 ORE",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNlJpTWNMWlFEaWtOMzRDeDR0cUtSWkMzdzlRVE9ZeFdRYzlDQXRFY2l1LUdYM1RPS21JdTlWTG5PQ1N0MVFmd25oTWkzYXZfSzJQTHR4X1ZRcE8tNjg1WHEtdmNfM1FvSTc1Rjh5ZXZabG5WdWEybndBSXhtUmd3aUMzXzZLN3RhRWw0dmtrS3ZqQUhNalNBeko4V0s2Ni1DMGZUS05GMTZaT2tQaTBQT0FwYWJpN2tlRy1EcHN0OFZzSzVrVFFB?oc=5"
+    },
+    {
+      "title": "New Delhi gears up for mega India-Africa Summit after a decade; spotlight on defence, energy, capacity building - Rising Kashmir",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNzM5djRaX3A4cXF5RTY0RGQxVkxyYXFXazMwR3lWYWcxOXpmNG0yaU1vWVlFVnhfSjh1V0FJaXRULVRKNGZraGZlT0ZPOGF6UnI3T29KNVZXR3ZIZVNKVWQ4WUV4ZFJJdDBBUUQxcXVLSWxYb3ZTUlp2Q29xUEZwMEZIVl8tQlN5U29XNE5rY0RDbFZqOVdOaUxfbEd5NXp5azR2SHZUcGZVZDR1SUZIcjZ4RUhmTzF3SV9rbjNnVWszYkhRT2wtQS1pSTY0S2M?oc=5"
+    },
+    {
+      "title": "Australia's right-wing One Nation party scores historic parliamentary win",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cwy2e4z4npro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Dissent Grips Mamata Banerjee's Trinamool As Bengal Election Fallout Exposes Cracks Within",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/dissent-grips-mamata-banerjees-trinamool-as-bengal-election-fallout-exposes-cracks-within-ws-l-10084170.html"
+    },
+    {
+      "title": "Gelatin sticks found along PM Modi’s convoy, half hour before he passed by",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/gelatin-sticks-found-along-pm-modis-convoy-half-hour-before-he-passed-by/article70961946.ece"
+    },
+    {
+      "title": "Sathya Sai Seva Samithi volunteers distribute free drinking water to train passengers at Duvvada",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/sathya-sai-seva-samithi-volunteers-distribute-free-drinking-water-to-train-passengers-at-duvvada/article70962663.ece"
+    },
+    {
+      "title": "FMCG companies bracing for another round of price increases amid inflation",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.thehindu.com/business/Economy/fmcg-companies-bracing-for-another-round-of-price-increases-amid-inflation/article70962562.ece"
+    },
+    {
+      "title": "Karnataka is No 1 in revenue, panchayat services, claims Priyank Kharge",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-is-no-1-in-revenue-panchayat-services-claims-priyank-kharge/article70962346.ece"
+    },
+    {
+      "title": "DW News. . Around the world, governments are moving to block prediction‑market platforms, calling them illegal and addictive gambling. The pushback comes as people bet real money on wars, elections and other global events - with these markets exploding - facebook.com",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObEFrZTJ4Y2ZyUUl5elJKV2FvaWpYZTNEZUk5Q1JMNmtRN2tjV2ZnZUl6YnB0OHVGdy1ZaUw3WlNoWHkycUs3WXI3ZmhDT3NoWjNNdk12eThVZE9kRHFnU0xzeF9oU05zZjhpNEhtbUp3cWstQkxjNHZ5b0R5R2dyREVFVGUydmxzc2dWWkx1NEtKTkJzNXN4Rm8yRUtFdTh3b0k2ZUN6TndyR1BWU2J6dktySmU4M2V1YWhTcm1uR1F3SkpuN0NKazVwa1Y2RGhMNDlfNld5UlZLODFaazF1QQ?oc=5"
+    },
+    {
+      "title": "Intel CEO who won over Donald Trump and Elon Musk now needs a breakthrough",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/technology/intel-ceo-who-won-over-donald-trump-and-elon-musk-now-needs-a-breakthrough/articleshow/130993949.cms"
+    },
+    {
+      "title": "PM Modi assures more support to Telangana, asks CM Revanth to collaborate with him",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/telangana/centre-to-support-telangana-more-vigorously-pm-modi-in-hyderabad/article70962140.ece"
+    },
+    {
+      "title": "Tamil Nadu government formation LIVE: TN Assembly to convene first session; Speaker election on May 12",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-government-formation-tvk-swearing-in-vijay-oath-ceremony-new-chief-minister-live-updates-may-10-2026/article70960233.ece"
+    },
+    {
+      "title": "Iran sends response to US proposals to end war",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Pimco warns Iran war could lead Federal Reserve to raise rates - Crypto Briefing",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oXzQ4Q1N4X1UwbEhOZ0V4bDhwdFlmRFpua2RxeFBQalVfbGpsZHRyRWp5SWNOaGY3R2FTZlM4dmZtNWRxUTIyaDBybU5sNkFJTURLTzdSLWJRSVk1TVhoX0d0S1laSGM?oc=5"
+    },
+    {
+      "title": "Why Your Grocery Store Has So Many Sparkling Waters",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-10/why-your-grocery-store-has-so-many-sparkling-waters-video"
+    },
+    {
+      "title": "What Happens To Your Body If You Drink Green Tea For 2 Weeks? A Harvard-Trained Doctor Explains",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/health/what-happens-to-your-body-if-you-drink-green-tea-for-2-weeks-a-harvard-trained-doctor-explains-11474760"
+    },
+    {
+      "title": "Stories of those killed in a single day of Israeli strikes on Lebanon",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/10/stories-of-those-killed-in-a-single-day-of-israeli-strikes-on-lebanon?traffic_source=rss"
+    },
+    {
+      "title": "Hyderabad: Modi Attacks Congress, TMC, Says Bengal Rejected Dangerous Model - Deccan Chronicle",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNT3ZRQW1Cb1VTRWV6eExRN1RPbGFPSmxEcEtYUHFxeFBBa2FwUE94QmVTLWZ5MjB5ZGJwVnlMQWFGZ1dfV0tVSnlKNnJiSFU3eHc0eC1vdFFFUFdMQ2pZSDNJQmxmOVBSbEVmNGtmWnVIX0F6X1UtN3duWjhHNWZQMHVpRWR6NnktbXFpNXBZRzB4dXV4blBWZGF6TVNhODlHcUHSAacBQVVfeXFMUGVJZHpCZG5rUXRHUjc3WHJVcVNrTFdQbEFxSnowNlhKdEFyaUdBNFJ1Y19abl9lMjQyVjRUeDFkSXNFalZVMDRNNlhzTERqSWtxTFN6Um1JWlIyeWstVXlBaWhkbmJRcmJKMC13cjBkQkdXNlNzeTdZMk9YdjB5Q1k0enRCeVRRN3R6X0ZPbHQwaHEwZ3JlYjB1QVpMTHpRZ0VnTUpGdlE?oc=5"
+    },
+    {
+      "title": "MV Hondius hantavirus outbreak revives traumatic memories of Covid-19 lockdowns at sea for Diamond Princess passengers",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/us-news/mv-hondius-hantavirus-outbreak-revives-traumatic-memories-of-covid-19-lockdowns-at-sea-for-diamond-princess-passengers-11778419788640.html"
+    },
+    {
+      "title": "PM Modi calls on Indians to use petrol, diesel with ‘great restraint’ amid West Asia crisis",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://indianexpress.com/article/india/pm-modi-petrol-diesel-iran-war-west-asia-crisis-restraint-10682740/"
+    },
+    {
+      "title": "First passengers fly home from virus-hit cruise ship",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cn7pzmg8zeno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Fed Chair Nominee Kevin Warsh Disagrees With Jerome Powell on This Key Fed Policy Supporting the Stock Market (Hint: Not Rate Cuts) - AOL.com",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ybktvVTdyMERWOVBSRDM0TjgtZG8wSUY3OS16Tk13cEVjbnl3dzFnOW9tdTJIRmZlNHkyTFdkRDRZQkpQd0VzNjhRdUkzOGhlbjhXN0JNX1lVbzNpWlU2TVZxZG1JU2NFUmpQMjhQbGhHNzJITEdDMFpweDZwQQ?oc=5"
+    },
+    {
+      "title": "‘Ukraine has momentum in war with Russia’",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/10/ukraine-has-momentum-in-war-with?traffic_source=rss"
+    },
+    {
+      "title": "How Worried Should Indians Be About Hantavirus? Doctors Explain",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/health/how-worried-should-indians-be-about-hantavirus-doctors-explain-11475273"
+    },
+    {
+      "title": "Air India has terminated over 1,000 staff in last 3 years for ethical breaches: CEO",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.thehindu.com/business/Industry/air-india-has-terminated-over-1000-staff-in-last-3-years-for-ethical-breaches-ceo/article70962236.ece"
+    },
+    {
+      "title": "Qatari gas shipment clears Strait of Hormuz after Pakistan-Iran talks",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.ft.com/content/2b2a9375-829c-4b4a-af98-c5e1e963c493"
+    },
+    {
+      "title": "Can Asian economies cope with the fallout from the Iran war?",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/5/10/can-asian-economies-cope-with-the-fallout-from-the-iran-war?traffic_source=rss"
+    },
+    {
+      "title": "'Aap Mere Se Hi Judo': PM Modi, Revanth Reddy Share Light Moment In Hyderabad",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/aap-mere-se-hi-judo-pm-modi-revanth-reddy-share-light-moment-in-hyderabad-ws-l-10084085.html"
+    },
+    {
+      "title": "Evening news wrap: Tamil Nadu CM Vijay chairs first Secretariat meeting; Iran sends response to US via Pakistan and more",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://timesofindia.indiatimes.com/india/evening-news-wrap-tamil-nadu-cm-vijay-chairs-first-secretariat-meeting-iran-sends-response-to-us-via-pakistan-and-more/articleshow/130992467.cms"
+    },
+    {
+      "title": "AI Wins Have Alphabet Poised to Become World’s Biggest Company",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/ai-wins-have-alphabet-poised-to-become-world-s-biggest-company"
+    }
+  ]
+}
