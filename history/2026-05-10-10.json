@@ -1,0 +1,657 @@
+{
+  "date": "2026-05-10",
+  "hour": "10",
+  "stats": {
+    "total": 2674,
+    "trending": 795,
+    "breaking": 368,
+    "sources": 256,
+    "feeds": 162,
+    "memory_runs": 2,
+    "updated": "10 May 2026, 10:57 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 381,
+      "share": 14
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 245,
+      "share": 9
+    },
+    {
+      "label": "India Cities",
+      "count": 228,
+      "share": 9
+    },
+    {
+      "label": "India Markets",
+      "count": 207,
+      "share": 8
+    },
+    {
+      "label": "Geopolitics",
+      "count": 185,
+      "share": 7
+    },
+    {
+      "label": "India Tech",
+      "count": 158,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 153,
+      "share": 6
+    },
+    {
+      "label": "India & APAC",
+      "count": 144,
+      "share": 5
+    },
+    {
+      "label": "AI & Startups",
+      "count": 135,
+      "share": 5
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 134,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 107,
+      "share": 4
+    },
+    {
+      "label": "India Society",
+      "count": 104,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 81,
+      "share": 3
+    },
+    {
+      "label": "🌍 Geopolitics & Conflict",
+      "count": 55,
+      "share": 2
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 553,
+      "score": 70,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 302,
+      "score": 68,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 176,
+      "score": 74,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 122,
+      "score": 69,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Chennai",
+      "count": 86,
+      "score": 70,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Russia",
+      "count": 72,
+      "score": 69,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Delhi",
+      "count": 69,
+      "score": 70,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Bengaluru",
+      "count": 48,
+      "score": 75,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Africa",
+      "count": 47,
+      "score": 65,
+      "lat": 1.6,
+      "lng": 17.5,
+      "x": 54.9,
+      "y": 49.1
+    },
+    {
+      "label": "Ukraine",
+      "count": 45,
+      "score": 73,
+      "lat": 48.4,
+      "lng": 31.2,
+      "x": 58.7,
+      "y": 23.1
+    },
+    {
+      "label": "Mumbai",
+      "count": 37,
+      "score": 74,
+      "lat": 19.1,
+      "lng": 72.9,
+      "x": 70.2,
+      "y": 39.4
+    },
+    {
+      "label": "Japan",
+      "count": 37,
+      "score": 58,
+      "lat": 36.2,
+      "lng": 138.3,
+      "x": 88.4,
+      "y": 29.9
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 271,
+      "share": 1
+    },
+    {
+      "label": "to",
+      "count": 99,
+      "share": 1
+    },
+    {
+      "label": "in",
+      "count": 92,
+      "share": 1
+    },
+    {
+      "label": "iran",
+      "count": 67,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 65,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 65,
+      "share": 0
+    },
+    {
+      "label": "tamil",
+      "count": 64,
+      "share": 0
+    },
+    {
+      "label": "vijay",
+      "count": 62,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 57,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 55,
+      "share": 0
+    },
+    {
+      "label": "modi",
+      "count": 54,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 54,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "strategy, bjp-level, Chennai",
+      "category": "India Pulse",
+      "count": 1769,
+      "average_score": 63,
+      "unique_sources": 229,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "BBC News World",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "casteist, surya, India",
+      "category": "India Pulse",
+      "count": 134,
+      "average_score": 88,
+      "unique_sources": 78,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera English",
+        "BBC News World",
+        "Bloomberg",
+        "CBS News"
+      ]
+    },
+    {
+      "id": "family-3",
+      "label": "stay, stock, India",
+      "category": "India Markets",
+      "count": 48,
+      "average_score": 88,
+      "unique_sources": 24,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Bloomberg Markets",
+        "CNBC Markets",
+        "Economic Times Economy"
+      ]
+    },
+    {
+      "id": "family-51",
+      "label": "announces, Africa, new",
+      "category": "Markets & Macro",
+      "count": 14,
+      "average_score": 70,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "FT Markets",
+        "Google: IMF OR world bank OR debt OR sovereign",
+        "Google: bitcoin OR ethereum OR crypto OR stablec",
+        "Google: bitcoin OR ethereum OR crypto etf"
+      ]
+    },
+    {
+      "id": "family-50",
+      "label": "hydroponic, India, strike",
+      "category": "India Cities",
+      "count": 9,
+      "average_score": 71,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Google India: Bengaluru news OR Karnataka",
+        "Google India: Kolkata news OR West Bengal",
+        "Google India: Pune news OR Ahmedabad OR Jaipur",
+        "Google: Kolkata OR West Bengal news"
+      ]
+    },
+    {
+      "id": "family-72",
+      "label": "look, at, mach",
+      "category": "Markets & Macro",
+      "count": 8,
+      "average_score": 71,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Google: earnings OR quarterly results OR guidanc",
+        "Google: oil OR natural gas OR opec",
+        "Google: oil OR natural gas OR opec cut OR brent",
+        "Google: rare earth OR mining OR commodity OR lit"
+      ]
+    },
+    {
+      "id": "family-54",
+      "label": "crypto, quietly, beating",
+      "category": "Markets & Macro",
+      "count": 6,
+      "average_score": 81,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: bitcoin OR ethereum OR crypto OR stablec",
+        "Google: bitcoin OR ethereum OR crypto etf",
+        "Google: federal reserve OR interest rate OR powe",
+        "Seeking Alpha"
+      ]
+    },
+    {
+      "id": "family-25",
+      "label": "billion, trial, turns",
+      "category": "AI & Startups",
+      "count": 6,
+      "average_score": 80,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: developer tools OR software startup OR S",
+        "Google: malware OR phishing OR infostealer campa",
+        "Google: open source AI OR agentic OR reasoning m"
+      ]
+    },
+    {
+      "id": "family-24",
+      "label": "cpanel, attackers, ransomware-wielding",
+      "category": "Cybersecurity",
+      "count": 5,
+      "average_score": 77,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Google: cloud security OR supply chain attack",
+        "Google: cyber attack OR breach OR ransomware 202",
+        "Google: malware OR phishing OR infostealer",
+        "Google: malware OR phishing OR infostealer campa"
+      ]
+    },
+    {
+      "id": "family-80",
+      "label": "zaidi, startups, to",
+      "category": "AI & Startups",
+      "count": 5,
+      "average_score": 74,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: artificial intelligence OR foundation model",
+        "Google: developer tools OR software startup",
+        "Google: startup funding OR venture capital",
+        "Google: startup funding OR venture capital round"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 1261,
+      "avg_score": 68,
+      "trending": 448,
+      "sources": 140,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1180,
+      "avg_score": 69,
+      "trending": 444,
+      "sources": 233,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 520,
+      "avg_score": 75,
+      "trending": 290,
+      "sources": 167,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 478,
+      "avg_score": 70,
+      "trending": 196,
+      "sources": 127,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 474,
+      "avg_score": 70,
+      "trending": 195,
+      "sources": 95,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 326,
+      "avg_score": 62,
+      "trending": 67,
+      "sources": 43,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 228,
+      "avg_score": 61,
+      "trending": 40,
+      "sources": 49,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 161,
+      "avg_score": 65,
+      "trending": 42,
+      "sources": 55,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "How Vijay’s TVK Applied BJP-Level Strategy To Reshape Tamil Nadu Politics",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/how-vijays-tvk-applied-bjp-level-strategy-to-reshape-tamil-nadu-politics-ws-l-10083872.html"
+    },
+    {
+      "title": "CJI Surya Kant condemns viral fake casteist quote falsely attributed to him, warns of legal action: 'Prepared to bring…'",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/cji-surya-kant-condemns-viral-fake-casteist-quote-attributed-to-him-warns-of-legal-action-vile-brazen-mischievo-11778406109424.html"
+    },
+    {
+      "title": "Stock markets likely to stay volatile this week amid US-Iran tensions, crude oil concerns - The Times of India",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQYWc0OWt3Q1VrVWRfMS1XajFEUG55MWpGbjBJNGt4QU1LS090YjFrYWZ3NEluUWJqSnNLWmFmVHQzcWl2VE5zNkZhTTVRZXc3MVJNN1dTNGNtbHVJTUVTekVPOTVJbFpFZDlwUW15aVRxaTM0Z0ZoSk9DaXdTR3ZJc3VTVnh1TTk1THd4eDlXQzM1eGZsNHFJVzk1UXpzMGlYSmI3S3dLNTJidGprQ3FLeW1ubGN1UXdzMXFiZ3h3NWVVSFhwTmM5MWs3SjVmTjJqam1MLWFLTklBNW92WExKVFV2cFB5aFJJejZnQVZFVTRKYzdaWDdoOXhXN2RtX081Tmw5TNIBigJBVV95cUxOYk5COUtUa0tpMzIwakw0dTJreFRCR3pRanFxVW96VzUwSS1NVGgxRy1GMjhMRUNNaFh0MlAtMHA0TDRuZmdkTmdGZWxZWWJxUTJGN1E1dmNVYmRGNHdsa1Y5OGlqUXh5NTJ1c0lfdHNzZk5yZ3ZRYW0zeDhXZC14dEMtOV9aX3NDeWtNdXhkMzc5X1dTZWwxcUdibUNjTzhZNVc1QmdreS04UHhaZGt4MlJsT0pTaUM2RkluSFFUd01ENWk3VW5DUW1OdEJORko4YVVYN2gzczRXanVwUXlXSTJSLVAtUllFVU1aSWNIRjlpTU1XeVFVeXd4RU5xYW5BVmV3V2k4SFlTQQ?oc=5"
+    },
+    {
+      "title": "PM Modi rolls out Rs 9,400 crore Telangana package, spotlights textile revolution",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/infrastructure/pm-modi-rolls-out-rs-9400-crore-telangana-package-spotlights-textile-revolution/articleshow/130990731.cms"
+    },
+    {
+      "title": "CITU calls South Coast Railway zone a “betrayal” of Andhra Pradesh, flags revenue loss",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/citu-calls-south-coast-railway-zone-a-betrayal-of-andhra-pradesh-flags-revenue-loss/article70961865.ece"
+    },
+    {
+      "title": "Air taxi patent wars; China ZTE-Samsung rate setting; FBI warns of AI-enabled IP theft; landmark Xoma buyout; Access Advance CEO interview; plus much more - IAM Media",
+      "score": 99,
+      "category": "Consumer Tech",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPX3hyQVZCSmIxdWJ4Vkx5WE1wbTM1a2FxU3VKZ0U5V3VTLXZDZlc1Sk1pUFd4Qk81d01kNGh3MXBuSFdrUkZucnBneUhaMXhpQ3oxajA5eUc3QXd4aTlQNEhMU3BuYktTYktMM0EwcWhwSFZRbTNBR3hOcExmTjdnbXJ3ZUJEa0VzdkNGMkhnTlNQY3NFT0dzc3UwVUVqZC00dm1BX1RtcFRCQ201OTdDWG01R25CMnEtdHhJd1JfMkJqT3VSRUVTMXhWbnVCZmEydGc?oc=5"
+    },
+    {
+      "title": "Iran war ceasefire tested as cargo ship catches fire and Kuwait reports drone attack - Barchart.com",
+      "score": 99,
+      "category": "Consumer Tech",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPazgwNXo4ZVdiMnM0cVd4dTV0SlU1VGhDTlNqN3hYRmZycEJsUWVCdVRZX21JbjBfanJOcVZkcDlOV1BGN2dQelhEdWJVSG9TYnVyQV9TRmZObF96QmhWZFE5dkVnQmJzRW5OLVhNRDlRQ1hHRHlkQ3FzNEdmeGttd1lual9vWnN0RV9HV2FQQ2I4YnV0ZU0tbEJkeEtuVXBiTGkyMEpIOFM2dGFZbTFIWnRBSnBSVERCRGtwaU1kai10dWhDcTZB?oc=5"
+    },
+    {
+      "title": "RCB vs MI prediction: Who’ll win, Royal Challengers Bengaluru or Mumbai Indian? We asked ChatGPT",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/trends/rcb-vs-mi-prediction-who-ll-win-royal-challengers-bengaluru-or-mumbai-indian-we-asked-chatgpt-11778408961453.html"
+    },
+    {
+      "title": "From the Opinions Editor: In Delhi’s Yamuna floodplains and elsewhere, environment protection is going against the poor - India IPO",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNRDQzUGdpeUtROGNvenh4Q3JjSnFUUG4yd2JWRjVWNUdwTVFoRWxDMGtUblFjbzlhVmZyNmRwVWgxWDVReHdEX3VXcjFuVVlkOGZzTi1BeGNNS19EU3lNTVpTTXYwWENhYzhEa2puNkRGd2ZpZVBuU3dOakJJUzI0cGZoZTBkd1hxeTltaDYxTWpCa0M3N21vRnpyaWZ4UFlBTXVDVkZqSzAzbjR4QkRXYjhkQ0lZSnF5UlZQMkpSUjNiMXpOUGJzdVl2bUFGRngzN0p0V3E5bE82OFdmckJiYW1QVHNDdVU?oc=5"
+    },
+    {
+      "title": "West Bengal Election Data Reveals Sharp Divide In Turnout, Victory Margins, Electoral Roll Revision",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/west-bengal-election-data-reveals-sharp-divide-in-turnout-victory-margins-electoral-roll-revision-ws-l-10083868.html"
+    },
+    {
+      "title": "Two gelatin sticks found near PM Modi's venue in Bengaluru, one detained",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.hindustantimes.com/india-news/two-gelatin-sticks-found-near-pm-modis-venue-in-bengaluru-one-detained-101778408365231.html"
+    },
+    {
+      "title": "Suvendu aide's murder: Probe hinges on links with UP and UPI",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.hindustantimes.com/india-news/suvendu-aide-chandrakants-murder-probe-hinges-on-links-with-up-and-upi-101778407749498.html"
+    },
+    {
+      "title": "Suvendu aide's murder: Probe hinges on links with UP and UPI | India News - Hindustan Times",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZFRBMi1tWm05eDZzWk9Sd2d4WE1HbTZBcFNEQ3NnaVR6akZ5YXZTRDdtZjA2UlU1Q1NwMFBtVGM5SGFvUGJoUUpPUnZiazQ2MDBBbVpNOVFMUUQxOGZEZzB6QlVFc2xHRy1ZMUk4WVpJUVUtYjREVWFDVVNRWXJjWlU5V1R4NkJZc0hkT3dRbExCWDgzY3plenhpS1NmREM0MTdhcWhZcTh1NVdLcnJ2YzU4YVJnekhVOEFZRVJqOHZ6UmFaUHNhZjgzVzBkd9IB0wFBVV95cUxPWkFFUDE5M0NGejZBdklJYjRaU3NUMnFrM0VMSnM3MkJpWDkwMy1fQ0V2SGdWXzVkdk9IUUN4dl9POVpWMV8xWE1xMjhnd05nYXJreUVFNVdZYUpxNnktWE44Rk9WZmY3dXNITXdqMWlwY25mc1JSWnp3TmZkLXdiTlVJZkUxU0t6U3IzOWd6MG5UbUNHaV9jWVdOcm9jWXZ4Q1BNSUh2VTEySUI3Y2QxdHNWNjAyTS1LT0dLbFVzNVFkNmV1Y3hfM3FmVHpzZTRwdjY4?oc=5"
+    },
+    {
+      "title": "IPL 2026 RCB vs MI Live Score, Playing 11 Updates: Bengaluru begin Raipur leg with match vs struggling Mumbai",
+      "score": 99,
+      "category": "India Society",
+      "url": "https://indianexpress.com/article/sports/cricket/rcb-vs-mi-ipl-2026-live-score-bengaluru-mumbai-today-match-updates-bengaluru-begin-raipur-stay-with-match-vs-struggling-mumbai-10682429/"
+    },
+    {
+      "title": "₹1,600-1,700 crore a day, ₹1 lakh crore in 10 weeks: Cost of insulating India from global energy shock",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.thehindu.com/business/Industry/1600-1700-crore-a-day-1-lakh-crore-in-10-weeks-cost-of-insulating-india-from-global-energy-shock/article70962012.ece"
+    },
+    {
+      "title": "Iran military warns of ‘surprising’ methods of warfare if attacked again",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/10/iran-military-warns-of-surprising-methods-of-warfare-if-attacked-again?traffic_source=rss"
+    },
+    {
+      "title": "India successfully tests Agni-5 MIRV missile with 5,000 km range, multi-warhead capability; 5 key facts",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.hindustantimes.com/india-news/india-successfully-tests-agni-5-mirv-missile-with-5-000-km-range-multi-warhead-capability-5-key-facts-101778406449213.html"
+    },
+    {
+      "title": "Spain starts evacuating virus-hit cruise ship in Tenerife",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cn7pzmg8zeno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "India today is far less fragile than before: Nippon India MF’s Sailesh Raj Bhan",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/india-today-far-less-fragile-than-before-nippon-india-mf-s-sailesh-raj-bhan-11778398687024.html"
+    },
+    {
+      "title": "200 units free electricity, ‘white paper’ on Stalin's DMK: Vijay's top-5 announcements as Tamil Nadu chief minister",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/200-units-free-electricity-white-paper-on-stalins-dmk-vijay-top-5-announcements-tamil-nadu-chief-minister-tvk-11778402858338.html"
+    },
+    {
+      "title": "Three-hour meeting fails to end impasse over Congress Chief Minister for Kerala",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/elections/kerala-assembly/impasse-over-congress-chief-minister-for-kerala/article70959697.ece"
+    },
+    {
+      "title": "Prime Minister Narendra Modi attacks Congress on ‘betrayal of allies’",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/prime-minister-narendra-modi-attacks-congress-on-betrayal-of-allies/article70961586.ece"
+    },
+    {
+      "title": "Ukraine War, Day 1,537: Russia Breaks \"Victory Day\" Ceasefire - EA WorldView",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRXo0U0Q2cDNmckw3NktIVlpnTUQ5N1V3QWtGNndrMzF6WXFHakVFR2hRT05tTmF4UFJzTlcxTXljTUJkTGEwV2stdUoxRm1jeUx4SUowZ3RGWV9hQU53TG5tMi1yNjB0TndncGNQU2s1ZEk0N1pJcEhKRm9wWE9ZaHpDaGxFblk?oc=5"
+    },
+    {
+      "title": "Spyware Attack: How Thousands of Private Messages and Photos of a British Celebrity Were Leaked - The Sunday Guardian",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdkZ2OVB4OVdScnBwQk1jR0pTRWNISXNlX1F5aW9tM1U4ZzF5MTdFVFR2ZE9XOXc2c2N5TVczTjJ1VEhwZ2ZtYVkwX1dmVHJUTVRYSXRTWnd1UkREN2hYT21BSzEzY2dIUjZhQncxY3M4M0FzalNnRllpcDZtT2tOVkRONUNYa0JvNFlQYkJ0RnNYQ0pEYzRpcHpQNEgwSGNXWHY2STBEMll3VW9LamRIYWFPMWtXU1FYY2VBTWprWGNTLVRTTGlaZldSdl9VM2g5OTFOdS1B?oc=5"
+    },
+    {
+      "title": "Car bomb attack in northwest Pakistan kills at least 14 police personnel - India Today",
+      "score": 99,
+      "category": "India Society",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZ1h6dFg1cUhBS1JJN0tHUVRMME02NW96YXFmR2FrNmZ2WkROZUZNaEdwTkhIRlVhLUVwenVZcF8zN0dnWVBkdERWS2FpR3hGUnk0UVpvbmY3cnNxLTF6dUdmb2VNdGFsWkc0TUtLbjNxSWxscG9HMERVd2dXekpWdllYMl9LUmFha1NaZ2g3RV9TSllLS191RFZyaUhIYUtPRUJfUDVjbzRkTF9RZzNXRERYRXAxM2lwWm5ib2diWEJSenNsbmdiWUlB0gHKAUFVX3lxTE9nWHp0WDVxSEFLUkk3S0dRVEwwTTY1b3phcWZHYWs2ZnZaRE5lRk1oR3BOSEhGVWEtRXB6dVlwXzM3R2dZUGR0RFZLYWlHeEZSeTRRWm9uZjdyc3EtMXp1R2ZvZU10YWxaRzRNS0tuM3FJbGxwb0cwRFV3Z1d6SlZ2WVgyX0tSYWFrU1pnaDdFX1NKWUtLX3VEVnJpSEhhS09FQl9QNWNvNGRMX1FnM1dERFhFcDEzaXBabmJvZ2JYQlJ6c2xuZ2JZSUE?oc=5"
+    },
+    {
+      "title": "US-Iran War News LIVE Updates: 9 Dead As Israel Strikes Lebanon Despite Truce",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/world-news/us-iran-war-news-live-updates-ceasefire-violation-donald-trump-abbas-araghchi-tehran-peace-proposal-strait-of-hormuz-11465293"
+    },
+    {
+      "title": "Quote of the Day by Ijeoma Umebinyuo: ‘So many broken children living in grown bodies…'",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/us-news/quote-of-the-day-by-ijeoma-umebinyuo-so-many-broken-children-living-in-grown-bodies-11778400509861.html"
+    },
+    {
+      "title": "\"Society More Powerful Than Government\": PM Modi At Art Of Living Event",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/india-news/society-more-powerful-than-government-pm-narendra-modi-at-art-of-living-event-in-bengaluru-11474503"
+    },
+    {
+      "title": "22% rally in one month! Why is Vodafone Idea share price skyrocketing?",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/22-rally-in-one-month-why-is-vodafone-idea-share-price-skyrocketing-11778397049135.html"
+    },
+    {
+      "title": "Hantavirus-Hit Cruise Ship Begins Evacuation in Canary Islands",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/hantavirushit-cruise-ship-begins-evacuation-in-canary-islands-11778404076749.html"
+    }
+  ]
+}
