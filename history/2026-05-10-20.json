@@ -1,0 +1,656 @@
+{
+  "date": "2026-05-10",
+  "hour": "20",
+  "stats": {
+    "total": 3491,
+    "trending": 940,
+    "breaking": 318,
+    "sources": 218,
+    "feeds": 162,
+    "memory_runs": 7,
+    "updated": "10 May 2026, 20:41 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 669,
+      "share": 19
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 405,
+      "share": 12
+    },
+    {
+      "label": "India Cities",
+      "count": 382,
+      "share": 11
+    },
+    {
+      "label": "India Markets",
+      "count": 288,
+      "share": 8
+    },
+    {
+      "label": "Geopolitics",
+      "count": 276,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 199,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 195,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 189,
+      "share": 5
+    },
+    {
+      "label": "AI & Startups",
+      "count": 184,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 173,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 169,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 126,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 96,
+      "share": 3
+    },
+    {
+      "label": "🌍 Geopolitics & Conflict",
+      "count": 29,
+      "share": 1
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 807,
+      "score": 68,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 380,
+      "score": 68,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 263,
+      "score": 75,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 148,
+      "score": 67,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Chennai",
+      "count": 124,
+      "score": 62,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Delhi",
+      "count": 101,
+      "score": 67,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Russia",
+      "count": 79,
+      "score": 69,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Hyderabad",
+      "count": 74,
+      "score": 66,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    },
+    {
+      "label": "Bengaluru",
+      "count": 73,
+      "score": 70,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Mumbai",
+      "count": 52,
+      "score": 72,
+      "lat": 19.1,
+      "lng": 72.9,
+      "x": 70.2,
+      "y": 39.4
+    },
+    {
+      "label": "Kolkata",
+      "count": 49,
+      "score": 67,
+      "lat": 22.6,
+      "lng": 88.4,
+      "x": 74.6,
+      "y": 37.4
+    },
+    {
+      "label": "Ukraine",
+      "count": 45,
+      "score": 74,
+      "lat": 48.4,
+      "lng": 31.2,
+      "x": 58.7,
+      "y": 23.1
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 400,
+      "share": 2
+    },
+    {
+      "label": "iran",
+      "count": 130,
+      "share": 1
+    },
+    {
+      "label": "modi",
+      "count": 122,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 97,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "tamil",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "vijay",
+      "count": 86,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 84,
+      "share": 0
+    },
+    {
+      "label": "trump",
+      "count": 78,
+      "share": 0
+    },
+    {
+      "label": "delhi",
+      "count": 76,
+      "share": 0
+    },
+    {
+      "label": "trade",
+      "count": 73,
+      "share": 0
+    },
+    {
+      "label": "nadu",
+      "count": 71,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "were, evil, Anthropic",
+      "category": "AI & Startups",
+      "count": 1717,
+      "average_score": 55,
+      "unique_sources": 200,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "BBC News World",
+        "Bloomberg"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "Middle East, United States, trump",
+      "category": "Geopolitics",
+      "count": 1012,
+      "average_score": 74,
+      "unique_sources": 168,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Al Jazeera English",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-6",
+      "label": "myths, United States, illness",
+      "category": "India Pulse",
+      "count": 110,
+      "average_score": 82,
+      "unique_sources": 35,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Bloomberg",
+        "Economic Times Economy",
+        "Economic Times Tech"
+      ]
+    },
+    {
+      "id": "family-21",
+      "label": "insurance, Middle East, Europe",
+      "category": "Markets & Macro",
+      "count": 22,
+      "average_score": 83,
+      "unique_sources": 10,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Bloomberg Markets",
+        "CNBC Markets",
+        "FT Markets"
+      ]
+    },
+    {
+      "id": "family-7",
+      "label": "thriller, mumbai, Lucknow",
+      "category": "India Cities",
+      "count": 16,
+      "average_score": 73,
+      "unique_sources": 10,
+      "consensus": 99,
+      "top_sources": [
+        "Google India: Bengaluru news OR Karnataka",
+        "Google India: Kolkata news OR West Bengal",
+        "Google: Bengaluru OR Bangalore OR Karnataka news",
+        "Google: Chennai OR Tamil Nadu news"
+      ]
+    },
+    {
+      "id": "family-19",
+      "label": "unlawful, United States, tariffs",
+      "category": "Markets & Macro",
+      "count": 14,
+      "average_score": 65,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Google: bitcoin OR ethereum OR crypto OR stablec",
+        "Google: earnings OR quarterly results OR guidanc",
+        "Google: oil OR natural gas OR opec cut OR brent"
+      ]
+    },
+    {
+      "id": "family-10",
+      "label": "acme, India, holdings",
+      "category": "India Markets",
+      "count": 13,
+      "average_score": 86,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Google: India GDP OR economy OR manufacturing OR",
+        "Google: India banking OR fintech OR UPI OR NPCI"
+      ]
+    },
+    {
+      "id": "family-8",
+      "label": "heavy, smoke, wildfire",
+      "category": "Climate & Supply Chain",
+      "count": 11,
+      "average_score": 71,
+      "unique_sources": 3,
+      "consensus": 99,
+      "top_sources": [
+        "Google: factory OR export OR freight",
+        "Google: flood OR drought OR wildfire OR heatwave",
+        "Google: power grid OR blackout OR battery OR sol"
+      ]
+    },
+    {
+      "id": "family-15",
+      "label": "chats, Google, claude",
+      "category": "Cybersecurity",
+      "count": 9,
+      "average_score": 78,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "Google: artificial intelligence OR LLM OR founda",
+        "Google: cloud security OR supply chain attack",
+        "Google: developer tools OR software startup OR S"
+      ]
+    },
+    {
+      "id": "family-83",
+      "label": "trump, donald, intel",
+      "category": "India Tech",
+      "count": 9,
+      "average_score": 61,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India electric vehicle OR EV OR battery",
+        "Google: India space OR ISRO OR satellite OR Gaga"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 1932,
+      "avg_score": 65,
+      "trending": 562,
+      "sources": 130,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1486,
+      "avg_score": 68,
+      "trending": 529,
+      "sources": 196,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 694,
+      "avg_score": 67,
+      "trending": 229,
+      "sources": 123,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 686,
+      "avg_score": 74,
+      "trending": 376,
+      "sources": 150,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 629,
+      "avg_score": 67,
+      "trending": 214,
+      "sources": 89,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 415,
+      "avg_score": 60,
+      "trending": 68,
+      "sources": 48,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 281,
+      "avg_score": 59,
+      "trending": 42,
+      "sources": 54,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 204,
+      "avg_score": 63,
+      "trending": 51,
+      "sources": 57,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Anthropic says ‘evil’ portrayals of AI were responsible for Claude’s blackmail attempts",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/"
+    },
+    {
+      "title": "War breaking news. Iran, Trump: 'They've been playing us for 47 years, now they won't laugh'. Netanyahu: 'It's not over, there's uranium to take away' - Il Sole 24 ORE",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNlJpTWNMWlFEaWtOMzRDeDR0cUtSWkMzdzlRVE9ZeFdRYzlDQXRFY2l1LUdYM1RPS21JdTlWTG5PQ1N0MVFmd25oTWkzYXZfSzJQTHR4X1ZRcE8tNjg1WHEtdmNfM1FvSTc1Rjh5ZXZabG5WdWEybndBSXhtUmd3aUMzXzZLN3RhRWw0dmtrS3ZqQUhNalNBeko4V0s2Ni1DMGZUS05GMTZaT2tQaTBQT0FwYWJpN2tlRy1EcHN0OFZzSzVrVFFB?oc=5"
+    },
+    {
+      "title": "Netanyahu says Iran war is 'not over' as Trump rejects latest Iranian offer",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/10/netanyahu-says-iran-war-is-not-over-as-peace-deal-remains-elusive.html"
+    },
+    {
+      "title": "Trump calls Iran response to US proposal to end war 'totally unacceptable'",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "IAF Plans to Deploy First Four Tejas Mk1A Sqn at Rajasthan Forward Air Bases to Improve Pakistan Border Defence - Defence.in",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOc1VlcUNDYjhVbUZDMHNjSXhsYU9FTU5DVkVXcENJSHdwYjJCdkNFSFZWcloxbTVWeXNxNDI2ZWtiYTJjWUFMTGRKMG1TS2kyU0ZMSUhsLXdhR1B4LVBIazloejh4NkxjSEYtWW9fdlhZQ0k1WHpyZl82dzBTQXVXMFhvaWtNRmozZUFnQlpzRmV3SU5Yam5UeXRhVU9mR1U4Mk96SmItSkFXcWZIaENTR2liRmtOUjJ2OUFvaWNjeTJkdC1RS3VLZXBXNC1vb1ZZZFZaeFlBN2NIRXdTS0UyRUNjWHh6N2k5TnVj?oc=5"
+    },
+    {
+      "title": "Jerome Powell to step down as Fed Chair, Kevin Warsh expected successor - Crypto Briefing",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVzZkZHpfcXYzMFVGaG1VaEtCSlBSTDc1NXdQZEJPTWhMaFpwbDRaWWtlYm5WWWJWdUlETjdhTlk2OUg3VXVDMHNHdDNGYjRUZnhab21hZVhFdlRKRkhVWW9aa211akZ6c2hzdnRQbFBhM3hVVUltMkx6eEpGbUhLS3ptVWNPTjZWQU5fYnRzSWs0UmJ3TmlNQTdla0dNWjg?oc=5"
+    },
+    {
+      "title": "Vidar Infostealer Campaign Steals Passwords, Cookies, Crypto Wallets, and Device Data - gbhackers.com",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43N1BkX21OQjdtWF90YjNVWVk5dmRDVVNaS3dvQlpUV3pOQkgwclRCa2I5ZDVQTDVCSVZkZVhVcUdqdVg2Z2d4bk9Hb1daSl80Vkh4a0hfTURaZnNFWU05dHJBYkVDWl9mMFB6V0txSnBVdEZNZ2t0ZmZHV2hXRDg?oc=5"
+    },
+    {
+      "title": "Hantavirus Myths vs Facts: 7 Myths About The Viral Illness You Should Stop Believing",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/health/hantavirus-myths-vs-facts-7-myths-about-viral-illness-you-should-stop-believing-11476418"
+    },
+    {
+      "title": "Mumbai, Lucknow out of IPL playoffs as RCB win thriller, CSK stay alive - Reuters",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdGc5ZFBiekwtRUkxTWxzNkNWNUFRZVFhbWo3V3FueEdXYkFKUnY5TlozUW5GTGRqQU9sRzJEd1lJYS1zU3FBdWJwS1FZYnoyVHJITjRkZ1QyT3FrZGd2RXM5SFp2VHpVbUY4c2I3NEVLMzRoRFVnR1pNQzRQLU90R2hWRHViX3ZJNHllRWZVZ2Y0N0QxLTk4dHRCTmNZQnBpcUFldzlQTVU3aFBtTEppUVViRmI?oc=5"
+    },
+    {
+      "title": "Trump giving diplomacy ‘every chance’ before more strikes on Iran, says Mike Waltz",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/us-news/trump-giving-diplomacy-every-chance-before-more-strikes-on-iran-says-mike-waltz-11778441063249.html"
+    },
+    {
+      "title": "Heavy smoke was seen in Broward County on Sunday after a wildfire broke out on Max Road. According to the Florida Forest Service, the fire is spread across 80 acres and is 0% contained. Follow updates of the wildfire here: http://on.nbc6.com/vWVbvOd #wil - facebook.com",
+      "score": 99,
+      "category": "Climate & Supply Chain",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNSDU2dkZ2MTY0b1BaXzVQb3kyaHpLNzZoTlRFeXpxYXA4UDJTMjV0MnprdVlmZF9sWDItRVhEX2hGOGxhNWlwX0FEU3JjTkpCQUFPWTVnY3VtYUxZaGZSYjVxTml5dFl5dS1iVFlReDFvMGpvbXlyUV9wRGtNb0dlUkRDVk5PSFF5Ylo4RlR0NHVVbERTUWlJZmZaNm9IeHlGLWhONmZDMktJT0ZfQm1meVh2bVRQTXdmTnpfZlRIb1VIUlhnMkhDZ1JHLXlVTFAxOE0zM3Yxd3Z1VlFHZ0diRQ?oc=5"
+    },
+    {
+      "title": "Medics among 51 killed in Israeli attacks on Lebanon in past 24 hours",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/news/2026/5/10/medics-among-51-killed-in-israeli-attacks-on-lebanon-in-past-24-hours?traffic_source=rss"
+    },
+    {
+      "title": "HM Amit Shah says, BJP govt in West Bengal will secure India’s borders & plug biggest hole in national security - News On AIR",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTzg5QnVfSnFXZW43S1VsNmFmNmhNYXVHRTZOaVhEbHZSMks3LTctMl9kek1ObnpIQzh4YXhHYUFyekRwQUxlVHhIZjI5ZnBUaVhHczJvcGpMODMtS2pmUU1vZXFMMFRrQ00tU3o3aXVKQXN0VzlweEtpc0pyY0ZXY3NxWDNTbDZMa21LNFVpVjVCNzlNTllpYzFZVFRGdkhqTGZGWGJURmVhZFVtSE1fQXplemVLcTZYdWdNYWNVamNMT21fNTNieWlLR2VfS1JBamVN?oc=5"
+    },
+    {
+      "title": "Railways staring at higher electricity costs after Supreme Court rules it qualifies as ‘consumer’",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://timesofindia.indiatimes.com/india/railways-staring-at-higher-electricity-costs-after-supreme-court-rules-it-qualifies-as-consumer/articleshow/130998079.cms"
+    },
+    {
+      "title": "Maritime safety and security is of primordial importance to Indian Ocean Region: Secretary-General",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/maritime-safety-and-security-is-of-primordial-importance-to-indian-ocean-region-secretary-general/article70962579.ece"
+    },
+    {
+      "title": "ACME Solar Holdings Incorporates Four Wholly Owned Subsidiaries for Renewable Energy Development - India IPO",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdFlKaDcwQ09TNTMtQjc5Z0JBQkotaTBxQUxZLXRDRjVTWVFNRFZqUFFmeVRjUHBUd1VXNWlYTWpfd2wwSlYyekdaV3llVHB5dnczc29xbmI2VzJ1cTlrWlVPN0NYcXpSS2ktZFI5eGJXMl9pTVBhb3VTRl9PWGp2RnJhRUpYakc5bGRDS1dmRlN2cWhNSzFzd0NZUkhTVHF5NEU4YUljM0VoejJVSS1wc21sNm1Rc2xKRGdqWHVhaFNEajhBMjVxdEYyckE?oc=5"
+    },
+    {
+      "title": "Unseen Since March, Mojtaba Khamenei Meets Iran Military Head",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/world-news/unseen-since-march-mojtaba-khamenei-meets-iran-military-head-11476251"
+    },
+    {
+      "title": "RCB vs MI: Bhuvneshwar and Krunal star as Royal Challengers Bengaluru send Mumbai Indians packing out of IPL 2026 - Yahoo Sports Canada",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xQWp4X3lHb19YeXVFUjE2Sllvd3Uta3VpaGF2VzRPVXFDck1UOHIzM1h3OFRLc3BzLVVxdUFzbFh5blVHTXhRLTJZaS1SMEVQVS1XRHZFVkx2MHRGWmFVTE1SY0xIT2hQR3lQSGdOV2lyb1BR?oc=5"
+    },
+    {
+      "title": "‘Bengal Poll Results Brought Relief Across India, Drew Global Attention’: PM Modi At Gujarat Rally",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/bengal-poll-results-brought-relief-across-india-drew-global-attention-pm-modi-at-gujarat-rally-ws-l-10084362.html"
+    },
+    {
+      "title": "Water System Hack Shows Potential, And Limits, of AI Attacks - BankInfoSecurity",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVlFpWHpUbmltbXVENjJFcTl0WFNqY0FPZGxGSTZtSGwwUHZyWFI5eEVEZk05YnN4aTFmN1Njb3FKemlNUE1zMk1ZOXFtY3VNTEk5RmJFSlhrOEx1RWpzaVVjdzRtclliTTZnd3lpdFZPazJfZ0VRQ0xBSXRmSzBibXU3bWNZdnJoZ2pUclM1NU1sZ3ZKYkhn?oc=5"
+    },
+    {
+      "title": "CPI Kerala State secretary Binoy Viswam criticises personality cults, reiterates CPI claim to Deputy Opposition Leader’s post",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/kerala/cpi-kerala-state-secretary-binoy-viswam-criticises-personality-cults-reiterates-cpi-claim-to-deputy-opposition-leaders-post/article70962777.ece"
+    },
+    {
+      "title": "Countries airlift nationals evacuated from virus-hit cruise ship",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cn7pzmg8zeno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Congress claims Instagram blocked Rahul Gandhi's reel and photo post featuring Vijay due to MeitY rules",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/congress-claims-instagram-blocked-rahul-gandhis-reel-and-photo-post-featuring-vijay-due-to-meity-rules/article70963346.ece"
+    },
+    {
+      "title": "Private capex surges 67% to ₹7.7 lakh crore: CII",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/private-capex-surges-67-to-7-7-lakh-crore-cii/articleshow/130997102.cms"
+    },
+    {
+      "title": "Hackers abuse Google ads, Claude.ai chats to push Mac malware",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-claudeai-chats-to-push-mac-malware/"
+    },
+    {
+      "title": "India negotiates EU market access for seafood exports: Piyush Goyal",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-negotiates-eu-market-access-for-seafood-exports-piyush-goyal/articleshow/130997103.cms"
+    },
+    {
+      "title": "AAP holds protests against BJP over ED action against Punjab Minister Sanjeev Arora",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/punjab/aap-holds-protests-against-bjp-over-ed-action-against-punjab-minister-sanjeev-arora/article70961862.ece"
+    },
+    {
+      "title": "O'Brien: Supreme Court Voting Rights Act Decision Likely Lead to \"Redistricting War\"",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-10/tim-o-brien-discusses-rising-redistricting-conflicts-video"
+    },
+    {
+      "title": "Amit Shah, Hardeep Puri Back PM Modi's Push For WFH, Reduced Fuel Usage Amid Iran War",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/amit-shah-hardeep-puri-back-pm-modis-push-for-wfh-reduced-fuel-usage-amid-iran-war-ws-l-10084289.html"
+    },
+    {
+      "title": "Wall Street Week Ahead: Focus on inflation, retail sales, US-Iran conflict, crude oil",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-focus-on-inflation-retail-sales-us-iran-conflict-crude-oil-11778428559877.html"
+    }
+  ]
+}
