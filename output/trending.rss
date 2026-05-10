@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-  <title>AutoTrend Atlas Trending</title>
+  <title>SpotPulse Trending</title>
   <link>https://autotrend.pages.dev</link>
-  <description>A simple live view of the stories getting attention across the web.</description>
-  <lastBuildDate>Sun, 10 May 2026 07:40:11 +0000</lastBuildDate>
+  <description>Live web pulse for India and global stories.</description>
+  <lastBuildDate>Sun, 10 May 2026 08:14:53 +0000</lastBuildDate>
   <item>
+  <title>US Awaits Iran Reply as Aramco Says Hormuz Opening No Quick Fix</title>
+  <link>https://www.bloomberg.com/news/articles/2026-05-10/us-awaits-iran-reply-as-aramco-says-hormuz-opening-no-quick-fix</link>
+  <description>The wait stretched on for Iran’s response to a US proposal to end 10 weeks of war, as the world’s largest oil company warned it would take months for the market to return to normal even if the Strait of Hormuz reopened immediately.</description>
+  <category>Markets &amp; Macro</category>
+  <pubDate>Sun, 10 May 2026 07:52:46 +0000</pubDate>
+</item>
+<item>
   <title>Anwar to Outline Malaysia Oil Supply Continuity Plan: Bernama</title>
   <link>https://www.bloomberg.com/news/articles/2026-05-10/anwar-to-outline-malaysia-oil-supply-continuity-plan-bernama</link>
   <description>Malaysian Prime Minister Anwar Ibrahim will unveil a plan soon to shore up the country’s oil supply as uncertainties stemming from the conflict in Iran continue, Bernama reported.</description>
@@ -48,9 +55,9 @@
   <pubDate>Fri, 08 May 2026 13:23:23 +0000</pubDate>
 </item>
 <item>
-  <title>Saudi Aramco Profit Jumps 26% as Iran War Drives Oil Prices</title>
+  <title>Aramco CEO Warns of Long Oil Market Disruption as Profit Jumps</title>
   <link>https://www.bloomberg.com/news/articles/2026-05-10/aramco-profit-climbs-as-war-driven-oil-rise-offsets-export-hit</link>
-  <description>Saudi Aramco reported a 26% jump in first-quarter profit following a war-induced rise in prices of oil and refined fuels, and as it redirected exports via a pipeline bypassing the Strait of Hormuz.</description>
+  <description>Saudi Aramco’s boss warned of a long disruption to oil markets from the near closure of the Strait of Hormuz, while the company reported a jump in profit following higher prices and its ability to redirect exports via a pipeline bypassing the vital waterway.</description>
   <category>Markets &amp; Macro</category>
   <pubDate>Sun, 10 May 2026 05:11:41 +0000</pubDate>
 </item>
@@ -90,18 +97,18 @@
   <pubDate>Sun, 10 May 2026 04:23:34 +0000</pubDate>
 </item>
 <item>
-  <title>Gustavo Petro Warns Fossil-Fueled Crypto Mining Will Trigger 'Climate Collapse' - Bitcoin News</title>
-  <link>https://news.google.com/rss/articles/CBMipgFBVV95cUxOMnJienRMaTI1UGhjQzdvNVU0SFdlZEpwaXl4dWNydXRVdWtQNkZFSDlmcU40dE1DRDFFa0RMbXJmaGlZd3g5MjlZU2FUUVpwYmRTX3ExYWR3MVQ5ZE1KRFJoMjVCemlmak81ZnM3ejhnRmU1bVVjSGRYelg1YjgydkppU1BfbjFxX290YnNvTWtLS1FDM3RpN2RzNXYyb2ZvZWRhVG1B?oc=5</link>
-  <description>Gustavo Petro Warns Fossil-Fueled Crypto Mining Will Trigger 'Climate Collapse' Bitcoin News</description>
-  <category>Climate &amp; Supply Chain</category>
-  <pubDate>Sun, 10 May 2026 05:43:25 +0000</pubDate>
-</item>
-<item>
   <title>ThreatsDay Bulletin: Edge Plaintext Passwords, ICS 0-Days, Patch-or-Die Alerts and 25+ New Stories</title>
   <link>https://thehackernews.com/2026/05/threatsday-bulletin-edge-plaintext.html</link>
   <description>Bad week. Turns out the easiest way to get hacked in 2026 is still the same old garbage: shady packages, fake apps, forgotten DNS junk, scam ads, and stolen logins getting dumped into Discord channels like it’s normal. Some of these attack chains don’t even feel sophisticated anymore. More like some tired guy with a Te</description>
   <category>Cybersecurity</category>
   <pubDate>Thu, 07 May 2026 11:33:00 +0000</pubDate>
+</item>
+<item>
+  <title>Iran warns countries enforcing US sanctions will face 'difficulties' in Strait of Hormuz transit - Anadolu Ajansı</title>
+  <link>https://news.google.com/rss/articles/CBMi1gFBVV95cUxPR290UVlHOVRuRWplZlFTbEhHOHZHM1RYV2h2dEt5ZlhjVnNCTjBvd2tUTG5ENVI1SU91YkhfZ1FrVW1PUGJSd1pEZ3VGNkRZTVBrajV2ZmRyYVlwV20tUmxrVGtaZEdoU0l3OWFyZ3JqRFFCRXo4bWhpS0l2SHh6Y05SMEV1OG1ZTHFTY0JfOXNGVU1aRHUwbGxJbmFkOVFkcXBvTkNTaTJacFpEVHc4WXBWcGVRVlljMmpIZFNtRkcwRWlqT2pIei00aWdyaFozRFAxQXln?oc=5</link>
+  <description>Iran warns countries enforcing US sanctions will face 'difficulties' in Strait of Hormuz transit Anadolu Ajansı</description>
+  <category>Geopolitics</category>
+  <pubDate>Sun, 10 May 2026 07:31:14 +0000</pubDate>
 </item>
 <item>
   <title>Canvas login portals hacked in mass ShinyHunters extortion campaign</title>
@@ -132,6 +139,13 @@
   <pubDate>Sun, 10 May 2026 00:27:45 +0000</pubDate>
 </item>
 <item>
+  <title>How many Russian soldiers died in the war with Ukraine - Mediazona</title>
+  <link>https://news.google.com/rss/articles/CBMia0FVX3lxTFBoQjVVdlBzMUxla3RjVHUxdkEwc015Znc3WlBPNWRBeF9vWDVFaHlpcEYtang3bkNZUG9vYkZwNnlkOVBhQ2xseGtxMGw5ODBMSDZ6REIzcEExWl83M20xS3B5U0VzWnNSNHdN?oc=5</link>
+  <description>How many Russian soldiers died in the war with Ukraine Mediazona</description>
+  <category>Geopolitics</category>
+  <pubDate>Sun, 10 May 2026 07:42:17 +0000</pubDate>
+</item>
+<item>
   <title>Taiwan’s Plastic Habit Collides With Shortages Caused by a Faraway War - The New York Times</title>
   <link>https://news.google.com/rss/articles/CBMiggFBVV95cUxOWnU1S3RGaFNOOTdZWFZoRkVWVDZiNmNsbWEzM0xNVkpOTC02U3R3TVV5V3lkWmJmQmxqb0k2eUtha3g3ZkZaTVQ0aXQ5WDJJQXZ0YzQ3cnk0VWhQU0dYSWhPaU1fMlBjWUNiU0ZoOVNheUN6aG42LUJHVjVNbk8xT1lR?oc=5</link>
   <description>Taiwan’s Plastic Habit Collides With Shortages Caused by a Faraway War The New York Times</description>
@@ -144,13 +158,6 @@
   <description>Pakistan central bank hikes policy rate by 100 bps as West Asia war fuels inflation MSN</description>
   <category>India &amp; APAC</category>
   <pubDate>Sun, 10 May 2026 01:06:11 +0000</pubDate>
-</item>
-<item>
-  <title>Dozens killed in jihadist attacks in central Mali</title>
-  <link>https://www.france24.com/en/africa/20260510-dozens-killed-in-jihadist-attacks-in-central-mali</link>
-  <description>Jihadist fighters launched a fresh wave of deadly attacks in central Mali that killed dozens of people, local and security sources said on Saturday. One local official said the latest attacks brought the death toll to more than 70 in recent days, as Islamist armed groups intensify assaults on villages across the region.</description>
-  <category>🇪🇺 Europe</category>
-  <pubDate>Sun, 10 May 2026 06:02:45 +0000</pubDate>
 </item>
 <item>
   <title>Iran war live: IRGC warns US against attacks on ships; Israel bombs Lebanon</title>
@@ -174,6 +181,13 @@
   <pubDate>Fri, 08 May 2026 11:00:00 +0000</pubDate>
 </item>
 <item>
+  <title>Gustavo Petro Warns Fossil-Fueled Crypto Mining Will Trigger 'Climate Collapse' - Bitcoin News</title>
+  <link>https://news.google.com/rss/articles/CBMipgFBVV95cUxOMnJienRMaTI1UGhjQzdvNVU0SFdlZEpwaXl4dWNydXRVdWtQNkZFSDlmcU40dE1DRDFFa0RMbXJmaGlZd3g5MjlZU2FUUVpwYmRTX3ExYWR3MVQ5ZE1KRFJoMjVCemlmak81ZnM3ejhnRmU1bVVjSGRYelg1YjgydkppU1BfbjFxX290YnNvTWtLS1FDM3RpN2RzNXYyb2ZvZWRhVG1B?oc=5</link>
+  <description>Gustavo Petro Warns Fossil-Fueled Crypto Mining Will Trigger 'Climate Collapse' Bitcoin News</description>
+  <category>Climate &amp; Supply Chain</category>
+  <pubDate>Sun, 10 May 2026 05:43:25 +0000</pubDate>
+</item>
+<item>
   <title>Whirlpool hikes prices again as Iran War, inflation shake appliance market - Scripps News</title>
   <link>https://news.google.com/rss/articles/CBMiugFBVV95cUxPSGw5Zkc1SGs3Tmo2Yl91bURwQU5HemVtNzBUVHdwMjNuY2pjYW5qb180bkxmLWFjTHV6clY4U3lLTkZpdTFtTkE4NmJOczVHNTdLNmZOWFc1N2RYcUxfRVhuRFl0VTlCZVFkTFo2UnM4QWFQUEdoemRsOWROX3Z3NHduQ2NHSkZST25SUHIxMU5IODBpS05fd2ZhOXpKVndUMUdpaS03MVAyaU9zNUNjcjBsRGVXMndVM2c?oc=5</link>
   <description>Whirlpool hikes prices again as Iran War, inflation shake appliance market Scripps News</description>
@@ -195,25 +209,11 @@
   <pubDate>Sat, 09 May 2026 22:00:00 +0000</pubDate>
 </item>
 <item>
-  <title>Iran War Is Draining World's Oil Buffer at an Unprecedented Pace</title>
-  <link>https://www.reddit.com/r/worldnews/comments/1t8wjzz/iran_war_is_draining_worlds_oil_buffer_at_an/</link>
-  <description>submitted by     /u/RRaj007      [link]   [comments]</description>
-  <category>🌍 Geopolitics &amp; Conflict</category>
-  <pubDate>Sun, 10 May 2026 04:16:30 +0000</pubDate>
-</item>
-<item>
-  <title>Zara data breach exposed personal information of 197,000 people</title>
-  <link>https://www.bleepingcomputer.com/news/security/zara-data-breach-exposed-personal-information-of-197-000-people/</link>
-  <description>Hackers who gained access to the databases of Spanish fast-fashion retailer Zara stole data belonging to more than 197,000 customers, according to data breach notification service Have I Been Pwned. [...]</description>
-  <category>Cybersecurity</category>
-  <pubDate>Fri, 08 May 2026 10:42:22 +0000</pubDate>
-</item>
-<item>
-  <title>Prediction: The Helium Crunch Will Accelerate the Reshoring of Artificial Intelligence (AI) Chip Manufacturing. Here Are the Best Growth Stocks to Own. - The Motley Fool</title>
-  <link>https://news.google.com/rss/articles/CBMijwFBVV95cUxPMUJmYjRzYk42RkFzOUhQRFFPLXM0S2xwY3FlSVRBZ0tpT1gwRkRKeWdmWUxJcGJVTmhRU2tUcUVlSnl3cmhJZGk4M1UyQ0xSSlVxSENwT3FCOFlwS0FIZWZoUFBfVU50dWNFbDZKT1Nra0xPdTRkcFluSDhoNU5IVHNuNGJLQk1tU3NhVXM3NA?oc=5</link>
-  <description>Prediction: The Helium Crunch Will Accelerate the Reshoring of Artificial Intelligence (AI) Chip Manufacturing. Here Are the Best Growth Stocks to Own. The Motley Fool</description>
-  <category>India &amp; APAC</category>
-  <pubDate>Sun, 10 May 2026 02:25:23 +0000</pubDate>
+  <title>Top 9 Best Crypto Presale May 2026: IONIX CHAIN Gains Speed as Institutional ETF Buying Accelerates - openPR.com</title>
+  <link>https://news.google.com/rss/articles/CBMingFBVV95cUxNZ2h2aUtQTnZTWXp0Q0VVMk1zSnVWbl8ycUN3bXlXelY4N3dWc0pUYmlOODJWdk1LS0d1ZE9pTHV4V1JXOS0tX0M0ZUxGT3Q3SWRyQU1hQnBlakI2bXFSaWI4MUFNaHJwRnBjVDVoMGl6Wjd1OXJxUGxRc1BYWGMxdUdacnpKd1ZlRno5QXhSRko0cDNHeDRPZG9FcDQyQQ?oc=5</link>
+  <description>Top 9 Best Crypto Presale May 2026: IONIX CHAIN Gains Speed as Institutional ETF Buying Accelerates openPR.com</description>
+  <category>Markets &amp; Macro</category>
+  <pubDate>Sun, 10 May 2026 07:01:03 +0000</pubDate>
 </item>
 </channel>
 </rss>

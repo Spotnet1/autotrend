@@ -1,44 +1,79 @@
 {
   "date": "2026-05-10",
   "stats": {
-    "total": 1151,
-    "trending": 106,
-    "breaking": 59,
+    "total": 1196,
+    "trending": 109,
+    "breaking": 61,
     "sources": 116,
     "feeds": 46,
-    "updated": "10 May 2026, 07:40 UTC"
+    "updated": "10 May 2026, 08:14 UTC"
   },
   "top_categories": [
     {
       "label": "Geopolitics",
-      "count": 102,
+      "count": 109,
       "share": 9
     },
     {
       "label": "Markets & Macro",
-      "count": 100,
+      "count": 108,
       "share": 9
     },
     {
       "label": "AI & Startups",
-      "count": 94,
+      "count": 99,
       "share": 8
     },
     {
       "label": "Cybersecurity",
-      "count": 76,
+      "count": 80,
       "share": 7
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 76,
+      "share": 6
     },
     {
       "label": "🌍 Geopolitics & Conflict",
       "count": 71,
       "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 71,
+      "share": 6
+    },
+    {
+      "label": "India & APAC",
+      "count": 68,
+      "share": 6
+    },
+    {
+      "label": "🚨 Breaking & Upcoming Alerts",
+      "count": 54,
+      "share": 5
+    },
+    {
+      "label": "🇺🇸 Americas",
+      "count": 51,
+      "share": 4
+    },
+    {
+      "label": "🇪🇺 Europe",
+      "count": 38,
+      "share": 3
+    },
+    {
+      "label": "💻 Technology",
+      "count": 38,
+      "share": 3
     }
   ],
   "top_regions": [
     {
       "label": "United States",
-      "count": 183,
+      "count": 191,
       "score": 57,
       "lat": 38.9,
       "lng": -97.0,
@@ -47,8 +82,8 @@
     },
     {
       "label": "Middle East",
-      "count": 114,
-      "score": 64,
+      "count": 119,
+      "score": 65,
       "lat": 29.3,
       "lng": 47.5,
       "x": 63.2,
@@ -56,7 +91,7 @@
     },
     {
       "label": "United Kingdom",
-      "count": 73,
+      "count": 74,
       "score": 60,
       "lat": 54.7,
       "lng": -3.5,
@@ -65,7 +100,7 @@
     },
     {
       "label": "China",
-      "count": 63,
+      "count": 66,
       "score": 54,
       "lat": 35.9,
       "lng": 104.2,
@@ -74,7 +109,7 @@
     },
     {
       "label": "Russia",
-      "count": 50,
+      "count": 51,
       "score": 62,
       "lat": 61.5,
       "lng": 105.3,
@@ -83,8 +118,8 @@
     },
     {
       "label": "Ukraine",
-      "count": 42,
-      "score": 64,
+      "count": 43,
+      "score": 65,
       "lat": 48.4,
       "lng": 31.2,
       "x": 58.7,
@@ -92,7 +127,7 @@
     },
     {
       "label": "Europe",
-      "count": 41,
+      "count": 42,
       "score": 56,
       "lat": 50.1,
       "lng": 8.6,
@@ -100,54 +135,54 @@
       "y": 22.2
     },
     {
-      "label": "Africa",
-      "count": 28,
-      "score": 54,
-      "lat": 1.6,
-      "lng": 17.5,
-      "x": 54.9,
-      "y": 49.1
+      "label": "Latin America",
+      "count": 29,
+      "score": 49,
+      "lat": -14.2,
+      "lng": -51.9,
+      "x": 35.6,
+      "y": 57.9
     }
   ],
   "top_keywords": [
     {
       "label": "to",
-      "count": 136,
+      "count": 142,
       "share": 2
     },
     {
       "label": "in",
-      "count": 110,
+      "count": 114,
       "share": 2
     },
     {
       "label": "of",
-      "count": 73,
+      "count": 77,
       "share": 1
     },
     {
       "label": "is",
-      "count": 56,
+      "count": 58,
       "share": 1
     },
     {
       "label": "ai",
-      "count": 39,
+      "count": 43,
       "share": 1
     },
     {
       "label": "on",
-      "count": 38,
+      "count": 39,
       "share": 1
     },
     {
       "label": "new",
-      "count": 38,
+      "count": 39,
       "share": 1
     },
     {
       "label": "iran",
-      "count": 34,
+      "count": 38,
       "share": 1
     },
     {
@@ -156,7 +191,7 @@
       "share": 0
     },
     {
-      "label": "market",
+      "label": "as",
       "count": 26,
       "share": 0
     }
@@ -164,11 +199,11 @@
   "top_families": [
     {
       "id": "family-1",
-      "label": "anwar, to, supply",
+      "label": "iran, as, Middle East",
       "category": "Markets & Macro",
-      "count": 452,
-      "average_score": 56,
-      "unique_sources": 81,
+      "count": 485,
+      "average_score": 57,
+      "unique_sources": 80,
       "consensus": 99,
       "top_sources": [
         "Al Jazeera English",
@@ -178,11 +213,26 @@
       ]
     },
     {
-      "id": "family-25",
-      "label": "virus-hit, United States, tenerife",
+      "id": "family-3",
+      "label": "one, to, zero",
+      "category": "Cybersecurity",
+      "count": 28,
+      "average_score": 61,
+      "unique_sources": 10,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "Google News: Cyber",
+        "Google: cloud security OR supply chain attack",
+        "Google: cyber attack OR breach OR ransomware"
+      ]
+    },
+    {
+      "id": "family-22",
+      "label": "cruise, virus-hit, United States",
       "category": "Geopolitics",
       "count": 20,
-      "average_score": 57,
+      "average_score": 56,
       "unique_sources": 7,
       "consensus": 99,
       "top_sources": [
@@ -193,83 +243,52 @@
       ]
     },
     {
-      "id": "family-4",
-      "label": "patient, one, zero",
-      "category": "Cybersecurity",
-      "count": 19,
-      "average_score": 65,
-      "unique_sources": 9,
-      "consensus": 99,
-      "top_sources": [
-        "BleepingComputer",
-        "Google News: AI",
-        "Google News: Cyber",
-        "Google: bitcoin OR ethereum OR crypto etf"
-      ]
-    },
-    {
-      "id": "family-20",
-      "label": "shot, breaking, killed",
-      "category": "🚨 Breaking & Upcoming Alerts",
-      "count": 16,
-      "average_score": 62,
-      "unique_sources": 2,
-      "consensus": 99,
-      "top_sources": [
-        "Google News: Breaking",
-        "Google: meta OR tiktok OR youtube"
-      ]
-    },
-    {
-      "id": "family-18",
-      "label": "soldiers, Ukraine, how",
+      "id": "family-7",
+      "label": "russian, many, how",
       "category": "Geopolitics",
-      "count": 11,
+      "count": 16,
       "average_score": 77,
-      "unique_sources": 4,
+      "unique_sources": 8,
       "consensus": 99,
       "top_sources": [
         "Google News: Conflicts",
         "Google News: Europe",
-        "Google: geopolitics OR war OR diplomacy",
-        "Google: zero-day OR exploit OR vulnerability"
+        "Google: china taiwan OR south china sea",
+        "Google: geopolitics OR war OR diplomacy"
       ]
     },
     {
-      "id": "family-2",
-      "label": "us, of, in",
-      "category": "🌏 Asia & Pacific",
-      "count": 11,
-      "average_score": 76,
-      "unique_sources": 8,
-      "consensus": 99,
-      "top_sources": [
-        "Al Jazeera English",
-        "Bloomberg",
-        "Google News: Conflicts",
-        "Google: malware OR phishing OR infostealer"
-      ]
-    },
-    {
-      "id": "family-77",
-      "label": "malaysia, Meta, mulls",
-      "category": "Consumer Tech",
-      "count": 10,
-      "average_score": 58,
+      "id": "family-66",
+      "label": "argentina, Latin America, celebrate",
+      "category": "🇺🇸 Americas",
+      "count": 16,
+      "average_score": 50,
       "unique_sources": 3,
       "consensus": 99,
       "top_sources": [
-        "Google: gaming OR streaming OR creator economy",
-        "Google: meta OR tiktok OR youtube",
-        "Google: open source model OR agentic ai"
+        "Globo",
+        "Google News: North America",
+        "Google News: South America"
       ]
     },
     {
-      "id": "family-26",
-      "label": "zaidi, startups, to",
+      "id": "family-42",
+      "label": "shot, man, breaking",
+      "category": "🚨 Breaking & Upcoming Alerts",
+      "count": 15,
+      "average_score": 60,
+      "unique_sources": 1,
+      "consensus": 99,
+      "top_sources": [
+        "Google News: Breaking"
+      ]
+    },
+    {
+      "id": "family-23",
+      "label": "to, startups, zaidi",
       "category": "AI & Startups",
       "count": 9,
-      "average_score": 57,
+      "average_score": 59,
       "unique_sources": 4,
       "consensus": 99,
       "top_sources": [
@@ -278,87 +297,92 @@
         "Google: open source model OR agentic ai",
         "Google: startup funding OR venture capital"
       ]
+    },
+    {
+      "id": "family-60",
+      "label": "ai, permits, Google",
+      "category": "AI & Startups",
+      "count": 9,
+      "average_score": 56,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: artificial intelligence OR foundation model",
+        "Google: cloud security OR supply chain attack",
+        "Google: developer tools OR software startup",
+        "Google: open source model OR agentic ai"
+      ]
     }
   ],
   "top_sectors": [
     {
       "label": "AI Race",
-      "count": 533,
+      "count": 557,
       "avg_score": 59,
-      "trending": 79,
+      "trending": 87,
       "sources": 110,
       "heat": 99
     },
     {
       "label": "Geopolitical Risk",
-      "count": 271,
+      "count": 282,
       "avg_score": 66,
-      "trending": 77,
-      "sources": 72,
+      "trending": 78,
+      "sources": 71,
       "heat": 99
     },
     {
       "label": "Macro Stress",
-      "count": 181,
+      "count": 191,
       "avg_score": 62,
-      "trending": 26,
-      "sources": 53,
+      "trending": 29,
+      "sources": 54,
       "heat": 99
     },
     {
       "label": "Energy & Supply",
-      "count": 123,
+      "count": 128,
       "avg_score": 60,
-      "trending": 22,
+      "trending": 20,
       "sources": 41,
       "heat": 99
     },
     {
       "label": "Cyber Threat",
-      "count": 99,
+      "count": 104,
       "avg_score": 64,
       "trending": 26,
-      "sources": 15,
+      "sources": 16,
       "heat": 99
     },
     {
       "label": "Platform Power",
-      "count": 77,
+      "count": 87,
       "avg_score": 52,
-      "trending": 1,
+      "trending": 2,
       "sources": 16,
       "heat": 99
     }
   ],
   "top_contagion": [
     {
+      "label": "AI & Startups -> Cybersecurity",
+      "score": 99,
+      "families": 3,
+      "drivers": [
+        "iran, as, Middle East",
+        "one, to, zero",
+        "ai, permits, Google"
+      ]
+    },
+    {
       "label": "Cybersecurity -> 🌍 Geopolitics & Conflict",
       "score": 99,
-      "families": 4,
-      "drivers": [
-        "anwar, to, supply",
-        "patient, one, zero",
-        "soldiers, Ukraine, how"
-      ]
-    },
-    {
-      "label": "Cybersecurity -> Geopolitics",
-      "score": 99,
       "families": 3,
       "drivers": [
-        "anwar, to, supply",
-        "soldiers, Ukraine, how",
-        "us, of, in"
-      ]
-    },
-    {
-      "label": "Cybersecurity -> Markets & Macro",
-      "score": 99,
-      "families": 3,
-      "drivers": [
-        "anwar, to, supply",
-        "patient, one, zero",
-        "us, of, in"
+        "iran, as, Middle East",
+        "one, to, zero",
+        "russian, many, how"
       ]
     },
     {
@@ -366,33 +390,46 @@
       "score": 99,
       "families": 3,
       "drivers": [
-        "anwar, to, supply",
-        "virus-hit, United States, tenerife",
-        "soldiers, Ukraine, how"
+        "iran, as, Middle East",
+        "cruise, virus-hit, United States",
+        "russian, many, how"
       ]
     },
     {
-      "label": "Geopolitics -> 🌍 Geopolitics & Conflict",
+      "label": "AI & Startups -> Consumer Tech",
       "score": 99,
-      "families": 3,
+      "families": 2,
       "drivers": [
-        "anwar, to, supply",
-        "soldiers, Ukraine, how",
-        "us, of, in"
+        "iran, as, Middle East",
+        "one, to, zero"
       ]
     },
     {
-      "label": "Markets & Macro -> 🌍 Geopolitics & Conflict",
+      "label": "AI & Startups -> 🌍 Geopolitics & Conflict",
       "score": 99,
-      "families": 3,
+      "families": 2,
       "drivers": [
-        "anwar, to, supply",
-        "patient, one, zero",
-        "us, of, in"
+        "iran, as, Middle East",
+        "one, to, zero"
+      ]
+    },
+    {
+      "label": "AI & Startups -> 🤖 Cyber & Tech Warfare",
+      "score": 99,
+      "families": 2,
+      "drivers": [
+        "iran, as, Middle East",
+        "one, to, zero"
       ]
     }
   ],
   "headlines": [
+    {
+      "title": "US Awaits Iran Reply as Aramco Says Hormuz Opening No Quick Fix",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/us-awaits-iran-reply-as-aramco-says-hormuz-opening-no-quick-fix"
+    },
     {
       "title": "Anwar to Outline Malaysia Oil Supply Continuity Plan: Bernama",
       "score": 99,
@@ -430,8 +467,8 @@
       "url": "https://www.bleepingcomputer.com/news/security/trellix-source-code-breach-claimed-by-ransomhouse-hackers/"
     },
     {
-      "title": "Saudi Aramco Profit Jumps 26% as Iran War Drives Oil Prices",
-      "score": 96,
+      "title": "Aramco CEO Warns of Long Oil Market Disruption as Profit Jumps",
+      "score": 98,
       "category": "Markets & Macro",
       "url": "https://www.bloomberg.com/news/articles/2026-05-10/aramco-profit-climbs-as-war-driven-oil-rise-offsets-export-hit"
     },
@@ -466,16 +503,16 @@
       "url": "https://www.bloomberg.com/news/articles/2026-05-10/qatar-sends-first-lng-shipment-through-hormuz-since-war-started"
     },
     {
-      "title": "Gustavo Petro Warns Fossil-Fueled Crypto Mining Will Trigger 'Climate Collapse' - Bitcoin News",
-      "score": 93,
-      "category": "Climate & Supply Chain",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMnJienRMaTI1UGhjQzdvNVU0SFdlZEpwaXl4dWNydXRVdWtQNkZFSDlmcU40dE1DRDFFa0RMbXJmaGlZd3g5MjlZU2FUUVpwYmRTX3ExYWR3MVQ5ZE1KRFJoMjVCemlmak81ZnM3ejhnRmU1bVVjSGRYelg1YjgydkppU1BfbjFxX290YnNvTWtLS1FDM3RpN2RzNXYyb2ZvZWRhVG1B?oc=5"
-    },
-    {
       "title": "ThreatsDay Bulletin: Edge Plaintext Passwords, ICS 0-Days, Patch-or-Die Alerts and 25+ New Stories",
       "score": 93,
       "category": "Cybersecurity",
       "url": "https://thehackernews.com/2026/05/threatsday-bulletin-edge-plaintext.html"
+    },
+    {
+      "title": "Iran warns countries enforcing US sanctions will face 'difficulties' in Strait of Hormuz transit - Anadolu Ajansı",
+      "score": 92,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPR290UVlHOVRuRWplZlFTbEhHOHZHM1RYV2h2dEt5ZlhjVnNCTjBvd2tUTG5ENVI1SU91YkhfZ1FrVW1PUGJSd1pEZ3VGNkRZTVBrajV2ZmRyYVlwV20tUmxrVGtaZEdoU0l3OWFyZ3JqRFFCRXo4bWhpS0l2SHh6Y05SMEV1OG1ZTHFTY0JfOXNGVU1aRHUwbGxJbmFkOVFkcXBvTkNTaTJacFpEVHc4WXBWcGVRVlljMmpIZFNtRkcwRWlqT2pIei00aWdyaFozRFAxQXln?oc=5"
     },
     {
       "title": "Canvas login portals hacked in mass ShinyHunters extortion campaign",
@@ -502,6 +539,12 @@
       "url": "https://www.bloomberg.com/news/articles/2026-05-10/far-right-australian-party-wins-seat-in-first-election-victory"
     },
     {
+      "title": "How many Russian soldiers died in the war with Ukraine - Mediazona",
+      "score": 89,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBoQjVVdlBzMUxla3RjVHUxdkEwc015Znc3WlBPNWRBeF9vWDVFaHlpcEYtang3bkNZUG9vYkZwNnlkOVBhQ2xseGtxMGw5ODBMSDZ6REIzcEExWl83M20xS3B5U0VzWnNSNHdN?oc=5"
+    },
+    {
       "title": "Taiwan’s Plastic Habit Collides With Shortages Caused by a Faraway War - The New York Times",
       "score": 88,
       "category": "Geopolitics",
@@ -512,12 +555,6 @@
       "score": 88,
       "category": "India & APAC",
       "url": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxNQng4bVBrYVhEN0hsdjhhMzZCa1VuTjh3R3FkcWZjai1scXlzOXhSVzRiRVVGX29RYUZzV2plVmNlZk1BSUhralhINTBwUVF6SV9uNWk0d1VrVTJuN19IcE9LcmNrb281Nm5ybXZuTWtZNXlPRnZBczZhRXVJbXBhSTN2QWtfN2FTclpTRi14VU5fbndWYXJMNi1UMmxKWmZ4aWRBS0IxVG5LWUlpbnhraFVHOXNGblF0RS0yZnJkc01SSXVkYWtzcmg2YWxjSWl0a0d6M0ZwanlydWtubHdZZnFFTzJ6NWlJeDlhejZ0Ri16SDh6dmFWQ2JSSFpZMHl5NUlVYldPV1ZUOFoxdTItVW8xaVVLX0l1VWFTSTdGYWVjYnNJakRvbEdyam1xQ3VEVTRNNFVUaFRVY1hILWxXSnp5UjdwdFo1TzMyb1VkYzRSWjk5RjZ3djB6YWlEUzNkRGFCRndIcGllZVF3TTJKaW5KVQ?oc=5"
-    },
-    {
-      "title": "Dozens killed in jihadist attacks in central Mali",
-      "score": 87,
-      "category": "🇪🇺 Europe",
-      "url": "https://www.france24.com/en/africa/20260510-dozens-killed-in-jihadist-attacks-in-central-mali"
     },
     {
       "title": "Iran war live: IRGC warns US against attacks on ships; Israel bombs Lebanon",
@@ -536,12 +573,6 @@
       "score": 86,
       "category": "Cybersecurity",
       "url": "https://thehackernews.com/2026/05/quasar-linux-rat-steals-developer.html"
-    },
-    {
-      "title": "Whirlpool hikes prices again as Iran War, inflation shake appliance market - Scripps News",
-      "score": 85,
-      "category": "Markets & Macro",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSGw5Zkc1SGs3Tmo2Yl91bURwQU5HemVtNzBUVHdwMjNuY2pjYW5qb180bkxmLWFjTHV6clY4U3lLTkZpdTFtTkE4NmJOczVHNTdLNmZOWFc1N2RYcUxfRVhuRFl0VTlCZVFkTFo2UnM4QWFQUEdoemRsOWROX3Z3NHduQ2NHSkZST25SUHIxMU5IODBpS05fd2ZhOXpKVndUMUdpaS03MVAyaU9zNUNjcjBsRGVXMndVM2c?oc=5"
     }
   ]
 }
