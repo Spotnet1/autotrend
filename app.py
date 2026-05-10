@@ -364,8 +364,14 @@ def main():
     save_historical_snapshot(cache.get_all())
     
     articles = cache.get_all()
+    
+    # Calculate category counts for sidebar
+    cat_counts = Counter([a.get("category", "Uncategorized") for a in articles])
+    
     stats = {
-        "total": len(articles), "trending": sum(1 for a in articles if a.get("is_trending")),
+        "total": len(articles), 
+        "trending": sum(1 for a in articles if a.get("is_trending")),
+        "categories": dict(cat_counts),
         "updated": utcnow().strftime("%Y-%m-%d %H:%M UTC")
     }
     kw_counts = Counter([k for a in articles for k in a.get("entities", {}).get("keywords", [])]).most_common(25)
