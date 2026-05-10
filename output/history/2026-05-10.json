@@ -1,1 +1,532 @@
-{"date": "2026-05-10", "total": 608, "hot": 207, "avg_virality": 64.18914473684211, "sentiment": [["negative", 252], ["positive", 213], ["neutral", 143]]}
+{
+  "date": "2026-05-10",
+  "stats": {
+    "total": 1100,
+    "trending": 113,
+    "breaking": 71,
+    "sources": 116,
+    "feeds": 46,
+    "updated": "10 May 2026, 07:22 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "Markets & Macro",
+      "count": 95,
+      "share": 9
+    },
+    {
+      "label": "Geopolitics",
+      "count": 90,
+      "share": 8
+    },
+    {
+      "label": "AI & Startups",
+      "count": 83,
+      "share": 8
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 73,
+      "share": 7
+    },
+    {
+      "label": "🌍 Geopolitics & Conflict",
+      "count": 71,
+      "share": 6
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "United States",
+      "count": 180,
+      "score": 57,
+      "lat": 38.9,
+      "lng": -97.0
+    },
+    {
+      "label": "Middle East",
+      "count": 111,
+      "score": 65,
+      "lat": 29.3,
+      "lng": 47.5
+    },
+    {
+      "label": "United Kingdom",
+      "count": 68,
+      "score": 61,
+      "lat": 54.7,
+      "lng": -3.5
+    },
+    {
+      "label": "China",
+      "count": 60,
+      "score": 55,
+      "lat": 35.9,
+      "lng": 104.2
+    },
+    {
+      "label": "Russia",
+      "count": 50,
+      "score": 62,
+      "lat": 61.5,
+      "lng": 105.3
+    },
+    {
+      "label": "Ukraine",
+      "count": 41,
+      "score": 65,
+      "lat": 48.4,
+      "lng": 31.2
+    },
+    {
+      "label": "Europe",
+      "count": 41,
+      "score": 56,
+      "lat": 50.1,
+      "lng": 8.6
+    },
+    {
+      "label": "Africa",
+      "count": 28,
+      "score": 54,
+      "lat": 1.6,
+      "lng": 17.5
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "to",
+      "count": 127,
+      "share": 2
+    },
+    {
+      "label": "in",
+      "count": 104,
+      "share": 2
+    },
+    {
+      "label": "of",
+      "count": 70,
+      "share": 1
+    },
+    {
+      "label": "is",
+      "count": 52,
+      "share": 1
+    },
+    {
+      "label": "new",
+      "count": 36,
+      "share": 1
+    },
+    {
+      "label": "ai",
+      "count": 36,
+      "share": 1
+    },
+    {
+      "label": "on",
+      "count": 34,
+      "share": 1
+    },
+    {
+      "label": "iran",
+      "count": 34,
+      "share": 1
+    },
+    {
+      "label": "putin",
+      "count": 27,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 26,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "to, supply, oil",
+      "category": "Markets & Macro",
+      "count": 425,
+      "average_score": 57,
+      "unique_sources": 81,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera English",
+        "BBC News World",
+        "BBC World",
+        "BleepingComputer"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "to, patient, one",
+      "category": "Cybersecurity",
+      "count": 20,
+      "average_score": 66,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "Google News: AI",
+        "Google News: Cyber",
+        "Google: bitcoin OR ethereum OR crypto etf"
+      ]
+    },
+    {
+      "id": "family-19",
+      "label": "man, shot, killed",
+      "category": "🚨 Breaking & Upcoming Alerts",
+      "count": 16,
+      "average_score": 62,
+      "unique_sources": 2,
+      "consensus": 99,
+      "top_sources": [
+        "Google News: Breaking",
+        "Google: meta OR tiktok OR youtube"
+      ]
+    },
+    {
+      "id": "family-25",
+      "label": "cruise, United States, ship",
+      "category": "Geopolitics",
+      "count": 14,
+      "average_score": 64,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "BBC News World",
+        "BBC World",
+        "France 24",
+        "Google News: South America"
+      ]
+    },
+    {
+      "id": "family-17",
+      "label": "Russia, how, Ukraine",
+      "category": "Geopolitics",
+      "count": 11,
+      "average_score": 78,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google News: Conflicts",
+        "Google News: Europe",
+        "Google: russia ukraine OR nato",
+        "Google: zero-day OR exploit OR vulnerability"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "in, us, United States",
+      "category": "🌏 Asia & Pacific",
+      "count": 11,
+      "average_score": 76,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera English",
+        "Bloomberg",
+        "Google News: Conflicts",
+        "Google: malware OR phishing OR infostealer"
+      ]
+    },
+    {
+      "id": "family-26",
+      "label": "to, startups, zaidi",
+      "category": "AI & Startups",
+      "count": 8,
+      "average_score": 58,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: artificial intelligence OR foundation model",
+        "Google: developer tools OR software startup",
+        "Google: open source model OR agentic ai",
+        "Google: startup funding OR venture capital"
+      ]
+    },
+    {
+      "id": "family-67",
+      "label": "ai, Google, permits",
+      "category": "AI & Startups",
+      "count": 8,
+      "average_score": 56,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: artificial intelligence OR foundation model",
+        "Google: cloud security OR supply chain attack",
+        "Google: developer tools OR software startup",
+        "Google: open source model OR agentic ai"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "AI Race",
+      "count": 506,
+      "avg_score": 60,
+      "trending": 83,
+      "sources": 110,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 255,
+      "avg_score": 66,
+      "trending": 81,
+      "sources": 71,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 173,
+      "avg_score": 62,
+      "trending": 24,
+      "sources": 53,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 114,
+      "avg_score": 61,
+      "trending": 21,
+      "sources": 40,
+      "heat": 99
+    },
+    {
+      "label": "Cyber Threat",
+      "count": 96,
+      "avg_score": 65,
+      "trending": 29,
+      "sources": 15,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 66,
+      "avg_score": 53,
+      "trending": 2,
+      "sources": 14,
+      "heat": 99
+    }
+  ],
+  "top_contagion": [
+    {
+      "label": "Cybersecurity -> 🌍 Geopolitics & Conflict",
+      "score": 99,
+      "families": 4,
+      "drivers": [
+        "to, supply, oil",
+        "to, patient, one",
+        "Russia, how, Ukraine"
+      ]
+    },
+    {
+      "label": "Cybersecurity -> Geopolitics",
+      "score": 99,
+      "families": 3,
+      "drivers": [
+        "to, supply, oil",
+        "Russia, how, Ukraine",
+        "in, us, United States"
+      ]
+    },
+    {
+      "label": "Cybersecurity -> Markets & Macro",
+      "score": 99,
+      "families": 3,
+      "drivers": [
+        "to, supply, oil",
+        "to, patient, one",
+        "in, us, United States"
+      ]
+    },
+    {
+      "label": "Geopolitics -> 🇪🇺 Europe",
+      "score": 99,
+      "families": 3,
+      "drivers": [
+        "to, supply, oil",
+        "cruise, United States, ship",
+        "Russia, how, Ukraine"
+      ]
+    },
+    {
+      "label": "Geopolitics -> 🌍 Geopolitics & Conflict",
+      "score": 99,
+      "families": 3,
+      "drivers": [
+        "to, supply, oil",
+        "Russia, how, Ukraine",
+        "in, us, United States"
+      ]
+    },
+    {
+      "label": "Markets & Macro -> 🌍 Geopolitics & Conflict",
+      "score": 99,
+      "families": 3,
+      "drivers": [
+        "to, supply, oil",
+        "to, patient, one",
+        "in, us, United States"
+      ]
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Anwar to Outline Malaysia Oil Supply Continuity Plan: Bernama",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/anwar-to-outline-malaysia-oil-supply-continuity-plan-bernama"
+    },
+    {
+      "title": "Anwar to Outline Malaysia Oil Supply Continuity Plan: Bernama",
+      "score": 99,
+      "category": "📈 Macro Economy & Markets",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/anwar-to-outline-malaysia-oil-supply-continuity-plan-bernama"
+    },
+    {
+      "title": "‘Missiles, drones locked on US targets’: Iran warns of ‘heavy assault’ after tanker strikes in Gulf of Oman",
+      "score": 99,
+      "category": "🌏 Asia & Pacific",
+      "url": "https://timesofindia.indiatimes.com/world/middle-east/missiles-drones-locked-on-us-targets-iran-warns-of-heavy-assault-after-tanker-strikes-in-gulf-of-oman/articleshow/130985047.cms"
+    },
+    {
+      "title": "Chalmers on 'Unacceptable' Australian Housing Status Quo",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-09/chalmers-on-unacceptable-australian-housing-status-quo-video"
+    },
+    {
+      "title": "Chalmers on 'Unacceptable' Australian Housing Status Quo",
+      "score": 99,
+      "category": "📈 Macro Economy & Markets",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-09/chalmers-on-unacceptable-australian-housing-status-quo-video"
+    },
+    {
+      "title": "Trellix source code breach claimed by RansomHouse hackers",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://www.bleepingcomputer.com/news/security/trellix-source-code-breach-claimed-by-ransomhouse-hackers/"
+    },
+    {
+      "title": "Saudi Aramco Profit Jumps 26% as Iran War Drives Oil Prices",
+      "score": 96,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/aramco-profit-climbs-as-war-driven-oil-rise-offsets-export-hit"
+    },
+    {
+      "title": "Aramco Profit Tops Estimates After War-Driven Oil Price Rise",
+      "score": 96,
+      "category": "📈 Macro Economy & Markets",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/aramco-profit-climbs-as-war-driven-oil-rise-offsets-export-hit"
+    },
+    {
+      "title": "Saudi Aramco Profit Jumps 26% as Iran War Drives Oil Prices",
+      "score": 96,
+      "category": "📉 Markets",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/aramco-profit-climbs-as-war-driven-oil-rise-offsets-export-hit"
+    },
+    {
+      "title": "One Click, Total Shutdown: The \"Patient Zero\" Webinar on Killing Stealth Breaches",
+      "score": 96,
+      "category": "Cybersecurity",
+      "url": "https://thehackernews.com/2026/05/one-click-total-shutdown-patient-zero.html"
+    },
+    {
+      "title": "Qatar Sends First LNG Shipment Through Hormuz Since War Started",
+      "score": 95,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/qatar-sends-first-lng-shipment-through-hormuz-since-war-started"
+    },
+    {
+      "title": "Qatar Sends First LNG Shipment Through Hormuz Since War Started",
+      "score": 95,
+      "category": "📈 Macro Economy & Markets",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/qatar-sends-first-lng-shipment-through-hormuz-since-war-started"
+    },
+    {
+      "title": "Gustavo Petro Warns Fossil-Fueled Crypto Mining Will Trigger 'Climate Collapse' - Bitcoin News",
+      "score": 93,
+      "category": "Climate & Supply Chain",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMnJienRMaTI1UGhjQzdvNVU0SFdlZEpwaXl4dWNydXRVdWtQNkZFSDlmcU40dE1DRDFFa0RMbXJmaGlZd3g5MjlZU2FUUVpwYmRTX3ExYWR3MVQ5ZE1KRFJoMjVCemlmak81ZnM3ejhnRmU1bVVjSGRYelg1YjgydkppU1BfbjFxX290YnNvTWtLS1FDM3RpN2RzNXYyb2ZvZWRhVG1B?oc=5"
+    },
+    {
+      "title": "ThreatsDay Bulletin: Edge Plaintext Passwords, ICS 0-Days, Patch-or-Die Alerts and 25+ New Stories",
+      "score": 93,
+      "category": "Cybersecurity",
+      "url": "https://thehackernews.com/2026/05/threatsday-bulletin-edge-plaintext.html"
+    },
+    {
+      "title": "Canvas login portals hacked in mass ShinyHunters extortion campaign",
+      "score": 92,
+      "category": "Cybersecurity",
+      "url": "https://www.bleepingcomputer.com/news/security/canvas-login-portals-hacked-in-mass-shinyhunters-extortion-campaign/"
+    },
+    {
+      "title": "The Iran war will change global energy markets in these important ways, oil executives say",
+      "score": 91,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/09/iran-war-oil-gas-energy-security.html"
+    },
+    {
+      "title": "The Iran war will change global energy markets in these important ways, oil executives say",
+      "score": 91,
+      "category": "📈 Business / Finance",
+      "url": "https://www.cnbc.com/2026/05/09/iran-war-oil-gas-energy-security.html"
+    },
+    {
+      "title": "Whirlpool hikes prices again as Iran War, inflation shake appliance market - Scripps News",
+      "score": 90,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSGw5Zkc1SGs3Tmo2Yl91bURwQU5HemVtNzBUVHdwMjNuY2pjYW5qb180bkxmLWFjTHV6clY4U3lLTkZpdTFtTkE4NmJOczVHNTdLNmZOWFc1N2RYcUxfRVhuRFl0VTlCZVFkTFo2UnM4QWFQUEdoemRsOWROX3Z3NHduQ2NHSkZST25SUHIxMU5IODBpS05fd2ZhOXpKVndUMUdpaS03MVAyaU9zNUNjcjBsRGVXMndVM2c?oc=5"
+    },
+    {
+      "title": "Far-Right Australian Party Wins Seat in First Election Victory",
+      "score": 90,
+      "category": "📈 Macro Economy & Markets",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-10/far-right-australian-party-wins-seat-in-first-election-victory"
+    },
+    {
+      "title": "Taiwan’s Plastic Habit Collides With Shortages Caused by a Faraway War - The New York Times",
+      "score": 88,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWnU1S3RGaFNOOTdZWFZoRkVWVDZiNmNsbWEzM0xNVkpOTC02U3R3TVV5V3lkWmJmQmxqb0k2eUtha3g3ZkZaTVQ0aXQ5WDJJQXZ0YzQ3cnk0VWhQU0dYSWhPaU1fMlBjWUNiU0ZoOVNheUN6aG42LUJHVjVNbk8xT1lR?oc=5"
+    },
+    {
+      "title": "Dozens killed in jihadist attacks in central Mali",
+      "score": 87,
+      "category": "🇪🇺 Europe",
+      "url": "https://www.france24.com/en/africa/20260510-dozens-killed-in-jihadist-attacks-in-central-mali"
+    },
+    {
+      "title": "Ransomware attack wipes out finals week at ISU, thousands of other schools - Idaho State Journal",
+      "score": 87,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQTzhabGNxVXl1TlpDLU5sdHZPWFhxSEJ4UU5vc0NHbWpZRXpyV1FrLU5BdkZLSnZxZzh4LUpWRi1ZNkVWZ09ySzQ5VEgzdVhYVUVtZnlTVGpSX1ZwOEZHRU96UVVfTjkweXp6ZVVsbllLRWxsdVRGajcxTGdjX0N5WjRQMm5zQmtEcmktRzBPdTlzV1E1cTZkQzA5NjdVSkdjQV9hOXhjZG5sZ1JXLWpjX2hpY1FicUgxcEk2Q21UeDVOVG40dW1hREVvbXlEUllxcldDMXVPX1E5Q3ZqMDNYUEEwbW53RTdnT3dkeWpBamZFUUZZU2RNQmtzMHJMS012cEHSAYICQVVfeXFMUE84WmxjcVV5dU5aQy1ObHR2T1hYcUhCeFFOb3NDR21qWUV6cldRay1OQXZGS0p2cWc4eC1KVkYtWTZFVmdPcks0OVRIM3VYWFVFbWZ5U1RqUl9WcDhGR0VPelFVX045MHl6emVVbG5ZS0VsbHVURmo3MUxnY19DeVo0UDJuc0JrRHJpLUcwT3U5c1dRNXE2ZEMwOTY3VUpHY0FfYTl4Y2RubGdSVy1qY19oaWNRYnFIMXBJNkNtVHg1TlRuNHVtYURFb215RFJZcXJXQzF1T19ROUN2ajAzWFBBMG1ud0U3Z093ZHlqQWpmRVFGWVNkTUJrczByTEtNdnBB?oc=5"
+    },
+    {
+      "title": "Ransomware attack wipes out finals week at ISU, thousands of other schools - Idaho State Journal",
+      "score": 87,
+      "category": "🤖 Cyber & Tech Warfare",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOWG14eF9VdElfRjNFRExQaWw0dU5hYVp0dnZmc1pYSlhlVFZqcmlvdC1pZlB2aXlKX08tcVUyWnN6WjFEVE5ULWFvcThMVENhM2lIdmlMbFp3em9fRFNET2w4ZTA2dEJVOVhlMXRvbXl2ZjdTcmFLVU9ncGJkMC1MVTNveDctVVQ2c0VseklNbDBEZ3BqeVB5aWtxOTBYRGMwYXlXWV8zSVZ4UUtDY3U1czdHTUY5OGJaUnFncl9UbFdOUi1KYlVNM3dzQ1FabzdGZ2NpcDN0b2lPVHJjX1pEcEFZV2dHUnZtMUxuSXVaODNNOGxnaHFfNmdpaFbSAYICQVVfeXFMUE84WmxjcVV5dU5aQy1ObHR2T1hYcUhCeFFOb3NDR21qWUV6cldRay1OQXZGS0p2cWc4eC1KVkYtWTZFVmdPcks0OVRIM3VYWFVFbWZ5U1RqUl9WcDhGR0VPelFVX045MHl6emVVbG5ZS0VsbHVURmo3MUxnY19DeVo0UDJuc0JrRHJpLUcwT3U5c1dRNXE2ZEMwOTY3VUpHY0FfYTl4Y2RubGdSVy1qY19oaWNRYnFIMXBJNkNtVHg1TlRuNHVtYURFb215RFJZcXJXQzF1T19ROUN2ajAzWFBBMG1ud0U3Z093ZHlqQWpmRVFGWVNkTUJrczByTEtNdnBB?oc=5"
+    },
+    {
+      "title": "Iran war live: IRGC warns US against attacks on ships; Israel bombs Lebanon",
+      "score": 86,
+      "category": "🌍 Geopolitics & Conflict",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/5/10/iran-war-live-irgc-warns-us-against-attacks-on-ships-israel-bombs-lebanon?traffic_source=rss"
+    },
+    {
+      "title": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
+      "score": 86,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/08/iran-focus-at-trump-xi-summit-may-delay-progress-on-tariffs-rare-earths.html"
+    }
+  ]
+}
