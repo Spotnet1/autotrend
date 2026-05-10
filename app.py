@@ -36,8 +36,8 @@ SITE_FILE = OUTPUT_DIR / "index.html"
 CNAME_FILE = OUTPUT_DIR / "CNAME"
 TEMPLATE_FILE = Path("template.html")
 
-SITE_TITLE = "AutoTrend Atlas"
-SITE_TAGLINE = "A simple live view of the stories getting attention across the web."
+SITE_TITLE = "SpotPulse"
+SITE_TAGLINE = "Live web pulse for India and global stories."
 SITE_URL = "https://autotrend.pages.dev"
 KEEP_HOURS = 36
 MAX_ITEMS_PER_FEED = 12
@@ -983,7 +983,7 @@ def build_payload(articles: list[dict]) -> dict:
     sources = Counter(article["source"] for article in articles)
     keywords = Counter(keyword for article in articles for keyword in article.get("keywords", []))
     regions = build_regions(articles)
-    top_categories = top_breakdown(categories, limit=5)
+    top_categories = top_breakdown(categories, limit=12)
     top_sources = top_breakdown(sources, limit=6)
     keyword_pulse = top_breakdown(keywords, limit=10)
     hourly_activity = build_hourly_activity(articles)

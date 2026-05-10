@@ -768,38 +768,666 @@
             .overview-bottom { grid-template-columns: 1fr 0.9fr; }
             .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
+        /* SpotPulse product pass */
+        :root {
+            --bg: #f7ebcd;
+            --panel: rgba(255, 250, 239, 0.92);
+            --panel-2: rgba(255, 248, 232, 0.96);
+            --line: rgba(24, 33, 28, 0.14);
+            --text: #17211c;
+            --muted: #657166;
+            --teal: #1e8a61;
+            --blue: #22b7c8;
+            --sun: #ffb23e;
+            --coral: #ec5d57;
+            --shadow: 0 18px 48px rgba(16, 20, 16, 0.18);
+            --radius-xl: 8px;
+            --radius-lg: 8px;
+            --radius-md: 8px;
+        }
+
+        body {
+            color: var(--text);
+            font-family: "Trebuchet MS", "Gill Sans", Verdana, sans-serif;
+            background:
+                repeating-linear-gradient(90deg, rgba(24, 33, 28, 0.035) 0 1px, transparent 1px 42px),
+                repeating-linear-gradient(0deg, rgba(24, 33, 28, 0.03) 0 1px, transparent 1px 42px),
+                linear-gradient(135deg, #f7ebcd 0%, #e7f2dd 34%, #e4f4f7 67%, #fff0d5 100%);
+        }
+
+        body::before,
+        body::after { display: none; }
+
+        .page {
+            width: min(100%, 1480px);
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        .shell {
+            min-height: calc(100vh - 20px);
+            display: flex;
+            flex-direction: column;
+            border-radius: 0;
+            background: rgba(255, 250, 239, 0.62);
+            border-color: rgba(24, 33, 28, 0.16);
+        }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid var(--line);
+            background: rgba(255, 248, 232, 0.96);
+            backdrop-filter: blur(18px);
+        }
+
+        .brand {
+            grid-column: auto;
+            grid-row: auto;
+            text-decoration: none;
+        }
+
+        .brand-mark {
+            border-radius: 8px;
+            color: #062018;
+            background: linear-gradient(135deg, #ffb23e, #89e2b1);
+            box-shadow: none;
+        }
+
+        .brand-copy strong {
+            font-size: 1.08rem;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        .brand-copy span {
+            max-width: 230px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .spot-ticker {
+            min-width: 0;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            gap: 10px;
+            overflow: hidden;
+            padding: 9px 10px;
+            border: 1px solid rgba(24, 33, 28, 0.14);
+            background: rgba(255, 255, 255, 0.56);
+        }
+
+        .spot-ticker strong {
+            color: var(--teal);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .ticker-window {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .ticker-track {
+            display: inline-flex;
+            gap: 28px;
+            min-width: 100%;
+            color: #29342d;
+            font-size: 0.86rem;
+            animation: ticker 26s linear infinite;
+        }
+
+        .topbar-meta {
+            grid-column: auto;
+            grid-row: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            justify-self: stretch;
+        }
+
+        .scope-toggle {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            padding: 4px;
+            border: 1px solid rgba(24, 33, 28, 0.14);
+            background: rgba(255, 255, 255, 0.56);
+        }
+
+        .scope-btn {
+            min-height: 38px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border: 0;
+            border-radius: 6px;
+            background: transparent;
+            color: var(--muted);
+            cursor: pointer;
+        }
+
+        .scope-btn.active {
+            color: #061b14;
+            background: #fff3cf;
+            box-shadow: inset 0 0 0 1px rgba(24, 33, 28, 0.1);
+        }
+
+        .scope-icon {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            border-radius: 50%;
+            border: 1px solid rgba(24, 33, 28, 0.22);
+        }
+
+        .scope-icon.global {
+            background:
+                linear-gradient(90deg, transparent 45%, rgba(255,255,255,0.75) 45% 55%, transparent 55%),
+                linear-gradient(0deg, transparent 45%, rgba(255,255,255,0.75) 45% 55%, transparent 55%),
+                #22b7c8;
+        }
+
+        .scope-icon.india {
+            position: relative;
+            background: linear-gradient(#ff9d35 0 33%, #fff 33% 66%, #178b52 66% 100%);
+        }
+
+        .scope-icon.india::after {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: #2450a6;
+        }
+
+        .update-pill {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 38px;
+            color: var(--muted);
+            background: rgba(255,255,255,0.56);
+            border-color: rgba(24, 33, 28, 0.14);
+        }
+
+        .hero {
+            position: relative;
+            grid-template-columns: 1fr !important;
+            min-height: 330px;
+            align-items: end;
+            overflow: hidden;
+            color: #fff9e8;
+            background:
+                repeating-linear-gradient(90deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 64px),
+                repeating-linear-gradient(0deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 64px),
+                linear-gradient(135deg, #102019 0%, #163323 38%, #43351b 68%, #241817 100%);
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: -35%;
+            pointer-events: none;
+        }
+
+        .hero::before {
+            background: conic-gradient(from 120deg, rgba(137,226,177,0.18), rgba(34,183,200,0.2), rgba(255,178,62,0.18), rgba(236,93,87,0.14), rgba(137,226,177,0.18));
+            animation: sweep 18s linear infinite;
+        }
+
+        .hero::after {
+            background: repeating-radial-gradient(circle at 72% 42%, transparent 0 36px, rgba(255,255,255,0.12) 37px 39px, transparent 40px 78px);
+            opacity: 0.6;
+            animation: radar 5s ease-in-out infinite;
+        }
+
+        .hero-copy {
+            z-index: 1;
+            border: 0;
+            padding: 0;
+            background: transparent;
+        }
+
+        .hero-featured { display: none; }
+
+        .eyebrow {
+            color: #102019;
+            background: #bdf0c9;
+            border: 0;
+        }
+
+        .hero h1 {
+            max-width: none;
+            font-size: 2rem;
+            line-height: 1;
+            letter-spacing: 0;
+            white-space: nowrap;
+        }
+
+        .hero p {
+            color: rgba(255, 249, 232, 0.86);
+            font-size: 0.96rem;
+            line-height: 1.55;
+        }
+
+        .stat {
+            border-radius: 8px;
+            background: rgba(255,255,255,0.11);
+            border-color: rgba(255,255,255,0.18);
+        }
+
+        .stat span { color: rgba(255, 249, 232, 0.72); }
+        .stat strong { color: #fff9e8; }
+
+        .overview {
+            flex: 1;
+            padding-top: 18px;
+        }
+
+        .overview-grid {
+            grid-template-columns: 1fr !important;
+        }
+
+        .story-activity-panel { display: none; }
+
+        .panel {
+            border-radius: 8px;
+            background: rgba(255, 250, 239, 0.88);
+            border-color: rgba(24, 33, 28, 0.14);
+        }
+
+        .map-card { min-height: 0; }
+
+        .map-canvas {
+            min-height: 310px;
+            border-radius: 8px;
+            border-color: rgba(24, 33, 28, 0.16);
+            background:
+                linear-gradient(115deg, rgba(30,138,97,0.17), transparent 28%),
+                linear-gradient(245deg, rgba(63,120,255,0.13), transparent 34%),
+                repeating-linear-gradient(90deg, rgba(24, 33, 28, 0.055) 0 1px, transparent 1px 48px),
+                repeating-linear-gradient(0deg, rgba(24, 33, 28, 0.045) 0 1px, transparent 1px 48px),
+                #f8f0dc;
+        }
+
+        .map-canvas::before {
+            opacity: 1;
+            background:
+                linear-gradient(rgba(24,33,28,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(24,33,28,0.05) 1px, transparent 1px);
+            background-size: 48px 48px;
+        }
+
+        .map-canvas::after {
+            inset: 12% 6%;
+            border-color: rgba(24, 33, 28, 0.1);
+            box-shadow:
+                inset 0 0 0 20px rgba(30, 138, 97, 0.035),
+                inset 0 0 0 54px rgba(34, 183, 200, 0.035);
+        }
+
+        .map-point {
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .map-point::before {
+            content: "";
+            position: absolute;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,178,62,0.42), rgba(236,93,87,0.2) 34%, transparent 68%);
+            animation: heat 2.7s ease-in-out infinite;
+        }
+
+        .map-dot {
+            position: relative;
+            z-index: 1;
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(135deg, var(--coral), var(--sun));
+            border: 2px solid #fff9e8;
+            box-shadow: 0 0 0 6px rgba(236, 93, 87, 0.14);
+        }
+
+        .map-point strong {
+            position: relative;
+            z-index: 1;
+            color: #132019;
+            background: rgba(255, 249, 232, 0.92);
+            border-color: rgba(24, 33, 28, 0.13);
+            box-shadow: 0 8px 20px rgba(24, 33, 28, 0.12);
+        }
+
+        .region-table {
+            width: 100%;
+            margin-top: 12px;
+            border-collapse: collapse;
+            border: 1px solid rgba(24, 33, 28, 0.14);
+            background: rgba(255, 250, 239, 0.78);
+        }
+
+        .region-table th,
+        .region-table td {
+            padding: 10px;
+            border-bottom: 1px solid rgba(24, 33, 28, 0.1);
+            text-align: left;
+            font-size: 0.84rem;
+        }
+
+        .region-table th {
+            color: var(--muted);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+        }
+
+        .mini-bar {
+            height: 8px;
+            min-width: 82px;
+            overflow: hidden;
+            background: rgba(24, 33, 28, 0.09);
+        }
+
+        .mini-bar i {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, var(--teal), var(--sun), var(--coral));
+        }
+
+        .category-slider {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: minmax(210px, 76vw);
+            gap: 10px;
+            max-height: none;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-right: 0;
+            padding-bottom: 6px;
+            scroll-snap-type: x proximity;
+        }
+
+        .category-slide {
+            min-height: 96px;
+            border-radius: 8px;
+            background: rgba(255, 250, 239, 0.82);
+            border-color: rgba(24, 33, 28, 0.14);
+        }
+
+        .category-slide.active,
+        .category-chip.active {
+            color: #fff8e8;
+            background: #123324;
+            border-color: #123324;
+        }
+
+        .category-slide.active span { color: rgba(255, 248, 232, 0.75); }
+
+        .controls {
+            border-radius: 8px;
+            background: rgba(255, 248, 232, 0.9);
+            border-color: rgba(24, 33, 28, 0.14);
+        }
+
+        .search input,
+        .sort-select {
+            border-radius: 0;
+            min-height: 44px;
+            background: #fffdf5;
+            color: var(--text);
+            border-color: rgba(24, 33, 28, 0.16);
+        }
+
+        .category-chip,
+        .pager button {
+            border-radius: 0;
+            background: rgba(255,255,255,0.58);
+            border-color: rgba(24, 33, 28, 0.14);
+        }
+
+        .article-grid {
+            gap: 12px;
+        }
+
+        .article-card {
+            position: relative;
+            border-radius: 8px;
+            border-color: rgba(24, 33, 28, 0.14);
+            background: rgba(255, 250, 239, 0.9);
+            box-shadow: 0 12px 30px rgba(24, 33, 28, 0.09);
+            color: var(--text);
+        }
+
+        .article-card::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 5px;
+            background: linear-gradient(180deg, var(--teal), var(--blue), var(--sun));
+        }
+
+        .article-card.lead {
+            background: linear-gradient(110deg, rgba(18, 51, 36, 0.98), rgba(34, 64, 45, 0.96));
+            color: #fff8e8;
+        }
+
+        .article-card.lead p,
+        .article-card.lead .story-meta,
+        .article-card.lead .card-footer,
+        .article-card.lead .signal-label {
+            color: rgba(255, 248, 232, 0.76);
+        }
+
+        .article-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .article-card h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.25rem;
+            line-height: 1.2;
+            letter-spacing: 0;
+        }
+
+        .article-card p {
+            color: #405047;
+            line-height: 1.52;
+            font-size: 0.92rem;
+        }
+
+        .signals {
+            display: grid;
+            gap: 9px;
+        }
+
+        .signal-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            color: var(--muted);
+            font-size: 0.76rem;
+        }
+
+        .bar-track,
+        .tone-track {
+            height: 9px;
+            overflow: hidden;
+            background: rgba(24, 33, 28, 0.1);
+        }
+
+        .bar-track i {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, var(--teal), var(--sun), var(--coral));
+        }
+
+        .tone-track {
+            display: flex;
+        }
+
+        .tone-track .pos { background: var(--teal); }
+        .tone-track .neu { background: var(--sun); }
+        .tone-track .neg { background: var(--coral); }
+
+        .tone-pill {
+            padding: 5px 8px;
+            border: 1px solid rgba(24, 33, 28, 0.12);
+            background: rgba(255,255,255,0.58);
+            font-size: 0.72rem;
+            font-weight: 700;
+        }
+
+        .tone-pill.positive { color: var(--teal); }
+        .tone-pill.negative { color: var(--coral); }
+        .tone-pill.neutral { color: #6c684c; }
+        .status-pill.fresh { color: var(--coral); }
+        .status-pill.rising { color: var(--sun); }
+        .status-pill.watch { color: var(--teal); }
+
+        .tag {
+            border-radius: 0;
+            color: #314138;
+            background: rgba(255,255,255,0.56);
+            border-color: rgba(24, 33, 28, 0.12);
+        }
+
+        .card-footer a {
+            color: inherit;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .footer {
+            margin-top: auto;
+            border-top: 1px solid var(--line);
+            background: #101410;
+            color: rgba(255, 248, 232, 0.74);
+        }
+
+        .footer a { color: #fff8e8; }
+
+        @keyframes ticker {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        @keyframes sweep {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes radar {
+            0%, 100% { transform: scale(1); opacity: 0.4; }
+            50% { transform: scale(1.04); opacity: 0.75; }
+        }
+
+        @keyframes heat {
+            0%, 100% { transform: scale(0.82); opacity: 0.55; }
+            50% { transform: scale(1.16); opacity: 0.9; }
+        }
+
+        @media (min-width: 760px) {
+            .topbar {
+                grid-template-columns: minmax(220px, 0.95fr) minmax(260px, 1.45fr) minmax(260px, 0.9fr);
+                padding: 12px 16px;
+            }
+            .topbar-meta {
+                grid-template-columns: 1fr auto;
+                align-items: center;
+            }
+            .hero {
+                min-height: 360px;
+                padding-top: 28px;
+                padding-bottom: 28px;
+            }
+            .hero h1 { font-size: 3rem; }
+            .category-slider { grid-auto-columns: minmax(210px, 260px); }
+            .article-card.lead {
+                grid-column: span 2;
+                grid-template-columns: minmax(0, 1fr) 280px;
+                align-items: start;
+            }
+            .article-card.lead h3 { font-size: 1.75rem; }
+            .article-card.lead .signals { align-self: stretch; }
+        }
+
+        @media (min-width: 1024px) {
+            .hero h1 { font-size: 4rem; }
+            .article-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 380px) {
+            .hero h1 { font-size: 1.72rem; }
+        }
     </style>
 </head>
 <body>
     <div class="page">
         <div class="shell">
             <header class="topbar">
-                <div class="brand">
-                    <div class="brand-mark">AT</div>
+                <a class="brand" href="#overview" aria-label="SpotPulse home">
+                    <div class="brand-mark">SP</div>
                     <div class="brand-copy">
                         <strong>{{ title }}</strong>
                         <span>{{ tagline }}</span>
                     </div>
+                </a>
+
+                <div class="spot-ticker" aria-label="Top story ticker">
+                    <strong>Ticker</strong>
+                    <div class="ticker-window">
+                        <div class="ticker-track">
+                            {% for article in hero_articles %}
+                            <span>{{ article.title }}</span>
+                            {% endfor %}
+                            {% for article in hero_articles %}
+                            <span>{{ article.title }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
 
-                <nav class="topnav">
-                    <a href="#overview">Overview</a>
-                    <a href="#stories">Stories</a>
-                    <a href="#sources">Sources</a>
-                </nav>
-
-                    <div class="topbar-meta">
-                        <div class="update-pill">Updated {{ updated }}</div>
-                        <a class="meta-link" href="trending.rss">Updates</a>
-                        <a class="meta-link" href="trends.json">Download</a>
+                <div class="topbar-meta">
+                    <div class="scope-toggle" aria-label="Region filter">
+                        <button class="scope-btn active" data-scope="global" type="button">
+                            <span class="scope-icon global" aria-hidden="true"></span>
+                            Global
+                        </button>
+                        <button class="scope-btn" data-scope="india" type="button">
+                            <span class="scope-icon india" aria-hidden="true"></span>
+                            India
+                        </button>
                     </div>
-                </header>
+                    <div class="update-pill">Updated {{ updated }}</div>
+                </div>
+            </header>
 
             <section class="hero" id="overview">
                 <div class="hero-copy">
-                    <div class="eyebrow">Today's updates</div>
-                    <h1>See what is getting attention right now.</h1>
-                    <p>{{ briefing }} Browse the top stories, check the map, and filter everything by category in one clean view.</p>
+                    <div class="eyebrow">Live public web pulse</div>
+                    <h1>What is moving now</h1>
+                    <p>{{ briefing }} SpotPulse turns public feeds into a clean reading view with location focus, category filters, pulse scores, and simple tone signals.</p>
                     <div class="hero-stats">
                         <div class="stat">
                             <span>Stories right now</span>
@@ -820,58 +1448,51 @@
                     </div>
                 </div>
 
-                <aside class="hero-featured">
-                    <div class="section-head">
-                        <h2>Top stories</h2>
-                        <span>Picked from the latest update</span>
-                    </div>
-                    <div class="featured-list">
-                        {% for article in hero_articles %}
-                        <article class="story-card">
-                            <div class="story-meta">
-                                <span>{{ article.category }}</span>
-                                <span>{{ article.published }}</span>
-                            </div>
-                            <h3><a href="{{ article.url }}" target="_blank" rel="noreferrer">{{ article.title }}</a></h3>
-                            <p>{{ article.summary }}</p>
-                            <a class="story-link" href="{{ article.url }}" target="_blank" rel="noreferrer">Open story</a>
-                        </article>
-                        {% endfor %}
-                    </div>
-                </aside>
             </section>
 
             <section class="overview">
                 <div class="overview-grid">
                     <section class="panel map-card">
                         <div class="section-head">
-                            <h3>Places in focus</h3>
-                            <span>Tap the stories below to explore more</span>
+                            <h3>Live map</h3>
+                            <span>Tap a place to filter stories</span>
                         </div>
                         <div class="map-canvas">
+                            {% if regions %}
                             {% for item in regions %}
-                            <div class="map-point" style="left: {{ item.x }}%; top: {{ item.y }}%;">
+                            <button class="map-point" data-region="{{ item.label }}" type="button" style="left: {{ item.x }}%; top: {{ item.y }}%;">
                                 <div class="map-dot"></div>
                                 <strong>{{ item.label }}</strong>
-                            </div>
+                            </button>
                             {% endfor %}
+                            {% else %}
+                            <div class="empty-state">Waiting for place signals</div>
+                            {% endif %}
                         </div>
-                    </section>
-
-                    <section class="panel">
-                        <div class="section-head">
-                            <h3>Story activity</h3>
-                            <span>When new stories are picking up</span>
-                        </div>
-                        <div class="chart-grid">
-                            {% for item in hourly_activity %}
-                            <div class="bar-wrap">
-                                <div class="bar" style="height: {{ item.height }}%;"></div>
-                                <span class="bar-value">{{ item.count }}</span>
-                                <span class="bar-label">{{ item.label }}</span>
-                            </div>
-                            {% endfor %}
-                        </div>
+                        <table class="region-table">
+                            <thead>
+                                <tr>
+                                    <th>Place</th>
+                                    <th>Stories</th>
+                                    <th>Pulse</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% if regions %}
+                                {% for item in regions %}
+                                <tr>
+                                    <td>{{ item.label }}</td>
+                                    <td>{{ item.count }}</td>
+                                    <td><div class="mini-bar" title="{{ item.score }}/99"><i style="width: {{ item.score }}%"></i></div></td>
+                                </tr>
+                                {% endfor %}
+                                {% else %}
+                                <tr>
+                                    <td colspan="3">No place signals yet</td>
+                                </tr>
+                                {% endif %}
+                            </tbody>
+                        </table>
                     </section>
 
                     <section class="panel">
@@ -896,65 +1517,28 @@
                     </section>
                 </div>
 
-                <div class="overview-bottom">
-                    <section class="panel">
-                        <div class="section-head">
-                            <h3>Popular topics</h3>
-                            <span>Clean, simple summary</span>
-                        </div>
-                        <div class="topic-list">
-                            {% for item in category_breakdown %}
-                            <div class="topic-item">
-                                <strong>{{ item.label }}</strong>
-                                <span>{{ item.share }}% of the current stories</span>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </section>
-
-                    <section class="panel" id="sources">
-                        <div class="section-head">
-                            <h3>Top sources today</h3>
-                            <span>Quick list view</span>
-                        </div>
-                        <table class="source-table">
-                            <thead>
-                                <tr>
-                                    <th>Source</th>
-                                    <th>Stories</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for item in source_breakdown %}
-                                <tr>
-                                    <td>{{ item.label }}</td>
-                                    <td>{{ item.count }}</td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    </section>
-                </div>
             </section>
 
             <section class="stories" id="stories">
                 <div class="section-head">
-                    <h2>All stories</h2>
-                    <span>Search, filter, and read quickly</span>
+                    <h2>Story desk</h2>
+                    <span>Search, filter, sort, and read without noise</span>
                 </div>
 
                 <div class="controls">
                 <div class="control-top">
                         <label class="search"><input id="searchInput" type="search" placeholder="Search headlines, people, places, or topics"></label>
                         <select class="sort-select" id="sortSelect">
-                            <option value="score">Most popular</option>
+                            <option value="score">Highest pulse</option>
                             <option value="latest">Newest first</option>
                             <option value="source">By source</option>
+                            <option value="tone">Strongest tone</option>
                         </select>
                     </div>
                     <div class="category-row" id="categoryFilters"></div>
                     <div class="results-strip">
                         <span id="resultsCount">0 stories</span>
+                        <span id="scopeLabel">Global view</span>
                         <div class="results-actions">
                             <button class="category-chip" id="clearFilters" type="button">Clear filters</button>
                         </div>
@@ -962,12 +1546,11 @@
                 </div>
 
                 <section class="article-grid" id="articleGrid"></section>
-                <div class="pager" id="pagerTop"></div>
-                <div class="pager" id="pagerBottom"></div>
+                <div class="pager" id="pager"></div>
             </section>
 
             <footer class="footer">
-                <span>{{ tagline }}</span>
+                <span><strong>SpotPulse</strong> keeps this page static, free, and GitHub Pages friendly.</span>
                 <div class="footer-links">
                     <a href="trending.rss">Updates</a>
                     <a href="trends.json">Download</a>
@@ -980,10 +1563,12 @@
     <script>
         const ARTICLES = {{ articles_json }};
         const CATEGORY_OPTIONS = {{ categories_json }};
+        const INDIA_TERMS = ['india', 'new delhi', 'delhi', 'mumbai', 'bengaluru', 'bangalore', 'chennai', 'hyderabad', 'pune', 'kolkata', 'apac'];
 
         const state = {
             search: '',
             category: 'All',
+            scope: 'global',
             sort: 'score',
             page: 1
         };
@@ -994,44 +1579,89 @@
         const searchInput = document.getElementById('searchInput');
         const sortSelect = document.getElementById('sortSelect');
         const resultsCount = document.getElementById('resultsCount');
+        const scopeLabel = document.getElementById('scopeLabel');
         const clearFilters = document.getElementById('clearFilters');
-        const pagerTop = document.getElementById('pagerTop');
-        const pagerBottom = document.getElementById('pagerBottom');
+        const pager = document.getElementById('pager');
 
-        function statusLabel(article) {
-            if (article.is_breaking) return 'New';
-            if (article.is_trending) return 'Popular';
-            return 'Watch';
+        function escapeHtml(value) {
+            return String(value || '').replace(/[&<>"']/g, (char) => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            }[char]));
         }
 
-        function matchesSearch(article, query) {
-            if (!query) return true;
-            const haystack = [
+        function safeUrl(value) {
+            try {
+                const url = new URL(value || '#', window.location.href);
+                return ['http:', 'https:'].includes(url.protocol) ? url.href : '#';
+            } catch {
+                return '#';
+            }
+        }
+
+        function articleText(article) {
+            return [
                 article.title,
                 article.summary,
                 article.source,
                 article.category,
                 ...((article.entities && article.entities.gpe) || []),
                 ...((article.entities && article.entities.orgs) || []),
-                ...((article.sectors) || [])
+                ...((article.entities && article.entities.persons) || []),
+                ...((article.sectors) || []),
+                ...((article.keywords) || [])
             ].join(' ').toLowerCase();
-            return haystack.includes(query);
+        }
+
+        function isIndiaArticle(article) {
+            const text = articleText(article);
+            return INDIA_TERMS.some((term) => text.includes(term));
+        }
+
+        function statusLabel(article) {
+            if (article.is_breaking) return 'Fresh';
+            if (article.is_trending) return 'Rising';
+            return 'Watch';
+        }
+
+        function toneLabel(article) {
+            const tone = article.sentiment || 'neutral';
+            return tone.charAt(0).toUpperCase() + tone.slice(1);
+        }
+
+        function toneParts(article) {
+            const raw = Number(article.sentiment_score || 0);
+            const strength = Math.min(92, Math.round(Math.abs(raw) * 100));
+            const neutral = Math.max(18, 100 - strength);
+            if (raw > 0.05) return { positive: strength, neutral, negative: Math.max(0, 100 - strength - neutral) };
+            if (raw < -0.05) return { positive: Math.max(0, 100 - strength - neutral), neutral, negative: strength };
+            return { positive: 16, neutral: 68, negative: 16 };
+        }
+
+        function matchesSearch(article, query) {
+            if (!query) return true;
+            return articleText(article).includes(query);
         }
 
         function filteredArticles() {
             const query = state.search.trim().toLowerCase();
             return ARTICLES
+                .filter((article) => state.scope === 'global' || isIndiaArticle(article))
                 .filter((article) => state.category === 'All' || article.category === state.category)
                 .filter((article) => matchesSearch(article, query))
                 .sort((a, b) => {
                     if (state.sort === 'latest') return (b.published_dt || '').localeCompare(a.published_dt || '');
-                    if (state.sort === 'source') return a.source.localeCompare(b.source);
-                    return b.virality_score - a.virality_score;
+                    if (state.sort === 'source') return String(a.source || '').localeCompare(String(b.source || ''));
+                    if (state.sort === 'tone') return Math.abs(b.sentiment_score || 0) - Math.abs(a.sentiment_score || 0);
+                    return (b.virality_score || 0) - (a.virality_score || 0);
                 });
         }
 
         function pageSize() {
-            return window.innerWidth < 760 ? 4 : 6;
+            return window.innerWidth < 760 ? 5 : 9;
         }
 
         function totalPages(items) {
@@ -1047,38 +1677,34 @@
         }
 
         function pageWindow(pages) {
-            const maxButtons = window.innerWidth < 760 ? 4 : 7;
+            const maxButtons = window.innerWidth < 760 ? 4 : 6;
             const half = Math.floor(maxButtons / 2);
             let start = Math.max(1, state.page - half);
             let end = Math.min(pages, start + maxButtons - 1);
             start = Math.max(1, end - maxButtons + 1);
             const buttons = [];
-            for (let page = start; page <= end; page += 1) {
-                buttons.push(page);
-            }
+            for (let page = start; page <= end; page += 1) buttons.push(page);
             return buttons;
         }
 
-        function renderPager(container, pages) {
+        function renderPager(pages) {
             if (pages <= 1) {
-                container.innerHTML = '';
+                pager.innerHTML = '';
                 return;
             }
-
             const buttons = pageWindow(pages).map((page) => `
                 <button class="${page === state.page ? 'active' : ''}" data-page="${page}" type="button">${page}</button>
             `).join('');
-
-            container.innerHTML = `
+            pager.innerHTML = `
                 <button data-page="${Math.max(1, state.page - 1)}" type="button" ${state.page === 1 ? 'disabled' : ''}>Prev</button>
                 ${buttons}
                 <button data-page="${Math.min(pages, state.page + 1)}" type="button" ${state.page === pages ? 'disabled' : ''}>Next</button>
             `;
-
-            container.querySelectorAll('button[data-page]').forEach((button) => {
+            pager.querySelectorAll('button[data-page]').forEach((button) => {
                 button.addEventListener('click', () => {
                     state.page = Number(button.dataset.page);
                     renderArticles();
+                    document.getElementById('stories').scrollIntoView({ behavior: 'smooth', block: 'start' });
                 });
             });
         }
@@ -1087,6 +1713,13 @@
             document.querySelectorAll('[data-category]').forEach((button) => {
                 button.classList.toggle('active', button.dataset.category === state.category);
             });
+        }
+
+        function syncScopeButtons() {
+            document.querySelectorAll('[data-scope]').forEach((button) => {
+                button.classList.toggle('active', button.dataset.scope === state.scope);
+            });
+            scopeLabel.textContent = state.scope === 'india' ? 'India view' : 'Global view';
         }
 
         function bindCategoryButtons(container) {
@@ -1103,7 +1736,7 @@
         function renderFilters() {
             const filters = ['All', ...CATEGORY_OPTIONS];
             categoryFilters.innerHTML = filters.map((category) => `
-                <button class="category-chip ${state.category === category ? 'active' : ''}" data-category="${category}" type="button">${category}</button>
+                <button class="category-chip ${state.category === category ? 'active' : ''}" data-category="${escapeHtml(category)}" type="button">${escapeHtml(category)}</button>
             `).join('');
             bindCategoryButtons(categoryFilters);
         }
@@ -1120,42 +1753,68 @@
                 : '0 stories';
 
             if (!items.length) {
-                articleGrid.innerHTML = '<div class="empty-state">No stories match that search yet. Try a different word or category.</div>';
-                pagerTop.innerHTML = '';
-                pagerBottom.innerHTML = '';
+                articleGrid.innerHTML = '<div class="empty-state">No stories match this view yet. Try Global, All stories, or a shorter search.</div>';
+                renderPager(1);
                 return;
             }
 
             articleGrid.innerHTML = pagedItems.map((article, index) => {
+                const score = Math.max(0, Math.min(99, Number(article.virality_score || 0)));
+                const parts = toneParts(article);
+                const tone = String(article.sentiment || 'neutral').toLowerCase();
+                const regions = (article.entities && article.entities.gpe) || [];
                 const tags = [
                     article.category,
-                    ...((article.entities && article.entities.gpe) || []).slice(0, 2),
+                    ...regions.slice(0, 2),
+                    ...((article.sectors) || []).slice(0, 2),
                     article.source
-                ].filter(Boolean).slice(0, 4);
+                ].filter(Boolean).slice(0, 6);
+                const leadClass = state.page === 1 && index === 0 ? ' lead' : '';
 
                 return `
-                    <article class="article-card" style="animation-delay:${Math.min(index * 35, 280)}ms">
-                        <div class="article-meta">
-                            <div class="story-meta">
-                                <span>${article.category}</span>
-                                <span>•</span>
-                                <span>${article.source}</span>
+                    <article class="article-card${leadClass}" style="animation-delay:${Math.min(index * 30, 240)}ms">
+                        <div>
+                            <div class="article-top">
+                                <div class="story-meta">
+                                    <span>${escapeHtml(article.category)}</span>
+                                    <span>${escapeHtml(article.source)}</span>
+                                </div>
+                                <span class="status-pill ${statusLabel(article).toLowerCase()}">${statusLabel(article)}</span>
                             </div>
-                            <span class="status-pill ${statusLabel(article).toLowerCase()}">${statusLabel(article)}</span>
+                            <h3><a href="${safeUrl(article.url)}" target="_blank" rel="noreferrer">${escapeHtml(article.title)}</a></h3>
+                            <p>${escapeHtml(article.summary || 'No summary available yet.')}</p>
                         </div>
-                        <h3><a href="${article.url}" target="_blank" rel="noreferrer">${article.title}</a></h3>
-                        <p>${article.summary || 'No summary available.'}</p>
-                        <div class="tag-row">${tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}</div>
-                        <div class="card-footer">
-                            <span>${article.published || 'Just now'}</span>
-                            <strong>${article.virality_score}/99</strong>
+
+                        <div class="signals">
+                            <div class="scale-bar">
+                                <div class="signal-label">
+                                    <strong>Pulse ${score}%</strong>
+                                    <span>${statusLabel(article)}</span>
+                                </div>
+                                <div class="bar-track"><i style="width:${score}%"></i></div>
+                            </div>
+                            <div class="tone-bar">
+                                <div class="signal-label">
+                                    <strong>Tone</strong>
+                                    <span class="tone-pill ${tone}">${toneLabel(article)}</span>
+                                </div>
+                                <div class="tone-track" title="Positive, neutral, negative">
+                                    <i class="pos" style="width:${Math.max(0, parts.positive)}%"></i>
+                                    <i class="neu" style="width:${Math.max(0, parts.neutral)}%"></i>
+                                    <i class="neg" style="width:${Math.max(0, parts.negative)}%"></i>
+                                </div>
+                            </div>
+                            <div class="tag-row">${tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}</div>
+                            <div class="card-footer">
+                                <span>${escapeHtml(article.published || 'Just now')}</span>
+                                <a href="${safeUrl(article.url)}" target="_blank" rel="noreferrer">Open story</a>
+                            </div>
                         </div>
                     </article>
                 `;
             }).join('');
 
-            renderPager(pagerTop, pages);
-            renderPager(pagerBottom, pages);
+            renderPager(pages);
         }
 
         searchInput.addEventListener('input', (event) => {
@@ -1178,8 +1837,26 @@
             searchInput.value = '';
             sortSelect.value = 'score';
             syncCategoryButtons();
-            renderFilters();
             renderArticles();
+        });
+
+        document.querySelectorAll('[data-scope]').forEach((button) => {
+            button.addEventListener('click', () => {
+                state.scope = button.dataset.scope;
+                state.page = 1;
+                syncScopeButtons();
+                renderArticles();
+            });
+        });
+
+        document.querySelectorAll('[data-region]').forEach((button) => {
+            button.addEventListener('click', () => {
+                state.search = button.dataset.region;
+                state.page = 1;
+                searchInput.value = button.dataset.region;
+                renderArticles();
+                document.getElementById('stories').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
         });
 
         window.addEventListener('resize', () => {
@@ -1189,6 +1866,7 @@
         renderFilters();
         bindCategoryButtons(categorySlider);
         syncCategoryButtons();
+        syncScopeButtons();
         renderArticles();
     </script>
 </body>
