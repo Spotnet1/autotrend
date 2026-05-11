@@ -1,0 +1,656 @@
+{
+  "date": "2026-05-11",
+  "hour": "10",
+  "stats": {
+    "total": 3788,
+    "trending": 1231,
+    "breaking": 641,
+    "sources": 144,
+    "feeds": 162,
+    "memory_runs": 11,
+    "updated": "11 May 2026, 10:56 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 744,
+      "share": 20
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 473,
+      "share": 12
+    },
+    {
+      "label": "India Cities",
+      "count": 376,
+      "share": 10
+    },
+    {
+      "label": "India Markets",
+      "count": 371,
+      "share": 10
+    },
+    {
+      "label": "Geopolitics",
+      "count": 315,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 249,
+      "share": 7
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 215,
+      "share": 6
+    },
+    {
+      "label": "AI & Startups",
+      "count": 213,
+      "share": 6
+    },
+    {
+      "label": "India Society",
+      "count": 201,
+      "share": 5
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 190,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 184,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 132,
+      "share": 3
+    },
+    {
+      "label": "Health & Science",
+      "count": 108,
+      "share": 3
+    },
+    {
+      "label": "🔬 Science",
+      "count": 10,
+      "share": 0
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 858,
+      "score": 72,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 419,
+      "score": 71,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 336,
+      "score": 77,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 169,
+      "score": 71,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 111,
+      "score": 69,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Chennai",
+      "count": 90,
+      "score": 64,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Hyderabad",
+      "count": 74,
+      "score": 66,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    },
+    {
+      "label": "Kolkata",
+      "count": 69,
+      "score": 73,
+      "lat": 22.6,
+      "lng": 88.4,
+      "x": 74.6,
+      "y": 37.4
+    },
+    {
+      "label": "South Korea",
+      "count": 69,
+      "score": 60,
+      "lat": 36.3,
+      "lng": 127.9,
+      "x": 85.5,
+      "y": 29.8
+    },
+    {
+      "label": "Russia",
+      "count": 66,
+      "score": 69,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Bengaluru",
+      "count": 66,
+      "score": 71,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Europe",
+      "count": 59,
+      "score": 70,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 433,
+      "share": 2
+    },
+    {
+      "label": "iran",
+      "count": 180,
+      "share": 1
+    },
+    {
+      "label": "modi",
+      "count": 135,
+      "share": 0
+    },
+    {
+      "label": "trump",
+      "count": 117,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 115,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 99,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 87,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 80,
+      "share": 0
+    },
+    {
+      "label": "delhi",
+      "count": 80,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 78,
+      "share": 0
+    },
+    {
+      "label": "trade",
+      "count": 77,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "United States, iran, Middle East",
+      "category": "Markets & Macro",
+      "count": 3125,
+      "average_score": 65,
+      "unique_sources": 137,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "bengal, cracks, trail",
+      "category": "India Markets",
+      "count": 43,
+      "average_score": 93,
+      "unique_sources": 22,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Economic Times Tech",
+        "Google: Chennai OR Tamil Nadu news"
+      ]
+    },
+    {
+      "id": "family-7",
+      "label": "India, bangladesh's, remark",
+      "category": "India Pulse",
+      "count": 37,
+      "average_score": 87,
+      "unique_sources": 10,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India energy OR power grid OR oil OR gas",
+        "Google: India foreign policy OR diplomacy OR MEA",
+        "Hindustan Times India",
+        "Indian Express Delhi"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "us-iran, fuel, hike",
+      "category": "India Pulse",
+      "count": 15,
+      "average_score": 77,
+      "unique_sources": 11,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India Supreme Court OR High Court OR pol",
+        "Google: India breaking news OR New Delhi",
+        "Google: India election OR BJP OR Congress OR AAP",
+        "Google: India foreign policy OR diplomacy OR MEA"
+      ]
+    },
+    {
+      "id": "family-33",
+      "label": "flags, India, surge",
+      "category": "India Tech",
+      "count": 12,
+      "average_score": 78,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India artificial intelligence OR AI star",
+        "Google: India banking OR fintech OR UPI OR NPCI"
+      ]
+    },
+    {
+      "id": "family-14",
+      "label": "Google, abuse, google",
+      "category": "Cybersecurity",
+      "count": 11,
+      "average_score": 85,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Google: cloud security OR supply chain attack",
+        "Google: cyber attack OR breach OR ransomware 202",
+        "Google: data leak OR database exposed OR dump",
+        "Google: malware OR phishing OR infostealer campa"
+      ]
+    },
+    {
+      "id": "family-20",
+      "label": "payment, murder, chandranath",
+      "category": "India Pulse",
+      "count": 9,
+      "average_score": 88,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Hindustan Times India",
+        "Indian Express Kolkata",
+        "Mint India",
+        "NDTV Latest"
+      ]
+    },
+    {
+      "id": "family-3",
+      "label": "rupee, United States, crashes",
+      "category": "India Markets",
+      "count": 7,
+      "average_score": 95,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Markets",
+        "Google: India markets OR Sensex OR Nifty OR BSE",
+        "Google: India stock market crash OR rally OR cor",
+        "The Hindu Business"
+      ]
+    },
+    {
+      "id": "family-41",
+      "label": "ex-israeli, lebanon, enemy",
+      "category": "Geopolitics",
+      "count": 7,
+      "average_score": 79,
+      "unique_sources": 3,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Google: middle east OR israel OR iran OR hamas"
+      ]
+    },
+    {
+      "id": "family-43",
+      "label": "income, emails, India",
+      "category": "Cybersecurity",
+      "count": 5,
+      "average_score": 90,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: cloud security OR supply chain attack",
+        "Google: cyber attack OR breach OR ransomware 202",
+        "Google: shipping OR supply chain OR logistics di"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2186,
+      "avg_score": 68,
+      "trending": 808,
+      "sources": 106,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1716,
+      "avg_score": 71,
+      "trending": 724,
+      "sources": 139,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 825,
+      "avg_score": 71,
+      "trending": 345,
+      "sources": 106,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 775,
+      "avg_score": 77,
+      "trending": 452,
+      "sources": 118,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 761,
+      "avg_score": 72,
+      "trending": 349,
+      "sources": 80,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 471,
+      "avg_score": 63,
+      "trending": 115,
+      "sources": 48,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 322,
+      "avg_score": 62,
+      "trending": 68,
+      "sources": 49,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 229,
+      "avg_score": 64,
+      "trending": 65,
+      "sources": 62,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "US, Iran Wrangle Over Terms as Trump Rejects Peace Proposal",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-11/trump-rejects-iran-s-unacceptable-peace-proposal-video"
+    },
+    {
+      "title": "War breaking news. Iran rejects US plan: 'Excessive demands'. Trump: 'Unacceptable' - Il Sole 24 ORE",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSEZpeVhrMnh5OXlGSFVhN2g5Z0RRTExScTBWV1BadEp3NERZRjdvVjk1MXVkeHd0VU5jMHRXTEsySFFVLXNXdFhiWlZnY080enExb0s2QVVKTGp2UFlOWXlwdzR1aGZIM2E0SGRjMU9CY0NaNHpjc0ZQbl8ybFFUQldkVEpmbFlQRzNhLUFCZnVXc2I0NDJQUHZB?oc=5"
+    },
+    {
+      "title": "Bank of America Tightened Block Trade Rules After Esprit Deal",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/bank-of-america-tightened-block-trade-rules-after-esprit-deal"
+    },
+    {
+      "title": "Bengal News: UPI Trail Cracks Suvendu Adhikari Aide Murder Case | Killers Tracked Across States - DNA India",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZnZzeXF5emFjVFNEa0UyVHJESFBZa3J3VHhUMnd6ZjI3V0lGVHBfYVYxcDd0VjgzZWlkRGJOVTFDWHh4OUpGSGxwQUQ2MWhpcjduLVZ5ajhGNVhpN0pkLUc2S25YckJCUHFXRTY5UGc1TjBUYjNlcWNKU2hQSnJJY0JJYTFxVjd3SXlYbm90Vnc5Y25zcU5tdzc2Qmg2azVxRjFuYzZmTUN2NWJrSlRpU25FLVJXTHEwcy1XYWY2TGJvcEFDZkp5Y25fN20yWW1Zck1J0gHYAUFVX3lxTE82RVpGLTlmOTRqTmRRanQyVGxyTlp1cUh3U1F3Uk84MFlmME1JMkktRUlOWnNtSnV6N2Z2UmYweWcxOVVrVkRKSG53MHZaYk5XdkJfUTkxaU9neXAyVXJaYzJhRHRmTFVaaThWd2pTNHRQbVVTaktZaXIwNUIxa0F3M2thWXB1SWYwVlM5Z3JPV0FqaDdoZGc5Rll0ZnBKMEVyNXR5MUlNaC1oQV9zWVJDY3k1UDhOZVF0ZUVIZTNXMnEza1JwYWFzVnoycDQ0LU5xTFQ0c2xGVg?oc=5"
+    },
+    {
+      "title": "Rupee crashes 82 paise to close at all-time low of 95.31 against U.S. dollar",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.thehindu.com/business/markets/indian-rupee-vs-us-dollar-on-may-11-2026/article70964366.ece"
+    },
+    {
+      "title": "Asian shares mixed, oil jumps 4% after Donald Trump rejects Iran's response to ceasefire proposal",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.thehindu.com/business/markets/asian-shares-mixed-oil-jumps-4-after-donald-trump-rejects-irans-response-to-ceasefire-proposal/article70964599.ece"
+    },
+    {
+      "title": "JSW Energy Q4 Results: Cons profit rises 38% YoY to Rs 574 crore; revenue jumps 41%",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/jsw-energy-q4-results-cons-profit-rises-38-yoy-to-rs-574-crore-revenue-jumps-41/articleshow/131011521.cms"
+    },
+    {
+      "title": "Govt Considering Fuel Price Hike Amid US-Iran Deadlock As Companies Face Massive Losses: Report",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/will-govt-hike-fuel-prices-amid-west-asia-crisis-oil-companies-staring-at-loss-of-rs-1-lakh-crore-ws-l-10085320.html"
+    },
+    {
+      "title": "Greatest setback for workers' rights since Independence: Congress on new labour codes",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/greatest-setback-for-workers-rights-since-independence-congress-on-new-labour-codes/article70964967.ece"
+    },
+    {
+      "title": "Russia and Ukraine trade blame for continued fighting as US-brokered ceasefire nears its end - ABC News - Breaking News, Latest News and Videos",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUnM0dFZQRTJmb0pNRElOT3R3TTdLMm1WTU42d2FhMFJRenI5T0hScVVzSmQtQy1zRXFzVE5vVFctTWdRbURDRFFhLVBQRGQtaFM0VXVSaWxTZWlCMjlIRzVmWXRObFVtU3IybjNSVTJ6clJEaHFETkM4dTBKaFJVTFpGMEtxQzN0c2pZb3lYYV9QOHlzSmhRNWpCODh6ZzFCYVlJNkFWVWNRb0VjNkZSSNIBtgFBVV95cUxPc0luLW5HRU9vLWNZNFpqNzJqTGs4Nmx0RkxIWmVwY2s0Qi1lUlNpbDRyVEFiOUFSUUNua2o4WWpHbDdXU1dHMV9Wa0RpdWtHZlBpYkwySUxBcm44OUFWVmdJTE5mOERFOVNoRlJIb1FHQnV1bmtTYV9NQ1RORGtiZENYc2huY2x4VXQxYXptU1BqdDVQLXhaN1lYb2taZXNzOXlTSC1nTkVZXzVVS2ZGUUlmSG1UUQ?oc=5"
+    },
+    {
+      "title": "Brent oil tops $103 after Trump dismisses Iran’s peace proposal response",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/11/oil-price-today-brent-wti-iran-war-trump.html"
+    },
+    {
+      "title": "Rupee drops most in a month to record closing as oil runs hot over US-Iran stalemate",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-drops-most-in-a-month-to-record-closing-as-oil-runs-hot-over-us-iran-stalemate/articleshow/131011471.cms"
+    },
+    {
+      "title": "Bangladesh's Big Remark on India-China Ties: Won't be a ‘Football’ Between Two Countries - The Sunday Guardian",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQYUU5QW1naU5DNHRwazF6Mk5CbnpIZG9pOHdQcnNYUlNlQlFLZlVKc1M1WTJGOVZvU21jR2Z0VXR1dnA4N1YxdTdjSmxzdVlmdk1OMWU2T0VnZGJ2UEh5Vk9jMG94OGNyRG5RWEtvVU00VVBSU0xOMndCNkFMVWN2SFFDbGx3YW04Z25UU20yWDlaLWJNcnpEc3JKdDdjWW1WWGFDbUItRTYxX3dYZVhlUm9sel8wOG1RSEsxQnBmTzBTOTlJQnVN?oc=5"
+    },
+    {
+      "title": "SIR deletions more than win margin: SC's '2%, 15%' comment at core of plea by Mamata Banerjee's TMC on Bengal polls",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.hindustantimes.com/india-news/sir-deletions-more-than-win-margin-scs-2-15-comment-at-core-of-plea-by-mamata-banerjees-tmc-on-bengal-polls-101778493936506.html"
+    },
+    {
+      "title": "Former Qatar PM: Netanyahu using Iran war to reshape Middle East",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/news/2026/5/11/former-qatar-pm-netanyahu-using-iran-war-to-reshape-middle-east?traffic_source=rss"
+    },
+    {
+      "title": "Taiwan civilians sharpen self-defence skills ahead of Trump-Xi summit",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/11/taiwan-civilians-sharpen-self-defence-skills-ahead-of-trump-xi-summit?traffic_source=rss"
+    },
+    {
+      "title": "Iltija Mufti’s X account blocked",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/iltija-muftis-x-account-blocked/article70965304.ece"
+    },
+    {
+      "title": "Ink Finance Treasury on Polygon Drained in $140K Exploit, Blockaid Reports - Cryptonews.net",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14Y3RCZ2o5TzZMN0FZbG9xXzRESjNSY0lqY2x0ckUyeDBZZFNpODh0STdiNUZUQnBsMlJ4TXByWWhPSlVfVWFoY21XcllENXRZTU9ockdybzZYUQ?oc=5"
+    },
+    {
+      "title": "NEET-UG 2026: NTA says committed to fair, credible exams amid Rajasthan SOG probe",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/rajasthan/neet-ug-2026-nta-says-committed-to-fair-credible-exams-amid-rajasthan-sog-probe/article70965258.ece"
+    },
+    {
+      "title": "Hormuz, hydrocarbons, and India: What the current Middle East conflict means for Indian oil and gas markets - ET EnergyWorld",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPM2w1aG1kdG1abmtmMWNyYkZiRXRzNE82QnBzMTJIVHB0VS1IWTdCWW1aTFRVdjZodjNTb0pGR1pvUXRJV0NGRzVVaG1Dc0o4eFI3STNha1dnRzc5Sy0xMkhJM1JNQk00aFRhM0xxYTdXUFV4TnRwU1dhLTc4LWxlb2RNejNSaEZHbEp6cXJWNjJHTDhSZ3l2LUFJbFZGNlpOcHJhOEhCRUUyS2M5aHMtM185d3pJdHBCSEJqYjdDcXVPTDlTWjNLbWdqME9iOXNpck1pdTZB0gHbAUFVX3lxTE43ay0yYU5GMF9rLW13LXhoc3JEUFY5YUtyZVRBbXUxSi01Mm52d192d1Z2NzVQQ0RDVlRicE9lS0pMZUpEMUZzUG1tZDZydTk0OHZlOUNLLW12RVFVN1RfY1UtOXBTd1VTdDkwM0oxNHJrS0pHbzdkR3VjeGJReFYwNjRDT0R0MGhyQVpJcERkY09wc05wb1Q1TG5wRktnLUw5QnlQOWRmdG1qRElLaTJVSmJlTG5oR0Faenctby1LTnNpdGlrbWZpS0dxbFBpVEw1SG12SjJFOXBEaw?oc=5"
+    },
+    {
+      "title": "Discounts on Russian Oil Widened for First Time Since Iran War",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/discounts-on-russian-oil-widened-for-first-time-since-iran-war"
+    },
+    {
+      "title": "Why PM Asked Households To Cut Use Of Cooking Oil And What's The Alternative",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/india-news/why-pm-asked-households-to-cut-use-of-cooking-oil-and-whats-the-alternative-11478488"
+    },
+    {
+      "title": "West Bengal Secretariat moving back to Writers’ Buildings; small traders hope for revival of businesses",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/west-bengal/west-bengal-secretariat-moving-back-to-writers-buildings-small-traders-hope-for-revival-of-businesses/article70964970.ece"
+    },
+    {
+      "title": "Investors Cheer as Alphabet Goes From AI Zero to Hero",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-05-11/investors-cheer-as-alphabet-goes-from-ai-zero-to-hero"
+    },
+    {
+      "title": "India, Iran To Hold Talks On Strait Of Hormuz Safe Passage Amid BRICS Meet In Delhi: Report - NDTV Profit",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQemxON19uOVM2Mm5Ybjk4eElGdnY1aGFEYko0R0JpM1g4a0RPN0FvbHRWaURHNFNaUTZiMUV5Q0pJeU5GM0NodFhwRTZDZWVYSW9oZzhGSWJuUUNKQ19heVlLV3B2dWRORG83enI5M2h3ejdMb2hWRWlKLVFBbkRMUEttclJ4Y0ZlbU4xYjJxTHJkSG9QNXdUUHpqdkZnUENPSVZjdVUyWXVaSUFZcjRNRVdOZWxuUUk3T2lVVmpMV0xrZWN6clBYNjJxa9IB0wFBVV95cUxQWWFKSU94NHFxWEFPRTJ4dklIeXFpcGtQZ3d3ZlktMzR5LTlqbFZtTV9DR19LeldjczY5LWZaQXg5cC05djJOMmFLSGxzQnJKTkNCTkRhMGZZdkZ2Sm1lTEtyUFk2VlRKNU5sSXo5Wjl0amtDWVFlUFBhcVVNa1hhc0tYcWJIeklIVUY2Zkx4T1NlcVg1cUp3UFJCeVdvVEwzUzQ0cHU3dVZWRGJVdV83bDQ1RjE5SE5JZFZCaHl3WnZHR1NCMEF3eG9HSWtTMXRRWkJ3?oc=5"
+    },
+    {
+      "title": "Manipur Naga bodies seek PM’s ‘personal’ intervention against armed Kuki groups aiding external aggression",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/manipur/manipur-naga-bodies-seek-pms-personal-intervention-against-armed-kuki-groups-aiding-external-aggression/article70962196.ece"
+    },
+    {
+      "title": "Maldives repays second $50 million Indian treasury bill: Muizzu",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/finance/maldives-settles-50-million-treasury-bill-payment-to-india-president-muizzu-confirms/articleshow/131010944.cms"
+    },
+    {
+      "title": "India faces risk of weaker monsoon, raising inflation and growth concerns - CNA",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaUlsaHBXUm5SX1IyVVlIRHZZMFdUWUU1WUxsQThqODA2YVR4V19jV2g5UWVYRG9YT3h5TTlXRjU0LWtqVlJEeGxYODJlY2xQUERLZUw4SXhaM0dKVFpjYS00TE1CNUxIX2o2cm04YUN6VkttRTRKTW1xOTdHZzVxX3FiVHZZSjBKRzhsWFk4V2g0T3N2MHlV?oc=5"
+    },
+    {
+      "title": "Hackers Abuse Google Ads and Claude.ai Shared Chats to Distribute macOS Malware - gHacks",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNkU0TEdVeDh0UmZRRThac1RHT00tajdDZGU0ZkdHMmRIMGFGaTRMSS1wMVJOZmtHUUkxa0NqNmczTGFMc3R3YWFvLUhZdjVWRWRZd0Zac3ZxclBwTU1nQUtQVWxiaXVmTVZyQ2Y0ZHBIUEI1dnNZTzMyV1ZfNldoeTFkS2NfNnBTZ1hSbzBzSzJScnBpNmJoWnB3MzFZUUlZWTZtTng0bVkzOWRYd21jNTlTZFQ?oc=5"
+    },
+    {
+      "title": "Sell Any Rally in Luxury Stocks as Growth Slows, Berenberg Says",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/sell-any-rally-in-luxury-stocks-as-growth-slows-berenberg-says"
+    }
+  ]
+}
