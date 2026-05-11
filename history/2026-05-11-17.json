@@ -1,0 +1,657 @@
+{
+  "date": "2026-05-11",
+  "hour": "17",
+  "stats": {
+    "total": 4188,
+    "trending": 1359,
+    "breaking": 506,
+    "sources": 146,
+    "feeds": 162,
+    "memory_runs": 13,
+    "updated": "11 May 2026, 17:51 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 774,
+      "share": 18
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 483,
+      "share": 12
+    },
+    {
+      "label": "India Markets",
+      "count": 443,
+      "share": 11
+    },
+    {
+      "label": "India Cities",
+      "count": 394,
+      "share": 9
+    },
+    {
+      "label": "Geopolitics",
+      "count": 339,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 302,
+      "share": 7
+    },
+    {
+      "label": "AI & Startups",
+      "count": 253,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 235,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 221,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 218,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 194,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 176,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 139,
+      "share": 3
+    },
+    {
+      "label": "🔬 Science",
+      "count": 10,
+      "share": 0
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 974,
+      "score": 71,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 470,
+      "score": 72,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 351,
+      "score": 76,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 187,
+      "score": 69,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 117,
+      "score": 66,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Europe",
+      "count": 80,
+      "score": 70,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "Chennai",
+      "count": 80,
+      "score": 63,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Kolkata",
+      "count": 74,
+      "score": 73,
+      "lat": 22.6,
+      "lng": 88.4,
+      "x": 74.6,
+      "y": 37.4
+    },
+    {
+      "label": "Bengaluru",
+      "count": 71,
+      "score": 70,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "South Korea",
+      "count": 69,
+      "score": 61,
+      "lat": 36.3,
+      "lng": 127.9,
+      "x": 85.5,
+      "y": 29.8
+    },
+    {
+      "label": "Southeast Asia",
+      "count": 63,
+      "score": 61,
+      "lat": 4.2,
+      "lng": 108.5,
+      "x": 80.1,
+      "y": 47.7
+    },
+    {
+      "label": "Hyderabad",
+      "count": 61,
+      "score": 65,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 515,
+      "share": 2
+    },
+    {
+      "label": "iran",
+      "count": 172,
+      "share": 1
+    },
+    {
+      "label": "trump",
+      "count": 148,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 124,
+      "share": 0
+    },
+    {
+      "label": "modi",
+      "count": 122,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 109,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 106,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 102,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 97,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 86,
+      "share": 0
+    },
+    {
+      "label": "trade",
+      "count": 84,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "kerala, delay, iuml",
+      "category": "India Pulse",
+      "count": 3213,
+      "average_score": 63,
+      "unique_sources": 140,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "manoj, chief, WHO",
+      "category": "India Pulse",
+      "count": 272,
+      "average_score": 91,
+      "unique_sources": 84,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World",
+        "BleepingComputer"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "online, schools, modi",
+      "category": "India Pulse",
+      "count": 46,
+      "average_score": 95,
+      "unique_sources": 22,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Bloomberg",
+        "Economic Times Economy",
+        "Economic Times Markets"
+      ]
+    },
+    {
+      "id": "family-18",
+      "label": "ai-assisted, google, Google",
+      "category": "Cybersecurity",
+      "count": 46,
+      "average_score": 86,
+      "unique_sources": 14,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "Dark Reading",
+        "Deutsche Welle",
+        "Economic Times Tech"
+      ]
+    },
+    {
+      "id": "family-10",
+      "label": "work-from-home, call, modi's",
+      "category": "India Markets",
+      "count": 21,
+      "average_score": 89,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Google: India markets OR Sensex OR Nifty OR BSE",
+        "Google: India startups OR funding OR IPO OR unic"
+      ]
+    },
+    {
+      "id": "family-23",
+      "label": "bankers, attempt, ditch",
+      "category": "Markets & Macro",
+      "count": 15,
+      "average_score": 77,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Google: bitcoin OR ethereum OR crypto OR stablec",
+        "Google: federal reserve OR interest rate OR powe",
+        "Google: oil OR natural gas OR opec cut OR brent"
+      ]
+    },
+    {
+      "id": "family-22",
+      "label": "ashwini, almost, jobs",
+      "category": "India Tech",
+      "count": 14,
+      "average_score": 81,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India artificial intelligence OR AI star",
+        "Google: India banking OR fintech OR UPI OR NPCI"
+      ]
+    },
+    {
+      "id": "family-7",
+      "label": "republicans, Middle East, trump",
+      "category": "Markets & Macro",
+      "count": 12,
+      "average_score": 86,
+      "unique_sources": 7,
+      "consensus": 99,
+      "top_sources": [
+        "CNBC Markets",
+        "Google: IMF OR world bank OR debt OR sovereign",
+        "Google: WHO OR pandemic OR outbreak OR virus 202",
+        "Google: bitcoin OR ethereum OR crypto OR stablec"
+      ]
+    },
+    {
+      "id": "family-9",
+      "label": "Middle East, video, unhinged",
+      "category": "Consumer Tech",
+      "count": 11,
+      "average_score": 81,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Ars Technica",
+        "CNBC Markets",
+        "Engadget",
+        "Google: gaming OR streaming OR netflix OR disney"
+      ]
+    },
+    {
+      "id": "family-12",
+      "label": "texas, filed, lawsuit",
+      "category": "Consumer Tech",
+      "count": 10,
+      "average_score": 71,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: gaming OR streaming OR netflix OR disney",
+        "Google: meta OR tiktok OR youtube OR instagram p",
+        "The Verge",
+        "Wired"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2383,
+      "avg_score": 68,
+      "trending": 852,
+      "sources": 106,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1953,
+      "avg_score": 71,
+      "trending": 838,
+      "sources": 144,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 905,
+      "avg_score": 71,
+      "trending": 391,
+      "sources": 113,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 897,
+      "avg_score": 73,
+      "trending": 423,
+      "sources": 92,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 828,
+      "avg_score": 77,
+      "trending": 486,
+      "sources": 131,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 557,
+      "avg_score": 64,
+      "trending": 135,
+      "sources": 48,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 391,
+      "avg_score": 62,
+      "trending": 81,
+      "sources": 47,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 256,
+      "avg_score": 65,
+      "trending": 75,
+      "sources": 58,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "‘People Asking Why They Voted For UDF’: IUML Targets Congress Over Delay In Naming Kerala CM",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/people-asking-why-they-voted-for-udf-iuml-targets-congress-over-delay-in-naming-kerala-cm-ws-l-10085987.html"
+    },
+    {
+      "title": "Who is Manoj Agarwal? West Bengal chief electoral officer appointed as chief secretary by Suvendu Adhikari government",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/who-is-manoj-agarwal-west-bengal-chief-electoral-officer-appointed-as-chief-secretary-by-suvendu-adhikari-government-11778517409256.html"
+    },
+    {
+      "title": "Redistricting war isn't over, Democrats say as Jeffries calls a meeting this week",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/11/elections-redistricting-congress-house-democrats.html"
+    },
+    {
+      "title": "Will hear Trinamool pleas on victory margins being less than deleted votes in SIR, says Supreme Court",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/will-hear-trinamool-pleas-on-victory-margins-being-less-than-deleted-votes-in-sir-says-supreme-court/article70965914.ece"
+    },
+    {
+      "title": "After Work from home, PM Modi suggests schools to opt for online classes as West Asia crisis continues",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/after-work-from-home-pm-modi-suggests-schools-to-opt-for-online-classes-as-west-asia-crisis-continues-11778519269650.html"
+    },
+    {
+      "title": "Tragedy at sea: MV Hondius captain praises unity amid hantavirus outbreak.",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/11/tragedy-at-sea-mv-hondius-captain-praises-unity-amid-hantavirus-outbreak-2?traffic_source=rss"
+    },
+    {
+      "title": "Three things in AI to watch, according to a Nobel-winning economist",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://www.technologyreview.com/2026/05/11/1137090/three-things-in-ai-to-watch-according-to-a-nobel-winning-economist/"
+    },
+    {
+      "title": "Trump, congressional Republicans float suspending federal gas tax amid Iran war",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/11/trump-congress-gop-gas-tax-iran-war.html"
+    },
+    {
+      "title": "Continued uncertainty: Department of Energy circulates latest “retain/modify” awards list - Clean Air Task Force",
+      "score": 99,
+      "category": "Climate & Supply Chain",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcEhmQlkyRWpsSWM2Qzd0UkNqZmFsdFZZZWtmM0c3ckU0SU4yeDF4b2ZSSW54RmlaV3dpenNNTTFDTXNUUnl3YlVMT2pSdkx4alI4Q3V2b0w3NkFLcGhNWWM5UHlSdHNwNHRSaW44WE1zVmFtQ1ZGSnRQdWZTb20taWN4bjNrdEpRd29ZNEVjRmEwWDBaZ1ZkYnBqdFhlc1RyalI3cUdBcmZCa29jSi1rMGd3?oc=5"
+    },
+    {
+      "title": "There’s an Unhinged New Video Game About Trump and the Iran War",
+      "score": 99,
+      "category": "Consumer Tech",
+      "url": "https://www.wired.com/story/video-game-trump-iran-war/"
+    },
+    {
+      "title": "What does PM Modi's work-from-home call mean for the Indian stock market?",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/what-does-pm-modis-work-from-home-call-mean-for-the-indian-stock-market-11778514724447.html"
+    },
+    {
+      "title": "Wall Street Veteran Yardeni Confident in S&P 500 Eclipsing 8,000",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/wall-street-veteran-yardeni-confident-in-s-p-500-eclipsing-8-000"
+    },
+    {
+      "title": "A New Hantavirus Vaccine Is in the Works",
+      "score": 99,
+      "category": "Consumer Tech",
+      "url": "https://www.wired.com/story/a-new-hantavirus-vaccine-is-in-the-works/"
+    },
+    {
+      "title": "Bandi Bhagirath’s case takes serious turn with Telangana CM ordering special team for comprehensive probe",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/telangana/bandi-bhagiraths-case-takes-a-serious-turn-with-telangana-cm-ordering-special-team-for-comprehensive-probe/article70964852.ece"
+    },
+    {
+      "title": "US-Iran War News LIVE Updates: Trump Says Iran Ceasefire On \"Massive Life Support\"",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/world-news/us-iran-war-news-live-updates-ceasefire-violation-donald-trump-abbas-araghchi-tehran-peace-proposal-strait-of-hormuz-11465293"
+    },
+    {
+      "title": "Texas sues Netflix for advertising ‘bait and switch’ and spying",
+      "score": 99,
+      "category": "Consumer Tech",
+      "url": "https://www.theverge.com/streaming/928071/texas-netflix-lawsuit-privacy"
+    },
+    {
+      "title": "PM Modi to visit UAE, Netherlands, Sweden, Norway and Italy amid Middle East war — What's in his itinerary?",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/world/pm-modi-to-visit-uae-netherlands-sweden-norway-and-italy-amid-middle-east-war-whats-in-his-itinerary-11778517187318.html"
+    },
+    {
+      "title": "Modi’s austerity drive is an admission of failure on economic and foreign policy fronts, alleges Akhilesh",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/pm-modis-appeal-on-fuel-savings-an-admission-of-failure-will-rattle-markets-akhilesh/article70964575.ece"
+    },
+    {
+      "title": "Canara Bank posts a 10% decline in Q4 net profit",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/karnataka/canara-bank-posts-a-10-decline-in-q4-net-profit/article70966939.ece"
+    },
+    {
+      "title": "Oil price predicted to remain above $100 for rest of year",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/ckgp4ev4yg4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "AAP protests rising crimes against women in Pune; seek justice in two cases",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://indianexpress.com/article/cities/pune/aap-protest-pune-kalakar-katta-crimes-against-women-maharashtra-10684298/"
+    },
+    {
+      "title": "India bow out of AFC U17 Women’s Asian Cup after quarterfinal loss against China - Firstpost",
+      "score": 99,
+      "category": "India Society",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNVl3N3lNemp5ZW81YVBvblFRQ016cWJldnJvQmVqRlVQcTZCd0E0ZDJ1eHoxSDRhSUZaejZyT1ZlWmJ3VGJxUEtZem9uLWU2Y2ppU2RkazdqQlVXQlZBOFl3YXRZZTNpU2lOWEgyaVJVVTNlbzdUX0ZIMUdfWTMxQzA1QktodGJ5WEtiY1lpeE1mbFUwVjZJM3hkU0lNaGJDX0tFNXRhb3FaM0FJQUwyTjVzb0VROE1uNEtBbTBVX0dRN3Q0R1RHZFppMGloTFdRWFBPdHlZRWc0TUlDMlHSAeMBQVVfeXFMTk0xWkJZLXFzOGM2WExSQzh5bTRQckxZcWVtc3QwaHlKTXNpVDhDRzN2Q2dEMW9paXRWRHlMckNZcGROTjVrbFZCY3MtWklOU2FsZFRYUS1KLU13VTMxUmYyaFBINFpxZ2RIWUttTVp6dVhHSkJ2UjgxWWVHdnpuVEdxc0k2THJQSU5Zam81LWNRNGtwczFRdVpFQzNtUngxcTZLYUtpV3JtZzg4UE8zT04xYzh3d0lUc3NPNjdFN0I3bGV6eEk0MDJBclJyWGd5Vm1rU2w4NXc2WklSendONmVIZHc?oc=5"
+    },
+    {
+      "title": "Ahead of Market: 10 things that will decide stock market action on Tuesday",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-tuesday/articleshow/131019167.cms"
+    },
+    {
+      "title": "Israeli attacks kill at least four in southern Lebanon",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/news/2026/5/11/israeli-attacks-kill-at-least-four-in-southern-lebanon?traffic_source=rss"
+    },
+    {
+      "title": "Google catches “first AI-assisted zero-day” as well as autonomous Android malware - Cybernews",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBtSEoyVGVWcGZRYTRENFNkTjN4V0dpZFU1N0k1X2RuTnh4Yzl0UmRBbThOSEhpWDdRRFJORnI4UzV6VFNDa3RDa21ualFTYTJuRl9JZGpOV2VQbGRoOEZ1TEtmQ0ZSNTJUdDhFNnctYTNXVXc?oc=5"
+    },
+    {
+      "title": "Taiwan Semiconductor Manufacturing Company poised to benefit from AI chip demand surge - Crypto Briefing",
+      "score": 99,
+      "category": "India & APAC",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE13Z21qMXl3U3RxS0FuXzNmX2hoMnB6N21zenA4RUlUYUFzVk42Yk9BRzFBWVEtdXhORHYxQ0xrREVTNm9nZ2hULTg2VEJOczVkZ3BqNnRzUG80SlZycFJCZzJHQQ?oc=5"
+    },
+    {
+      "title": "Chandrababu Naidu backs PM Modi's ‘seven appeals’ — says ‘national mission because of…’",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/andhra-cm-chandrababu-naidu-backs-pm-modis-seven-appeals-amid-west-asia-conflict-11778514929373.html"
+    },
+    {
+      "title": "Dozens of Nigerian fishermen feared dead after Chad air strikes on Boko Haram",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cr5p85v446ro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "India Rejects Russian LNG Under Sanctions - Crude Oil Prices Today | OilPrice.com",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcDdsMTVmcGhPYk9ZZmd4dHlpWllyXzdxblN5RjhFQUYyWHN0MFVkUHE5LTdiZHZQU0hSbURxVDQwc1k0MnhES0NlTU5xMGp0Ym1SODBoNmVRQlI4VnRZWlZTNXFQMlV1b20zeWNaQ2IyMmk4Si0tOGQ3RmFwMHYtVUhVckNJWUd4Uy0tSVhxWEFTSFRiTXk1M0lXd3VYWUxpbHpn0gGjAUFVX3lxTFBwN2wxNWZwaE9iT1lmZ3h0eWlaWXJfN3FuU3lGOEVBRjJYc3QwVWRQcTktN2JkdlBTSFJtRHFUNDBzWTQyeERLQ2VNTnEwanRibVI4MGg2ZVFCUjhWdFlaVlM1cVAyVXVvbTN5Y1pDYjIyaThKLS04ZDdGYXAwdi1VSFVyQ0lZR3hTLS1JWHFYQVNIVGJNeTUzSVd3dVhZTGlsemc?oc=5"
+    },
+    {
+      "title": "Hantavirus cases spark brief surge in pharma and biotech stocks — here’s why trading is so volatile",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/11/hantavirus-cases-pharma-stocks-surge-moderna-novavax.html"
+    }
+  ]
+}
