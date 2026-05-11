@@ -1,0 +1,652 @@
+{
+  "date": "2026-05-11",
+  "hour": "21",
+  "stats": {
+    "total": 4322,
+    "trending": 1313,
+    "breaking": 359,
+    "sources": 143,
+    "feeds": 162,
+    "memory_runs": 15,
+    "updated": "11 May 2026, 21:13 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 791,
+      "share": 18
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 540,
+      "share": 12
+    },
+    {
+      "label": "India Markets",
+      "count": 443,
+      "share": 10
+    },
+    {
+      "label": "India Cities",
+      "count": 409,
+      "share": 9
+    },
+    {
+      "label": "Geopolitics",
+      "count": 346,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 316,
+      "share": 7
+    },
+    {
+      "label": "AI & Startups",
+      "count": 268,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 234,
+      "share": 5
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 230,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 220,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 204,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 181,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 140,
+      "share": 3
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 997,
+      "score": 71,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 495,
+      "score": 72,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 340,
+      "score": 76,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 192,
+      "score": 67,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 123,
+      "score": 64,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Europe",
+      "count": 83,
+      "score": 69,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "Kolkata",
+      "count": 77,
+      "score": 71,
+      "lat": 22.6,
+      "lng": 88.4,
+      "x": 74.6,
+      "y": 37.4
+    },
+    {
+      "label": "Chennai",
+      "count": 76,
+      "score": 61,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Bengaluru",
+      "count": 73,
+      "score": 69,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Southeast Asia",
+      "count": 68,
+      "score": 59,
+      "lat": 4.2,
+      "lng": 108.5,
+      "x": 80.1,
+      "y": 47.7
+    },
+    {
+      "label": "Hyderabad",
+      "count": 67,
+      "score": 64,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    },
+    {
+      "label": "South Korea",
+      "count": 65,
+      "score": 60,
+      "lat": 36.3,
+      "lng": 127.9,
+      "x": 85.5,
+      "y": 29.8
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 531,
+      "share": 2
+    },
+    {
+      "label": "iran",
+      "count": 158,
+      "share": 0
+    },
+    {
+      "label": "trump",
+      "count": 147,
+      "share": 0
+    },
+    {
+      "label": "modi",
+      "count": 127,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 124,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 107,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 105,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 102,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 100,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 95,
+      "share": 0
+    },
+    {
+      "label": "india's",
+      "count": 88,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-2",
+      "label": "revolt, faces, starmer",
+      "category": "India Pulse",
+      "count": 3709,
+      "average_score": 65,
+      "unique_sources": 140,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-7",
+      "label": "Europe, israeli, Middle East",
+      "category": "Geopolitics",
+      "count": 27,
+      "average_score": 88,
+      "unique_sources": 13,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Bloomberg",
+        "Economic Times Tech"
+      ]
+    },
+    {
+      "id": "family-9",
+      "label": "Middle East, april, higher",
+      "category": "Markets & Macro",
+      "count": 19,
+      "average_score": 83,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "CNBC Markets",
+        "Economic Times Markets",
+        "FT Markets"
+      ]
+    },
+    {
+      "id": "family-24",
+      "label": "google, hackers, using",
+      "category": "AI & Startups",
+      "count": 17,
+      "average_score": 99,
+      "unique_sources": 13,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "CNBC Markets",
+        "Dark Reading",
+        "Economic Times Tech"
+      ]
+    },
+    {
+      "id": "family-26",
+      "label": "seattle, technology, starbucks",
+      "category": "India Tech",
+      "count": 17,
+      "average_score": 75,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India banking OR fintech OR UPI OR NPCI",
+        "Google: India cyber attack OR data breach OR hac"
+      ]
+    },
+    {
+      "id": "family-19",
+      "label": "commerce, India, secretary",
+      "category": "India Markets",
+      "count": 14,
+      "average_score": 90,
+      "unique_sources": 7,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Google: India banking OR fintech OR UPI OR NPCI",
+        "Google: India markets OR Sensex OR Nifty OR BSE"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "writer, ransomware, changes",
+      "category": "Cybersecurity",
+      "count": 13,
+      "average_score": 85,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "Google: cyber attack OR breach OR ransomware 202",
+        "Google: data leak OR database exposed OR dump",
+        "Google: nation state hacking OR espionage APT"
+      ]
+    },
+    {
+      "id": "family-93",
+      "label": "lawsuit, netflix, filed",
+      "category": "Consumer Tech",
+      "count": 11,
+      "average_score": 70,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Engadget",
+        "Google: gaming OR streaming OR netflix OR disney",
+        "Google: meta OR tiktok OR youtube OR instagram p"
+      ]
+    },
+    {
+      "id": "family-16",
+      "label": "revenue, firm, natural",
+      "category": "India Markets",
+      "count": 5,
+      "average_score": 88,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Markets",
+        "Google: India banking OR fintech OR UPI OR NPCI",
+        "Google: Reliance OR Tata OR Adani OR Infosys OR ",
+        "Mint Markets"
+      ]
+    },
+    {
+      "id": "family-3",
+      "label": "circle, blockchain, valuation",
+      "category": "AI & Startups",
+      "count": 5,
+      "average_score": 78,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Google: robotics OR autonomous OR humanoid robot",
+        "Hacker News",
+        "Seeking Alpha"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2444,
+      "avg_score": 67,
+      "trending": 812,
+      "sources": 109,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 2014,
+      "avg_score": 70,
+      "trending": 804,
+      "sources": 141,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 963,
+      "avg_score": 70,
+      "trending": 387,
+      "sources": 112,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 897,
+      "avg_score": 73,
+      "trending": 421,
+      "sources": 90,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 851,
+      "avg_score": 76,
+      "trending": 492,
+      "sources": 127,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 577,
+      "avg_score": 63,
+      "trending": 130,
+      "sources": 46,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 402,
+      "avg_score": 62,
+      "trending": 79,
+      "sources": 47,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 257,
+      "avg_score": 63,
+      "trending": 68,
+      "sources": 57,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Media Mogul Byron Allen to Buy Control of BuzzFeed",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://www.theinformation.com/briefings/media-mogul-byron-allen-buy-control-buzzfeed"
+    },
+    {
+      "title": "Starmer faces Labour revolt as MPs openly call for UK PM to resign after disastrous local election results",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/world/starmer-faces-labour-revolt-as-mps-openly-call-for-uk-pm-to-resign-after-disastrous-local-election-results-11778532363508.html"
+    },
+    {
+      "title": "Circle Raises Funding at $3 Billion Valuation for Arc Blockchain",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://www.theinformation.com/briefings/circle-raises-funding-3-billion-valuation-arc-blockchain"
+    },
+    {
+      "title": "Ransomware: AI changes the writer. It doesn't change the math. - Sophos",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0yRUpPZmxDY01DeUthdkF6LWxybmE2X2RjcTJDeGlSS3V3S2tkRUpfazFSdmI3VDdBMEM3Ml9IaGg3MlV1NGtOSmR6SnJjMEFxTUNvSmEzc2VBWEdkUmVJN2M3Rno?oc=5"
+    },
+    {
+      "title": "Market Still Expecting Strait of Hormuz to Reopen: Renaud-Chatelain",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-11/market-still-expecting-hormuz-to-reopen-renaud-chatelain-video"
+    },
+    {
+      "title": "Tables Turned: Gentlemen Ransomware Group Suffers Data Leak - BankInfoSecurity",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQY0s3QU1kTTlfMmlzc1BOTmRwUlRqV2xjOS1ERU5MR21lMnVtT0RZWXpyQ0FpSlVuSEplTTZNNEdJeTlJSnBWVFVJTXBxR0R2RzFKUXJhZ2IyNFJYb2dta2thOUR6S3Y3YXl4QVg2emVGOWh5Y25XR3N6RzR0Zm9SRXgyV0JIUXRKRWYyaGkwYUc3Y1FMZE45RnM2OXNETmxl?oc=5"
+    },
+    {
+      "title": "Redistricting war isn't over, Democrats say as Jeffries calls a meeting this week",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/11/elections-redistricting-congress-house-democrats.html"
+    },
+    {
+      "title": "EU sanctions violent Israeli settlers after months of deadlock",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/11/eu-sanctions-violent-israeli-settlers-after-months-of-deadlock?traffic_source=rss"
+    },
+    {
+      "title": "Harvard's chip expert has a warning for AI memory investors: 'This too will pass' - Fortune",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdm9naVJodmZ0NUFWWE41a3JLX3pYRXJkVnA3YWNUSEVBYk45UWxmWTRnSGIydFhRWXRFdmJKSmlXdXB3SFJOZzlIMWtvMUpZdXFXcVh1c0drZGdObktvQlkzR1lhZTFDakFCaF81Y09wT09aWjdiLWFsSzdpZ2NaTGdfNFBiRUp6MXI2M0xZckE1Mm5rRUpVbms1WmtweXdYWkpncA?oc=5"
+    },
+    {
+      "title": "​Belated warning: On the Prime Minister’s austerity appeal",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/opinion/editorial/belated-warning-on-the-prime-ministers-austerity-appeal/article70965048.ece"
+    },
+    {
+      "title": "April home sales disappoint as higher mortgage rates weigh on buyers",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/11/april-home-sales-disappoint-higher-mortgage-rates.html"
+    },
+    {
+      "title": "US stocks today: S&P 500 inches to higher close, AI fervor edges out Iran impasse",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-today-sp-500-inches-to-higher-close-ai-fervor-edges-out-iran-impasse/articleshow/131023447.cms"
+    },
+    {
+      "title": "India to Deploy First Tejas Mk1A Squadrons Near Pakistan Border, IAF Powerful Strategy Revealed - Indianmasterminds",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZVM4al9OczBEeXUyckxpZW9kTEtwTG1GWE1pTHl6anJmb0ZHVkwwYnpRMXprczgxb3FWYTJ5VFhiNTdEQ2VTZF93eHR6VE40WVllVjZ3d1kwTnpocGUweVNoOTlCTUsxMTJvWHVmN2kxanI4UWRzR2tjQ0RhTXY4VW80OGI1Z1lHQkpfSExRMnRPOS1mdElHTg?oc=5"
+    },
+    {
+      "title": "Modi’s Frugality Warning Flags Twin Shock for India - Bloomberg.com",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZkxqTlFSS0g1aldfVlNDYUdLemRpdXdObXRkdGN2RGQ5OElwWTExOHQ1dFMxb3V2WDV2ek1JR0x6M240cXVrVDVZSklaVFcxRXoyM0JIblQ3ZEZzRHVnOE16akpUQm9vV1RPTW52UFFYcWpxRmFsMzJxNmxwaklvYnBVcXdaQU8tSmxDeWZSNTJLdUtmb2tmRnFINUlXbkJZaTF1UmU3Y25DQkRnY3hLQkk3Q2l4V2V3Ymt0dGQ1SjYtZw?oc=5"
+    },
+    {
+      "title": "Trump Warns Mideast Truce On \"Life Support\", Iran Says Ready For Any Aggression",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/world-news/donald-trump-warns-mideast-truce-on-life-support-iran-says-ready-for-any-aggression-11481274"
+    },
+    {
+      "title": "J&K CM Abdullah retracts statement on liquor in face of growing criticism",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/jk-cm-abdullah-retracts-statement-on-liquor-in-face-of-growing-criticism/article70966982.ece"
+    },
+    {
+      "title": "Radio Station Owner Spanish Broadcasting Files for Bankruptcy",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/radio-station-owner-spanish-broadcasting-files-for-bankruptcy"
+    },
+    {
+      "title": "Hudson River generates $6.4bn in first-quarter trading revenue",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.ft.com/content/e2859530-7b8b-4f42-ac32-afd451aff570"
+    },
+    {
+      "title": "Education Budget will grow every year, says Telangana CM Revanth Reddy",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/telangana/education-budget-will-grow-every-year-says-telangana-cm-revanth-reddy/article70966847.ece"
+    },
+    {
+      "title": "EU agrees sanctions on Israeli West Bank settlers, Hamas leaders",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/news/2026/5/11/eu-agrees-sanctions-on-israeli-west-bank-settlers-hamas-leaders?traffic_source=rss"
+    },
+    {
+      "title": "Low-Cost Airlines ‘Ripe’ For Mergers, Deutsche Bank Analyst Says",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/low-cost-airlines-ripe-for-mergers-deutsche-bank-analyst-says"
+    },
+    {
+      "title": "ONGC Mulls New ₹200 Cr Fund To Back Energy & AI Startups",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://inc42.com/buzz/ongc-mulls-new-%e2%82%b9200-cr-fund-to-back-energy-ai-startups/"
+    },
+    {
+      "title": "Natural gas mineral firm WhiteHawk reveals sevenfold revenue surge in US IPO filing",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/natural-gas-mineral-firm-whitehawk-reveals-sevenfold-revenue-surge-in-us-ipo-filing/articleshow/131022678.cms"
+    },
+    {
+      "title": "'Bending, not breaking': Goldman Sachs explains why the war in Iran hasn't derailed the global economy - Forex Factory",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQVB3NUlnNFJHWWNNeGxLVlhlcUxKZHFKV1FiWG1OdFJ4Smx3VDFadkRHQWZBS1hkaVllY29xZXNBTFFBdzdZOXV2Q21NTDFNb0ZuTEdDT0VWVWxyZVJyaGhPcm9mVnpPVnl5R09EUzMxQnkwNV9kWDdacWZwX1gxUlFrYktNOWhLa0FhY1RQWFJmTjFZSV9HTFBaajRJd9IBngFBVV95cUxOQVB3NUlnNFJHWWNNeGxLVlhlcUxKZHFKV1FiWG1OdFJ4Smx3VDFadkRHQWZBS1hkaVllY29xZXNBTFFBdzdZOXV2Q21NTDFNb0ZuTEdDT0VWVWxyZVJyaGhPcm9mVnpPVnl5R09EUzMxQnkwNV9kWDdacWZwX1gxUlFrYktNOWhLa0FhY1RQWFJmTjFZSV9HTFBaajRJdw?oc=5"
+    },
+    {
+      "title": "Carlyle BDC Cuts Dividend Even As It Flags Better Credit Market",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/carlyle-bdc-cuts-dividend-even-as-it-flags-better-credit-market"
+    },
+    {
+      "title": "Natural Gas, WTI Oil, Brent Oil Forecasts – Oil Gains 4% As Trump Says Ceasefire Is On “Life Support” - FXEmpire",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLW5RTEVXYXZvc3VJUS1CR0gxZHVmZUhoMEVxcWIzMzlIcXBBa0Z5dmxRWWdlUWdVWHpoVlAwQWZpaEx0MWNrWUg3b0FlZDZSUXdyRXYyTGFyUXBlN2kwbHVIVWdGcWU4cW5rWWUyRjZwQ2lTNEdtOS1MaS1kYmVYLWo0YklWZnZnR0FaVnNuM3U5cmc0MGw0Q0tpalpkSk4tZUtxc2tJcGpMTk1DbEktSGZEcy02emlTRzZ1LUx5bnRLZzFYRUQybm8zcWRxNEJYZkc1S3pseFc1clRpN2c?oc=5"
+    },
+    {
+      "title": "EU says OpenAI offers to open access to cybersecurity model, Anthropic not there yet",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/eu-says-openai-offers-to-open-access-to-cybersecurity-model-anthropic-not-there-yet/articleshow/131022484.cms"
+    },
+    {
+      "title": "Trump, congressional Republicans float suspending federal gas tax amid Iran war",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/11/trump-congress-gop-gas-tax-iran-war.html"
+    },
+    {
+      "title": "India’s new FTAs offer investment opportunities, but utilisation remains weak: Commerce Secretary",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-new-ftas-offer-investment-opportunities-but-utilisation-remains-weak-commerce-secretary/articleshow/131022332.cms"
+    },
+    {
+      "title": "India plans ‘Made in India’ brand scheme, targets gaps in domestic manufacturing",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/policy/india-plans-made-in-india-brand-scheme-targets-gaps-in-domestic-manufacturing/articleshow/131022331.cms"
+    }
+  ]
+}
