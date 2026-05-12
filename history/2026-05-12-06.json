@@ -1,0 +1,652 @@
+{
+  "date": "2026-05-12",
+  "hour": "06",
+  "stats": {
+    "total": 4277,
+    "trending": 1246,
+    "breaking": 438,
+    "sources": 141,
+    "feeds": 162,
+    "memory_runs": 18,
+    "updated": "12 May 2026, 06:34 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 796,
+      "share": 19
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 549,
+      "share": 13
+    },
+    {
+      "label": "India Markets",
+      "count": 410,
+      "share": 10
+    },
+    {
+      "label": "India Cities",
+      "count": 404,
+      "share": 9
+    },
+    {
+      "label": "Geopolitics",
+      "count": 347,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 317,
+      "share": 7
+    },
+    {
+      "label": "AI & Startups",
+      "count": 253,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 247,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 227,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 213,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 195,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 189,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 130,
+      "share": 3
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 950,
+      "score": 70,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 516,
+      "score": 70,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 310,
+      "score": 76,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 181,
+      "score": 67,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 117,
+      "score": 65,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Europe",
+      "count": 91,
+      "score": 68,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "Bengaluru",
+      "count": 78,
+      "score": 65,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Chennai",
+      "count": 72,
+      "score": 65,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Kolkata",
+      "count": 71,
+      "score": 70,
+      "lat": 22.6,
+      "lng": 88.4,
+      "x": 74.6,
+      "y": 37.4
+    },
+    {
+      "label": "Japan",
+      "count": 69,
+      "score": 64,
+      "lat": 36.2,
+      "lng": 138.3,
+      "x": 88.4,
+      "y": 29.9
+    },
+    {
+      "label": "Russia",
+      "count": 65,
+      "score": 69,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "South Korea",
+      "count": 61,
+      "score": 62,
+      "lat": 36.3,
+      "lng": 127.9,
+      "x": 85.5,
+      "y": 29.8
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 505,
+      "share": 2
+    },
+    {
+      "label": "trump",
+      "count": 149,
+      "share": 0
+    },
+    {
+      "label": "iran",
+      "count": 129,
+      "share": 0
+    },
+    {
+      "label": "modi",
+      "count": 121,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 112,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 110,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 99,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 98,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 95,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 94,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 93,
+      "share": 0
+    },
+    {
+      "label": "trade",
+      "count": 88,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "assam, minister, second",
+      "category": "India Pulse",
+      "count": 3208,
+      "average_score": 61,
+      "unique_sources": 138,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "Delhi, Mumbai, carat",
+      "category": "India Cities",
+      "count": 271,
+      "average_score": 87,
+      "unique_sources": 76,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Bloomberg",
+        "CNBC Markets"
+      ]
+    },
+    {
+      "id": "family-3",
+      "label": "ajendra, remark, WHO",
+      "category": "India Pulse",
+      "count": 113,
+      "average_score": 91,
+      "unique_sources": 50,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "BleepingComputer",
+        "Bloomberg"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "idea, shares, transfer",
+      "category": "India Markets",
+      "count": 24,
+      "average_score": 90,
+      "unique_sources": 13,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Economic Times Tech",
+        "Google: India GDP OR economy OR manufacturing OR"
+      ]
+    },
+    {
+      "id": "family-38",
+      "label": "exploit, development, attack",
+      "category": "Cybersecurity",
+      "count": 19,
+      "average_score": 70,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Ars Technica",
+        "BleepingComputer",
+        "Dark Reading",
+        "Google: cloud security OR supply chain attack"
+      ]
+    },
+    {
+      "id": "family-7",
+      "label": "market, south, South Korea",
+      "category": "India Markets",
+      "count": 16,
+      "average_score": 90,
+      "unique_sources": 11,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "CNBC Markets",
+        "Economic Times Markets",
+        "Economic Times Tech"
+      ]
+    },
+    {
+      "id": "family-10",
+      "label": "United States, markets, pivot",
+      "category": "Markets & Macro",
+      "count": 12,
+      "average_score": 89,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "CNBC Markets",
+        "FT Markets",
+        "Google: IMF OR world bank OR debt OR sovereign"
+      ]
+    },
+    {
+      "id": "family-6",
+      "label": "identifies, google, zero-day",
+      "category": "AI & Startups",
+      "count": 11,
+      "average_score": 81,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "CNBC Markets",
+        "Google: artificial intelligence OR LLM OR founda",
+        "Google: malware OR phishing OR infostealer campa",
+        "Google: open source AI OR agentic OR reasoning m"
+      ]
+    },
+    {
+      "id": "family-19",
+      "label": "airstrikes, drone, India",
+      "category": "India Tech",
+      "count": 11,
+      "average_score": 80,
+      "unique_sources": 7,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India cyber attack OR data breach OR hac",
+        "Google: India deeptech OR drone OR robotics"
+      ]
+    },
+    {
+      "id": "family-5",
+      "label": "Chennai, nadu, politics",
+      "category": "India Pulse",
+      "count": 10,
+      "average_score": 95,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Hindustan Times India",
+        "Mint India",
+        "NDTV India",
+        "News18 India"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2389,
+      "avg_score": 67,
+      "trending": 775,
+      "sources": 104,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 2000,
+      "avg_score": 70,
+      "trending": 789,
+      "sources": 139,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 969,
+      "avg_score": 69,
+      "trending": 370,
+      "sources": 111,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 861,
+      "avg_score": 72,
+      "trending": 408,
+      "sources": 85,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 844,
+      "avg_score": 75,
+      "trending": 464,
+      "sources": 123,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 593,
+      "avg_score": 62,
+      "trending": 138,
+      "sources": 43,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 399,
+      "avg_score": 61,
+      "trending": 73,
+      "sources": 45,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 245,
+      "avg_score": 62,
+      "trending": 62,
+      "sources": 53,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Assam swearing-in LIVE: Himanta Biswa Sarma takes oath as Assam CM for second consecutive term",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/elections/assam-assembly/assam-bjp-government-formation-himanta-biswa-sarma-swearing-in-oath-ceremony-live-updates-may-12-2026/article70968167.ece"
+    },
+    {
+      "title": "Gold Rate Today, May 12: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://indianexpress.com/article/cities/delhi/gold-rate-today-may-12-check-10684991/"
+    },
+    {
+      "title": "SP MP Ajendra Singh Lodhi booked over ‘anti-national’ remark on PM Modi",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/sp-mp-ajendra-singh-lodhi-booked-over-anti-national-remark-on-pm-modi/article70968532.ece"
+    },
+    {
+      "title": "Vodafone Idea shares drop 4% after telco clarifies on treasury stock transfer report. Here's what it said",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/vodafone-idea-shares-drop-4-after-telco-clarifies-on-treasury-stock-transfer-report-heres-what-it-said/articleshow/131030306.cms"
+    },
+    {
+      "title": "Tamil Nadu politics LIVE: Velumani-Shanmugam-led AIADMK faction extends support to ruling TVK",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-floor-test-aiadmk-party-split-palaniswami-velumani-live-updates-may-12-2026/article70968227.ece"
+    },
+    {
+      "title": "Google identifies first AI-developed zero-day exploit - Notebookcheck",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUXc3QWQ0Q2x3dHZSSjRqTDBNYzJwTmNJajd0SEdyYXlFdFprMlBMOEVLV044NWdEYmoxVVloRkQ4eUNoMUxsV0llTHpkV0w4X1V5VHZ0SmRORnZoMFdBelpCc0wwR0FFRFJhR1hON2JLUlc4RDFSc0Z0MlJPajljUDJmU0lCdUU2cTQ0eFp5VlBrRFJVLTh3bm9DNGpFNnc?oc=5"
+    },
+    {
+      "title": "South Korea’s radical 'AI dividend' proposal: A bold future or a market nightmare?",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/south-koreas-radical-ai-dividend-proposal-a-bold-future-or-a-market-nightmare/articleshow/131030253.cms"
+    },
+    {
+      "title": "Malaysia, Tamil Nadu share deep ties, says PM Anwar Ibrahim; congratulates new Tamil Nadu CM Joseph Vijay",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/malaysia-tamil-nadu-share-deep-ties-says-pm-anwar-ibrahim-congratulates-new-tamil-nadu-cm-joseph-vijay/article70968433.ece"
+    },
+    {
+      "title": "‘Cancel your own foreign tours’: Opposition leaders in Maharashtra slam PM",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/maharashtra/cancel-your-own-foreign-tours-opposition-leaders-in-maharashtra-slam-pm/article70968311.ece"
+    },
+    {
+      "title": "India's IT index falls to three-year low on weak earnings outlook, demand worries - MSN",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOSEdpcm5RZHVCUDBlN3FXNjBIbTAxejViLThrc3hlcE14STNDalF1QVNLUUpsSXQxMmxtRnRFcGQzZkp3My05bGctb1ZWdE9JdVczV3UxeVVxZThHcjJGdmROcVkzcXFVVWZ6a1lGT3U1SjNQQU45Tndhd3RUd2NyUjNmSUgwX0JhLWlxR1d3dEp1M29jaFJ4dzc4bmV2Zk1VNVlRU2VxVjdiUTV4ZmdHTC1IZzhoOUs2UFEtWks2Y1dkbDNBek5vMjBfMzdoWTFuZHFOelV6dHJjNnBvZU1HbVZ6UVUzZk8wb3ZYN0cxUQ?oc=5"
+    },
+    {
+      "title": "Vodafone Sales Beat as Strategic Pivot to Main Markets Pays Off",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/vodafone-sales-beat-as-strategic-pivot-to-main-markets-pays-off"
+    },
+    {
+      "title": "Defence, Energy, Diaspora: Why PM Modi’s UAE Visit Matters Now More Than Ever",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.news18.com/india/defence-energy-diaspora-why-pm-modis-uae-visit-matters-now-more-than-ever-ws-l-10086458.html"
+    },
+    {
+      "title": "TVK MLA-Elect Won By 1 Vote. Now DMK Rival's Challenge, Trust Vote Red Light",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/india-news/tvk-mla-elect-r-srinivasa-sethupathi-won-by-1-vote-dmk-rivals-kp-periyakaruppan-challenge-vijay-trust-vote-11482307"
+    },
+    {
+      "title": "Who is Nandini Harinath? All about Indian scientist whose saree was displayed at US museum",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/trends/who-is-nandini-harinath-all-about-indian-scientist-whose-saree-was-displayed-at-us-museum-11778563281684.html"
+    },
+    {
+      "title": "Simca Advertising IPO GMP signals 17% listing pop: Check subscription and other details on Day 3 of the offer",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/ipo/simca-advertising-ipo-gmp-signals-17-listing-pop-check-subscription-and-other-details-on-day-3-of-the-offer-11778564095498.html"
+    },
+    {
+      "title": "Mumbai water cut from May 15: BMC announces 10% reduction as reservoir levels drop to 23%",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/mumbai-water-cut-from-may-15-bmc-announces-10-per-cent-reduction-as-reservoir-levels-drop-to-23-per-cent-11778563392791.html"
+    },
+    {
+      "title": "Why is stock market crashing today? Sensex drops over 800 points - Rs 5 lakh crore investors wealth wiped - The Times of India",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNM25XaXg5OFBVU3VFRm1VdU9ZbkNXS3NrVGhEUzcwUTNGR0dUblB2REk3OE9ST3dteFltcXotOW9GUEhWYkRyUklKbllnNjF0azZ5MzBqbkthTHRqOGZTYWZLSWFVNElGWXRnVktrN29fb3FfNUZyWXdKMndOV2VKcTdyMDlXZkdkdWM3SkZHOWZ6NDdJaGtHcmlodHhiV2VSUnBwdFZuLUpoUmlUVjcyN3RBRjhTWEsyX0tHSFNIU09aOC13QU5FWUpVNEtmWktacGZ4T2lxUTUzc0hsLTdQTzZ3NnRERC1MQXNUYnhhNWJiMlM1OXZwSGZGdE00NlRYdEcxVVJpcVBOczVMUEJTMVYza0tGdVlTdTM5UEFBM3IwQ1BhbVJCRmltMlNKblhSd25NaExR0gG7AkFVX3lxTE9zdi13RE1vbkFOajBJaERPME9WMWlmZTNWS2J5aWVKbG1VVGs5ZDBYcGtBMEZfajBJRnd4Wm91VGlyT3pFNm14T2RzVG5XbXRLaDhxZmNEbUJubEk0d3pWMjVVNHhzd3hFaWNMTzZWekt1UFJBZjVUbURBa1B4UW80WE5BclRXX2FKbE5rQ2VsYnc4SjFUeE9lUzRtemdFbko5NmY4R3JEc1Btc0JsNU83elhCTjd3Y19ITG1WaWR1S1B4aUU2cXpEWS1WR21yTlMxaURCVXdwZ1FidEExSzVfbEJ0TXhlZFZQNVhZYWRIUUZYMUI0cXlCekFnYm9abWhKNjc0WW5hdFkxNm0yOEhrd3p4d2RDbnNqT3Vwb2FIQWNUUG5qSS1oUDdYemNRaWZzb0g4WmE0OGxvdw?oc=5"
+    },
+    {
+      "title": "Recode Studios share price hits 5% upper circuit after bumper debut",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/recode-studios-share-price-hits-5-upper-circuit-after-bumper-debut-11778564517522.html"
+    },
+    {
+      "title": "Sony upgraded its wearable AC so it’s cooler and better at hugging your neck",
+      "score": 99,
+      "category": "Consumer Tech",
+      "url": "https://www.theverge.com/tech/928220/sony-reon-pocket-pro-plus-personal-wearable-air-conditioner"
+    },
+    {
+      "title": "DNR, local fire crews battle wildfire in Presque Isle County - dailypress.net",
+      "score": 99,
+      "category": "Climate & Supply Chain",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQmtKbFFFX2w5WXd3Q2lSb09FOW1Qcm9vdUc1ZFExcHZyZTVVUWgwMjRVWENhR1FLaUlBR1VHX1Nja25PV1NvNWNJOWY0VFYxUng2Nk5lLTZSbXdtYnVzS1dEd0dDOEhXWGdVUTM3djVlak1GTWhGLXAxb0ROOVpmempIX1JuZDFNM2dOcUVtUlhiMHlmZEVrODNlc1FVNE1URjg0VHNhdXhwUDNQNTVDRg?oc=5"
+    },
+    {
+      "title": "ADNOC Gas: Ready to Export LNG As Soon As Hormuz Reopens",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-12/adnoc-gas-ready-to-export-lng-as-soon-as-hormuz-reopens-video"
+    },
+    {
+      "title": "Iran war oil shortage forces Japan snack giant to use black-and-white packaging",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.theguardian.com/world/2026/may/12/calbee-japan-snack-giant-black-white-packaging-iran-war-oil-ink-shortage"
+    },
+    {
+      "title": "Zerodha's Nikhil Kamath backs gold-based stablecoin over dollar-linked crypto; says UPI saved India from a bigger risk",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/zerodha-nikhil-kamath-backs-gold-based-stablecoin-over-dollar-linked-crypto-says-upi-saved-india-from-a-bigger-risk-11778563445916.html"
+    },
+    {
+      "title": "PM Modi’s call to stop foreign travel comes as spending in this area has already been falling",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/business/Industry/pm-modis-call-to-stop-foreign-travel-comes-as-spending-in-this-area-has-already-been-falling/article70965654.ece"
+    },
+    {
+      "title": "\"Speculative, Misleading\": Pak On Report Claiming It Is Shielding Iran Jets From US Strikes",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/world-news/iran-war-news-pakistan-on-report-claiming-it-is-shielding-iran-jets-from-us-strikes-speculative-misleading-11482206"
+    },
+    {
+      "title": "India Weighs Emergency Steps to Protect Forex Reserves | Insight with Haslinda Amin 05/12/2026",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-12/insight-with-haslinda-amin-05-12-2026-video"
+    },
+    {
+      "title": "Stock market crash:  ₹11 lakh crore wiped out in 4 sessions; should investors follow Warren Buffett and hold cash?",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/stock-market-crash-11-lakh-crore-wiped-out-in-4-sessions-should-investors-follow-warren-buffett-and-hold-cash-11778561903670.html"
+    },
+    {
+      "title": "Paschi Beats on Profit as CEO Focuses on Mediobanca Integration",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/paschi-beats-on-profit-as-ceo-focuses-on-mediobanca-integration"
+    },
+    {
+      "title": "Groww turns multi-bagger for Peak XV, YC, Ribbit after IPO lock-in expiry",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/technology/groww-turns-multi-bagger-for-peak-xv-yc-ribbit-after-ipo-lock-in-expiry/articleshow/131029802.cms"
+    },
+    {
+      "title": "IMD forecasts rain and gusty winds across North India; yellow alert issued for Delhi",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://indianexpress.com/article/cities/delhi/north-india-rainfall-yellow-alert-delhi-haryana-punjab-10684897/"
+    }
+  ]
+}
