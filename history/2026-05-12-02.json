@@ -1,0 +1,650 @@
+{
+  "date": "2026-05-12",
+  "hour": "02",
+  "stats": {
+    "total": 4344,
+    "trending": 1212,
+    "breaking": 317,
+    "sources": 142,
+    "feeds": 162,
+    "memory_runs": 17,
+    "updated": "12 May 2026, 02:29 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 779,
+      "share": 18
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 552,
+      "share": 13
+    },
+    {
+      "label": "India Cities",
+      "count": 419,
+      "share": 10
+    },
+    {
+      "label": "India Markets",
+      "count": 417,
+      "share": 10
+    },
+    {
+      "label": "Geopolitics",
+      "count": 345,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 327,
+      "share": 8
+    },
+    {
+      "label": "AI & Startups",
+      "count": 263,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 243,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 230,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 222,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 218,
+      "share": 5
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 196,
+      "share": 5
+    },
+    {
+      "label": "Health & Science",
+      "count": 133,
+      "share": 3
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 983,
+      "score": 69,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 526,
+      "score": 70,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 321,
+      "score": 76,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 196,
+      "score": 68,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 123,
+      "score": 63,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Europe",
+      "count": 85,
+      "score": 67,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "Kolkata",
+      "count": 78,
+      "score": 70,
+      "lat": 22.6,
+      "lng": 88.4,
+      "x": 74.6,
+      "y": 37.4
+    },
+    {
+      "label": "Bengaluru",
+      "count": 72,
+      "score": 66,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Chennai",
+      "count": 70,
+      "score": 60,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Russia",
+      "count": 64,
+      "score": 67,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Japan",
+      "count": 62,
+      "score": 61,
+      "lat": 36.2,
+      "lng": 138.3,
+      "x": 88.4,
+      "y": 29.9
+    },
+    {
+      "label": "Hyderabad",
+      "count": 61,
+      "score": 62,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 526,
+      "share": 2
+    },
+    {
+      "label": "trump",
+      "count": 146,
+      "share": 0
+    },
+    {
+      "label": "iran",
+      "count": 143,
+      "share": 0
+    },
+    {
+      "label": "modi",
+      "count": 126,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 125,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 109,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 102,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 101,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 98,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 95,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 92,
+      "share": 0
+    },
+    {
+      "label": "india's",
+      "count": 90,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "break, invaders, WHO",
+      "category": "India Pulse",
+      "count": 3741,
+      "average_score": 63,
+      "unique_sources": 141,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-3",
+      "label": "venkatraman, marketsmith, United States",
+      "category": "India Markets",
+      "count": 49,
+      "average_score": 91,
+      "unique_sources": 15,
+      "consensus": 99,
+      "top_sources": [
+        "BBC World",
+        "Bloomberg",
+        "CNBC Markets",
+        "Economic Times Economy"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "Microsoft, OpenAI, nadella",
+      "category": "India Tech",
+      "count": 21,
+      "average_score": 81,
+      "unique_sources": 12,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India cyber attack OR data breach OR hac",
+        "Google: India deeptech OR drone OR robotics"
+      ]
+    },
+    {
+      "id": "family-21",
+      "label": "hackers, attack, development",
+      "category": "Cybersecurity",
+      "count": 14,
+      "average_score": 80,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Dark Reading",
+        "Google: cloud security OR supply chain attack",
+        "Google: cyber attack OR breach OR ransomware 202",
+        "Google: malware OR phishing OR infostealer campa"
+      ]
+    },
+    {
+      "id": "family-57",
+      "label": "beauty, whisper, parlour",
+      "category": "India Cities",
+      "count": 10,
+      "average_score": 68,
+      "unique_sources": 3,
+      "consensus": 99,
+      "top_sources": [
+        "Google: Kolkata OR West Bengal news",
+        "Google: Pune OR Ahmedabad OR Jaipur news",
+        "Indian Express Delhi"
+      ]
+    },
+    {
+      "id": "family-34",
+      "label": "indigenous, United States, Latin America",
+      "category": "Geopolitics",
+      "count": 6,
+      "average_score": 76,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Google: drug approval OR FDA OR EMA OR CDSCO",
+        "Google: geopolitics OR war OR diplomacy breaking",
+        "Guardian World"
+      ]
+    },
+    {
+      "id": "family-9",
+      "label": "jaishankar, jaipur, United States",
+      "category": "India Pulse",
+      "count": 5,
+      "average_score": 89,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Hindustan Times India",
+        "Indian Express Mumbai",
+        "News18 India",
+        "The Hindu National"
+      ]
+    },
+    {
+      "id": "family-106",
+      "label": "texas, filed, lawsuit",
+      "category": "Consumer Tech",
+      "count": 5,
+      "average_score": 69,
+      "unique_sources": 4,
+      "consensus": 97,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: gaming OR streaming OR netflix OR disney",
+        "Google: meta OR tiktok OR youtube OR instagram p",
+        "The Verge"
+      ]
+    },
+    {
+      "id": "family-108",
+      "label": "insights, crypto, venezuela's",
+      "category": "Markets & Macro",
+      "count": 7,
+      "average_score": 70,
+      "unique_sources": 3,
+      "consensus": 96,
+      "top_sources": [
+        "CNBC Markets",
+        "Google: bitcoin OR ethereum OR crypto OR stablec",
+        "Google: federal reserve OR interest rate OR powe"
+      ]
+    },
+    {
+      "id": "family-28",
+      "label": "circle, billion, valuation",
+      "category": "AI & Startups",
+      "count": 4,
+      "average_score": 80,
+      "unique_sources": 4,
+      "consensus": 96,
+      "top_sources": [
+        "Bloomberg",
+        "Google: developer tools OR software startup OR S",
+        "Seeking Alpha",
+        "The Information"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2437,
+      "avg_score": 66,
+      "trending": 733,
+      "sources": 106,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 2011,
+      "avg_score": 69,
+      "trending": 749,
+      "sources": 140,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 971,
+      "avg_score": 69,
+      "trending": 378,
+      "sources": 111,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 874,
+      "avg_score": 72,
+      "trending": 390,
+      "sources": 86,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 845,
+      "avg_score": 75,
+      "trending": 467,
+      "sources": 127,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 603,
+      "avg_score": 62,
+      "trending": 122,
+      "sources": 45,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 411,
+      "avg_score": 61,
+      "trending": 68,
+      "sources": 44,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 247,
+      "avg_score": 62,
+      "trending": 54,
+      "sources": 56,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Invaders couldn't break India's soul; Sanatan prevails in its consciousness: Yogi Adityanath",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/invaders-couldnt-break-indias-soul-sanatan-prevails-in-its-consciousness-adityanath/article70965339.ece"
+    },
+    {
+      "title": "Himachal to link DC, SP performance ratings to drug control efforts",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/himachal-pradesh/himachal-to-link-dc-sp-performance-ratings-to-drug-control-efforts/article70966127.ece"
+    },
+    {
+      "title": "Raja Venkatraman, MarketSmith recommend five stocks for 12 May",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/raja-venkatraman-marketsmith-recommend-five-stocks-for-12-may-11778550139916.html"
+    },
+    {
+      "title": "India Markets Have A Big Test: April Inflation And Q4 Earnings - Finimize",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSmZCN1hFbEY1STBSc1BwS1A4M1lNdUxidHU0bnVJdjNqR25WNlFNMGNkdUNnLWFtUlptZk5WQlh0OG5KUEZyS0tQdTl0dE44c2pQWUpPdVZja2FMOUxWZTF6UFVlWmVvNmIwUl9BVUozMUVaeWNZS05XS2doZUJoRmhuM1EyajhzYzBpU1RMSjlFc2NL?oc=5"
+    },
+    {
+      "title": "Asia markets trade mixed as investors weigh Trump’s ceasefire warning",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/12/asia-markets-today-live-updates-kospi-hang-seng-index-nikkei-225-sensex-csi-300.html"
+    },
+    {
+      "title": "Microsoft CEO Satya Nadella 'proud' of profit-making OpenAI investment",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-ceo-satya-nadella-proud-of-profit-making-openai-investment/articleshow/131026206.cms"
+    },
+    {
+      "title": "Sensex Today | Nifty 50 | Stock Market Live Updates: GIFT Nifty signals a negative start; Asian shares trade higher",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/live-blog/bse-sensex-today-nifty50-stock-market-live-updates-gift-nifty-groww-dr-reddys-share-price-12-may-2026/liveblog/131026575.cms"
+    },
+    {
+      "title": "'Beyond shameless': TMC attacks BJP, EC after ex-Bengal CEO Manoj Agarwal appointed chief secretary",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://timesofindia.indiatimes.com/india/beyond-shameless-tmc-attacks-bjp-ec-after-ex-bengal-ceo-manoj-agarwal-appointed-chief-secretary/articleshow/131026513.cms"
+    },
+    {
+      "title": "‘EC-BJP collusion’: Why Congress slammed new appointments in Suvendu Adhikari's Bengal government",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/ecbjp-collusion-why-congress-slammed-new-appointments-in-suvendu-adhikaris-bengal-government-sir-tmc-eci-11778548938330.html"
+    },
+    {
+      "title": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 12 May",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/nifty-50-sensex-prediction-today-check-how-indian-stock-market-is-expected-to-trade-on-12-may-11778550253738.html"
+    },
+    {
+      "title": "West Asia war to cast shadow on Brics meet",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.hindustantimes.com/india-news/west-asia-war-to-cast-shadow-on-brics-meet-101778550986613.html"
+    },
+    {
+      "title": "Stock Market LIVE Updates, Sensex Today: Markets Likely To Open In Red After Trump's 'Ceasefire On Life Support' Remark",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-today-12-may-donald-trump-us-iran-ceasefire-crude-oil-prices-11481606"
+    },
+    {
+      "title": "Prosthetic foot centre set up in Trinidad; Jaishankar terms it gift of mobility",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/prosthetic-foot-centre-set-up-in-trinidad-jaishankar-terms-it-gift-of-mobility/article70968110.ece"
+    },
+    {
+      "title": "Dollar steady as Middle East peace hopes recede",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/forex/dollar-steady-as-middle-east-peace-hopes-recede/articleshow/131026517.cms"
+    },
+    {
+      "title": "Stocks to watch: Tata Power, Dixon Tech, Indian Hotels among 10 shares in focus today",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/stocks-to-watch-tata-power-dixon-tech-indian-hotels-among-10-shares-in-focus-today-11778548663546.html"
+    },
+    {
+      "title": "Gold rises with US–China talks, MidEast conflict in focus",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-rises-with-uschina-talks-mideast-conflict-in-focus/articleshow/131026496.cms"
+    },
+    {
+      "title": "LPG gas cylinder price on 12 May: How much does domestic and commercial cooking gas cost in New Delhi, Mumbai, Bengaluru",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/lpg-gas-cylinder-price-on-12-may-how-much-does-domestic-and-commercial-cooking-gas-cost-in-new-delhi-mumbai-bengaluru-11778549515696.html"
+    },
+    {
+      "title": "File separate pleas on SIR’s impact on West Bengal polls: Supreme Court tells TMC",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.hindustantimes.com/india-news/file-separate-pleas-on-sir-s-impact-on-west-bengal-elections-supreme-court-tells-tmc-101778549991462.html"
+    },
+    {
+      "title": "PIPC concludes probe into Coupang data leak, to decide penalty as early as June - Korea JoongAng Daily",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNc3RWMXVTVm1xZFdGNjE3ZE0xWVhpVmdfWnFka1c3YlR1aEpWY3YxMnRtWmllRFM2TVZ3d0d5a1lFZWVJMUtmQVF2Q3c0ZzV1Ulk3LW50U3FqUXc2T0pobTBoOVVydk1SZ3hnOWJuTW04TjlCVGp6a1VjM0c4UkdNN093dHJDc3pxQ3o2T01LblNkOUJydDVQTksxVTN4Zjl2YndINy1Zck16Uy1VaTB4WERPanVEUmlUUFl2UDdlZFZQTWp3VGpMQzQzU3lXWmM5YUhObW1hckFJUnpsVXItaHU5cHFkUGtORXBtQm9mWWxzTHF3?oc=5"
+    },
+    {
+      "title": "From Gift Nifty, US-Iran peace talks to crude oil prices: 10 key things that changed for Indian stock market overnight",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/from-gift-nifty-us-iran-peace-talks-to-crude-oil-prices-10-key-things-that-changed-for-indian-stock-market-overnight-11778549343606.html"
+    },
+    {
+      "title": "PM Modi reiterates call for work from home, avoid buying gold 'in time of global crisis'",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.hindustantimes.com/india-news/pm-modi-reiterates-call-for-wfh-work-from-home-avoid-buying-gold-in-time-of-global-crisis-amid-us-iran-war-101778549149909.html"
+    },
+    {
+      "title": "Franklin Templeton Turns to Fixed Income to Fuel India Growth",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/franklin-templeton-turns-to-fixed-income-to-fuel-india-growth"
+    },
+    {
+      "title": "Bears tighten grip on D-Street as GIFT Nifty points to weak opening",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/pre-market-action-heres-the-trade-setup-for-todays-session/articleshow/131026245.cms"
+    },
+    {
+      "title": "Oil Rally: Brent Crude Holds Above $104 As Trump Says Iran Ceasefire Is On 'Life Support' - NDTV Profit",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZHI0SFMtcFViOExwTDBDM3hFeFFfRWpvRzZGUEpwclhHLXZDenJna1JNMC1hSVk3eV9vRUZwZXVaNG1nVjVLRklMS1pHN3ZVWUJCNktYNGFndUZ0N2JoNUZzRFZRVkp6LThHQ0IzcnRfbDlod2JNeHhkS3dqb1BQX2JWYzdpdGhJdG80Ykk3Qk83N2U5OG53VlJyUDRCX3ZlTmxQN2ZmLUxGb3ZQczZQVHBOdzdiY1BWc0VTTGhJM3lOU0M4OTlpX2d0T1J0ekN6eVRr0gHbAUFVX3lxTE9UcVAtRUtYWnV0TU1hSlpzbnhsalVVeHNfVVl3U3MtejExRVNlSGVadjZsWGwyVmZESndFQURZUnBqWjNZMzh5aGNmd3pTdEdpMjFDVXpyV292Y05tQW96eGxHQjZfclJxWDNKZGtPdGZRYThibDh3WWFxWERjUVZNY3VDMnZkNjlNakszemRsc0U1eEd5aWhzZTNZc3VsbHgxZEFGNFIyekptUjR1VE5WWUpoUGJYbjh0ZVVVRVlYNWNGcElZRnFWb0Rkb2NhMUVPTVBmXzNjRW5xQQ?oc=5"
+    },
+    {
+      "title": "Microsoft, Google, xAI security test details deleted from US government website",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-google-xai-security-test-details-deleted-from-us-government-website/articleshow/131026231.cms"
+    },
+    {
+      "title": "Global Market Today: Asian stocks advance, oil gains on Iran deadlock",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-advance-oil-gains-on-iran-deadlock/articleshow/131026226.cms"
+    },
+    {
+      "title": "Former OpenAI executive Sutskever discloses nearly $7 billion stake in AI firm",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/technology/former-openai-executive-sutskever-says-he-spent-a-year-gathering-proof-of-alleged-altman-dishonesty/articleshow/131026210.cms"
+    },
+    {
+      "title": "Kalshi Judge Predicts Tribe Will Win Block on Sports Contracts",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/kalshi-judge-predicts-tribe-will-win-block-on-sports-contracts"
+    },
+    {
+      "title": "Trump says Iran ceasefire is on 'massive life support'",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cvgznxn18zgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Oil prices rise as fragile US-Iran talks sustain supply worries",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-rise-as-fragile-us-iran-talks-sustain-supply-worries/articleshow/131026193.cms"
+    }
+  ]
+}
