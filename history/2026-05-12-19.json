@@ -1,0 +1,652 @@
+{
+  "date": "2026-05-12",
+  "hour": "19",
+  "stats": {
+    "total": 4152,
+    "trending": 1367,
+    "breaking": 536,
+    "sources": 143,
+    "feeds": 162,
+    "memory_runs": 22,
+    "updated": "12 May 2026, 19:42 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 753,
+      "share": 18
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 488,
+      "share": 12
+    },
+    {
+      "label": "India Markets",
+      "count": 422,
+      "share": 10
+    },
+    {
+      "label": "India Cities",
+      "count": 387,
+      "share": 9
+    },
+    {
+      "label": "Geopolitics",
+      "count": 350,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 305,
+      "share": 7
+    },
+    {
+      "label": "AI & Startups",
+      "count": 273,
+      "share": 7
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 258,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 227,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 185,
+      "share": 4
+    },
+    {
+      "label": "India Society",
+      "count": 181,
+      "share": 4
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 179,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 144,
+      "share": 3
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 892,
+      "score": 70,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 498,
+      "score": 71,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 285,
+      "score": 78,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 191,
+      "score": 69,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 97,
+      "score": 68,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Europe",
+      "count": 93,
+      "score": 68,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "Chennai",
+      "count": 85,
+      "score": 62,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Bengaluru",
+      "count": 74,
+      "score": 65,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "South Korea",
+      "count": 70,
+      "score": 62,
+      "lat": 36.3,
+      "lng": 127.9,
+      "x": 85.5,
+      "y": 29.8
+    },
+    {
+      "label": "Japan",
+      "count": 70,
+      "score": 62,
+      "lat": 36.2,
+      "lng": 138.3,
+      "x": 88.4,
+      "y": 29.9
+    },
+    {
+      "label": "Russia",
+      "count": 69,
+      "score": 73,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Hyderabad",
+      "count": 61,
+      "score": 60,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 480,
+      "share": 2
+    },
+    {
+      "label": "iran",
+      "count": 129,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 125,
+      "share": 0
+    },
+    {
+      "label": "trump",
+      "count": 118,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 102,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 100,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 100,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 97,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 92,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 86,
+      "share": 0
+    },
+    {
+      "label": "data",
+      "count": 84,
+      "share": 0
+    },
+    {
+      "label": "trade",
+      "count": 79,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "social, signal, phishing",
+      "category": "Cybersecurity",
+      "count": 2998,
+      "average_score": 62,
+      "unique_sources": 142,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "liquor, abdullah, debate",
+      "category": "India Pulse",
+      "count": 260,
+      "average_score": 81,
+      "unique_sources": 80,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Bloomberg",
+        "CNBC Markets"
+      ]
+    },
+    {
+      "id": "family-6",
+      "label": "terrorist, killed, India",
+      "category": "India Pulse",
+      "count": 205,
+      "average_score": 91,
+      "unique_sources": 61,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Bloomberg",
+        "CNBC Markets"
+      ]
+    },
+    {
+      "id": "family-8",
+      "label": "forecasts, gains, United States",
+      "category": "Markets & Macro",
+      "count": 55,
+      "average_score": 88,
+      "unique_sources": 20,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Bloomberg",
+        "CISA Alerts"
+      ]
+    },
+    {
+      "id": "family-9",
+      "label": "rise, food, retail",
+      "category": "India Markets",
+      "count": 23,
+      "average_score": 93,
+      "unique_sources": 11,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Google: India markets OR Sensex OR Nifty OR BSE",
+        "Google: India startups OR funding OR IPO OR unic"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "real, zero-day, hack",
+      "category": "Cybersecurity",
+      "count": 21,
+      "average_score": 86,
+      "unique_sources": 13,
+      "consensus": 99,
+      "top_sources": [
+        "CNBC Markets",
+        "Economic Times Tech",
+        "Engadget",
+        "Google: cloud security OR supply chain attack"
+      ]
+    },
+    {
+      "id": "family-19",
+      "label": "microsoft, openai, billion",
+      "category": "AI & Startups",
+      "count": 17,
+      "average_score": 86,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "BleepingComputer",
+        "Google: artificial intelligence OR LLM OR founda",
+        "Google: developer tools OR software startup OR S"
+      ]
+    },
+    {
+      "id": "family-5",
+      "label": "minister, appeal, khan",
+      "category": "India Pulse",
+      "count": 13,
+      "average_score": 92,
+      "unique_sources": 11,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India breaking news OR New Delhi",
+        "Google: India foreign policy OR diplomacy OR MEA",
+        "Google: India infrastructure OR highway OR railw"
+      ]
+    },
+    {
+      "id": "family-50",
+      "label": "flooded, roads, waymo",
+      "category": "Consumer Tech",
+      "count": 11,
+      "average_score": 78,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: gaming OR streaming OR netflix OR disney",
+        "Google: wearables OR smartwatch OR spatial compu",
+        "The Verge",
+        "Wired"
+      ]
+    },
+    {
+      "id": "family-36",
+      "label": "foods, restaurant, startup",
+      "category": "India Tech",
+      "count": 9,
+      "average_score": 86,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: India app OR creator economy OR telecom ",
+        "Google: India deeptech OR drone OR robotics",
+        "Google: India semiconductor OR chip OR electroni"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2280,
+      "avg_score": 67,
+      "trending": 790,
+      "sources": 100,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1961,
+      "avg_score": 70,
+      "trending": 807,
+      "sources": 142,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 884,
+      "avg_score": 72,
+      "trending": 403,
+      "sources": 111,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 863,
+      "avg_score": 73,
+      "trending": 414,
+      "sources": 82,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 827,
+      "avg_score": 77,
+      "trending": 486,
+      "sources": 121,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 592,
+      "avg_score": 64,
+      "trending": 157,
+      "sources": 43,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 411,
+      "avg_score": 62,
+      "trending": 75,
+      "sources": 51,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 251,
+      "avg_score": 64,
+      "trending": 60,
+      "sources": 53,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Signal adds security warnings for social engineering, phishing attacks",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://www.bleepingcomputer.com/news/security/signal-adds-security-warnings-for-social-engineering-phishing-attacks/"
+    },
+    {
+      "title": "AI Just Built Its First Real Zero-Day Hack — Google Sounds Alarm - Dallas Express",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNLWEwN1JHQzlFUlZ5eG5vc0wtbmt5NFVfVzFiNVJ1c25mdGh6Y3R1M2hyM2RlY3c4ajF5VDNDbVlzZDFUWlFMcUFOYW5fUGtFdVZONkNCMUVKVDVEX1VJR3dPeDNjMzdaM2kwZmVtY2lvVkYxWEcxNmlsWG12YUF3QzVuUEJLNi0tMF8xb0VNQkF2ajBLYWJCS3pXSFVPZ3RZVVpPdzNXUzRoQQ?oc=5"
+    },
+    {
+      "title": "Traders will soon be able to bet on computer chip prices as AI drives costs skyward",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/12/new-futures-market-for-semiconductors-comes-as-ai-drives-costs-skyward.html"
+    },
+    {
+      "title": "AI-Driven Cyber Threats Are Growing, Google Warns - CircleID",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZEN6bDlqSjVQbE5zTVotUWdCRVpFclFZNGlvWVdwVjlqMm1pdXBNczFkemZHTmZqa1NvXzJmTklkT25MNDdObVhkdDZKQ3FLQ0Z0TzFYUVVnSHJqSzk3UWxyWnNDMWU0d3BXbndEdmpfaGx3TF9BUDFjaDlYZldMMA?oc=5"
+    },
+    {
+      "title": "Farooq joins liquor debate, says even Sheikh Abdullah didn’t favour prohibition; Mirwaiz, BJP seek ban",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://timesofindia.indiatimes.com/india/farooq-joins-liquor-debate-says-even-sheikh-abdullah-didnt-favour-prohibition-mirwaiz-bjp-seek-ban/articleshow/131048864.cms"
+    },
+    {
+      "title": "\"Our Appeal To Prime Minister Is...\": What Khan Sir Said On NEET Paper Leak",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/india-news/what-khan-sir-said-on-neet-paper-leak-11486462"
+    },
+    {
+      "title": "Terrorist killed, Poonch infiltration bid foiled",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://timesofindia.indiatimes.com/india/terrorist-killed-poonch-infiltration-bid-foiled/articleshow/131048832.cms"
+    },
+    {
+      "title": "All Energy Solar awarded Gold for best Solar Power Provider in the Twin Cities. - PR Newswire",
+      "score": 99,
+      "category": "Climate & Supply Chain",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdG8ySGJ0MFBvdExvZ19lZUZ4YnlPM0FMem03eXNWd09CU1hnMk1UVmdsY0RfMnVrQU52UmJCU0tMemptWUJuMGlOQTVtRW1wTktnWEUteEFVa1ZEeUNtcjlJLWR5UUlvWXIyTHVHMXA4TjczVnJnNjJlb0FUZ1hRMlRjd01CdzdYWXhQczMwTnRiNldFc0Jqd2NLWDBaRGk1TzBKUlRBUHdRWTZ4WTV6b1RIZTl2Z0dSOVRkamZzdVB2NVdiZXFrRGNFZUxNa3c?oc=5"
+    },
+    {
+      "title": "Natural Gas, WTI Oil, Brent Oil Forecasts – Oil Gains 4% As Traders See No Progress In U.S. – Iran Talks - FXEmpire",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNEs3R2hkNkxWeC0xRWV0Y0E4MkJkVzl0azdnQ1R2OS1URS13NlFiTXp6aFdubVhPSFdOTjBGZTdRNnJ6eG81aFRmbkpWOU5hZ3gzdnlFWXlVcG1TRVVHT1BzSVVSYVJKRmVUcXFPZV83RWRnR2pFeEgwWkI0TlZwVVU0MmN5eDJGWGIzYy1CUE0tR3pUSlVNV2toMllWdFZuWHZOR2VYQmQ0QW5hMmJxX01rZHdoeTdUOW9ONG1pTm1TN0hjSzU5WlVUQzlKbUNIdklrdHYxYmRnTWxuNXlybw?oc=5"
+    },
+    {
+      "title": "Retail inflation up a tad on rise in food, bullion prices",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/retail-inflation-up-a-tad-on-rise-in-food-bullion-prices/articleshow/131048362.cms"
+    },
+    {
+      "title": "CEA Nageswaran says West Asia crisis a balance of payments stress test; to impact CAD, inflation & exchange rate",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/policy/cea-nageswaran-says-west-asia-crisis-a-balance-of-payments-stress-test-to-impact-cad-inflation-exchange-rate/articleshow/131048230.cms"
+    },
+    {
+      "title": "50 paise a kg: Onion price crash leaves Maharashtra farmers in throes of debt",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://indianexpress.com/article/cities/pune/50-paise-a-kg-onion-price-crash-leaves-maharashtra-farmers-in-throes-of-debt-10686355/"
+    },
+    {
+      "title": "Replit Showcases AI-Driven Software Development Themes at SaaStr Annual 2026 - TipRanks",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbGNyQTc0Q3NBOUFSR1lnaExzUUdjS01UeGZwREJKSy1TWjZuLXNObXFkU2JQaHFkczB1MlRYQS1zVFU1QWdqNzZPejZDbEFYS0ZnT0FYNkw4UUtkSzhkcWl4VXRsQkRNdW9zcHBPV3BjNjlrU3JRYmU0V1lDM3NoVGYzNEhQeGhPU0hScHlucHJ4NmNBUTJlTm5ETy1Bc1dYQUxjZkxMMHlyaWZFaU5BY2FteUtQendKQlRtOXFuM1A5QQ?oc=5"
+    },
+    {
+      "title": "US inflation jumps to 3.8% as energy costs surge from Iran war",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/c202pgxx89lo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Senate confirms Kevin Warsh as Fed governor, clears way for chair vote",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/12/senate-confirms-kevin-warsh-as-fed-governor-clears-way-for-chair-vote.html"
+    },
+    {
+      "title": "BREAKING: U.S. President Donald Trump Makes Important Statements – “The Ukraine-Russia War Will End Soon” - Cryptonews.net",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9IQkNZS0czWkZMbWRrV1FXWF9YMVVKc3h5ZlNaTDFJdmVOMy1vUTdyNDBJd1YzSHlLcXNVQjBEc3o4RU4xSGZjNnJiRXdOT1pkVzNvVk1SZUE?oc=5"
+    },
+    {
+      "title": "Breaking News: U.S. inflation shot up to a 3.8% annual rate in April, as the war in Iran raised energy prices and costs across the country. - facebook.com",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbXdfYnlvM2Z2dTNDTWJnV0F4WnhnVFBkRW9sM0RDdkp6M1ZINE5zUEVYTV92WkhDZGpjejViaExRdlU2NEtaZHBCWkJ3Y1JFYVZOalJETnc4SklCaENFeUl4RVQybWRGODJVQkpwb2ZlZ3IyQkhLdkk3Ty1kNE5ibE1qekJzSVlRRVFZci1wZV83SU16SmtwS3ZWUXFyNWFiSXladXp1MGVmS0FQTF90Q2xzRmJ0NWZPMHVFUWo3NG8xNEtSVDRnY0tfdEQ5ZERxX0RZ?oc=5"
+    },
+    {
+      "title": "Fortinet warns of critical RCE flaws in FortiSandbox and FortiAuthenticator",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-rce-flaws-in-fortisandbox-and-fortiauthenticator/"
+    },
+    {
+      "title": "US Power Prices Climb 61% Faster Than Inflation as Demand Surges",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/us-power-prices-climb-61-faster-than-inflation-as-demand-surges"
+    },
+    {
+      "title": "6 Devotees Killed, 14 Injured After Temple Wall Collapses In Maharashtra",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/india-news/6-devotees-killed-14-injured-after-temple-wall-collapses-in-maharashtra-11486261"
+    },
+    {
+      "title": "Top BJP leader's aide shot dead in violence after Indian state election - AOL.com",
+      "score": 99,
+      "category": "India Society",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4tWW42Vm12SWV6S0pkYjZheWstTUk0TUxjd1JhWEgzcS0xaFU5VE5GYmF3Q20zeHdtV1V2MUY4UnptUzJqX1BxdVRkMW5SOERISWt5NjBsQ1BnN0VIN3cyM2FSV2QycF9ETFM4WnNRVTJwNkp2Qm9YSA?oc=5"
+    },
+    {
+      "title": "US LNG Pioneer Charif Souki Vows He Will Never Go Public Again",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/us-lng-pioneer-charif-souki-vows-he-will-never-go-public-again"
+    },
+    {
+      "title": "'Shock Is Coming': Uday Kotak Backs PM, Issues Warning Over Iran War",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/india-news/shock-is-coming-uday-kotak-backs-pm-issues-warning-over-iran-war-11486230"
+    },
+    {
+      "title": "Trump doesn't need Congress to restart Iran strikes: Hegseth",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/12/trump-congress-iran-war-hegseth.html"
+    },
+    {
+      "title": "Samsung Elec, labour union fail to reach pay deal as strike looms - Reuters",
+      "score": 99,
+      "category": "Consumer Tech",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZEdIUWhHa0l4bFg3OEtsUVIwMEV2Zl93WG9XSEduMVVzVFJJTkxhV1ByTnJYNVY4NTN2dFJlbWVvaUVPUXNuRGpNYU1xTWg2VVF5QlV6aDlLejRrTUVQdW5YMmprMU1BMGlvbl9MNHVMVlJsN1gyaFpLTTc5cUlic2tjNUU0WFZ6MVQtaHRPczB0YVI3YllmUnVqcnBkVjEzY3VsZkltdUNYclRtZnFoZTdMNlI1QTdX?oc=5"
+    },
+    {
+      "title": "Microsoft Has Recouped More Than Double Its $13 Billion OpenAI Investment in Revenue",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://www.theinformation.com/articles/microsoft-recouped-double-13-billion-openai-investment-revenue"
+    },
+    {
+      "title": "Dali ship operator charged over deadly  Baltimore bridge collapse",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cnvpm67ner6o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "India Books Phosphate Fertilizer at 40% Above Pre-War Prices",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/india-books-phosphate-fertilizer-at-40-above-pre-war-prices"
+    },
+    {
+      "title": "US FDA Commissioner Marty Makary resigns amid turmoil in federal health agencies: Details here",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/us-news/us-fda-commissioner-marty-makary-resigns-amid-turmoil-in-federal-health-agencies-details-here-11778608673657.html"
+    },
+    {
+      "title": "Serbia hosts first joint military exercise with NATO",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/news/2026/5/12/serbia-hosts-first-joint-military-exercise-with-nato?traffic_source=rss"
+    }
+  ]
+}
