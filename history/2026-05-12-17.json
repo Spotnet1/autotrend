@@ -1,0 +1,651 @@
+{
+  "date": "2026-05-12",
+  "hour": "17",
+  "stats": {
+    "total": 4049,
+    "trending": 1356,
+    "breaking": 539,
+    "sources": 143,
+    "feeds": 162,
+    "memory_runs": 21,
+    "updated": "12 May 2026, 17:55 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 739,
+      "share": 18
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 494,
+      "share": 12
+    },
+    {
+      "label": "India Markets",
+      "count": 408,
+      "share": 10
+    },
+    {
+      "label": "India Cities",
+      "count": 385,
+      "share": 10
+    },
+    {
+      "label": "Geopolitics",
+      "count": 347,
+      "share": 9
+    },
+    {
+      "label": "India Tech",
+      "count": 298,
+      "share": 7
+    },
+    {
+      "label": "AI & Startups",
+      "count": 250,
+      "share": 6
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 247,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 216,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 187,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 177,
+      "share": 4
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 169,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 132,
+      "share": 3
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 873,
+      "score": 71,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 494,
+      "score": 71,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 282,
+      "score": 78,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 194,
+      "score": 69,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 97,
+      "score": 68,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Europe",
+      "count": 93,
+      "score": 68,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "Chennai",
+      "count": 80,
+      "score": 63,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Bengaluru",
+      "count": 76,
+      "score": 65,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Russia",
+      "count": 72,
+      "score": 74,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Japan",
+      "count": 70,
+      "score": 63,
+      "lat": 36.2,
+      "lng": 138.3,
+      "x": 88.4,
+      "y": 29.9
+    },
+    {
+      "label": "South Korea",
+      "count": 64,
+      "score": 62,
+      "lat": 36.3,
+      "lng": 127.9,
+      "x": 85.5,
+      "y": 29.8
+    },
+    {
+      "label": "Hyderabad",
+      "count": 60,
+      "score": 60,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 464,
+      "share": 2
+    },
+    {
+      "label": "trump",
+      "count": 133,
+      "share": 0
+    },
+    {
+      "label": "iran",
+      "count": 124,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 123,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 105,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 95,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 90,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 90,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 89,
+      "share": 0
+    },
+    {
+      "label": "trade",
+      "count": 84,
+      "share": 0
+    },
+    {
+      "label": "data",
+      "count": 78,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "all-party, must, pawar",
+      "category": "India Pulse",
+      "count": 3225,
+      "average_score": 64,
+      "unique_sources": 140,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World",
+        "BleepingComputer"
+      ]
+    },
+    {
+      "id": "family-3",
+      "label": "India, start, track",
+      "category": "India Pulse",
+      "count": 140,
+      "average_score": 92,
+      "unique_sources": 43,
+      "consensus": 99,
+      "top_sources": [
+        "BBC World",
+        "Bloomberg",
+        "CNBC Markets",
+        "Economic Times Economy"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "help, depthfirst, credits",
+      "category": "AI & Startups",
+      "count": 34,
+      "average_score": 87,
+      "unique_sources": 21,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Ars Technica",
+        "CNBC Markets",
+        "Economic Times Tech"
+      ]
+    },
+    {
+      "id": "family-5",
+      "label": "hangs, iran, trump's",
+      "category": "Markets & Macro",
+      "count": 29,
+      "average_score": 89,
+      "unique_sources": 12,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "CISA Alerts",
+        "CNBC Markets",
+        "FT Markets"
+      ]
+    },
+    {
+      "id": "family-15",
+      "label": "mistral, tanstack, software",
+      "category": "Cybersecurity",
+      "count": 28,
+      "average_score": 86,
+      "unique_sources": 10,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "Dark Reading",
+        "Google: India cyber attack OR data breach OR hac",
+        "Google: cloud security OR supply chain attack"
+      ]
+    },
+    {
+      "id": "family-30",
+      "label": "enablement, restaurant, foods",
+      "category": "India Tech",
+      "count": 19,
+      "average_score": 85,
+      "unique_sources": 11,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Tech",
+        "Engadget",
+        "Google: India app OR creator economy OR telecom "
+      ]
+    },
+    {
+      "id": "family-32",
+      "label": "India, decide, market",
+      "category": "India Markets",
+      "count": 18,
+      "average_score": 96,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Google: India markets OR Sensex OR Nifty OR BSE"
+      ]
+    },
+    {
+      "id": "family-6",
+      "label": "costs, United States, Middle East",
+      "category": "Geopolitics",
+      "count": 14,
+      "average_score": 90,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Google: geopolitics OR war OR diplomacy breaking",
+        "Google: pakistan OR china border India"
+      ]
+    },
+    {
+      "id": "family-23",
+      "label": "russia, Russia, drone",
+      "category": "Markets & Macro",
+      "count": 8,
+      "average_score": 96,
+      "unique_sources": 7,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Bloomberg",
+        "Google: India deeptech OR drone OR robotics",
+        "Google: geopolitics OR war OR diplomacy breaking"
+      ]
+    },
+    {
+      "id": "family-43",
+      "label": "qilin, sector, reconsolidating",
+      "category": "Cybersecurity",
+      "count": 7,
+      "average_score": 95,
+      "unique_sources": 3,
+      "consensus": 99,
+      "top_sources": [
+        "Google: critical infrastructure attack OR power ",
+        "Google: cyber attack OR breach OR ransomware 202",
+        "Security Week"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2237,
+      "avg_score": 68,
+      "trending": 794,
+      "sources": 99,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1896,
+      "avg_score": 71,
+      "trending": 807,
+      "sources": 141,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 880,
+      "avg_score": 72,
+      "trending": 406,
+      "sources": 109,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 837,
+      "avg_score": 73,
+      "trending": 414,
+      "sources": 84,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 804,
+      "avg_score": 77,
+      "trending": 470,
+      "sources": 120,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 573,
+      "avg_score": 65,
+      "trending": 157,
+      "sources": 42,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 390,
+      "avg_score": 63,
+      "trending": 77,
+      "sources": 51,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 241,
+      "avg_score": 65,
+      "trending": 64,
+      "sources": 53,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "PM Modi must call all-party meet to discuss impact of West Asia conflict: Pawar",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/pm-modi-must-call-all-party-meet-to-discuss-impact-of-west-asia-conflict-pawar/article70970471.ece"
+    },
+    {
+      "title": "depthfirst Commits up to $5M in Credits to Help Open Source Software Find and Fix Zero Day Vulnerabilities - The National Law Review",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXF5WE5JN3pMV2hhSGxhUFlnZUlnNXZ1c3VUSkJWX3VLRzBUenpOLUJINEMxOHlrT2ZBRWVjaXNra1U4QkRWeXJjX0lGanJBTHZMbDRNNEMwT054Rll4el9pZDdSU2J4R2xmM3E3ZWlUN09JbnZxbUdmRWNfS1paNnlBeHRIU1UxTzY2MFBXWTlHdFJRc1JtZXFkalU2eE5BUHB4S3dxc0ZCUjBQdXJOODMyQQ?oc=5"
+    },
+    {
+      "title": "India-Oman FTA on track for June 1 start even as deal with Chile hits hurdles, says Commerce Minister",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/india-oman-fta-on-track-for-june-1-start-even-as-deal-with-chile-hits-hurdles-says-commerce-minister/article70970426.ece"
+    },
+    {
+      "title": "Infiltrator killed by Army near the LoC in Poonch",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/infiltrator-killed-by-army-near-the-loc-in-poonch/article70970835.ece"
+    },
+    {
+      "title": "Analysis: Iran war hangs over Trump's China trip — and his presidency",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/12/trump-china-iran-war-xi-jinping-analysis.html"
+    },
+    {
+      "title": "Former Army personnel accused of killing three people, dies in police encounter in Uttar Pradesh",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/former-army-personnel-accused-of-murdering-three-in-uttar-pradeshs-chandauli-district-killed-in-encounter/article70968804.ece"
+    },
+    {
+      "title": "US faces rising costs with Iran war driving energy prices, inflation higher",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/economy/2026/5/12/us-faces-rising-costs-with-iran-war-driving-energy-prices-inflation-higher?traffic_source=rss"
+    },
+    {
+      "title": "ECB Rate Hikes Increasingly Likely, Nagel Tells Handelsblatt",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/ecb-rate-hikes-increasingly-likely-nagel-tells-handelsblatt"
+    },
+    {
+      "title": "Qualcomm, Nvidia, AMD and Intel plunge up to 15% as hot US inflation data dents AI rally sentiment",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/nvidia-amd-intel-plunge-up-to-14-as-hot-us-inflation-data-dents-ai-rally-sentiment-11778606568018.html"
+    },
+    {
+      "title": "Junk-Rated Firms Rush to Reprice Debt as Demand for Loans Surges",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/junk-rated-firms-rush-to-reprice-debt-as-demand-for-loans-surges"
+    },
+    {
+      "title": "Anthropic warns investors against secondary platforms offering access to its shares",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://techcrunch.com/2026/05/12/anthropic-warns-investors-against-secondary-platforms-offering-access-to-its-shares/"
+    },
+    {
+      "title": "Education Ministry gives fresh push for implementation of PM-SHRI in Bengal, Kerala, and T.N. post elections",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/education-ministry-gives-fresh-push-for-implementation-of-pm-shri-in-bengal-kerala-and-tn-post-elections/article70970906.ece"
+    },
+    {
+      "title": "Chinese claims of ‘on site support’ to Pakistan during Operation Sindoor ‘corroborates’ what was known earlier: MEA",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/chinese-claims-of-on-site-support-to-pakistan-during-operation-sindoor-corroborates-what-was-known-earlier-mea/article70971098.ece"
+    },
+    {
+      "title": "The case for owning cybersecurity stocks in the age of AI just got stronger",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/12/the-case-for-owning-cybersecurity-stocks-in-the-age-of-ai-just-got-stronger.html"
+    },
+    {
+      "title": "Japanese Proverb of the Day: ‘Little fish grinding their teeth’; meaning, business lesson and why it still matters today",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/us-news/japanese-proverb-of-the-day-12-may-2026-11778606410466.html"
+    },
+    {
+      "title": "Yogi Adityanath cuts UP ministers' convoys by 50%, urges public to save fuel after Modi's appeal amid West Asia crisis",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/yogi-adityanath-cuts-up-ministers-convoys-by-50-urges-public-to-save-fuel-after-modis-appeal-amid-west-asia-crisis-11778603240393.html"
+    },
+    {
+      "title": "Boeing Bets Comeback on Trump, China and an Elusive New Plane",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-12/boeing-bets-comeback-on-trump-china-elusive-new-plane-video"
+    },
+    {
+      "title": "Four cheetah cubs die at Kuno in suspected leopard attack",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/madhya-pradesh/four-cheetah-cubs-die-at-kuno-in-suspected-leopard-attack/article70970676.ece"
+    },
+    {
+      "title": "Washington National Guard Aviation Crews Train for Wildfire Season - U.S. Department of War (.gov)",
+      "score": 99,
+      "category": "Climate & Supply Chain",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPd1BHNVVVOUhCN3Z5MHZIZUVHZUwwRWotdHRCbEdmR29Ycm9ZRVk5U1BpU1BXekRHNFdWdHgwaER6UHBXQWVfa2gwTmphemVRdS1xRGJveGFIaEhWdXo4UTB6RXJpQUNBcldvcjF1Y2MxbkVRMlQ3Z2ZaMFFrZHdtSnl5OWJEdXVPU09NZWNpdTJ0TjNiZDA5aVpHMXdpU1pGM3NObUt5b1hSTGpfRkpzMU8wVWNCcW9XMFE4blZQbHd5NGFMSUVCcQ?oc=5"
+    },
+    {
+      "title": "Kharif reset: Farmers may ditch paddy and maize for soybean, pulses amid monsoon fears",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/agriculture/kharif-reset-farmers-may-ditch-paddy-and-maize-for-soybean-pulses-amid-monsoon-fears/articleshow/131045884.cms"
+    },
+    {
+      "title": "All India strike by MGNREGA workers on May 15",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/all-india-strike-by-mgnrega-workers-on-may-15/article70970126.ece"
+    },
+    {
+      "title": "Global turmoil is India’s 'wake-up call' to cut import dependence: Piyush Goyal",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/global-turmoil-is-indias-wake-up-call-to-cut-import-dependence-piyush-goyal/articleshow/131045713.cms"
+    },
+    {
+      "title": "IMD unveils weather model to provide ‘block level’ forecast of monsoon journey",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/imd-unveils-weather-model-to-provide-block-level-forecast-of-monsoon-journey/article70970694.ece"
+    },
+    {
+      "title": "Mistral AI SDK, TanStack Router hit in npm software supply chain attack - csoonline.com",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeW5mZS03NU44YjRxVWRiRmJha0VYaDh4dU1HdUs3YzNZQ0VvM2xNNFVRSF85b2d2eFVhTlUxQlNIYm9xYXk5RWxiV3VGanlMRkdzcERlV28zTkh0SFpzRm4xa3hvV1ZNVWFNcHluUmg1VFZJN3VJRnExdkVSTzV5SXhqdjBBWFVoNXBERldud2pnWEs3eEhKTloyNDVzSVQwWmVTbXFraFRBNHg5ZndERFBPVU9zMnpr?oc=5"
+    },
+    {
+      "title": "UN Chief Guterres Urges Urgent Climate Financing at Africa Forward Summit - ENA English",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1aVldYRkpQNW5pSFVwMVdHdW5MMjRHMDdDeWZXQXZHMThVSVVMbDhlUGJtTkJMektEYlN5aXhNOE1HM04xR3B0SUpCbkw2dEFrVnc?oc=5"
+    },
+    {
+      "title": "Sam Altman rejects Elon Musk’s ‘stealing a charity’ claim in explosive OpenAI trial",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/us-news/sam-altman-rejects-elon-musk-s-stealing-a-charity-claim-in-explosive-openai-trial-11778605522554.html"
+    },
+    {
+      "title": "BREAKING: Iran’s IRGC Launches Massive War Drill Amid Fragile Truce And Rising Tensions - WION",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQVRycDc3d20zek9WTW5saXpvcW5yYUkwMF96WFhOalhQS0FXbU1jY3NQSm1KVGhZNzZOZDRfT0hRU29vZDNUbG1iWl9PakxXNjZYMjh0Q0VzRHdHYXNJVkgwTEhSbU9hVW90em9xdXVoZDBxSmloczFacTNQbndIcE1jOFdydW1MRno5dlFkWFFRSkZtWkk0U28wQjllX0tldUNIM19IVF82a1Y2VVQ1YXM2d1VTeHF4a1FFd1dkLWJFSDBkVFV4Qy1PZ3pXczJf0gHQAUFVX3lxTFBBVHJwNzd3bTN6T1ZNbmxpem9xbnJhSTAwX3pYWE5qWFBLQVdtTWNjc1BKbUpUaFk3Nk5kNF9PSFFTb29kM1RsbWJaX09qTFc2NlgyOHRDRXNEd0dhc0lWSDBMSFJtT2FVb3R6b3F1dWhkMHFKaWhzMVpxM1Bud0hwTWM4V3J1bUxGejl2UWRYUVFKRm1aSTRTbzBCOWVfS2V1Q0gzX0hUXzZrVjZVVDVhczZ3VVN4cXhrUUV3V2QtYkVIMGRUVXhDLU9neldzMl8?oc=5"
+    },
+    {
+      "title": "Attackers Use Fake OpenAI Model to Push Credential-Stealing Malware - Security Boulevard",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSXVWRkFiR1FBNDhBS2RLY2dTWW9tZ1hrRC1KbWl1MElUdGlqX1ZGYWlweDBSMWRNd1pCTzlfQVdBSDhpeDFYZDFhc25VeC1kOXVGT3NMWGtRNWdzWndfMTg4Q0FPY1FpcmN2YU9VX0plcG1lRVR0T19IV09Wb3dhQURHUFZ3alFadnNMNWxaRWdfbDBabVJUeHp3VnU0cFlFLUtDbFhpcFMxQQ?oc=5"
+    },
+    {
+      "title": "Indian woman says picking fallen mangoes in Singapore may cost  ₹3.5 lakh: ‘My India is the best’",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/trends/indian-woman-says-picking-fallen-mangoes-in-singapore-may-cost-rs-3-5-lakh-my-india-is-the-best-11778602831333.html"
+    },
+    {
+      "title": "Fake Invitation Phishing Is Becoming a Remote Access Problem for CISOs - cyberpress.org",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ZTkI2Q3FyUVZSa3pCaGdTbF9GQk1KNzRRTlRVc2hfTlhWUXhDX3hHamE5MkI2QWZaOEFqamlJY0ZZOEEwYXF2WGN0UHpIcjFkZlF3S3l4UHo0MVdkLS10WUFaU2hHZmZkUjlBSUkwbw?oc=5"
+    }
+  ]
+}
