@@ -1,0 +1,651 @@
+{
+  "date": "2026-05-12",
+  "hour": "10",
+  "stats": {
+    "total": 4117,
+    "trending": 1303,
+    "breaking": 527,
+    "sources": 142,
+    "feeds": 162,
+    "memory_runs": 19,
+    "updated": "12 May 2026, 10:27 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 779,
+      "share": 19
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 529,
+      "share": 13
+    },
+    {
+      "label": "India Markets",
+      "count": 398,
+      "share": 10
+    },
+    {
+      "label": "India Cities",
+      "count": 380,
+      "share": 9
+    },
+    {
+      "label": "Geopolitics",
+      "count": 345,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 301,
+      "share": 7
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 249,
+      "share": 6
+    },
+    {
+      "label": "AI & Startups",
+      "count": 233,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 223,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 206,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 185,
+      "share": 4
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 163,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 126,
+      "share": 3
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 907,
+      "score": 70,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 522,
+      "score": 70,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 293,
+      "score": 77,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 181,
+      "score": 68,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 116,
+      "score": 68,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Europe",
+      "count": 88,
+      "score": 70,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "Chennai",
+      "count": 75,
+      "score": 67,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Japan",
+      "count": 73,
+      "score": 64,
+      "lat": 36.2,
+      "lng": 138.3,
+      "x": 88.4,
+      "y": 29.9
+    },
+    {
+      "label": "Russia",
+      "count": 70,
+      "score": 72,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Bengaluru",
+      "count": 70,
+      "score": 67,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Hyderabad",
+      "count": 64,
+      "score": 63,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    },
+    {
+      "label": "Kolkata",
+      "count": 62,
+      "score": 68,
+      "lat": 22.6,
+      "lng": 88.4,
+      "x": 74.6,
+      "y": 37.4
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 482,
+      "share": 2
+    },
+    {
+      "label": "trump",
+      "count": 156,
+      "share": 1
+    },
+    {
+      "label": "iran",
+      "count": 126,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 113,
+      "share": 0
+    },
+    {
+      "label": "china",
+      "count": 111,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 103,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 101,
+      "share": 0
+    },
+    {
+      "label": "modi",
+      "count": 98,
+      "share": 0
+    },
+    {
+      "label": "market",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "trade",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 93,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 91,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "jewellers, gainers, Tata",
+      "category": "India Markets",
+      "count": 3438,
+      "average_score": 64,
+      "unique_sources": 142,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "probe, cancelled, neet-ug",
+      "category": "India Pulse",
+      "count": 64,
+      "average_score": 80,
+      "unique_sources": 18,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India Supreme Court OR High Court OR pol",
+        "Google: India crime OR police OR arrest",
+        "Google: India cyber attack OR data breach OR hac",
+        "Google: India education OR IIT OR NEET OR exam"
+      ]
+    },
+    {
+      "id": "family-12",
+      "label": "trade, market, bond",
+      "category": "Markets & Macro",
+      "count": 29,
+      "average_score": 88,
+      "unique_sources": 14,
+      "consensus": 99,
+      "top_sources": [
+        "BBC World",
+        "Bloomberg",
+        "CNBC Markets",
+        "FT Markets"
+      ]
+    },
+    {
+      "id": "family-20",
+      "label": "expired, leak, vodafone",
+      "category": "Cybersecurity",
+      "count": 22,
+      "average_score": 80,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "Dark Reading",
+        "Google: India cyber attack OR data breach OR hac",
+        "Google: cloud security OR supply chain attack",
+        "Google: data leak OR database exposed OR dump"
+      ]
+    },
+    {
+      "id": "family-15",
+      "label": "semiconductor, raises, Bengaluru",
+      "category": "India Tech",
+      "count": 16,
+      "average_score": 82,
+      "unique_sources": 11,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Tech",
+        "Google: Bengaluru OR Bangalore OR Karnataka news",
+        "Google: India agriculture OR farmer OR MSP OR cr",
+        "Google: India cyber attack OR data breach OR hac"
+      ]
+    },
+    {
+      "id": "family-8",
+      "label": "neet, unfair, WHO",
+      "category": "India Pulse",
+      "count": 13,
+      "average_score": 92,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India breaking news OR New Delhi",
+        "Google: India defence OR border OR military OR L",
+        "Hindustan Times India",
+        "Indian Express Cricket"
+      ]
+    },
+    {
+      "id": "family-9",
+      "label": "hyderabad, most, India",
+      "category": "India Pulse",
+      "count": 7,
+      "average_score": 95,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India energy OR power grid OR oil OR gas",
+        "Google: India foreign policy OR diplomacy OR MEA",
+        "NDTV India",
+        "News18 India"
+      ]
+    },
+    {
+      "id": "family-38",
+      "label": "aided, attackers, google",
+      "category": "Cybersecurity",
+      "count": 6,
+      "average_score": 98,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "CNBC Markets",
+        "Google: cloud security OR supply chain attack",
+        "Google: malware OR phishing OR infostealer campa"
+      ]
+    },
+    {
+      "id": "family-19",
+      "label": "larger, health, sign",
+      "category": "Geopolitics",
+      "count": 5,
+      "average_score": 92,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "BBC World",
+        "Google: pakistan OR china border India",
+        "Google: south korea chip OR samsung OR hynix",
+        "Google: united nations OR g20 OR g7 summit"
+      ]
+    },
+    {
+      "id": "family-17",
+      "label": "israeli, Middle East, military",
+      "category": "Geopolitics",
+      "count": 6,
+      "average_score": 91,
+      "unique_sources": 3,
+      "consensus": 98,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Google: missile OR sanctions OR military offensi"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2294,
+      "avg_score": 68,
+      "trending": 802,
+      "sources": 98,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1941,
+      "avg_score": 70,
+      "trending": 817,
+      "sources": 141,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 927,
+      "avg_score": 70,
+      "trending": 381,
+      "sources": 104,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 840,
+      "avg_score": 74,
+      "trending": 426,
+      "sources": 81,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 806,
+      "avg_score": 76,
+      "trending": 455,
+      "sources": 120,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 574,
+      "avg_score": 63,
+      "trending": 147,
+      "sources": 41,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 392,
+      "avg_score": 63,
+      "trending": 87,
+      "sources": 46,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 240,
+      "avg_score": 65,
+      "trending": 75,
+      "sources": 50,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Top Gainers & Losers on May 12: Kalyan Jewellers, Adani Power, Anant Raj, Tata Motors, BEML, UPL among top losers",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/top-gainers-losers-on-may-12-kalyan-jewellers-adani-power-anant-raj-tata-motors-beml-olectra-greentech-among-11778580287771.html"
+    },
+    {
+      "title": "NEET-UG 2026 cancelled LIVE: CBI to probe paper leak allegations",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/education/neet-ug-nta-exam-cancellation-protest-around-india-cbi-probe-paper-leak-may-12-2026-live-updates/article70969020.ece"
+    },
+    {
+      "title": "JPMorgan India expects 30% corporate banking growth, says CEO Pranav Chawda- Moneycontrol.com - LinkedIn",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNDlGRE1aSTA0a0RJeFZvNXZUWjZMbXpxdUFHZWNSZVN6RDlUV3g3Ulc4VTRXd29lVDVnY0lYbG0zMnlOckJ4Z3NKeUo2M05id05VYjhtUnl2R3ptdlFuWXZWbWxpeG5Vc1VsUU83NjdYb1A0eHhkakZoTzVMY2hPQmx3NDl1U0lsaVM2bEs2YWk4MnFYLVJUNk1pa3pkU2ZnU25WWTN4LU1LLWp5bHhYWTRBOWJCdnNNVWR6M2xn?oc=5"
+    },
+    {
+      "title": "Quiet Token Sales Boosted Trump Crypto Wealth by $660 Million",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/quiet-token-sales-boosted-trump-crypto-wealth-by-660-million"
+    },
+    {
+      "title": "Tamil Nadu politics LIVE: AIADMK reacts sharply to rebel MLAs, AMMK expels party's lone legislator",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-floor-test-aiadmk-party-split-palaniswami-velumani-live-updates-may-12-2026/article70968227.ece"
+    },
+    {
+      "title": "Suvendu Adhikari aide murder case: Accused's counsel hails CBI probe; mother says son framed",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/west-bengal/suvendu-adhikari-aide-murder-case-accuseds-counsel-hails-cbi-probe-mother-says-son-framed/article70969026.ece"
+    },
+    {
+      "title": "Who really owns the AI boom? South Korea’s Presidential Policy Office is proposing a 'National Dividend', or a plan to redirect windfall profits from AI & semiconductors into youth startups, rural basic income, & pensions. However, critics warn that taxing 'excess - LinkedIn",
+      "score": 99,
+      "category": "India & APAC",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMm5BQXZYR283M2ItUVhqc0F1QVFnNVdnOG83b2NwcG15TDE1MFl1RmpvWTZKbnhMX016TjFFLTZzTzA4MWQ4OHBXUzNPY0JaY21iSTJsQmFYYnpiTGktRFlIeGFsZ0pheDFwd0ZoZVRfcUwyWGFhRTFtWF9fTVNKUXRpc2thRUppc1dNTFFjQmNXLTNzdXJaMjB3?oc=5"
+    },
+    {
+      "title": "United Arab Emirates Collaborates With Iran, China, Russia, India, South Africa, Brazil, And BRICS Nations In Urgent Efforts To Rebuild Middle East Stability And Reinforce Travel Routes Through Ceasefire Initiatives And Economic Partnerships - Travel And Tour World",
+      "score": 99,
+      "category": "India & APAC",
+      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOWEZXeTVxUjFqdGxkOVgwYmN3ZWNwRVFjY2NLZFR1STl6U2R1aWZhcVVjX2VSdlBrcE9QSjFTOEtUbGRfVjJycGN6MldmakxuemFxMlJDbzNtT2h4QjFkdkJnTnNCRnpRUWV1bXVmUHhNNnVvVHFQcEI4d1NlTXM3Uy1TSTk5cEZzaW5uakFzZjhnN3dkOE1xcUxTV2NQUXExdGV5QWNWZFpiZVo4WFp2aG5KSGFhQXhWcDZXdlZDOHhlUW1MS1FkS3dEeGduTDhPNUMzYlRQcUxrcWdpdDRULXpQUHZIdEZVRDhsTTVIVnFvcjFBSVhyeVZkbEtlWmVTd0dxbmRLOGg1Z3VkaDhRdGZTRFFQM2JoSHlScDJkMm1IX3BYd2ZOamlyclVBdVRGQW9nWmJhWkpGbUtGbndvWmN3V25YdDdoRkNKYzViTXZHS0xybG52RGZFTjhDSl9n?oc=5"
+    },
+    {
+      "title": "NEET 2026 re-examination is unfair on students, say educationalists in coastal Karnataka",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/cities/Mangalore/neet-2026-leak-re-examination-is-unfair-on-students-say-educationalists-in-coastal-karnataka/article70968984.ece"
+    },
+    {
+      "title": "Hyderabad is third most accident-prone city in India, Telangana logs nearly 8,000 road deaths in 2024: NCRB",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-is-third-most-accident-prone-cities-in-india-telangana-logs-nearly-8000-road-deaths-in-2024-ncrb/article70955797.ece"
+    },
+    {
+      "title": "Prikus Secures USD 2.5 Million Funding to Accelerate AI-Driven Cybersecurity Expansion - The Tribune",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNc3lHNm1RRF9OV3pJTTJpWEVKZnJTVkN5NDYtSGRpQ3M5SGpTZi13Mmx2ZUNzaTE3UGlvQ3lna1VqcDNpNkc1VTVOcE8zZC1GMW5mbkdtZWlfSFVFbkpRZGk4cjQwVW1aMWlqTEhWeUtUaDUxeXBkS3p1Y0RFcWVmWmhQaXdFNDVmcHFRbXJLU091dVA2T295N04wZW5NRWFyeTFpd1BvQnpabGhMZmNrbll3SUg0UlF3WnFXWjREOE5HV01fYURLb0lwWGhrV2R1OEk3dXNtTXlCWUY2eEVLX084TlYxOWdxUFE?oc=5"
+    },
+    {
+      "title": "Congress claims Instagram blocked Rahul Gandhi's reel and photo post featuring Vijay due to MeitY rules",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/congress-claims-instagram-blocked-rahul-gandhis-reel-and-photo-post-featuring-vijay-due-to-meity-rules/article70963346.ece"
+    },
+    {
+      "title": "Tamil Nadu Assembly: from TVK Minister Keerthana not bringing election certificate to AIADMK MLA becoming emotional",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-tvk-minister-s-keerthana-comes-without-election-certificate-for-oath-taking-may-11-2026/article70965320.ece"
+    },
+    {
+      "title": "Bond Market Ditches Warsh Trade as Oil Surges",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-05-12/bond-market-ditches-warsh-trade-as-oil-surges"
+    },
+    {
+      "title": "Marco Rubio Aims to Reset U.S.-India Ties in New Delhi - Foreign Policy",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQR1BoeWFnV1JFVmFaN0h6aGRuYXV4MS1QY0hPaEl5dVlSU3BzNVZTOWtkcExKVWplNnNSeEFSNEt1Y3I2b1dIWGRObWZZUzlIY2RZUWlmY1hPUWppUF83YTlSekg4X2plNWVFaTFvTFVwbWZNbV90SlBFRnNYM1dReTdfNzJkS1Y5?oc=5"
+    },
+    {
+      "title": "Experts warn of 'highly sophisticated' weaponized JPEG campaign used to send out ScreenConnect malware - TechRadar",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNeGl4VlV4cTVGTFU5TTRxWnMtYlFGWU41NGI3MjN3OWoya0JDbFZOMEt5TjM2dm95UDBUZFJiMFQ1SGVWUjNOLW0ybzVEdi0wR25EQTJlQTRuTTlMLVFqTUp0czJtMUZvcTBjZ0FTSXpiS3JtUXQ5TDBFTWt2blBkNXVyT19PWDdjdjhsZFBvb25BM0VCcjg0eGdPd2Uxb21NZ3d6RVA2UG1lcEo2eXJ2akxjRW1QZGlYS3lvdGlXYkl4YVpXUXRKUkJrRFBxcnZjQ2xYRzdR?oc=5"
+    },
+    {
+      "title": "Rubio Aims to Reset U.S.-India Ties",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://foreignpolicy.com/2026/05/12/rubio-us-india-new-delhi-visit-quad-meeting/"
+    },
+    {
+      "title": "What's at stake for trade, Taiwan and Iran in Trump's high-risk summit with China's Xi",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/12/trump-xi-china-trade-iran-taiwan.html"
+    },
+    {
+      "title": "Senate Republicans warn Trump against Cuba military attack - The Hill",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTGZSQS1ZSjFQa003LW1PVTJrV2cxMFIxRjJkWkh6RkZ0NEotc0VmdVg1UTY3QmNhV0g5OTVUOVNORkFOcUkwNFZ5MTd1ejRGRG16X3pxWXN3QmV4Z054MkhCMmk0bU5BV3lTTUx0LVdlQVZzbmZGSFFMNXZJTUp1bHVYaGxBMHIyQWfSAY8BQVVfeXFMTjhyRTlLaHJkSWhlMG9rcVdRcmZodkZnTmJFVnVCS3ZLOGMwQUpsOFNvd0NDbVlONnRkU0xZY1VYR1h1R2xLRDl6VnJyOGN0NDBOZ09xX1QyRlJoWVJzZi1rc0RmRHBxbF9Oczh4dlRKejFRVUdBdWdWZVRXa3dUZ2h1bHlrbmpkZFBwV3d6VHc?oc=5"
+    },
+    {
+      "title": "Semiconductor Startup HrdWyr Raises $13 Mn To Build AI-Native Chips",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://inc42.com/buzz/semiconductor-startup-hrdwyr-raises-13-mn-to-build-ai-native-chips/"
+    },
+    {
+      "title": "NEET UG 2026 Live: ‘Mastermind’ Arrested In Jaipur As Leak Probe Deepens",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/education/neet-ug-2026-exam-live-updates-paper-cancelled-for-over-22-lakh-students-11482588"
+    },
+    {
+      "title": "Conditions favourable for onset of southwest monsoon over South Bay of Bengal, Andaman: IMD",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/agriculture/conditions-favourable-for-onset-of-southwest-monsoon-over-south-bay-of-bengal-andaman-imd/articleshow/131035274.cms"
+    },
+    {
+      "title": "Gujarat Expands Renewable Energy and Battery Storage Framework as India Accelerates Grid Modernization - Africa Sustainability Matters",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOT2g0TnFPX1FteDRLS1VDazdNN3JCM3ExUGJCWTlrTjhxMTJXRXBsc29qZHpibTZDMDh4cmNsemVMQkkxZWxjeHJyZ2ZUUHNaWFc4MGpfNGYtWF9MV3VVbTVVU182TXp6UjRqU0R3YnN3TVhQUDlMQXVqamZNUG1la1dDUzl1ZVEwWFlvX3pPUGtjUVlIMTRvQTZVeVJTdXVKS1d3MkIyQWNlVXlyak9xZXU1T2dPTHNvU0hCOVR0cTlpRWVvOFYyRDVzdU4tUk5rMy1OQ2FWOXlyQkU?oc=5"
+    },
+    {
+      "title": "Korea Benchmark Bond Yield Tops 4% as Rate-Hike Bets Grow",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/korea-benchmark-bond-yield-tops-4-as-rate-hike-bets-grow"
+    },
+    {
+      "title": "Tele Columbus Creditors Unite Ahead of Potential Debt Talks",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/tele-columbus-creditors-unite-ahead-of-potential-debt-talks"
+    },
+    {
+      "title": "Kremlin: Ukraine can end the war at any moment - Breakingthenews.net",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSmpuN2ZKcnRhcUpRak9EZDJBZE1yTnFXNU94cC1uV2RfZVd6NnQtZ0JrdHdPMExhdnZNc3c5TE80dVdvNV9remNiVWtETmZBbjJScE4xZDhueDlOV2VHNW1BOWwzbjJNOFdEeUwtUUp6ZW9MSlZjeFhRVjVNeFA2a3d5dU1QUkZ2Qk5PeS1PTHEtbUJzS0E?oc=5"
+    },
+    {
+      "title": "Emerging-Market Currencies, Stocks Fall as Iran Peace Hopes Dim",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-12/emerging-market-currencies-stocks-fall-as-iran-peace-hopes-dim"
+    },
+    {
+      "title": "Will AI trade reversal in Taiwan, South Korea benefit India stock markets in future? - MSN",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWFdVMG4zcjB5OG9MbDVGSDNISUlaUDF2bTNjMXdQNVF2OVNyWkY0ejhhU3EzUVFPTzV3YnVsUmZkLVhTMVRERDZEb2pJQndnNnZVYUxOdDQ5NFVTWDRJYXhiUjBWVUJodmF3eUx3amVpREZiemRfdjVTTTB1SXRwdGloRnJGX05vc0t0cEFtQXlIYm5pRWQ3VU4tbzFyR3hNQlp3dmJLNmlqbDQzWE9Pa2s2VGNhTkhvRko4NFVNTTBRd3B5VW5zek9xank1QjBJZTJj?oc=5"
+    },
+    {
+      "title": "Unique Picks: 6 stocks held by only one MF scheme in April, falling up to 40% in CY26",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/unique-picks-6-stocks-held-by-only-one-mf-scheme-in-april-falling-up-to-40-in-cy26/slideshow/131035834.cms"
+    },
+    {
+      "title": "Israeli military kills six in Lebanon, issues more displacement threats",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/news/2026/5/12/israeli-military-kills-six-in-lebanon-issues-more-displacement-threats?traffic_source=rss"
+    }
+  ]
+}
