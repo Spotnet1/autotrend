@@ -1,0 +1,652 @@
+{
+  "date": "2026-05-13",
+  "hour": "10",
+  "stats": {
+    "total": 4136,
+    "trending": 1351,
+    "breaking": 519,
+    "sources": 143,
+    "feeds": 162,
+    "memory_runs": 27,
+    "updated": "13 May 2026, 10:18 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 758,
+      "share": 18
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 465,
+      "share": 11
+    },
+    {
+      "label": "India Markets",
+      "count": 430,
+      "share": 10
+    },
+    {
+      "label": "India Cities",
+      "count": 400,
+      "share": 10
+    },
+    {
+      "label": "Geopolitics",
+      "count": 358,
+      "share": 9
+    },
+    {
+      "label": "India Tech",
+      "count": 302,
+      "share": 7
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 266,
+      "share": 6
+    },
+    {
+      "label": "AI & Startups",
+      "count": 257,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 225,
+      "share": 5
+    },
+    {
+      "label": "India Society",
+      "count": 194,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 177,
+      "share": 4
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 166,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 138,
+      "share": 3
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 908,
+      "score": 71,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 474,
+      "score": 70,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 264,
+      "score": 76,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 221,
+      "score": 70,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 92,
+      "score": 68,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Chennai",
+      "count": 89,
+      "score": 67,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Europe",
+      "count": 85,
+      "score": 62,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "Russia",
+      "count": 73,
+      "score": 71,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "South Korea",
+      "count": 72,
+      "score": 65,
+      "lat": 36.3,
+      "lng": 127.9,
+      "x": 85.5,
+      "y": 29.8
+    },
+    {
+      "label": "Bengaluru",
+      "count": 71,
+      "score": 63,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Japan",
+      "count": 59,
+      "score": 66,
+      "lat": 36.2,
+      "lng": 138.3,
+      "x": 88.4,
+      "y": 29.9
+    },
+    {
+      "label": "Hyderabad",
+      "count": 55,
+      "score": 57,
+      "lat": 17.4,
+      "lng": 78.5,
+      "x": 71.8,
+      "y": 40.3
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 485,
+      "share": 2
+    },
+    {
+      "label": "china",
+      "count": 148,
+      "share": 0
+    },
+    {
+      "label": "trump",
+      "count": 143,
+      "share": 0
+    },
+    {
+      "label": "iran",
+      "count": 127,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 103,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 98,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 97,
+      "share": 0
+    },
+    {
+      "label": "gold",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "data",
+      "count": 94,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 90,
+      "share": 0
+    },
+    {
+      "label": "inflation",
+      "count": 87,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 82,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "sail, gainers, dixon",
+      "category": "India Markets",
+      "count": 3454,
+      "average_score": 64,
+      "unique_sources": 141,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-8",
+      "label": "Mumbai, raids, maharashtra",
+      "category": "India Pulse",
+      "count": 44,
+      "average_score": 85,
+      "unique_sources": 19,
+      "consensus": 99,
+      "top_sources": [
+        "CNBC Markets",
+        "Economic Times Tech",
+        "Google: India Supreme Court OR High Court OR pol",
+        "Google: India cyber attack OR data breach OR hac"
+      ]
+    },
+    {
+      "id": "family-7",
+      "label": "aiadmk, Chennai, nadu",
+      "category": "India Pulse",
+      "count": 33,
+      "average_score": 81,
+      "unique_sources": 13,
+      "consensus": 99,
+      "top_sources": [
+        "Google: Chennai OR Tamil Nadu news",
+        "Google: India Supreme Court OR High Court OR pol",
+        "Google: India defence OR border OR military OR L",
+        "Google: India foreign policy OR diplomacy OR MEA"
+      ]
+    },
+    {
+      "id": "family-38",
+      "label": "rubygems, gemstuffer, abuses",
+      "category": "Cybersecurity",
+      "count": 22,
+      "average_score": 82,
+      "unique_sources": 10,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "CISA Alerts",
+        "Dark Reading",
+        "Google: cloud security OR supply chain attack"
+      ]
+    },
+    {
+      "id": "family-25",
+      "label": "down, steady, prices",
+      "category": "Markets & Macro",
+      "count": 17,
+      "average_score": 76,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Google: earnings OR quarterly results OR guidanc",
+        "Google: oil OR natural gas OR opec cut OR brent",
+        "Seeking Alpha"
+      ]
+    },
+    {
+      "id": "family-10",
+      "label": "assam, power, Kolkata",
+      "category": "India Pulse",
+      "count": 14,
+      "average_score": 80,
+      "unique_sources": 9,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India cyber attack OR data breach OR hac",
+        "Google: India election OR BJP OR Congress OR AAP",
+        "Hindustan Times India",
+        "Indian Express India"
+      ]
+    },
+    {
+      "id": "family-6",
+      "label": "Russia, sight, what's",
+      "category": "Geopolitics",
+      "count": 9,
+      "average_score": 88,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "Bloomberg",
+        "Google: geopolitics OR war OR diplomacy breaking",
+        "Google: middle east OR israel OR iran OR hamas"
+      ]
+    },
+    {
+      "id": "family-11",
+      "label": "iran, Middle East, price",
+      "category": "India Cities",
+      "count": 9,
+      "average_score": 82,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "FT Markets",
+        "Google: Hyderabad OR Telangana news",
+        "Google: Lucknow OR Kanpur OR UP news",
+        "Google: Pune OR Ahmedabad OR Jaipur news"
+      ]
+    },
+    {
+      "id": "family-48",
+      "label": "modi, Middle East, shrinks",
+      "category": "India Pulse",
+      "count": 8,
+      "average_score": 91,
+      "unique_sources": 7,
+      "consensus": 99,
+      "top_sources": [
+        "Google: India foreign policy OR diplomacy OR MEA",
+        "Hindustan Times India",
+        "Indian Express India",
+        "NDTV India"
+      ]
+    },
+    {
+      "id": "family-45",
+      "label": "sophisticated, logging, intrusion",
+      "category": "Cybersecurity",
+      "count": 6,
+      "average_score": 92,
+      "unique_sources": 4,
+      "consensus": 99,
+      "top_sources": [
+        "Google: malware OR phishing OR infostealer campa",
+        "Google: zero-day OR exploit OR vulnerability dis",
+        "TechCrunch",
+        "The Hacker News"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2307,
+      "avg_score": 68,
+      "trending": 841,
+      "sources": 98,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1990,
+      "avg_score": 70,
+      "trending": 825,
+      "sources": 142,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 878,
+      "avg_score": 71,
+      "trending": 393,
+      "sources": 98,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 861,
+      "avg_score": 72,
+      "trending": 396,
+      "sources": 84,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 826,
+      "avg_score": 76,
+      "trending": 478,
+      "sources": 124,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 604,
+      "avg_score": 63,
+      "trending": 171,
+      "sources": 45,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 398,
+      "avg_score": 61,
+      "trending": 88,
+      "sources": 48,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 232,
+      "avg_score": 61,
+      "trending": 58,
+      "sources": 48,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "Top Gainers & Losers on May 13: SAIL, Dixon Tech, Vodafone Idea, HPCL, Berger Paints, Ather Energy among top gainers",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/top-gainers-losers-on-may-13-sail-dixon-tech-vodafone-idea-hpcl-berger-paints-ather-energy-among-top-gainers-11778664243150.html"
+    },
+    {
+      "title": "Alibaba's core profit plunges 84% even as AI and cloud growth accelerate",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/13/alibaba-earnings-march-quarter-ai-cloud-growth.html"
+    },
+    {
+      "title": "Visakhapatnam gets ₹1,501.03 crore Centre nod for water, drainage projects; Madhurawada gets lion’s share",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/cities/Visakhapatnam/visakhapatnam-gets-150103-crore-centre-nod-for-water-drainage-projects-madhurawada-gets-lions-share/article70973100.ece"
+    },
+    {
+      "title": "War latest news. Oil: IEA, unprecedented supply shock with Hormuz blockade. Record drop in stocks - Il Sole 24 ORE",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQd3E1cFJlVWN0RG0wNHhvTnR1QkI3N292QmItVVVpMDdtTkV2UGdwT0Y2RGdrQkNONmJaaW0wRmlma05GbnF1U2FuQnpsYlZiUHJQOVc2N1NQUDlFaHFFaHFkdjRMMkJFTmNiR1o1eUZyTG5PZnZFRHVnMHBwX3cta2JMLUJkaUZJZUFuODRXNmQ0TWhObENObnZNcXZYV0ZPcENPUHgwVEstc1REQTdraWxrMk9GZmF0eU9yRTRKQQ?oc=5"
+    },
+    {
+      "title": "Cyber Crime Wing notice for blocking social media posts draws criticism",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cyber-crime-wing-notice-seeking-suspension-of-x-accounts-draws-criticism/article70965745.ece"
+    },
+    {
+      "title": "Ceasefire in sight? What's next for Russia's war in Ukraine - dw.com",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa2ZVY0hBVmx3WFBheEY1WFo5M1hrT1g0R05SeThKRC14WUdKUHpaU2dKN3YzeF9uaWV5S1plOVZsTDlrWUpvSklYb2ZhOFE0OGdCTGVhZ2hHMjlFbGdYSExjMDlieWRMdmd3UWtKUHBhR1ZMeVNNdEp0NE5reHJhRjJMTUJDNll6aUhkQmUzWU04b1nSAZMBQVVfeXFMUDZUMHZhd0ZTVjEtLXFvUjBjQjd6Mkk0QUUtZjJMN1RiMHBhNldaVWdtUTJnTjBDU3hSemlXazBDdFhQRWJhX0VEdVpkSC1YaWFYYXlxc3VHbktqRVhIUGpPU2R4NDV5c2haVm1ZZ0YtVUJJcmJOcjUxVzhnMFd5UEszbHB6c1p2VEo3MlhoQTVlUTQ4?oc=5"
+    },
+    {
+      "title": "Tamil Nadu Assembly session LIVE: Chief Minister Vijay's TVK wins trust vote with 144 ‘ayes’",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-assembly-floor-test-vote-tvk-alliance-aiadmk-chief-minister-vijay-live-updates-may-13-2026/article70972403.ece"
+    },
+    {
+      "title": "ATS raids over 40 places in Maharashtra, questions 53 suspects linked to Pakistan-based gangster",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/maharashtra/ats-raids-over-40-places-in-maharashtra-questions-suspects-linked-to-pakistan-based-gangster/article70973176.ece"
+    },
+    {
+      "title": "Konthuruthy river puramboke eviction: families withdraw case; settle for compensation",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/kerala/konthuruthy-river-puramboke-eviction-families-withdraw-case-settle-for-compensation/article70972834.ece"
+    },
+    {
+      "title": "Softbank's AI Investments Catalyze Fivefold Profit Surge - India IPO",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxON0huLWluaGk1cGtteDlRYmctcG5nZzA5djg5ZmM0T3RmN09laVpQdXZUd0VueWtwendWVWVKeEtNNkQ3MHZlZzZfMm9fTlpnRENpT1IzaHlqbTZUaGsxRXBxdnRaWUhaWE94SnVNbkdFRW1hc3VOT0JhQTNpcGR6OEprTU1SMWl5RHRGMlA4LUxlSWRlbmc?oc=5"
+    },
+    {
+      "title": "Assam feels safer with BJP in power in West Bengal: Himanta Biswa Sarma",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/assam/assam-feels-safer-with-bjp-in-power-in-west-bengal-himanta-biswa-sarma/article70973455.ece"
+    },
+    {
+      "title": "Iran war drives energy price spike, wages struggle to keep up with inflation - KJRH",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOamtDekFINXpwZG5WbVM0a3JOQ1V0ZlJucFF4VkJ1SFhOX0tDaUJvanJzOURReFZYei0tU2ROaVFHWWNncGZTRXdyUkszeENsWDczYTVwZTFLY1Q1bDRDUDhFaE5GQ25XNUtGdXpsR0tUY3ZOaEFnbjItZlNrMU9GRkdDdzF6UjlBNnNDaC1WblpCRTNjWWo5cUZQbHlDTmJZVzJIWUlTbWpJcjFBTDZUR2JXU1l0MnZyMXFxVWxKTDQ5a2Zl?oc=5"
+    },
+    {
+      "title": "Stock market today: Sensex gains 50 points, Nifty 50 ends above 23,400; mid, small-caps outperform",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-sensex-gains-50-points-nifty-50-ends-above-23-400-mid-small-caps-outperform-11778665919871.html"
+    },
+    {
+      "title": "Iran war shows military force alone cannot be solution to conflicts: T.S. Tirumurti",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/cities/chennai/iran-war-shows-military-force-alone-cannot-be-solution-to-conflicts-ts-tirumurti/article70973322.ece"
+    },
+    {
+      "title": "A plan to make drugs in orbit is going commercial",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://www.technologyreview.com/2026/05/13/1137153/varda-united-therapeutics-drug-manufacturing-in-space/"
+    },
+    {
+      "title": "Cabinet raises Minimum Support Prices for 14 kharif crops",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://economictimes.indiatimes.com/news/economy/policy/cabinet-raises-minimum-support-prices-for-14-kharif-crops/articleshow/131061884.cms"
+    },
+    {
+      "title": "Flipkart Faces 18% GST On Delivery Charges After Relief Bid Fails",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://inc42.com/buzz/flipkart-faces-18-gst-on-delivery-charges-after-relief-bid-fails/"
+    },
+    {
+      "title": "India should have stepped into vacuum left by U.S. as guarantor of security in West Asia: Talmiz Ahmad",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/cities/chennai/india-should-have-stepped-into-vacuum-left-by-us-as-guarantor-of-security-in-west-asia-talmiz-ahmad/article70973440.ece"
+    },
+    {
+      "title": "China tech giant Tencent sees Q1 profit jump after AI bets",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/technology/china-tech-giant-tencent-sees-q1-profit-jump-after-ai-bets/articleshow/131061927.cms"
+    },
+    {
+      "title": "The class politics of modern outbreaks",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.aljazeera.com/opinions/2026/5/13/the-class-politics-of-modern-outbreaks?traffic_source=rss"
+    },
+    {
+      "title": "How A 30-Year-Old Nashik Student Leaked NEET Paper 45 Hours Before Exam",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/education/neet-ug-2026-paper-leak-nashik-student-allegedly-bought-paper-for-rs-10-lakh-sold-it-for-rs-15-lakh-11487692"
+    },
+    {
+      "title": "Mossad chief said to have visited UAE during Iran war - Breakingthenews.net",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTVdwaHZobU1GM2xJMHNXbk1pWUhiOUZ0SjNLWVViSWJTQWVVNlE3ZTJSS1VzZHR5dnFDXzY2NFRQUW90OVpqU0tubjdNZVM5bDU1VmxVcndvN2tpbkNOWGl6Nm9jNXVUUGJkQmJnWllwMjBtd2tMSTd2REptbHVpXzh4WENYZ003aERoTng5NFRIOGd5Zm16REZTaHByd0U?oc=5"
+    },
+    {
+      "title": "NEET UG 2026 Paper Leak: Jaipur Brothers Allegedly Bought Paper For Rs 15 Lakh",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/education/neet-ug-2026-paper-leak-jaipur-brothers-allegedly-bought-paper-for-rs-15-lakh-11488856"
+    },
+    {
+      "title": "Bengal CM Adhikari to retain Bhabanipur Assembly segment, give up Nandigram",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/elections/west-bengal-assembly/bengal-cm-adhikari-to-retain-bhabanipur-assembly-segment-give-up-nandigram/article70973344.ece"
+    },
+    {
+      "title": "Alibaba quarterly revenue rises on cloud demand, ecommerce growth",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/technology/alibaba-quarterly-revenue-rises-on-cloud-demand-ecommerce-growth/articleshow/131061691.cms"
+    },
+    {
+      "title": "Mumbai’s first major voter roll revision in 24 years may face delay as BMC urges ECI to avoid May drive",
+      "score": 99,
+      "category": "India Cities",
+      "url": "https://indianexpress.com/article/cities/mumbai/mumbais-first-major-voter-roll-revision-in-24-years-may-face-delay-as-bmc-urges-eci-to-avoid-may-drive-10687293/"
+    },
+    {
+      "title": "Do you know why companies pay dividends? Key facts investors should know",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/do-you-know-why-companies-pay-dividends-key-facts-investors-should-know-11778661607344.html"
+    },
+    {
+      "title": "Stock Market LIVE Updates, Sensex Today: Sensex Gains 70 Points, Nifty Up 45 Amid Mixed Global Cues",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-pm-modi-austerity-gold-import-today-13-may-donald-trump-us-iran-war-oil-prices-11487171"
+    },
+    {
+      "title": "US CPI records biggest jump in 3 years: Can the Fed raise interest rates after hot inflation data?",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/us-cpi-records-biggest-jump-in-3-years-can-the-fed-raise-interest-rates-after-hot-inflation-data-11778660164124.html"
+    },
+    {
+      "title": "India Loses $18.3 Billion On Edible Oil Imports. Why Don't We Produce It?",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/india-news/india-heavy-import-bill-pm-modi-speech-vegetable-edible-oil-farmer-domestic-production-11488650"
+    }
+  ]
+}
