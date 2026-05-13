@@ -1,0 +1,652 @@
+{
+  "date": "2026-05-13",
+  "hour": "14",
+  "stats": {
+    "total": 4110,
+    "trending": 1396,
+    "breaking": 577,
+    "sources": 142,
+    "feeds": 162,
+    "memory_runs": 28,
+    "updated": "13 May 2026, 14:16 UTC"
+  },
+  "top_categories": [
+    {
+      "label": "India Pulse",
+      "count": 771,
+      "share": 19
+    },
+    {
+      "label": "Markets & Macro",
+      "count": 468,
+      "share": 11
+    },
+    {
+      "label": "India Markets",
+      "count": 427,
+      "share": 10
+    },
+    {
+      "label": "India Cities",
+      "count": 374,
+      "share": 9
+    },
+    {
+      "label": "Geopolitics",
+      "count": 348,
+      "share": 8
+    },
+    {
+      "label": "India Tech",
+      "count": 296,
+      "share": 7
+    },
+    {
+      "label": "Consumer Tech",
+      "count": 281,
+      "share": 7
+    },
+    {
+      "label": "AI & Startups",
+      "count": 253,
+      "share": 6
+    },
+    {
+      "label": "Climate & Supply Chain",
+      "count": 227,
+      "share": 6
+    },
+    {
+      "label": "India Society",
+      "count": 198,
+      "share": 5
+    },
+    {
+      "label": "India & APAC",
+      "count": 180,
+      "share": 4
+    },
+    {
+      "label": "Cybersecurity",
+      "count": 147,
+      "share": 4
+    },
+    {
+      "label": "Health & Science",
+      "count": 140,
+      "share": 3
+    }
+  ],
+  "top_regions": [
+    {
+      "label": "India",
+      "count": 906,
+      "score": 71,
+      "lat": 21.1,
+      "lng": 78.0,
+      "x": 71.7,
+      "y": 38.3
+    },
+    {
+      "label": "United States",
+      "count": 488,
+      "score": 71,
+      "lat": 38.9,
+      "lng": -97.0,
+      "x": 23.1,
+      "y": 28.4
+    },
+    {
+      "label": "Middle East",
+      "count": 264,
+      "score": 76,
+      "lat": 29.3,
+      "lng": 47.5,
+      "x": 63.2,
+      "y": 33.7
+    },
+    {
+      "label": "China",
+      "count": 230,
+      "score": 72,
+      "lat": 35.9,
+      "lng": 104.2,
+      "x": 78.9,
+      "y": 30.1
+    },
+    {
+      "label": "Delhi",
+      "count": 89,
+      "score": 69,
+      "lat": 28.6,
+      "lng": 77.2,
+      "x": 71.4,
+      "y": 34.1
+    },
+    {
+      "label": "Chennai",
+      "count": 87,
+      "score": 66,
+      "lat": 13.1,
+      "lng": 80.3,
+      "x": 72.3,
+      "y": 42.7
+    },
+    {
+      "label": "Bengaluru",
+      "count": 79,
+      "score": 64,
+      "lat": 12.9,
+      "lng": 77.6,
+      "x": 71.6,
+      "y": 42.8
+    },
+    {
+      "label": "Russia",
+      "count": 78,
+      "score": 72,
+      "lat": 61.5,
+      "lng": 105.3,
+      "x": 79.2,
+      "y": 15.8
+    },
+    {
+      "label": "Europe",
+      "count": 75,
+      "score": 65,
+      "lat": 50.1,
+      "lng": 8.6,
+      "x": 52.4,
+      "y": 22.2
+    },
+    {
+      "label": "South Korea",
+      "count": 71,
+      "score": 65,
+      "lat": 36.3,
+      "lng": 127.9,
+      "x": 85.5,
+      "y": 29.8
+    },
+    {
+      "label": "Japan",
+      "count": 57,
+      "score": 65,
+      "lat": 36.2,
+      "lng": 138.3,
+      "x": 88.4,
+      "y": 29.9
+    },
+    {
+      "label": "Kolkata",
+      "count": 54,
+      "score": 68,
+      "lat": 22.6,
+      "lng": 88.4,
+      "x": 74.6,
+      "y": 37.4
+    }
+  ],
+  "top_keywords": [
+    {
+      "label": "india",
+      "count": 499,
+      "share": 2
+    },
+    {
+      "label": "trump",
+      "count": 162,
+      "share": 1
+    },
+    {
+      "label": "china",
+      "count": 154,
+      "share": 0
+    },
+    {
+      "label": "iran",
+      "count": 130,
+      "share": 0
+    },
+    {
+      "label": "energy",
+      "count": 116,
+      "share": 0
+    },
+    {
+      "label": "times",
+      "count": 100,
+      "share": 0
+    },
+    {
+      "label": "data",
+      "count": 96,
+      "share": 0
+    },
+    {
+      "label": "indian",
+      "count": 94,
+      "share": 0
+    },
+    {
+      "label": "gold",
+      "count": 93,
+      "share": 0
+    },
+    {
+      "label": "global",
+      "count": 86,
+      "share": 0
+    },
+    {
+      "label": "stock",
+      "count": 83,
+      "share": 0
+    },
+    {
+      "label": "trade",
+      "count": 76,
+      "share": 0
+    }
+  ],
+  "top_families": [
+    {
+      "id": "family-1",
+      "label": "sees, OPEC, hormuz",
+      "category": "Markets & Macro",
+      "count": 3307,
+      "average_score": 64,
+      "unique_sources": 140,
+      "consensus": 99,
+      "top_sources": [
+        "AI News",
+        "Al Jazeera",
+        "Ars Technica",
+        "BBC World"
+      ]
+    },
+    {
+      "id": "family-3",
+      "label": "prices, milk, India",
+      "category": "India Pulse",
+      "count": 163,
+      "average_score": 83,
+      "unique_sources": 49,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BleepingComputer",
+        "Economic Times Economy",
+        "Economic Times Markets"
+      ]
+    },
+    {
+      "id": "family-2",
+      "label": "solutions, rises, profit",
+      "category": "India Tech",
+      "count": 72,
+      "average_score": 92,
+      "unique_sources": 27,
+      "consensus": 99,
+      "top_sources": [
+        "Bloomberg",
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Economic Times Tech"
+      ]
+    },
+    {
+      "id": "family-4",
+      "label": "crore, revenue, sequentially",
+      "category": "India Markets",
+      "count": 20,
+      "average_score": 90,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Google: India infrastructure OR highway OR railw",
+        "Google: India markets OR Sensex OR Nifty OR BSE"
+      ]
+    },
+    {
+      "id": "family-7",
+      "label": "administration, trump, United States",
+      "category": "India Pulse",
+      "count": 14,
+      "average_score": 95,
+      "unique_sources": 8,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Bloomberg",
+        "Dark Reading"
+      ]
+    },
+    {
+      "id": "family-16",
+      "label": "Amazon, baby, checks",
+      "category": "Cybersecurity",
+      "count": 10,
+      "average_score": 86,
+      "unique_sources": 6,
+      "consensus": 99,
+      "top_sources": [
+        "Google: cloud security OR supply chain attack",
+        "Google: data leak OR database exposed OR dump",
+        "Google: malware OR phishing OR infostealer campa",
+        "Google: open source AI OR agentic OR reasoning m"
+      ]
+    },
+    {
+      "id": "family-15",
+      "label": "israeli, cars, Middle East",
+      "category": "Geopolitics",
+      "count": 9,
+      "average_score": 86,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Al Jazeera",
+        "BBC World",
+        "Google: china taiwan OR south china sea 2025",
+        "Google: geopolitics OR war OR diplomacy breaking"
+      ]
+    },
+    {
+      "id": "family-40",
+      "label": "dollar, United States, rupee",
+      "category": "India Markets",
+      "count": 8,
+      "average_score": 97,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Economic Times Economy",
+        "Economic Times Markets",
+        "Indian Express Business",
+        "Mint Markets"
+      ]
+    },
+    {
+      "id": "family-21",
+      "label": "dirty, politics, stalin",
+      "category": "India Pulse",
+      "count": 8,
+      "average_score": 95,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "Hindustan Times India",
+        "Indian Express India",
+        "NDTV India",
+        "The Hindu National"
+      ]
+    },
+    {
+      "id": "family-35",
+      "label": "confirms, United States, claimed",
+      "category": "Cybersecurity",
+      "count": 8,
+      "average_score": 90,
+      "unique_sources": 5,
+      "consensus": 99,
+      "top_sources": [
+        "BleepingComputer",
+        "Google: cloud security OR supply chain attack",
+        "Google: data leak OR database exposed OR dump",
+        "Google: malware OR phishing OR infostealer campa"
+      ]
+    }
+  ],
+  "top_sectors": [
+    {
+      "label": "India Watch",
+      "count": 2288,
+      "avg_score": 69,
+      "trending": 855,
+      "sources": 99,
+      "heat": 99
+    },
+    {
+      "label": "AI Race",
+      "count": 1998,
+      "avg_score": 71,
+      "trending": 862,
+      "sources": 140,
+      "heat": 99
+    },
+    {
+      "label": "Energy & Supply",
+      "count": 875,
+      "avg_score": 73,
+      "trending": 423,
+      "sources": 87,
+      "heat": 99
+    },
+    {
+      "label": "Macro Stress",
+      "count": 873,
+      "avg_score": 72,
+      "trending": 397,
+      "sources": 102,
+      "heat": 99
+    },
+    {
+      "label": "Geopolitical Risk",
+      "count": 803,
+      "avg_score": 76,
+      "trending": 475,
+      "sources": 117,
+      "heat": 99
+    },
+    {
+      "label": "Platform Power",
+      "count": 614,
+      "avg_score": 64,
+      "trending": 172,
+      "sources": 46,
+      "heat": 99
+    },
+    {
+      "label": "Science & Space",
+      "count": 409,
+      "avg_score": 63,
+      "trending": 95,
+      "sources": 52,
+      "heat": 99
+    },
+    {
+      "label": "Health Alert",
+      "count": 231,
+      "avg_score": 63,
+      "trending": 68,
+      "sources": 50,
+      "heat": 99
+    }
+  ],
+  "headlines": [
+    {
+      "title": "OPEC sees slower demand growth this year as production falls more than 30% on Hormuz closure",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.cnbc.com/2026/05/13/opec-oil-strait-hormuz-iran-war-saudi-arabia-uae.html"
+    },
+    {
+      "title": "Veefin Solutions Q4: Profit Rises 106% QoQ To ₹16 Cr, Revenue Up 27%",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://inc42.com/buzz/veefin-solutions-q4-profit-rises-106-qoq-to-%e2%82%b916-cr-revenue-up-27/"
+    },
+    {
+      "title": "Amul hikes milk prices by ₹2 per litre across India, effective May 14",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/amul-hikes-milk-prices-by-2-per-litre-across-india-effective-may-14/article70974685.ece"
+    },
+    {
+      "title": "NIA arrests Hizb-ul-Mujahideen linked ‘narco-terrorist’ after extradition from Portugal",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/nia-arrests-hizb-ul-mujahideen-linked-narco-terrorist-after-extradition-from-portugal/article70973449.ece"
+    },
+    {
+      "title": "DLF Q4 Results: Net profit flat at  ₹1,265 crore, revenue falls 42% YoY;  ₹8 dividend announced",
+      "score": 99,
+      "category": "India Markets",
+      "url": "https://www.livemint.com/market/stock-market-news/dlf-q4-results-net-profit-flat-at-rs-1-265-crore-revenue-falls-42-yoy-rs-8-dividend-announced-11778680297251.html"
+    },
+    {
+      "title": "Students, States, coaching centres say NEET-UG cancellation is unfair, stressful",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/students-states-coaching-centres-say-neet-ug-cancellation-is-unfair-stressful/article70974229.ece"
+    },
+    {
+      "title": "JPMorgan Reshuffles Investment Bank Leadership",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-13/jpmorgan-reshuffles-investment-bank-leadership-video"
+    },
+    {
+      "title": "Trump administration considering renaming Iran war to Operation Sledgehammer if fragile ceasefire collapses: Report",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/us-news/trump-administration-considering-renaming-iran-war-to-operation-sledgehammer-if-fragile-ceasefire-collapses-report-11778680880766.html"
+    },
+    {
+      "title": "Iran war accelerates Chinese EV makers’ global expansion — echoing Japan’s 1970s rise - Automotive News",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOazRoTTFfNFl2VE16NHNBZ1I5ZUZwTzd4cGp3aUlPSk9TM0ZvNkJfQWNrSFBQS2gwak4wWU0wMlRyWUlCcTZQaGQ0dlFQS1ZiSWJkazcwMHhSU295U3hkSk80TWtEdHFRaXZ3TGZmYV9UQjNTU2FXdWtKTXN0MlU5QjNDWXJoQzBMTmpyTEI3QXlmTkNLTG5BYkxnUXkxQjZCZFF2NjhfZEtxVlctRFhlZ3Q0VQ?oc=5"
+    },
+    {
+      "title": "Youth Congress stages protest against NEET paper leak",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/karnataka/youth-congress-stages-protest-against-neet-paper-leak/article70974267.ece"
+    },
+    {
+      "title": "Night train restrictions to expedite Kollam railway station redevelopment",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.thehindu.com/news/national/kerala/night-train-restrictions-to-expedite-kollam-railway-station-redevelopment/article70974010.ece"
+    },
+    {
+      "title": "Amul hikes milk prices by  ₹2 per litre across India due to rising input costs, effective May 14",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/amul-hikes-milk-prices-by-2-per-litre-across-india-due-to-rising-input-costs-effective-may-14-11778680706339.html"
+    },
+    {
+      "title": "How Anthropic Could Take an OpenAI Supplier Off The Table",
+      "score": 99,
+      "category": "AI & Startups",
+      "url": "https://www.theinformation.com/articles/anthropic-take-openai-supplier-table"
+    },
+    {
+      "title": "Philippine Senate in lockdown after gunshots fired",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/cnvp730yd52o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Alibaba to exceed planned AI spending and says margin is secondary",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/alibaba-to-exceed-planned-ai-spending-and-says-margin-is-secondary/articleshow/131067929.cms"
+    },
+    {
+      "title": "Cabinet approves  ₹2.6 trillion kharif MSP outlay, energy security measures",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/india/cabinet-msp-hike-kharif-crops-msp-india-coal-gasification-oilseed-pulses-msp-11778675901099.html"
+    },
+    {
+      "title": "Nvidia's CEO Is a Late Add to Trump's China Trip",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-13/nvidia-s-ceo-is-a-late-add-to-trump-s-china-trip-video"
+    },
+    {
+      "title": "Israeli strikes on cars in southern Lebanon kill 12, health ministry says",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/c1k2zekj8y9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Trump arrives in China for high-stakes meeting with Xi Jinping",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/c1w28qw1e0xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Hacker checks out Amazon baby monitor, finds mother of all security flaws - Cybernews",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41TUtYTEJ2WnZBZ0tMRUZpci1uSTRKZ1FKQnlmcVN0S1NQREtYY3dJampmSGR6dDNNT2ZGbUJuX2FBaEdJMEdZWG0yb05EUEFDWjJ1UW40d1pSd1VJbFpWY2NJakREZlpDOFdtelBiMVRqUzJyXzhwSHoyTUdMQlE?oc=5"
+    },
+    {
+      "title": "Epstein abused me while under house arrest, survivor tells US lawmakers",
+      "score": 99,
+      "category": "Geopolitics",
+      "url": "https://www.bbc.com/news/articles/clypr378l2wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Microsoft's MDASH AI System Finds 16 Windows Flaws Fixed in Patch Tuesday",
+      "score": 99,
+      "category": "Cybersecurity",
+      "url": "https://thehackernews.com/2026/05/microsofts-mdash-ai-system-finds-16.html"
+    },
+    {
+      "title": "Uttarakhand govt announces fuel-saving measures, cuts ministers’ convoy size by 50%; pushes EV use",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://timesofindia.indiatimes.com/india/uttarakhand-govt-announces-fuel-saving-measures-cuts-ministers-convoy-size-by-50-pushes-ev-use/articleshow/131067680.cms"
+    },
+    {
+      "title": "CBI Arrests 5 In NEET-UG 2026 Paper Leak Case, Raids Multiple Locations",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.ndtv.com/education/cbi-arrests-5-in-neet-ug-2026-paper-leak-case-raids-multiple-locations-11490220"
+    },
+    {
+      "title": "SoftBank logs $600 million paper loss on India-listed portfolio in Jan-Mar",
+      "score": 99,
+      "category": "India Tech",
+      "url": "https://economictimes.indiatimes.com/tech/technology/softbank-logs-600-million-paper-loss-on-india-listed-portfolio-in-jan-mar/articleshow/131067717.cms"
+    },
+    {
+      "title": "Lone Star-Owned German Bank IKB Is Exposed to Collapse of UK Mortgage Firm MFS",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-13/lone-star-owned-german-bank-ikb-is-exposed-to-collapse-of-uk-mortgage-firm-mfs"
+    },
+    {
+      "title": "TVK talking clean politics now practising dirty politics: DMK president M K Stalin",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.hindustantimes.com/india-news/tvk-talking-clean-politics-now-practising-dirty-politics-dmk-president-m-k-stalin-101778679634467.html"
+    },
+    {
+      "title": "Senegal Targets $7.5 Billion Gas Project to End Energy Subsidies",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-13/senegal-targets-7-5-billion-gas-project-to-end-energy-subsidies"
+    },
+    {
+      "title": "Gastrointestinal illness outbreak leaves over 1000 passengers on a UK-operated cruise ship in France after 49 fell ill",
+      "score": 99,
+      "category": "India Pulse",
+      "url": "https://www.livemint.com/news/world/gastrointestinal-illness-outbreak-leaves-over-1000-passengers-on-a-uk-operated-cruise-ship-in-france-after-49-fell-ill-11778675022390.html"
+    },
+    {
+      "title": "Consumers Still Face Months of Pain, Piegza Says",
+      "score": 99,
+      "category": "Markets & Macro",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-13/consumers-still-face-months-of-pain-piegza-says-video"
+    }
+  ]
+}
